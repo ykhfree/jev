@@ -1,0 +1,19 @@
+[project]
+name = "jev-cli"
+version = "0.1.0"
+description = "Delegate narrow judgments from a coding agent to TypeSafe Jev"
+requires-python = ">=3.10"
+dependencies = ["typesafe-sdk>=0.7,<0.8"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+jev = "jev:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["jev"]
