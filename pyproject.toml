@@ -1,5 +1,5 @@
 [project]
-name = "jev-cli"
+name = "jev"
 version = "0.1.0"
 description = "Delegate narrow judgments from a coding agent to TypeSafe Jev"
 requires-python = ">=3.10"

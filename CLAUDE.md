@@ -13,7 +13,7 @@ The primary consumer is the "Jev delegation" section of `~/.claude/CLAUDE.md`, w
 The CLI is installed as an **editable** pipx package (`pipx install --editable ~/AI/jev`, with `pytest` injected into the same venv), so edits to `jev.py` take effect in the `jev` command immediately. pytest is not on PATH; use the venv's copy:
 
 ```bash
-PYTEST=~/.local/pipx/venvs/jev-cli/bin/pytest
+PYTEST=~/.local/pipx/venvs/jev/bin/pytest
 
 $PYTEST tests/test_jev.py                              # offline tests, fake model (fast)
 $PYTEST tests/test_jev.py::test_memgate_verdict        # single test
@@ -42,4 +42,4 @@ Live tests call the paid API and assert on real model scores; run them after cha
 
 ## Environment
 
-`.claude/settings.local.json` points `CROSS_MEMORY_DIR` at this project's own store (`…/memory-store/jev-cli/memory`), so `cross-memory` records made in this repo land there.
+`.claude/settings.local.json` points `CROSS_MEMORY_DIR` at this project's own store (`…/memory-store/jev/memory`), so `cross-memory` records made in this repo land there.

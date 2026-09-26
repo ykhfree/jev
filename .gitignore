@@ -1,2 +1,2 @@
 .idea
-jev_cli.egg-info
+*.egg-info
