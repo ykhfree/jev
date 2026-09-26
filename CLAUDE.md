@@ -18,10 +18,10 @@ PYTEST=~/.local/pipx/venvs/jev/bin/pytest
 $PYTEST tests/test_jev.py                              # offline tests, fake model (fast)
 $PYTEST tests/test_jev.py::test_memgate_verdict        # single test
 $PYTEST tests/test_jev.py -k screen                    # by keyword
-$PYTEST tests/test_live.py                             # real API; skipped unless TYPESAFE_API_KEY is set
+JEV_LIVE=1 $PYTEST tests/test_live.py                  # real API; skipped unless JEV_LIVE=1 and TYPESAFE_API_KEY are set
 ```
 
-Live tests call the paid API and assert on real model scores; run them after changing a question or threshold, not on every edit. There is no linter or formatter configured.
+Live tests call the paid API (one request per `ask`) and assert on real model scores. Run them only after changing a question or threshold, and ask the user first. There is no linter or formatter configured.
 
 ## Architecture
 

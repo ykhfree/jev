@@ -1,4 +1,5 @@
-"""Live checks against the real TypeSafe API. Skipped unless TYPESAFE_API_KEY is set."""
+"""Live checks against the real TypeSafe API; every request is billed.
+Skipped unless JEV_LIVE=1 and TYPESAFE_API_KEY are both set."""
 
 import io
 import json
@@ -9,7 +10,11 @@ import pytest
 
 import jev
 
-pytestmark = pytest.mark.skipif(not os.environ.get("TYPESAFE_API_KEY"), reason="needs TYPESAFE_API_KEY")
+# The key is always set on the dev machine, so require an explicit opt-in too.
+pytestmark = pytest.mark.skipif(
+    os.environ.get("JEV_LIVE") != "1" or not os.environ.get("TYPESAFE_API_KEY"),
+    reason="billed API calls: set JEV_LIVE=1 and TYPESAFE_API_KEY to run",
+)
 
 
 def run(argv, capsys, monkeypatch=None, stdin=None):
