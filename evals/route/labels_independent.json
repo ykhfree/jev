@@ -1,0 +1,321 @@
+[
+ {
+  "id": "a1",
+  "label": "self",
+  "rule": "answer",
+  "ambiguous": false
+ },
+ {
+  "id": "a2",
+  "label": "self",
+  "rule": "answer",
+  "ambiguous": false
+ },
+ {
+  "id": "a3",
+  "label": "self",
+  "rule": "answer",
+  "ambiguous": false
+ },
+ {
+  "id": "a4",
+  "label": "self",
+  "rule": "answer",
+  "ambiguous": false
+ },
+ {
+  "id": "a5",
+  "label": "self",
+  "rule": "answer",
+  "ambiguous": false
+ },
+ {
+  "id": "a6",
+  "label": "self",
+  "rule": "answer",
+  "ambiguous": true,
+  "note": "Requires running the test suite, but changes no code, so it stays a question the main session answers."
+ },
+ {
+  "id": "r1a",
+  "label": "self",
+  "rule": "1",
+  "ambiguous": false
+ },
+ {
+  "id": "r1b",
+  "label": "self",
+  "rule": "1",
+  "ambiguous": false
+ },
+ {
+  "id": "r1c",
+  "label": "self",
+  "rule": "1",
+  "ambiguous": false
+ },
+ {
+  "id": "r1d",
+  "label": "self",
+  "rule": "1",
+  "ambiguous": false
+ },
+ {
+  "id": "r1e",
+  "label": "self",
+  "rule": "1",
+  "ambiguous": false
+ },
+ {
+  "id": "r1f",
+  "label": "self",
+  "rule": "1",
+  "ambiguous": false
+ },
+ {
+  "id": "r1g",
+  "label": "self",
+  "rule": "1",
+  "ambiguous": true,
+  "note": "One-line version bump already specified, but a major dependency upgrade may need verification beyond a trivial edit."
+ },
+ {
+  "id": "r1h",
+  "label": "self",
+  "rule": "1",
+  "ambiguous": false
+ },
+ {
+  "id": "r1i",
+  "label": "self",
+  "rule": "1",
+  "ambiguous": false
+ },
+ {
+  "id": "d2a",
+  "label": "deep-reasoner",
+  "rule": "2",
+  "ambiguous": false
+ },
+ {
+  "id": "d2b",
+  "label": "deep-reasoner",
+  "rule": "2",
+  "ambiguous": false
+ },
+ {
+  "id": "d2c",
+  "label": "deep-reasoner",
+  "rule": "2",
+  "ambiguous": false
+ },
+ {
+  "id": "d2d",
+  "label": "deep-reasoner",
+  "rule": "2",
+  "ambiguous": false
+ },
+ {
+  "id": "d2e",
+  "label": "deep-reasoner",
+  "rule": "2",
+  "ambiguous": false
+ },
+ {
+  "id": "d2f",
+  "label": "deep-reasoner",
+  "rule": "2",
+  "ambiguous": false
+ },
+ {
+  "id": "d2g",
+  "label": "deep-reasoner",
+  "rule": "2",
+  "ambiguous": true,
+  "note": "Main session already compared both options, so one could argue it can decide itself, but the choice is still open and costly to revert."
+ },
+ {
+  "id": "d2h",
+  "label": "deep-reasoner",
+  "rule": "2",
+  "ambiguous": false
+ },
+ {
+  "id": "d3a",
+  "label": "deep-reasoner",
+  "rule": "3",
+  "ambiguous": true,
+  "note": "No investigation pass has happened yet, so the main session could investigate first."
+ },
+ {
+  "id": "d3b",
+  "label": "deep-reasoner",
+  "rule": "3",
+  "ambiguous": false
+ },
+ {
+  "id": "d3c",
+  "label": "deep-reasoner",
+  "rule": "3",
+  "ambiguous": false
+ },
+ {
+  "id": "d3d",
+  "label": "deep-reasoner",
+  "rule": "3",
+  "ambiguous": false
+ },
+ {
+  "id": "d3f",
+  "label": "deep-reasoner",
+  "rule": "3",
+  "ambiguous": true,
+  "note": "Phrased as advice question; could be answered directly as self."
+ },
+ {
+  "id": "d3g",
+  "label": "deep-reasoner",
+  "rule": "3",
+  "ambiguous": false
+ },
+ {
+  "id": "d3h",
+  "label": "deep-reasoner",
+  "rule": "3",
+  "ambiguous": false
+ },
+ {
+  "id": "f1",
+  "label": "feature-developer",
+  "rule": "4",
+  "ambiguous": false
+ },
+ {
+  "id": "f2",
+  "label": "feature-developer",
+  "rule": "4",
+  "ambiguous": false
+ },
+ {
+  "id": "f3",
+  "label": "feature-developer",
+  "rule": "4",
+  "ambiguous": false
+ },
+ {
+  "id": "f4",
+  "label": "feature-developer",
+  "rule": "4",
+  "ambiguous": false
+ },
+ {
+  "id": "f5",
+  "label": "feature-developer",
+  "rule": "4",
+  "ambiguous": false
+ },
+ {
+  "id": "f6",
+  "label": "feature-developer",
+  "rule": "4",
+  "ambiguous": false
+ },
+ {
+  "id": "f7",
+  "label": "feature-developer",
+  "rule": "4",
+  "ambiguous": false
+ },
+ {
+  "id": "f8",
+  "label": "feature-developer",
+  "rule": "4",
+  "ambiguous": false
+ },
+ {
+  "id": "f9",
+  "label": "feature-developer",
+  "rule": "4",
+  "ambiguous": false
+ },
+ {
+  "id": "f10",
+  "label": "feature-developer",
+  "rule": "4",
+  "ambiguous": true,
+  "note": "The similarity algorithm for tag suggestions is unspecified, which could make it a rule 3 design choice."
+ },
+ {
+  "id": "f11",
+  "label": "feature-developer",
+  "rule": "4",
+  "ambiguous": false
+ },
+ {
+  "id": "w1",
+  "label": "fast-worker",
+  "rule": "5",
+  "ambiguous": false
+ },
+ {
+  "id": "w2",
+  "label": "fast-worker",
+  "rule": "5",
+  "ambiguous": false
+ },
+ {
+  "id": "w3",
+  "label": "fast-worker",
+  "rule": "5",
+  "ambiguous": false
+ },
+ {
+  "id": "w4",
+  "label": "fast-worker",
+  "rule": "5",
+  "ambiguous": false
+ },
+ {
+  "id": "w6",
+  "label": "fast-worker",
+  "rule": "5",
+  "ambiguous": false
+ },
+ {
+  "id": "w7",
+  "label": "fast-worker",
+  "rule": "5",
+  "ambiguous": true,
+  "note": "If the main session already read the six files, rule 1 (self) could apply."
+ },
+ {
+  "id": "w9",
+  "label": "fast-worker",
+  "rule": "5",
+  "ambiguous": false
+ },
+ {
+  "id": "w10",
+  "label": "fast-worker",
+  "rule": "5",
+  "ambiguous": false
+ },
+ {
+  "id": "w11",
+  "label": "fast-worker",
+  "rule": "5",
+  "ambiguous": false
+ },
+ {
+  "id": "w12",
+  "label": "fast-worker",
+  "rule": "5",
+  "ambiguous": false
+ },
+ {
+  "id": "w13",
+  "label": "fast-worker",
+  "rule": "5",
+  "ambiguous": false
+ }
+]

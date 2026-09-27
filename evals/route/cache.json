@@ -1,0 +1,1956 @@
+{
+ "38b7be1ef26d59133d23ce8fd21ed3a6d209b7eb9ea5ed0221321e520a60c687": {
+  "answer_only": 0.96,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.02,
+  "approach_undecided": 0.26,
+  "changes_behavior": 0.03,
+  "fully_specified": 0.11,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "deep-reasoner": 0.01,
+    "self": 0.98,
+    "fast-worker": 0.01,
+    "feature-developer": 0.0
+   },
+   "confidence": 0.97
+  }
+ },
+ "a0937889f5b8165a338472553b84b562be8497cb1d9327d07949ef951647b582": {
+  "answer_only": 0.97,
+  "exact_edit_known": 0.14,
+  "costly_decision_open": 0.03,
+  "approach_undecided": 0.07,
+  "changes_behavior": 0.04,
+  "fully_specified": 0.37,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "fast-worker": 0.01,
+    "self": 0.99,
+    "feature-developer": 0.0,
+    "deep-reasoner": 0.0
+   },
+   "confidence": 0.99
+  }
+ },
+ "eeb7aa57bff40458e917b31ff2558d9f1c0ec7073630d075d555d8484694bc9e": {
+  "answer_only": 0.96,
+  "exact_edit_known": 0.02,
+  "costly_decision_open": 0.03,
+  "approach_undecided": 0.34,
+  "changes_behavior": 0.07,
+  "fully_specified": 0.1,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "deep-reasoner": 0.02,
+    "self": 0.93,
+    "feature-developer": 0.05,
+    "fast-worker": 0.0
+   },
+   "confidence": 0.91
+  }
+ },
+ "7c334b5511986f5e32cc5b27d34eca75e1b6d4f47a1afec15337e7cb17525b92": {
+  "answer_only": 0.97,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.05,
+  "approach_undecided": 0.17,
+  "changes_behavior": 0.04,
+  "fully_specified": 0.09,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "fast-worker": 0.0,
+    "self": 1.0,
+    "feature-developer": 0.0,
+    "deep-reasoner": 0.0
+   },
+   "confidence": 1.0
+  }
+ },
+ "0dcd02ecfa3a574ad746c24984d07e70a0bd60c91df7913b816ed8824fb99da8": {
+  "answer_only": 0.96,
+  "exact_edit_known": 0.04,
+  "costly_decision_open": 0.04,
+  "approach_undecided": 0.33,
+  "changes_behavior": 0.06,
+  "fully_specified": 0.09,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "feature-developer": 0.0,
+    "fast-worker": 0.0,
+    "deep-reasoner": 0.02,
+    "self": 0.98
+   },
+   "confidence": 0.97
+  }
+ },
+ "f91c11f52559427e7efead68633885e1c53b9d7040300f3c5ed78df7be099fcc": "self",
+ "5e7c39498abdb5b37677fd9631bc0b5624bcb338a6b595a7d763ad2739562fdb": "self",
+ "a2b5fbfcf1c05ea472af1008081abb35656715ee06342d7b9638361c2b43aa94": "self",
+ "7e233d4ceee48cae23efa6b2205716c9b6aec1468242cbf7bb353842f450b1db": "self",
+ "5ca53e00041187f5acc7085fb2ac836ba41ec6a67edc44e75da6d150cbd53846": "self",
+ "e5d75ac3ac37f1471173fa6562f78f05c98e0201ac581d60fd881031cd7e63c8": "self",
+ "960f07aebdb4c9659eb96f3eb4542da37af06b42f9408c63f375a79f5c0a73dd": "self",
+ "1ab38dbfd4b73a68723280fb9d1144ecf5f05bd2fdd8541e9de4e1a422dc69d5": "self",
+ "1348298df3856a572f1d56f7bfa094045ce66d09bfdc82ee02204d6328f53f1b": "self",
+ "340496792bd8650aa76d3a1684c8b3b8c144f8219411b1ce25daac523b719f61": {
+  "answer_only": 0.97,
+  "exact_edit_known": 0.02,
+  "costly_decision_open": 0.03,
+  "approach_undecided": 0.08,
+  "changes_behavior": 0.05,
+  "fully_specified": 0.12,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "self": 1.0,
+    "feature-developer": 0.0,
+    "deep-reasoner": 0.0,
+    "fast-worker": 0.0
+   },
+   "confidence": 1.0
+  }
+ },
+ "4d6275942a27a6caf0c239bd9e199c7f4442c4f672791e191c4b398556a81338": "self",
+ "74e289b7904fec5b932282778e52d37a7c57dabc2cc3330ec533194b4fdfd995": "self",
+ "c8bc0d6716c6af991103cb93fe9a13b6664a29afc0df0da88c86cb448d02ee79": {
+  "answer_only": 0.96,
+  "exact_edit_known": 0.02,
+  "costly_decision_open": 0.02,
+  "approach_undecided": 0.32,
+  "changes_behavior": 0.04,
+  "fully_specified": 0.09,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "deep-reasoner": 0.04,
+    "self": 0.94,
+    "feature-developer": 0.0,
+    "fast-worker": 0.02
+   },
+   "confidence": 0.92
+  }
+ },
+ "2e055d5c524d5c96e842b5fd428cdf2b2affccd12e7d42177672c5a2d3a20dcf": {
+  "answer_only": 0.31,
+  "exact_edit_known": 0.56,
+  "costly_decision_open": 0.13,
+  "approach_undecided": 0.34,
+  "changes_behavior": 0.35,
+  "fully_specified": 0.13,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "fast-worker": 0.22,
+    "self": 0.63,
+    "feature-developer": 0.12,
+    "deep-reasoner": 0.03
+   },
+   "confidence": 0.52
+  }
+ },
+ "9e07d72733f3502c395b62873fdc19d1434d09bb93bf3b863c4733fa6479e4bc": {
+  "answer_only": 0.64,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.03,
+  "approach_undecided": 0.36,
+  "changes_behavior": 0.2,
+  "fully_specified": 0.08,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "feature-developer": 0.02,
+    "deep-reasoner": 0.07,
+    "self": 0.6,
+    "fast-worker": 0.31
+   },
+   "confidence": 0.47
+  }
+ },
+ "e47162d3c9c3976dd8f706fe62b4bf218abb3ea649db6ea7732fcffe2d10f3bc": "self",
+ "e763530374f172ac4018e401ad02bee9c100ae5a7227f496e67d347dfaae1b45": {
+  "answer_only": 0.13,
+  "exact_edit_known": 0.81,
+  "costly_decision_open": 0.07,
+  "approach_undecided": 0.31,
+  "changes_behavior": 0.44,
+  "fully_specified": 0.23,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "feature-developer": 0.05,
+    "deep-reasoner": 0.0,
+    "fast-worker": 0.14,
+    "self": 0.81
+   },
+   "confidence": 0.75
+  }
+ },
+ "dab6163a380085d70444d0be7ce7b9578daf82d8c6bb677cd63826972c8f702c": {
+  "answer_only": 0.26,
+  "exact_edit_known": 0.02,
+  "costly_decision_open": 0.04,
+  "approach_undecided": 0.6,
+  "changes_behavior": 0.23,
+  "fully_specified": 0.05,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "self": 0.75,
+    "fast-worker": 0.09,
+    "feature-developer": 0.01,
+    "deep-reasoner": 0.15
+   },
+   "confidence": 0.66
+  }
+ },
+ "936045b510713da9b330473bb71997f4c47b057617d01fdb5aadd4db3d1ed8d4": "self",
+ "3d742e318e1b857b22df9bf9c70cebca977b75f2068657a1ddbf29024e7725dc": "self",
+ "32f34fec20af4681572b2ef88253366bf7435bc6e5ec31a4c4bc364056f2c9a5": "self",
+ "70b39436f2e0b6396cccdb87251c2a8b28a175b3aae889ac2f35a38b190a2c81": "self",
+ "e0b6d81d8d2fa1d469c4fd5c330a7b0b8925a42bb2e9891259f62a22d1aa205e": "self",
+ "fec223ddbd190a0d24ecdc09daa829217e9ff644b2554006bd097e6fb083a6bd": "self",
+ "6deca817974f956be76d7cf55751231a80812cdb1beeea0055357de874fa162f": "self",
+ "4325480fd6b09a4553e97c7b4119aacb3d2ed53dcb5828a14e217a060362ef6c": "self",
+ "02154e51ec144e08f56daca3d0194a5fd5317ae333ccbf6200ede5bf0e32ba84": {
+  "answer_only": 0.09,
+  "exact_edit_known": 0.87,
+  "costly_decision_open": 0.02,
+  "approach_undecided": 0.09,
+  "changes_behavior": 0.09,
+  "fully_specified": 0.45,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "deep-reasoner": 0.0,
+    "self": 0.76,
+    "feature-developer": 0.0,
+    "fast-worker": 0.24
+   },
+   "confidence": 0.67
+  }
+ },
+ "20b7661bf0d02867e68197d538848e56cbcd256edda3dbd83c8398a352d749d9": "self",
+ "fd7a132e2cb02ef8ae11fcaae489d3ab086af973c39c9d6093b88f4d7fd46f8e": {
+  "answer_only": 0.27,
+  "exact_edit_known": 0.02,
+  "costly_decision_open": 0.01,
+  "approach_undecided": 0.34,
+  "changes_behavior": 0.08,
+  "fully_specified": 0.06,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "deep-reasoner": 0.03,
+    "feature-developer": 0.0,
+    "self": 0.6,
+    "fast-worker": 0.37
+   },
+   "confidence": 0.46
+  }
+ },
+ "178eb3652e2581054f72dc39f9a2e6e840439b89c681eaeaec9249b83ce00a27": "self",
+ "b1726a9a3074945b068c8612e314a8347e3895de2a58150311965faa9b343faa": {
+  "answer_only": 0.02,
+  "exact_edit_known": 0.44,
+  "costly_decision_open": 0.03,
+  "approach_undecided": 0.09,
+  "changes_behavior": 0.76,
+  "fully_specified": 0.47,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "self": 0.88,
+    "fast-worker": 0.12,
+    "feature-developer": 0.0,
+    "deep-reasoner": 0.0
+   },
+   "confidence": 0.83
+  }
+ },
+ "f743a47c59acd462f2e9507637621fd74b1db42e026bf9c6c30a7d0cc8945dc6": {
+  "answer_only": 0.03,
+  "exact_edit_known": 0.06,
+  "costly_decision_open": 0.04,
+  "approach_undecided": 0.09,
+  "changes_behavior": 0.7,
+  "fully_specified": 0.53,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "feature-developer": 0.0,
+    "self": 0.14,
+    "fast-worker": 0.86,
+    "deep-reasoner": 0.0
+   },
+   "confidence": 0.81
+  }
+ },
+ "1408d0dc7328799b596262f1441196c213b13f8d8694ac0ac412d198041ca22f": "self",
+ "19d71bba38fa15eaa296d2b99c76364498dbbbc913e46493308d89f1fd9e44f9": "self",
+ "a51bab306d54bb472ee636cad067059d543365a53b4e668ed821e32d365541e8": {
+  "answer_only": 0.03,
+  "exact_edit_known": 0.88,
+  "costly_decision_open": 0.03,
+  "approach_undecided": 0.07,
+  "changes_behavior": 0.27,
+  "fully_specified": 0.7,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "fast-worker": 0.28,
+    "self": 0.72,
+    "deep-reasoner": 0.0,
+    "feature-developer": 0.0
+   },
+   "confidence": 0.62
+  }
+ },
+ "7caf095ceb3c44354ad335ae7ea374cc488667c7e891cc80f343028590e0e66c": {
+  "answer_only": 0.03,
+  "exact_edit_known": 0.05,
+  "costly_decision_open": 0.03,
+  "approach_undecided": 0.1,
+  "changes_behavior": 0.25,
+  "fully_specified": 0.63,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "fast-worker": 0.8,
+    "feature-developer": 0.0,
+    "deep-reasoner": 0.0,
+    "self": 0.2
+   },
+   "confidence": 0.74
+  }
+ },
+ "61ee8c9f6389c1ec77efda979c247a1dec2bdcad3ce6282dd99e48ec039e3254": "self",
+ "b319e2ec2e893e0b3d2f4128e5491dfd4def674c0bc4d6147263941425e0d336": {
+  "answer_only": 0.02,
+  "exact_edit_known": 0.88,
+  "costly_decision_open": 0.07,
+  "approach_undecided": 0.12,
+  "changes_behavior": 0.47,
+  "fully_specified": 0.23,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "self": 0.87,
+    "deep-reasoner": 0.0,
+    "fast-worker": 0.13,
+    "feature-developer": 0.0
+   },
+   "confidence": 0.83
+  }
+ },
+ "c2a8ed4e5798da2129f1a85f28553b2471cb0d7eec00df2a85e54f3e14ae459b": {
+  "answer_only": 0.03,
+  "exact_edit_known": 0.04,
+  "costly_decision_open": 0.12,
+  "approach_undecided": 0.16,
+  "changes_behavior": 0.56,
+  "fully_specified": 0.13,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "self": 0.25,
+    "fast-worker": 0.73,
+    "feature-developer": 0.02,
+    "deep-reasoner": 0.0
+   },
+   "confidence": 0.63
+  }
+ },
+ "b065a13ac936311d562903b0dd530dc587a995ea540ecbf9c3e075da07689e25": "self",
+ "bd857e5c69881e71b4131760963157cdc2fa372b79783866b040cc3d193e4cfd": "self",
+ "df0abe321bb107423df32306238b7a89ff75166562ae6958b38cde49dba8b8a6": "self",
+ "ef91a02af7fc4694c512edb4e996003a5a33c0a537499812d70dcdb4623874a8": "self",
+ "f37fcb71e2da3b9148873efd339f73f5b694a3cc7ebcf5def9195238817e65e0": "self",
+ "3a6e38ee7cbefe3b7241d0c6789d2e255271d233a7cadc4eeedb7b6fa280885d": "self",
+ "c932334a75c1234694591dba4d637dc34dbed4bb88db5cc56eb7796649830fd5": {
+  "answer_only": 0.08,
+  "exact_edit_known": 0.86,
+  "costly_decision_open": 0.12,
+  "approach_undecided": 0.18,
+  "changes_behavior": 0.2,
+  "fully_specified": 0.39,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "feature-developer": 0.0,
+    "self": 0.76,
+    "deep-reasoner": 0.0,
+    "fast-worker": 0.24
+   },
+   "confidence": 0.67
+  }
+ },
+ "14b917dd80ee56c81ad9f865f0a2a0b04504c5779a4ac27ea6b1dd80acdbd114": {
+  "answer_only": 0.24,
+  "exact_edit_known": 0.04,
+  "costly_decision_open": 0.1,
+  "approach_undecided": 0.56,
+  "changes_behavior": 0.4,
+  "fully_specified": 0.1,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "self": 0.52,
+    "deep-reasoner": 0.14,
+    "fast-worker": 0.28,
+    "feature-developer": 0.06
+   },
+   "confidence": 0.36
+  }
+ },
+ "b5e2882d1003d674b6584660b4d8ff0ece008b74902a1a9a26bd7d663d4d6947": "self",
+ "cae9811876e7e9fb6805384319c9db91a3f8094a9397424dd52edfa61784d259": "self",
+ "8d6a55c1d7aa87ea9e2a1b078b41e3ae4100a8af149e056f27f0b69580d789a0": "self",
+ "7cf3290d63d087bd5a6ac86f6fdbbad4c76ce12eeba5728dd0a1d68bdc91569d": {
+  "answer_only": 0.04,
+  "exact_edit_known": 0.85,
+  "costly_decision_open": 0.02,
+  "approach_undecided": 0.11,
+  "changes_behavior": 0.05,
+  "fully_specified": 0.37,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "feature-developer": 0.0,
+    "deep-reasoner": 0.0,
+    "fast-worker": 0.46,
+    "self": 0.54
+   },
+   "confidence": 0.39
+  }
+ },
+ "ceab521940b6546dee1c3528f007f1b2ce7768284f535520a6208d72dad36fa6": {
+  "answer_only": 0.07,
+  "exact_edit_known": 0.06,
+  "costly_decision_open": 0.02,
+  "approach_undecided": 0.26,
+  "changes_behavior": 0.07,
+  "fully_specified": 0.1,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "deep-reasoner": 0.0,
+    "self": 0.13,
+    "feature-developer": 0.0,
+    "fast-worker": 0.87
+   },
+   "confidence": 0.82
+  }
+ },
+ "65b0e8851a22196c84be9020c09b36e8bac1cadb844897399323fa93c0741b12": "self",
+ "2d38f6e4e6cf19f782121369753ef1a1f598eb452e30248c4720d76fc7d151e2": {
+  "answer_only": 0.08,
+  "exact_edit_known": 0.89,
+  "costly_decision_open": 0.05,
+  "approach_undecided": 0.13,
+  "changes_behavior": 0.66,
+  "fully_specified": 0.24,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "deep-reasoner": 0.0,
+    "self": 0.91,
+    "feature-developer": 0.0,
+    "fast-worker": 0.09
+   },
+   "confidence": 0.87
+  }
+ },
+ "7ad6660f45b0db9f880d836c2a6e88ce9f780218ae930fe8e65ab13f6e4e6d72": {
+  "answer_only": 0.1,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.07,
+  "approach_undecided": 0.61,
+  "changes_behavior": 0.49,
+  "fully_specified": 0.04,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "feature-developer": 0.2,
+    "self": 0.5,
+    "fast-worker": 0.04,
+    "deep-reasoner": 0.26
+   },
+   "confidence": 0.33
+  }
+ },
+ "dc48111358889c22f891604c7daed1046020218886865a208ab42c8962f8261b": "self",
+ "74923f89c1bca93022f8af63ac49a7aaac2067c47724d3efcbe24e5d5376c8fd": "self",
+ "65f900bbed1feae88af270a1d9a3b9ec634dd986471662d0e04ce9258106f7d0": {
+  "answer_only": 0.88,
+  "exact_edit_known": 0.02,
+  "costly_decision_open": 0.89,
+  "approach_undecided": 0.94,
+  "changes_behavior": 0.19,
+  "fully_specified": 0.05,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "self": 0.0,
+    "deep-reasoner": 1.0,
+    "fast-worker": 0.0,
+    "feature-developer": 0.0
+   },
+   "confidence": 1.0
+  }
+ },
+ "45dbf64cdf32fcc15720e53824b8cfe513d0a5dcdfe017a699d3a11103542dd9": "self",
+ "a2a1996610bbf31b557f05208301ba26bf605a8e0ff4a2b3c1f379fc8ef6c9d1": "self",
+ "40610f8c79a749478ff4e5b3078797946a28d0f6cd2f0b3c51315937bde02732": "self",
+ "c942bbecbcfb538a3c0a21f9e30cd7b1f3556e03c9d5a7234947145bad2fed53": "deep-reasoner",
+ "bfe91b8e9eca7c7e4d37cb6f1b1ea10fa42087384579de20b5cd1b428b2f49d3": "self",
+ "dd5ef1839bba85db0a3fbd263a6bc41507c3d77b4d546160bfc7ba4ca4b19a92": "self",
+ "25160be4cb2e5d67e9b7366637b3734c9479e264967aa5ef32688c6d1863e1f8": "self",
+ "a351c905e205e28bb1d46626c63bef27cc26c03884f58c626e65abbb7ef1c542": {
+  "answer_only": 0.86,
+  "exact_edit_known": 0.02,
+  "costly_decision_open": 0.82,
+  "approach_undecided": 0.93,
+  "changes_behavior": 0.48,
+  "fully_specified": 0.05,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "fast-worker": 0.0,
+    "self": 0.0,
+    "deep-reasoner": 1.0,
+    "feature-developer": 0.0
+   },
+   "confidence": 0.99
+  }
+ },
+ "d335ebfe56c88bea4f235516a95ac9e2739de3979185939d596fbf4bbbe35498": "deep-reasoner",
+ "cbc2bc3d1114d25882b3975bd10bed46786907c2f29d61ebe48ca0ed46a9e1f1": "self",
+ "41f5a1d9e8730390e71b1364d898e7360598a8408070de8611b506eae71ef13b": {
+  "answer_only": 0.92,
+  "exact_edit_known": 0.02,
+  "costly_decision_open": 0.9,
+  "approach_undecided": 0.95,
+  "changes_behavior": 0.25,
+  "fully_specified": 0.05,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "deep-reasoner": 0.99,
+    "self": 0.01,
+    "feature-developer": 0.0,
+    "fast-worker": 0.0
+   },
+   "confidence": 0.99
+  }
+ },
+ "f8905efc3055a2c26fe84d35e4bf90a3077a4e5f106ba222cf6873e470bd6bbf": "self",
+ "fc6d675bf585e92f3000088de4be37132505cc6400c380010667d830faaf287c": {
+  "answer_only": 0.78,
+  "exact_edit_known": 0.02,
+  "costly_decision_open": 0.8,
+  "approach_undecided": 0.83,
+  "changes_behavior": 0.5,
+  "fully_specified": 0.06,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "feature-developer": 0.0,
+    "deep-reasoner": 1.0,
+    "fast-worker": 0.0,
+    "self": 0.0
+   },
+   "confidence": 1.0
+  }
+ },
+ "65535ec65bd1a1fc599bfa198d401c255ed42c3f7a1144f2d3c428e96a2e34a4": "deep-reasoner",
+ "4d597d1074632cf3313f6da509f82660ea47ba74a6155f908149aa5ce17916e2": "deep-reasoner",
+ "8c91b3cf28eb58e23146753f202f5df0328b5524016ec58801e64045b6cbd9aa": {
+  "answer_only": 0.77,
+  "exact_edit_known": 0.07,
+  "costly_decision_open": 0.91,
+  "approach_undecided": 0.9,
+  "changes_behavior": 0.19,
+  "fully_specified": 0.08,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "fast-worker": 0.0,
+    "deep-reasoner": 0.99,
+    "self": 0.01,
+    "feature-developer": 0.0
+   },
+   "confidence": 0.99
+  }
+ },
+ "b0e5e9461ab30a775712334c671fd84b497d021fe8d0c761f0ea97311748f637": {
+  "answer_only": 0.51,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.42,
+  "approach_undecided": 0.52,
+  "changes_behavior": 0.13,
+  "fully_specified": 0.08,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "self": 0.39,
+    "feature-developer": 0.04,
+    "deep-reasoner": 0.54,
+    "fast-worker": 0.03
+   },
+   "confidence": 0.39
+  }
+ },
+ "95cc36fd4e3304c8df323b8a45afcd4518e3ce774101d37fe054eae86e4ce182": "deep-reasoner",
+ "f3d4f644d33229145be3e8aed5ab077e59860c60b4a8bc09050cb865a2a6c387": "deep-reasoner",
+ "e7999844341757d2002deb78f6b7b5f8ab40e868c2ee5369f2c4d74fa021a762": "deep-reasoner",
+ "d2ff4d9684e4a534ca6c86d6b647ba44b9d3cb3edbfcff03af24b7adf0d83cc7": "deep-reasoner",
+ "bd8958d669cc5a04f002aabf160215c69a94a374d2ac22e8fed5df9c777483c4": "deep-reasoner",
+ "f1644c18cfa69c609a521fe01402d79749eb19b3ae746000ee8fd195e0f0373c": "deep-reasoner",
+ "d4d55910b8262cae2a0b6eb7d6103b6bf6168837bb6bd0e7062cf2679b805ba8": {
+  "answer_only": 0.95,
+  "exact_edit_known": 0.02,
+  "costly_decision_open": 0.52,
+  "approach_undecided": 0.86,
+  "changes_behavior": 0.17,
+  "fully_specified": 0.05,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "fast-worker": 0.0,
+    "deep-reasoner": 0.98,
+    "self": 0.02,
+    "feature-developer": 0.0
+   },
+   "confidence": 0.97
+  }
+ },
+ "fdff03733ff7cdb517200be0faeac054f4a64b954805eaf2e3cc90996ee987d2": "deep-reasoner",
+ "30325a91fbb0701992da353e78baf45a6741a52b4c7c5980ef10dc9888eea59b": {
+  "answer_only": 0.84,
+  "exact_edit_known": 0.07,
+  "costly_decision_open": 0.88,
+  "approach_undecided": 0.87,
+  "changes_behavior": 0.08,
+  "fully_specified": 0.07,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "fast-worker": 0.0,
+    "self": 0.05,
+    "feature-developer": 0.0,
+    "deep-reasoner": 0.95
+   },
+   "confidence": 0.92
+  }
+ },
+ "e43c966fc486e521ec460b1f12281882b090960125c886d87e40dc86b682888d": {
+  "answer_only": 0.83,
+  "exact_edit_known": 0.04,
+  "costly_decision_open": 0.38,
+  "approach_undecided": 0.81,
+  "changes_behavior": 0.1,
+  "fully_specified": 0.06,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "feature-developer": 0.01,
+    "deep-reasoner": 0.82,
+    "self": 0.17,
+    "fast-worker": 0.0
+   },
+   "confidence": 0.76
+  }
+ },
+ "13be52b1d70157305ba9862bd3f484174c1c67fc8d7603fe98ed815043c6554a": "deep-reasoner",
+ "21e4aa7e399241bef9e9560da8585c289fb775afe2aac5fb6faedfe7b7253d29": "deep-reasoner",
+ "0b394f95e3028e512fb90a4e3db2adb30152197821da88e9ad4191a4e3b63d5b": "deep-reasoner",
+ "81d5799f6b90c133718fbfb02c69eecd1434a9e843317d878adc221b5e818743": "deep-reasoner",
+ "40d28bdf1ca5a154b14ee2bb9223ef76448097e3e21987629749c310e876979e": {
+  "answer_only": 0.22,
+  "exact_edit_known": 0.16,
+  "costly_decision_open": 0.62,
+  "approach_undecided": 0.62,
+  "changes_behavior": 0.27,
+  "fully_specified": 0.13,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "feature-developer": 0.0,
+    "self": 0.02,
+    "fast-worker": 0.0,
+    "deep-reasoner": 0.98
+   },
+   "confidence": 0.96
+  }
+ },
+ "88d6769d649b048332841c9f4d2d6f93b23ffee9bec3f6218a0e266ef08308ce": "deep-reasoner",
+ "41e8460669f1021621e39e086cfb193deb99c16a4958aacc2f28f6c946b62690": "deep-reasoner",
+ "fd04548b0ea836e3b470e3b91f4b633579f598098b0e77e7b1ddd1abfcd9b61f": {
+  "answer_only": 0.54,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.06,
+  "approach_undecided": 0.48,
+  "changes_behavior": 0.19,
+  "fully_specified": 0.09,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "fast-worker": 0.22,
+    "feature-developer": 0.04,
+    "self": 0.6,
+    "deep-reasoner": 0.14
+   },
+   "confidence": 0.46
+  }
+ },
+ "8af1f367624099fae8496c33c1c873f37b8b1f379e0d47df370f030463b92dc3": {
+  "answer_only": 0.92,
+  "exact_edit_known": 0.02,
+  "costly_decision_open": 0.04,
+  "approach_undecided": 0.88,
+  "changes_behavior": 0.06,
+  "fully_specified": 0.04,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "feature-developer": 0.0,
+    "self": 0.03,
+    "fast-worker": 0.0,
+    "deep-reasoner": 0.97
+   },
+   "confidence": 0.97
+  }
+ },
+ "c4db685e8c0ef007e2bde9391c95c87f5b97044ce11de2e78d38b8c672c50570": "deep-reasoner",
+ "881046f03c4e9f07d504aeb48db1355f8ab1fb0c742248928c679229fb06ccfd": "deep-reasoner",
+ "66ad50aa115b6fc746b15c1a98d3dd9fa14a5b39485bd67c9dcf08eb02713f23": "deep-reasoner",
+ "8e7bf4a1a95716158d9b383ed9cd851a3adb588c1915b61347f21f9d70c3840b": "deep-reasoner",
+ "7b4977cdff736eaab1082e8ec81526ac9eb7cc0f50169e3f85a2c4fd1a5f8448": "deep-reasoner",
+ "f9e02e949583dcd4235ae59c269e88061628c184dc3dff6cd234b9ce76eb0291": {
+  "answer_only": 0.84,
+  "exact_edit_known": 0.04,
+  "costly_decision_open": 0.03,
+  "approach_undecided": 0.89,
+  "changes_behavior": 0.06,
+  "fully_specified": 0.07,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "deep-reasoner": 1.0,
+    "self": 0.0,
+    "fast-worker": 0.0,
+    "feature-developer": 0.0
+   },
+   "confidence": 0.99
+  }
+ },
+ "ef15e40e78c9cdeac2d35d8868f24b2a45907a663e0a0b06c006455a0297b4cf": {
+  "answer_only": 0.92,
+  "exact_edit_known": 0.02,
+  "costly_decision_open": 0.02,
+  "approach_undecided": 0.7,
+  "changes_behavior": 0.05,
+  "fully_specified": 0.08,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "self": 0.19,
+    "deep-reasoner": 0.81,
+    "feature-developer": 0.0,
+    "fast-worker": 0.0
+   },
+   "confidence": 0.74
+  }
+ },
+ "b8d5a993f6c55d113d357b0be9f93ac17416a901a7e5a0533e999bffe8405bb3": "deep-reasoner",
+ "8cfa3062118573d37e8484bce7e1371dec88bd62357fb084f5da97b83a0a3fb2": {
+  "answer_only": 0.93,
+  "exact_edit_known": 0.02,
+  "costly_decision_open": 0.27,
+  "approach_undecided": 0.94,
+  "changes_behavior": 0.12,
+  "fully_specified": 0.03,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "feature-developer": 0.0,
+    "deep-reasoner": 0.97,
+    "fast-worker": 0.0,
+    "self": 0.03
+   },
+   "confidence": 0.95
+  }
+ },
+ "5514ffaaf9f280e9261b40a6f43f79ebb66a793a71a3e7d14b7992c42da856dc": "deep-reasoner",
+ "cf82ea0cf83f95d2b68611fa8f3a54706f6331e89aa63a7791e308a5e46cc0dd": "deep-reasoner",
+ "7f1a0a41e03b3a638ebbce6ee4ab38b60bb8b74233cb30bf5427d5472ce1109d": "deep-reasoner",
+ "c3563e892c30267fe93670eb3bc0ccdb7e280e1702e867f52d5d89c08b10a654": "deep-reasoner",
+ "ee3a85b481bf005ce1e3b6c508b1047f37d645143eafcd7d188ee0a52b874c84": "deep-reasoner",
+ "bab102af7dfdee5fa23a6559404d8f64b90b68d4c9c6758e03130e0413009752": {
+  "answer_only": 0.66,
+  "exact_edit_known": 0.05,
+  "costly_decision_open": 0.03,
+  "approach_undecided": 0.82,
+  "changes_behavior": 0.08,
+  "fully_specified": 0.05,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "fast-worker": 0.0,
+    "feature-developer": 0.0,
+    "deep-reasoner": 0.99,
+    "self": 0.01
+   },
+   "confidence": 0.99
+  }
+ },
+ "778af0991d56f407a314489882519a4d9a4c65278d1c75feab5ea9f43ecd279c": "deep-reasoner",
+ "fc65d95478e2bf8f5d7558d9b55f6048988c5268d624c5259ac9ebeffc0bf354": {
+  "answer_only": 0.78,
+  "exact_edit_known": 0.02,
+  "costly_decision_open": 0.02,
+  "approach_undecided": 0.64,
+  "changes_behavior": 0.07,
+  "fully_specified": 0.04,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "self": 0.14,
+    "feature-developer": 0.0,
+    "deep-reasoner": 0.86,
+    "fast-worker": 0.0
+   },
+   "confidence": 0.8
+  }
+ },
+ "a5e69cf2cfe08d8c5eb98b2b1e9a9e664864f70c063217456a55e362f272bbcd": {
+  "answer_only": 0.95,
+  "exact_edit_known": 0.02,
+  "costly_decision_open": 0.67,
+  "approach_undecided": 0.94,
+  "changes_behavior": 0.25,
+  "fully_specified": 0.02,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "fast-worker": 0.0,
+    "feature-developer": 0.0,
+    "self": 0.04,
+    "deep-reasoner": 0.96
+   },
+   "confidence": 0.95
+  }
+ },
+ "82c7936524e0b1cc8ebeb8dbbb5f92e32c41e0f62c5d230b5217d45adad535f4": "deep-reasoner",
+ "f78a6dfd99be169cc8fbd8488362dac9d1b1f3061bd4cb33f03c2e444330190a": "deep-reasoner",
+ "421fe7490203fb6cea076def5dca981736fa8dadebb8036c7d4cb40cff6b2bf5": "deep-reasoner",
+ "cd754bb7e750191c085a753b347e3871a879152a0d4a8147deb901e6554c4945": {
+  "answer_only": 0.37,
+  "exact_edit_known": 0.13,
+  "costly_decision_open": 0.12,
+  "approach_undecided": 0.88,
+  "changes_behavior": 0.08,
+  "fully_specified": 0.05,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "feature-developer": 0.0,
+    "deep-reasoner": 1.0,
+    "self": 0.0,
+    "fast-worker": 0.0
+   },
+   "confidence": 1.0
+  }
+ },
+ "7792cce04e7f22bcfdf405191d3500c70a959b36d16de2519a3f0984bd54b7bc": "deep-reasoner",
+ "68ce476371644cbfa4bed74016b6c67fbc7f07f0688c0a6a293e5694f589103e": {
+  "answer_only": 0.35,
+  "exact_edit_known": 0.04,
+  "costly_decision_open": 0.02,
+  "approach_undecided": 0.71,
+  "changes_behavior": 0.06,
+  "fully_specified": 0.05,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "deep-reasoner": 0.8,
+    "self": 0.2,
+    "fast-worker": 0.0,
+    "feature-developer": 0.0
+   },
+   "confidence": 0.73
+  }
+ },
+ "a92797de13ced8345f575b670bc84a1bee27eded3f9266bd89206999f98d5d9a": "deep-reasoner",
+ "163d5f201074ce4347f32409fb963a789776ea3e57a9f9bcbc448aff6143fc45": "deep-reasoner",
+ "debac25d28b3e8fd7e0f8001672dcd3c3014ee8a14719378969962e7c7767a6d": {
+  "answer_only": 0.24,
+  "exact_edit_known": 0.02,
+  "costly_decision_open": 0.64,
+  "approach_undecided": 0.92,
+  "changes_behavior": 0.5,
+  "fully_specified": 0.06,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "deep-reasoner": 1.0,
+    "self": 0.0,
+    "feature-developer": 0.0,
+    "fast-worker": 0.0
+   },
+   "confidence": 1.0
+  }
+ },
+ "6dc5f7932b9ce84ab501e00e83ae8fb33f654a986c42491a87343e27ed7a14cc": "deep-reasoner",
+ "05a3c6d83962b27d5b61645bc4a58131812d0089bfef0488000c540e014ded3d": "deep-reasoner",
+ "7b231753898f5549e1b54535493d4f7df452ac0d71cf0bf75e114c75b8b2fd96": "deep-reasoner",
+ "67a163d89f591d31bc1646bed194772289791e3963b8d59aa9e0619987932371": "deep-reasoner",
+ "00fbbc56d6e3ae84ac976712ad9038122c850e8da3a3ceefcc8fd76c3dd6284a": "deep-reasoner",
+ "8eb4914ebd48a43b8575d8b93954ad14f04071499153982c00a603deef3dc7de": {
+  "answer_only": 0.03,
+  "exact_edit_known": 0.02,
+  "costly_decision_open": 0.1,
+  "approach_undecided": 0.48,
+  "changes_behavior": 0.97,
+  "fully_specified": 0.11,
+  "route": {
+   "choice": "feature-developer",
+   "probabilities": {
+    "fast-worker": 0.01,
+    "self": 0.01,
+    "feature-developer": 0.98,
+    "deep-reasoner": 0.0
+   },
+   "confidence": 0.97
+  }
+ },
+ "fa7e3054526eb5a93629414e559fcd4f57645999a6a3957f96d0a6dd3fccaa6c": "deep-reasoner",
+ "dc3beabf0f7f58a6c4710adb732da01df07ed1bad38c8f7586f701ba766bbb57": "deep-reasoner",
+ "ff22bfdd4a8dfef677df415aefa4838049251c070e99ba7d8fd9afd956b95f7e": "deep-reasoner",
+ "86ea5f1ee9b52a9f3e5ddce989b98acc83565429edc4379b31aa0c6379e5f2bd": {
+  "answer_only": 0.27,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.11,
+  "approach_undecided": 0.42,
+  "changes_behavior": 0.94,
+  "fully_specified": 0.12,
+  "route": {
+   "choice": "feature-developer",
+   "probabilities": {
+    "feature-developer": 0.98,
+    "deep-reasoner": 0.0,
+    "fast-worker": 0.0,
+    "self": 0.02
+   },
+   "confidence": 0.96
+  }
+ },
+ "0e766c41321c3316715e1c4f50d5d25085ca82a5a6d48675bde7d3f229eb4764": "deep-reasoner",
+ "72343cd4c564b2672d0001be5943e06946eb5cc2b93fc25826f396e062fd51a2": {
+  "answer_only": 0.09,
+  "exact_edit_known": 0.37,
+  "costly_decision_open": 0.11,
+  "approach_undecided": 0.09,
+  "changes_behavior": 0.77,
+  "fully_specified": 0.27,
+  "route": {
+   "choice": "feature-developer",
+   "probabilities": {
+    "fast-worker": 0.04,
+    "deep-reasoner": 0.0,
+    "self": 0.02,
+    "feature-developer": 0.94
+   },
+   "confidence": 0.92
+  }
+ },
+ "c66915a2aed8255a8e66927db4111d6860724575642b200949291a29630addcf": {
+  "answer_only": 0.54,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.06,
+  "approach_undecided": 0.5,
+  "changes_behavior": 0.17,
+  "fully_specified": 0.08,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "fast-worker": 0.29,
+    "self": 0.5599999999999999,
+    "deep-reasoner": 0.11,
+    "feature-developer": 0.04
+   },
+   "confidence": 0.42
+  }
+ },
+ "e57a1c93e7c8b377f78a9b131161d3598afa27f93f8a50bba4d19b56665d5100": "deep-reasoner",
+ "2b62802b5ce5ec6d4823cda4a50b6b40699f6eac6c43201a39157c44512b8ddb": "feature-developer",
+ "ae1a9afc2254c5359a90bf446f6e03537b23ce5fc44b5703d5a70eecda5f7628": {
+  "answer_only": 0.04,
+  "exact_edit_known": 0.21,
+  "costly_decision_open": 0.12,
+  "approach_undecided": 0.17,
+  "changes_behavior": 0.9,
+  "fully_specified": 0.21,
+  "route": {
+   "choice": "feature-developer",
+   "probabilities": {
+    "self": 0.03,
+    "fast-worker": 0.07,
+    "deep-reasoner": 0.0,
+    "feature-developer": 0.9
+   },
+   "confidence": 0.86
+  }
+ },
+ "2547016fe2423fe818bddcc1c2adf2a174bc5659272427153ca6a74605b18038": {
+  "answer_only": 0.03,
+  "exact_edit_known": 0.05,
+  "costly_decision_open": 0.13,
+  "approach_undecided": 0.43,
+  "changes_behavior": 0.89,
+  "fully_specified": 0.09,
+  "route": {
+   "choice": "feature-developer",
+   "probabilities": {
+    "feature-developer": 0.88,
+    "deep-reasoner": 0.03,
+    "self": 0.05,
+    "fast-worker": 0.04
+   },
+   "confidence": 0.84
+  }
+ },
+ "99341ae701dc0c711a6ac349da1da2ae482922b9ada20f1c184b496fe0235316": "feature-developer",
+ "2a298f1274a9e03230af7b8ff7b414976951f32c26258558e204afe2d95167b4": "feature-developer",
+ "54753a3653059c10e00e7b163f0a4b4b507b9550a3f7cfca6a5134deb3507183": "feature-developer",
+ "49294cb01a8ff9e158cc98372058198817fbc24ba2e05a4e77fa0e64a20d63d1": "feature-developer",
+ "440caceb7f84a63e5bf267c690998516530a9a1c862f7ea9ea5c7fb3e8dfbf29": "feature-developer",
+ "15b129adb65751cec6ce9bf27ade264319fe7c353456ecb896fa5604603a67a6": "feature-developer",
+ "f4970fc7c695b21afa5c526ddacddf642921c384ddb963b570c2ea80e367c8ce": "feature-developer",
+ "8217ec933aea9df0658f081589cd158f183872c3d4d7d1a5bb96bc5d69986af2": "feature-developer",
+ "5cd975e21c8dd5d9cfb4f2d86156efe086ade4d35821c96f4c358863a076f5fd": {
+  "answer_only": 0.05,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.05,
+  "approach_undecided": 0.39,
+  "changes_behavior": 0.95,
+  "fully_specified": 0.15,
+  "route": {
+   "choice": "feature-developer",
+   "probabilities": {
+    "deep-reasoner": 0.0,
+    "self": 0.02,
+    "feature-developer": 0.97,
+    "fast-worker": 0.01
+   },
+   "confidence": 0.96
+  }
+ },
+ "5fde4a8a7585dab4bde53f94ffc8604072343917878176782080b30d5382e198": "feature-developer",
+ "53eae2c7c4c77e62750db48bc24fcbadc1a5e48cc5ca74bc9193e16fc9b60cd5": {
+  "answer_only": 0.1,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.09,
+  "approach_undecided": 0.43,
+  "changes_behavior": 0.94,
+  "fully_specified": 0.16,
+  "route": {
+   "choice": "feature-developer",
+   "probabilities": {
+    "feature-developer": 0.94,
+    "deep-reasoner": 0.0,
+    "fast-worker": 0.03,
+    "self": 0.03
+   },
+   "confidence": 0.91
+  }
+ },
+ "32f563570de0e8ea52938f34c778ac119024df0f17088ad0c9c733aaad9b0668": "feature-developer",
+ "60ee7832c34e4e0743d5e9d9992efcf960329df94c56f88794624d979dd77ad1": {
+  "answer_only": 0.32,
+  "exact_edit_known": 0.17,
+  "costly_decision_open": 0.06,
+  "approach_undecided": 0.09,
+  "changes_behavior": 0.47,
+  "fully_specified": 0.22,
+  "route": {
+   "choice": "feature-developer",
+   "probabilities": {
+    "self": 0.07,
+    "feature-developer": 0.76,
+    "deep-reasoner": 0.0,
+    "fast-worker": 0.17
+   },
+   "confidence": 0.67
+  }
+ },
+ "2f87d898ebab37f1f6a2bd1ca779c1449f1e5406e40aaea10a40d55ea02864e5": {
+  "answer_only": 0.56,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.06,
+  "approach_undecided": 0.32,
+  "changes_behavior": 0.58,
+  "fully_specified": 0.09,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "deep-reasoner": 0.12,
+    "fast-worker": 0.32,
+    "self": 0.48,
+    "feature-developer": 0.08
+   },
+   "confidence": 0.3
+  }
+ },
+ "29b0e84b7c20e08904bf74eca2a8084cced15dce795869fb39ae12616615a8e8": "feature-developer",
+ "9d2a9107914d1c34de29b5e96bea9f815d0141813fe6338eedd9ff00e13ba8f2": "feature-developer",
+ "08873d9da25dd0a9e766eddcec3b1f86c9f8d2860aea4a292532a6994499f872": {
+  "answer_only": 0.18,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.07,
+  "approach_undecided": 0.36,
+  "changes_behavior": 0.82,
+  "fully_specified": 0.13,
+  "route": {
+   "choice": "feature-developer",
+   "probabilities": {
+    "fast-worker": 0.04,
+    "self": 0.06,
+    "deep-reasoner": 0.0,
+    "feature-developer": 0.9
+   },
+   "confidence": 0.86
+  }
+ },
+ "0bc3ebe9446be7bc1498fcc2f31ca23552e57162beaf3b924dcdaf968f458a5c": "feature-developer",
+ "e466b8edc329d561770e1f077bc34fb610e5b205855ce3bfbf64e5d393cc356a": "feature-developer",
+ "ba9d749a5fe2cf039611f38fbd0440e8e0a30f3d79b546d28b0e38a7b2624590": "feature-developer",
+ "4386d07540c3d124bbd8883fad6390a0b9f71ff69ca4d79e66c341ddce785d0b": "feature-developer",
+ "04c7964d8c8271a5448cc518c4e9d05b5ae210f4acf66ab010366b0a492ed82a": "feature-developer",
+ "94800e067679360b0d1050d4807107dd58ba067d1af850a381b093ba73e90324": "feature-developer",
+ "6bc9da0bb13d96e2168d4473447138546341bab8285ad76b270c0bb07d712f65": "feature-developer",
+ "030ca7deb2bfdb7a38541b518402fb747d8e71ff935800a0de0dd401b7d95ee8": {
+  "answer_only": 0.03,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.08,
+  "approach_undecided": 0.42,
+  "changes_behavior": 0.95,
+  "fully_specified": 0.12,
+  "route": {
+   "choice": "feature-developer",
+   "probabilities": {
+    "self": 0.02,
+    "fast-worker": 0.02,
+    "feature-developer": 0.96,
+    "deep-reasoner": 0.0
+   },
+   "confidence": 0.94
+  }
+ },
+ "baf612ce8acb8cf62f6d91fa8d6fa5901e5f868e4c37886cc8ef70083e6b8336": "feature-developer",
+ "ce3d4459f6de1d7762f4cfb88cf3b0e86d3a3db69f494e24f15927ea4a4d5940": "feature-developer",
+ "68e55ddc0de8e7f4cf01d50aca26a37d600361e520a695c987ec5358790b1f42": {
+  "answer_only": 0.05,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.05,
+  "approach_undecided": 0.51,
+  "changes_behavior": 0.95,
+  "fully_specified": 0.1,
+  "route": {
+   "choice": "feature-developer",
+   "probabilities": {
+    "fast-worker": 0.01,
+    "feature-developer": 0.98,
+    "deep-reasoner": 0.0,
+    "self": 0.01
+   },
+   "confidence": 0.97
+  }
+ },
+ "4aef6de1ef7eee676c29011e607226c53398489369ee2701b997cea9d9363539": "feature-developer",
+ "5a18fed1999023e859be36b2015ee70e39bc5acd9a2cc54df606ed68270c769e": "feature-developer",
+ "02ad23ec53c1db36295dbb86fdc70680a3695670dcadcc13fd27514d3eeb8a04": {
+  "answer_only": 0.08,
+  "exact_edit_known": 0.42,
+  "costly_decision_open": 0.07,
+  "approach_undecided": 0.15,
+  "changes_behavior": 0.88,
+  "fully_specified": 0.21,
+  "route": {
+   "choice": "feature-developer",
+   "probabilities": {
+    "feature-developer": 0.77,
+    "deep-reasoner": 0.0,
+    "fast-worker": 0.1,
+    "self": 0.13
+   },
+   "confidence": 0.69
+  }
+ },
+ "580c44144dd8f4b59188833c409f4cef5d76b82a5ba11d9ae167ed8088ad960e": {
+  "answer_only": 0.61,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.03,
+  "approach_undecided": 0.28,
+  "changes_behavior": 0.31,
+  "fully_specified": 0.11,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "feature-developer": 0.1,
+    "deep-reasoner": 0.04,
+    "fast-worker": 0.54,
+    "self": 0.32
+   },
+   "confidence": 0.4
+  }
+ },
+ "d7cf965745a2cd652c84aacc4eeae9dfe11bc26a25454c4517e14116293a1f96": "feature-developer",
+ "cdf345838c4f04b9b7273f3ef5478474d675ac65df91039d18ec8be5e1a1675c": "feature-developer",
+ "faf751afd4d14014f0f251f91898faa9b309dbdca843a4b3292e09a8779b6808": {
+  "answer_only": 0.03,
+  "exact_edit_known": 0.04,
+  "costly_decision_open": 0.11,
+  "approach_undecided": 0.12,
+  "changes_behavior": 0.1,
+  "fully_specified": 0.49,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "deep-reasoner": 0.0,
+    "feature-developer": 0.0,
+    "self": 0.0,
+    "fast-worker": 1.0
+   },
+   "confidence": 0.99
+  }
+ },
+ "57450df12ab4477b3aa9683848fad30f273534932aab0c011f6842af4abafbad": "feature-developer",
+ "76b22ee67c5d651d7111c4a6a6b322ad6327a0b0c90a4a5f642711705e08eef0": "feature-developer",
+ "9b5c44585ff7f33680b47284409b395776448303262c075f64dd001a825f9492": "fast-worker",
+ "f23abc6b061841061fe508ac5cb04b1233e6d94cda53dd3f0dc3f54a8fed420a": "feature-developer",
+ "7a8cfbebd5a25342937d6d1f573925e475a319ba2622b90cb9e2f4255fd9c697": "feature-developer",
+ "b9b8c310cd13ce48bdcbde2050df7abf6119ac0e86041bdf76d598791d033a2e": {
+  "answer_only": 0.03,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.03,
+  "approach_undecided": 0.28,
+  "changes_behavior": 0.3,
+  "fully_specified": 0.48,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "feature-developer": 0.0,
+    "deep-reasoner": 0.0,
+    "fast-worker": 1.0,
+    "self": 0.0
+   },
+   "confidence": 1.0
+  }
+ },
+ "293b3fb01b44b6f96d6a3b058abe3d304ed17c990e617e58a847783d853ea792": "fast-worker",
+ "3453e34dc117b6c8ec13053889abf57238462beada4a720c7d5e960b0e5eda50": "feature-developer",
+ "4ebbb144689e805b3ec2ce5a81633876b94e10ea7d7673ac3ecff7643e12b007": "feature-developer",
+ "4a5bcbf55448476c53d6fa214defb0f0c43cd7249f2a69de7e3f6214a1ea6258": {
+  "answer_only": 0.17,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.02,
+  "approach_undecided": 0.17,
+  "changes_behavior": 0.22,
+  "fully_specified": 0.75,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "feature-developer": 0.01,
+    "self": 0.01,
+    "deep-reasoner": 0.0,
+    "fast-worker": 0.98
+   },
+   "confidence": 0.98
+  }
+ },
+ "22eb27552169ec3040f1b1f97262a2c5632fe80386dc947e344367438d75a38c": "fast-worker",
+ "911b7062b5526ba4a99ed9975ebd44416b4def92bcd81ecba3f5af64b5ab8c13": "fast-worker",
+ "46c3123a7819f36a4e258ba704024456dbbd0153c791a02da18cd2144a8566c0": {
+  "answer_only": 0.02,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.02,
+  "approach_undecided": 0.21,
+  "changes_behavior": 0.13,
+  "fully_specified": 0.44,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "feature-developer": 0.0,
+    "deep-reasoner": 0.0,
+    "fast-worker": 0.99,
+    "self": 0.01
+   },
+   "confidence": 0.99
+  }
+ },
+ "ad04b079a747bc4bb6e65a813bd051604922d5c1fabbed6376b83ff500fa8551": "feature-developer",
+ "b4cbfc9778d993fe08cfdf2bc16cb73b04e0be5349d46328fcbffe4d82223ef0": {
+  "answer_only": 0.06,
+  "exact_edit_known": 0.04,
+  "costly_decision_open": 0.1,
+  "approach_undecided": 0.21,
+  "changes_behavior": 0.07,
+  "fully_specified": 0.23,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "fast-worker": 1.0,
+    "self": 0.0,
+    "feature-developer": 0.0,
+    "deep-reasoner": 0.0
+   },
+   "confidence": 0.99
+  }
+ },
+ "8702119a379cdd02ef48101f3b1dbd5cdceb956e8ed61acfdf2f37f8413d52d3": "fast-worker",
+ "e9ba586b279df0640da95507e067effede6469e9d3f2d748022816a4bc71c394": "fast-worker",
+ "856e511b4101ed710ffd0557e040321f095b8d8dbfbf3913d402b07c5c654af6": "fast-worker",
+ "242265b51fbdc83accc6c3c6f3473220b5acc895e840e8bb334bdc7b7c38ee70": "fast-worker",
+ "1c6de697e39929ffe5152c5a66fdaef9fdd875fc585be0da9d7057b1d7d81b44": {
+  "answer_only": 0.07,
+  "exact_edit_known": 0.71,
+  "costly_decision_open": 0.03,
+  "approach_undecided": 0.1,
+  "changes_behavior": 0.17,
+  "fully_specified": 0.76,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "feature-developer": 0.0,
+    "self": 0.05,
+    "fast-worker": 0.95,
+    "deep-reasoner": 0.0
+   },
+   "confidence": 0.93
+  }
+ },
+ "74829561fe6794f12668f507a3500e3acea6b339df0f535bef18e9c4f96da600": {
+  "answer_only": 0.66,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.05,
+  "approach_undecided": 0.48,
+  "changes_behavior": 0.21,
+  "fully_specified": 0.09,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "feature-developer": 0.07,
+    "self": 0.47,
+    "deep-reasoner": 0.08,
+    "fast-worker": 0.38
+   },
+   "confidence": 0.29
+  }
+ },
+ "bb39d1f772f64471812ff18a609db929134ae8bbaf90cbe4bd1bd13dae89affa": "fast-worker",
+ "b7d25744e984701ecfe775b4a95db309c5e5b4eac1b992bf46efad453133c3d1": "fast-worker",
+ "6d7fdbf7189adb258a9a4d05ded018dd2c011b860ea20176b81997539bd7e7e7": "fast-worker",
+ "39cfcd92355f25f4b2af85d2589e000ea48840590133f63e58bfcae0449d2508": "fast-worker",
+ "64fdf7b0483015cf17b2d8cf76bb38a91b621d3ce8c53e20061e496dd5630440": "fast-worker",
+ "e3daec654ae1149ebec7e44efd468fc6ca3184ef96f731179ef2bb3fcbbc5088": "fast-worker",
+ "023496f2e3165e6b71d8f3114fe5b2a6d91f7ef0a186c86856c4decc17196e2c": {
+  "answer_only": 0.03,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.13,
+  "approach_undecided": 0.23,
+  "changes_behavior": 0.26,
+  "fully_specified": 0.36,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "feature-developer": 0.0,
+    "deep-reasoner": 0.0,
+    "fast-worker": 1.0,
+    "self": 0.0
+   },
+   "confidence": 1.0
+  }
+ },
+ "f36b29f75a3790c60e9a4a57414dd1f0a2ca846384e2f2249c9c50464529b559": "fast-worker",
+ "208cdbf67cacd7c8aabcc1c5c698d39b25aea9dd725b7a4662dbc17810e1287d": {
+  "answer_only": 0.02,
+  "exact_edit_known": 0.28,
+  "costly_decision_open": 0.02,
+  "approach_undecided": 0.15,
+  "changes_behavior": 0.17,
+  "fully_specified": 0.56,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "deep-reasoner": 0.0,
+    "self": 0.05,
+    "fast-worker": 0.95,
+    "feature-developer": 0.0
+   },
+   "confidence": 0.94
+  }
+ },
+ "d430ee831d5c2c77500bcb85dc76950e1845a046c57b4f4d56a39cf329c9381a": {
+  "answer_only": 0.02,
+  "exact_edit_known": 0.16,
+  "costly_decision_open": 0.02,
+  "approach_undecided": 0.15,
+  "changes_behavior": 0.22,
+  "fully_specified": 0.36,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "fast-worker": 0.92,
+    "self": 0.08,
+    "deep-reasoner": 0.0,
+    "feature-developer": 0.0
+   },
+   "confidence": 0.89
+  }
+ },
+ "5db1a253481fbb1dcca8893e78a9afe0c3d7462d156e14ae4b19af6a2e5cbe6a": "fast-worker",
+ "18f7da86320e48359bb2e16a3c24a0d0abb7d6906f78eaf86668933f0a2baf0c": "fast-worker",
+ "5e4bbb73b142f522ea3761a8f3b2acaf331be53e1fdc67931e358bdcd8d8d991": "fast-worker",
+ "198e4dd478b8e73f66a5292d5c2fa90975f615d3a9ea9ce111303cd6bf45fc29": {
+  "answer_only": 0.25,
+  "exact_edit_known": 0.64,
+  "costly_decision_open": 0.22,
+  "approach_undecided": 0.2,
+  "changes_behavior": 0.29,
+  "fully_specified": 0.67,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "deep-reasoner": 0.0,
+    "self": 0.03,
+    "fast-worker": 0.96,
+    "feature-developer": 0.01
+   },
+   "confidence": 0.95
+  }
+ },
+ "60b1a758f58edb6169d296deb75777eee1f9a0b85a1060b32f6b923d6ea226dc": {
+  "answer_only": 0.69,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.06,
+  "approach_undecided": 0.53,
+  "changes_behavior": 0.17,
+  "fully_specified": 0.09,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "feature-developer": 0.02,
+    "fast-worker": 0.23,
+    "self": 0.63,
+    "deep-reasoner": 0.12
+   },
+   "confidence": 0.5
+  }
+ },
+ "936ff0d42fcecec55efaae6acbddab955b69a027afd2280dc83a53269f58046a": "fast-worker",
+ "c92f18cdc2c7847897fc4e9ff3a25f10dd18a9aeef84b3f6b4ac04154ded05d1": {
+  "answer_only": 0.02,
+  "exact_edit_known": 0.04,
+  "costly_decision_open": 0.02,
+  "approach_undecided": 0.25,
+  "changes_behavior": 0.09,
+  "fully_specified": 0.5,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "feature-developer": 0.0,
+    "self": 0.0,
+    "fast-worker": 1.0,
+    "deep-reasoner": 0.0
+   },
+   "confidence": 0.99
+  }
+ },
+ "953b4f20ca5595b75af97e0c071b218a4ad895c8bf255c660e55a61b6f391cd3": "fast-worker",
+ "675a90a25751932873f4f4be46e5f171984e32cf097b83353abbc9d31ad07799": "fast-worker",
+ "1e05e1934911505578b8082439fa47e83c2fcb199a5736482374d05b901ba16a": "fast-worker",
+ "2e750aaaaadccd3571ca4164cb5f45852974f1f2b1c249331a68f0054939ea87": "fast-worker",
+ "fb2ab7206390706b5961f3fc1f459d29d1e6c37ae3c5a3498f7bbc6a028c7164": "fast-worker",
+ "0144a337ecf8940fe7ae0a64a3c8fdc2b04593d2b9088a0dc5b8d05c2d016657": "fast-worker",
+ "d1c246a0d8ae5738a70896c086e17f7f4540b570f92071e8bceb7c4c9a488e62": "fast-worker",
+ "5206bb85e0ffe400e696d1e848ac827fb88a80ecef25a39a1d17dcca60147504": {
+  "answer_only": 0.42,
+  "exact_edit_known": 0.17,
+  "costly_decision_open": 0.02,
+  "approach_undecided": 0.16,
+  "changes_behavior": 0.11,
+  "fully_specified": 0.28,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "fast-worker": 0.98,
+    "self": 0.01,
+    "deep-reasoner": 0.0,
+    "feature-developer": 0.01
+   },
+   "confidence": 0.97
+  }
+ },
+ "fef157cbb11449b0ed4534fc3a1b7bd02e8245c34725f0514c9f75c93b472f48": {
+  "answer_only": 0.39,
+  "exact_edit_known": 0.03,
+  "costly_decision_open": 0.02,
+  "approach_undecided": 0.2,
+  "changes_behavior": 0.12,
+  "fully_specified": 0.2,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "self": 0.02,
+    "fast-worker": 0.96,
+    "feature-developer": 0.02,
+    "deep-reasoner": 0.0
+   },
+   "confidence": 0.94
+  }
+ },
+ "e15aad18ff2b4e407779c130907deec389c2695234c93a51dd3a82ae1b887116": "fast-worker",
+ "9c7ff0dcd6dea9f75b3aa7573ac8ac414334a609677b653bc198d09c6e865ebe": "fast-worker",
+ "5db571ea827f745b730384442824cc587f1963759e064bf6a0a8be22794152c5": "fast-worker",
+ "41b1d2a0dac43e46c8e82e0bd2e8be0080f3cdb39ee0cbcf32200b34f406d9b1": "fast-worker",
+ "59301af68a1826e698fb16928d1f27d356b7147160b5c48e4774d61546a27b65": "fast-worker",
+ "bd1a64d9dcbca63c91ab750793b2019872b2cf4dc8a859bfc10771432946a803": "fast-worker",
+ "049cf5894893c465cbf83db203504a646232d6a785549e05374c963390dbe554": "fast-worker",
+ "e1da8262f37f3779d375b1401a30a2da8c0f3857549d086dd2ca667bbe20f277": {
+  "answer_only": 0.2,
+  "exact_edit_known": 0.74,
+  "costly_decision_open": 0.02,
+  "approach_undecided": 0.25,
+  "changes_behavior": 0.2,
+  "fully_specified": 0.34,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "self": 0.71,
+    "fast-worker": 0.29,
+    "deep-reasoner": 0.0,
+    "feature-developer": 0.0
+   },
+   "confidence": 0.6
+  }
+ },
+ "f7ca4e5d89b3b989d036aeea4308d32ed04dc7e46c4f40bf8c95221d8861552e": {
+  "answer_only": 0.74,
+  "exact_edit_known": 0.42,
+  "costly_decision_open": 0.08,
+  "approach_undecided": 0.27,
+  "changes_behavior": 0.13,
+  "fully_specified": 0.11,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "self": 0.71,
+    "deep-reasoner": 0.06,
+    "feature-developer": 0.06,
+    "fast-worker": 0.17
+   },
+   "confidence": 0.6
+  }
+ },
+ "d21a87149f3d5194daa116e6e2ddbf40139ab8d8c8c70a9af6a3ce0631cc8372": {
+  "answer_only": 0.96,
+  "exact_edit_known": 0.55,
+  "costly_decision_open": 0.03,
+  "approach_undecided": 0.06,
+  "changes_behavior": 0.05,
+  "fully_specified": 0.36,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "deep-reasoner": 0.0,
+    "self": 1.0,
+    "feature-developer": 0.0,
+    "fast-worker": 0.0
+   },
+   "confidence": 0.99
+  }
+ },
+ "a1644a7a1ee22beeb233fdd088f5fc4e0f2e2a2acdd8ff31e328a7c2572b73a6": {
+  "answer_only": 0.3,
+  "exact_edit_known": 0.75,
+  "costly_decision_open": 0.03,
+  "approach_undecided": 0.14,
+  "changes_behavior": 0.26,
+  "fully_specified": 0.17,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "deep-reasoner": 0.01,
+    "self": 0.8,
+    "fast-worker": 0.17,
+    "feature-developer": 0.02
+   },
+   "confidence": 0.74
+  }
+ },
+ "4d5f7c158466e57caeeb529b1381230699af50926c84b40cbaf1e6cbb50ced4c": {
+  "answer_only": 0.02,
+  "exact_edit_known": 0.43,
+  "costly_decision_open": 0.05,
+  "approach_undecided": 0.16,
+  "changes_behavior": 0.81,
+  "fully_specified": 0.42,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "deep-reasoner": 0.0,
+    "self": 0.65,
+    "feature-developer": 0.01,
+    "fast-worker": 0.34
+   },
+   "confidence": 0.53
+  }
+ },
+ "8a991d44221a6cd3812e92b169b0778a4c48ae44055bde69708bbde987f716bf": {
+  "answer_only": 0.02,
+  "exact_edit_known": 0.88,
+  "costly_decision_open": 0.02,
+  "approach_undecided": 0.06,
+  "changes_behavior": 0.44,
+  "fully_specified": 0.73,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "feature-developer": 0.0,
+    "fast-worker": 0.26,
+    "self": 0.74,
+    "deep-reasoner": 0.0
+   },
+   "confidence": 0.65
+  }
+ },
+ "c9218620058382c0eb90603fdf58bf84c885d3b89a9ec0991e9d76f71c6531f6": {
+  "answer_only": 0.13,
+  "exact_edit_known": 0.93,
+  "costly_decision_open": 0.09,
+  "approach_undecided": 0.18,
+  "changes_behavior": 0.42,
+  "fully_specified": 0.46,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "fast-worker": 0.27,
+    "feature-developer": 0.01,
+    "deep-reasoner": 0.0,
+    "self": 0.72
+   },
+   "confidence": 0.62
+  }
+ },
+ "daad83e239a2abedd0a4375913d96d12f9b2a9e0e8c4fb7251f9fbac30c70923": {
+  "answer_only": 0.02,
+  "exact_edit_known": 0.84,
+  "costly_decision_open": 0.14,
+  "approach_undecided": 0.08,
+  "changes_behavior": 0.51,
+  "fully_specified": 0.57,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "feature-developer": 0.0,
+    "fast-worker": 0.28,
+    "self": 0.72,
+    "deep-reasoner": 0.0
+   },
+   "confidence": 0.63
+  }
+ },
+ "b8b4dce7fb7dd1c24bae3eb95149bf25051320db28c9c8c801f57a0f3589c82e": {
+  "answer_only": 0.11,
+  "exact_edit_known": 0.67,
+  "costly_decision_open": 0.05,
+  "approach_undecided": 0.14,
+  "changes_behavior": 0.7,
+  "fully_specified": 0.22,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "self": 0.8099999999999999,
+    "fast-worker": 0.13,
+    "feature-developer": 0.05,
+    "deep-reasoner": 0.01
+   },
+   "confidence": 0.75
+  }
+ },
+ "7022dc4333536c8564abdf49e006b12d044ec47fc3ca03b26332d4b9f28faf4a": {
+  "answer_only": 0.06,
+  "exact_edit_known": 0.93,
+  "costly_decision_open": 0.03,
+  "approach_undecided": 0.27,
+  "changes_behavior": 0.08,
+  "fully_specified": 0.45,
+  "route": {
+   "choice": "self",
+   "probabilities": {
+    "deep-reasoner": 0.0,
+    "self": 0.55,
+    "feature-developer": 0.0,
+    "fast-worker": 0.45
+   },
+   "confidence": 0.39
+  }
+ },
+ "162b72435dc9d9404b4c08fa148fc8ac54a9779b259fd5ce4e9855ff0acf5052": {
+  "answer_only": 0.76,
+  "exact_edit_known": 0.17,
+  "costly_decision_open": 0.91,
+  "approach_undecided": 0.93,
+  "changes_behavior": 0.14,
+  "fully_specified": 0.07,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "self": 0.03,
+    "fast-worker": 0.0,
+    "feature-developer": 0.0,
+    "deep-reasoner": 0.97
+   },
+   "confidence": 0.96
+  }
+ },
+ "a54737cbf472fba2e85682eb6fe8aefa246365d461c15fa06fa7682c6dc668ed": {
+  "answer_only": 0.86,
+  "exact_edit_known": 0.14,
+  "costly_decision_open": 0.92,
+  "approach_undecided": 0.88,
+  "changes_behavior": 0.08,
+  "fully_specified": 0.07,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "self": 0.07,
+    "deep-reasoner": 0.93,
+    "feature-developer": 0.0,
+    "fast-worker": 0.0
+   },
+   "confidence": 0.9
+  }
+ },
+ "ea461bbbe71e58a533ac61d713c70bdf330e0b1e186e6b3e0d72af466fee0d74": {
+  "answer_only": 0.35,
+  "exact_edit_known": 0.65,
+  "costly_decision_open": 0.66,
+  "approach_undecided": 0.52,
+  "changes_behavior": 0.29,
+  "fully_specified": 0.14,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "self": 0.11,
+    "feature-developer": 0.01,
+    "deep-reasoner": 0.87,
+    "fast-worker": 0.01
+   },
+   "confidence": 0.83
+  }
+ },
+ "9df961a3064ee8a242012dc01a1424773ad0069d66233ae623c823b4f8f13056": {
+  "answer_only": 0.88,
+  "exact_edit_known": 0.07,
+  "costly_decision_open": 0.02,
+  "approach_undecided": 0.91,
+  "changes_behavior": 0.07,
+  "fully_specified": 0.06,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "feature-developer": 0.0,
+    "deep-reasoner": 0.95,
+    "self": 0.05,
+    "fast-worker": 0.0
+   },
+   "confidence": 0.93
+  }
+ },
+ "546ff6995ebc089e7ed5ce6128fb2c4da8b97d5ef723890d642c1febdfb183a8": {
+  "answer_only": 0.79,
+  "exact_edit_known": 0.06,
+  "costly_decision_open": 0.03,
+  "approach_undecided": 0.86,
+  "changes_behavior": 0.08,
+  "fully_specified": 0.05,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "feature-developer": 0.0,
+    "deep-reasoner": 0.9,
+    "fast-worker": 0.0,
+    "self": 0.1
+   },
+   "confidence": 0.86
+  }
+ },
+ "e697dc12772be3711eba0a95b3037e585f8d90e560674b6c8fc66029605bea57": {
+  "answer_only": 0.55,
+  "exact_edit_known": 0.29,
+  "costly_decision_open": 0.07,
+  "approach_undecided": 0.9,
+  "changes_behavior": 0.12,
+  "fully_specified": 0.07,
+  "route": {
+   "choice": "deep-reasoner",
+   "probabilities": {
+    "feature-developer": 0.0,
+    "deep-reasoner": 0.93,
+    "fast-worker": 0.0,
+    "self": 0.07
+   },
+   "confidence": 0.9
+  }
+ },
+ "4cf745a0a4493ad67bc4dd4f54eb1f49f7d5b6bbaee080afdcf236e9cbec7b8d": {
+  "answer_only": 0.26,
+  "exact_edit_known": 0.48,
+  "costly_decision_open": 0.15,
+  "approach_undecided": 0.16,
+  "changes_behavior": 0.45,
+  "fully_specified": 0.18,
+  "route": {
+   "choice": "feature-developer",
+   "probabilities": {
+    "fast-worker": 0.12,
+    "deep-reasoner": 0.0,
+    "self": 0.13,
+    "feature-developer": 0.75
+   },
+   "confidence": 0.66
+  }
+ },
+ "d0499cd18183bbadf7439c8a93f78253cad792a2d7c241ce63830f0912bb9432": {
+  "answer_only": 0.13,
+  "exact_edit_known": 0.72,
+  "costly_decision_open": 0.05,
+  "approach_undecided": 0.13,
+  "changes_behavior": 0.47,
+  "fully_specified": 0.15,
+  "route": {
+   "choice": "feature-developer",
+   "probabilities": {
+    "deep-reasoner": 0.0,
+    "self": 0.02,
+    "feature-developer": 0.95,
+    "fast-worker": 0.03
+   },
+   "confidence": 0.93
+  }
+ },
+ "aade9b3efca2d9b949afb9c7fd5d1fc0d3c58407568d9c37b4df3e2b4e464f52": {
+  "answer_only": 0.22,
+  "exact_edit_known": 0.85,
+  "costly_decision_open": 0.06,
+  "approach_undecided": 0.38,
+  "changes_behavior": 0.54,
+  "fully_specified": 0.29,
+  "route": {
+   "choice": "feature-developer",
+   "probabilities": {
+    "deep-reasoner": 0.0,
+    "feature-developer": 0.48,
+    "self": 0.35,
+    "fast-worker": 0.17
+   },
+   "confidence": 0.3
+  }
+ },
+ "26795122bb93f8ca1b51a2503edd0ec65dc4d2dc54c9335754dc1747b03658be": {
+  "answer_only": 0.15,
+  "exact_edit_known": 0.79,
+  "costly_decision_open": 0.05,
+  "approach_undecided": 0.11,
+  "changes_behavior": 0.26,
+  "fully_specified": 0.62,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "fast-worker": 0.92,
+    "self": 0.08,
+    "feature-developer": 0.0,
+    "deep-reasoner": 0.0
+   },
+   "confidence": 0.88
+  }
+ },
+ "12888a47b838968143105c1190ecd0dfe79c63ed673b9e3419a77aa4810ce671": {
+  "answer_only": 0.41,
+  "exact_edit_known": 0.69,
+  "costly_decision_open": 0.17,
+  "approach_undecided": 0.35,
+  "changes_behavior": 0.28,
+  "fully_specified": 0.46,
+  "route": {
+   "choice": "fast-worker",
+   "probabilities": {
+    "fast-worker": 0.96,
+    "self": 0.03,
+    "feature-developer": 0.01,
+    "deep-reasoner": 0.0
+   },
+   "confidence": 0.93
+  }
+ },
+ "29bbcefef2ccac20297b52f7b27340043f2c0df0fb9072dac6aa1b8d63ccabb2": "self",
+ "887cc6889e4836a05abc2a4e3786c2a8473958d5091e411bc9231ebbfc9fa0ea": "self",
+ "4623210f9806010f832a97e2602302d4cda713325dc71ccbc02e3c39b46321ee": "self",
+ "05bb6676256d52709ca9c561af30581eccf846bed45aa53e81d50cd2a8f15664": "self",
+ "756391036b8245f68303448c4a7edf94c8d31bc80d036f81c28a3a310d1dfa4c": "self",
+ "e0edbaf70ee1624bc397d9c65c49903911f69ea8bbf8157e8d7ce219ad79a82f": "self",
+ "ced37dd41761264a07a362e337db27de0fc5e31a3dc24d62247a89b5c3a75cd4": "self",
+ "42a62459a6164abddabbe3eaba157ddb604c30e68e3adf08d44e184828892856": "self",
+ "de691ba2fd5aee6ca31243cf7ec460609b26dc7a3302ce139d3ec2db20d19c96": "self",
+ "edb10f32ab35d388d3c3a4a154e0887f97d37c409c3d6226c7192157221d7e4a": "self",
+ "27526a341d7103edd8c0a3604a7f92fd2dbb0dc0fb8e0368ca9450998f2b0e4c": "self",
+ "50244dd888337e9ed9735a745af1d8ee31a447ea7608658e74c444e79729c854": "self",
+ "1e951ae314c46e8766e6e265033f4e3c6671ae797e6414ee14939fcdeeb93c7e": "self",
+ "66099d46a43d484c9c4f986b36afccd2517cde61532b178ec9e594eecb7c4525": "deep-reasoner",
+ "b910cd1ee44a6d4e5cabd3d2d5ee50e91ec5b2571c76485e8215a43e5738386d": "deep-reasoner",
+ "b2b8bfaef83726fb4008df9f97685a0b95707f3c42d5dc02a905515dca0ea131": "deep-reasoner",
+ "f1e06108872b5cb4203e5513a6368363fa23cd03aafa63e5fb83deeedc517041": "deep-reasoner",
+ "a87d736c5965607a20644b55d76609012d98990792b32ffca34c7b1cc2de92b0": "deep-reasoner",
+ "e3d90561c95e39dcc12166f3e19c2617deefb40c8e82b0229d2a5b3588460ed9": "deep-reasoner",
+ "e68ddbbd5d48f4ae1f5c11be967bc2adecdd32a7657bfce27a797eb9797fe0bd": "deep-reasoner",
+ "3274789705a7af8634d8d53df52fd9286833fab9339f5b0c18c89d316a29b3fa": "deep-reasoner",
+ "a554228b897ff91a7071fda99a9cd8780f749c37b747056b85082be63b080878": "deep-reasoner",
+ "6cc5bee57d009c04ac1b7dcf5f9078f8ad367612746f731c795d8751b6220de6": "deep-reasoner",
+ "95a0dea72425b87731b040ed79085ca80b0f8bbd7890a9f0ea121c462fddc7f3": "deep-reasoner",
+ "d4ec21af08230055f78e97092eed4b13215faffdfe5a0520b98c046e319a4d3b": "deep-reasoner",
+ "c1e501df700e7749cdb5d442b65ec251079a593b15a6d50b54a7207e2543a4a0": "feature-developer",
+ "419a0b4c7a828eccc6c0354e6fac87be58ce026e17e0a846e3e49cbb8340ff11": "feature-developer",
+ "9bab72379a684353f60e30b6db991166e1e980db42a400fd290c37d06edd04f6": "feature-developer",
+ "ee600006010a3664046e62ce4d8d4311adbda0f665350027cbb659e0142dba74": "feature-developer",
+ "2f093d57e898ff1efde8bc259a89bd2674215a089e2d312e4bf44b093ab98cac": "feature-developer",
+ "cae185328903eea25a7c4ae1b24fb3145c5ea13277408bde4d634fa833821b0f": "feature-developer",
+ "3d80397da8bbfe29c70826ce69e584588279b9239f84ed9eb952e8fa1949af0f": "feature-developer",
+ "f69ee62d027e815d7fc9a43791b065b3827fb41b13940259712c5a1043819c40": "feature-developer",
+ "b78b23705716791120b9419bf5edf9ce979c238d281cd9191f5999ebdf77839a": "feature-developer",
+ "3869dc22dd6bf618eee6cacc29a87a6d67fef18c220ddb098059c1065227a6af": "fast-worker",
+ "76859b3ebc3d00d71e0334e64004cc613561fc581a760578f6c834fae77d5a69": "feature-developer",
+ "78e6b62dcdac7402bdae1c45e55d3f9bfc5dfd35126ca88dc79db6cacf7a46b7": "fast-worker",
+ "aeddc140b4e9d979e3b8546ae3d2c051fa8efad26369c20f86f4792bc3563c7d": "fast-worker",
+ "3372edf159069939672bc2c2e65d738bac0ed6b093d4114a3d88fd66f45a105a": "fast-worker",
+ "44a5004c83607ec238b3b019189880532771132768bf56e22cbab9e14e31601e": "fast-worker",
+ "a0730a1f5e4f897df5636c9ba7edb4f459f1632025c5838b27d2167fefba4431": "fast-worker",
+ "1194db5489ccd69c2f103671fae490fcb5bfc143a8593bd6b7881ce7b8f91cd7": "fast-worker",
+ "8a8237e8dcff5713521921c5ed886302fd1257b9ec0aa3fe0e2519acecdca159": "fast-worker",
+ "bc5f2cb9e85e3c4318adf7859f0152bad67c89e61a987e2f17ab95cd9292bc40": "fast-worker",
+ "fa8036182b682077608a8ab52046f60c00dc52751c231e1855eae4751ea72814": "fast-worker",
+ "bdac95afde09f0cf5d48325d8e0fd890f7c3d2f6a9cac8ffefe9389e2b4da2ed": "self",
+ "27af8c413cbe65d7872dd5b831003cf3b41d2a42a53e0c4c475679c794c76755": "self",
+ "302073cea6be79f1c7a15112125ec0b44fabde19735be74eb60bd38962971a96": "deep-reasoner",
+ "84a4488ad6c4eae38e532d5b00520894686a2e89f662333b63c6b3463cff433a": "deep-reasoner",
+ "f66fff55a0fa13cd53e30c562f24173d2f871cbe5cdc307b2e44c48255e1ddff": "feature-developer",
+ "d67bd663f94611542bee59d23aed320b4c7cd30b6a173d93741ce1562bf7dd0a": "fast-worker",
+ "75ffc42e9833d07eb5e11722022a1e93a1e951f98955e42ad1f149959485c690": "deep-reasoner"
+}

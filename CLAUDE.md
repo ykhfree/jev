@@ -21,6 +21,8 @@ $PYTEST tests/test_jev.py -k screen                    # by keyword
 JEV_LIVE=1 $PYTEST tests/test_live.py                  # real API; skipped unless JEV_LIVE=1 and TYPESAFE_API_KEY are set
 ```
 
+`evals/route/` is an offline experiment, not part of the CLI: it measures whether Jev can route tasks per the global CLAUDE.md Orchestration rules (`report.md` holds the generated numbers, `findings.md` the interpretation; `cases.json` and `raw_contexts.json` are synthetic, with no real session content). Its harness tests run with `$PYTEST evals/route/test_eval_route.py`; `eval_route.py` makes live Jev and `claude -p` calls unless they are in its `cache.json`.
+
 Live tests call the paid API (one request per `ask`) and assert on real model scores. Run them only after changing a question or threshold, and ask the user first. There is no linter or formatter configured.
 
 ## Architecture
