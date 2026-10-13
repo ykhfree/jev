@@ -1,0 +1,402 @@
+[
+ {
+  "id": "c01",
+  "kind": "easy",
+  "claim": "normalize() folds curly quotes to straight ones and collapses every run of whitespace into a single space.",
+  "file": "fixtures/jev.py",
+  "quote": "return re.sub(r\"\\s+\", \" \", text.translate(QUOTE_FOLD)).strip()",
+  "gold_section": "verified",
+  "gold_file": "verified",
+  "note": "L306 translates with QUOTE_FOLD and re.sub(r'\\s+', ' ') then strips; L305 docstring says the same"
+ },
+ {
+  "id": "c02",
+  "kind": "easy",
+  "claim": "CHOICE_SURE 임계값은 0.7이라서, claims 결과는 confidence가 0.7 이상이면 review 없이 채택된다.",
+  "file": "fixtures/jev.py",
+  "quote": "CHOICE_SURE = 0.8  # citation_check cookbook: auto-accept at confidence >= 0.8",
+  "gold_section": "contradicted",
+  "gold_file": "contradicted",
+  "note": "L20 sets CHOICE_SURE = 0.8, not 0.7"
+ },
+ {
+  "id": "c03",
+  "kind": "easy",
+  "claim": "check_claim은 대상 파일이 없으면 verdict를 file_missing으로 하고 review를 True로 표시한다.",
+  "file": "fixtures/jev.py",
+  "quote": "return {**out, \"verdict\": \"file_missing\", \"review\": True}",
+  "gold_section": "verified",
+  "gold_file": "verified",
+  "note": "L335-336: FileNotFoundError -> verdict file_missing, review True"
+ },
+ {
+  "id": "c04",
+  "kind": "easy",
+  "claim": "split_passages merges short consecutive paragraphs into one passage until it reaches PASSAGE_CHARS.",
+  "file": "fixtures/jev.py",
+  "quote": "Paragraphs are never merged: an injected paragraph would otherwise take clean evidence down with it.",
+  "gold_section": "contradicted",
+  "gold_file": "contradicted",
+  "note": "L368-369 docstring: paragraphs are never merged; L371-373 split per paragraph and only cut long ones"
+ },
+ {
+  "id": "c05",
+  "kind": "easy",
+  "claim": "Run records are stored in per-month folders, runs/<YYYY-MM>/<id>.json, with the month taken from the id prefix.",
+  "file": "fixtures/store.py",
+  "quote": "return self.runs_dir / run_id[:7] / f\"{run_id}.json\"",
+  "gold_section": "verified",
+  "gold_file": "verified",
+  "note": "L86-87: runs_dir / run_id[:7] / <id>.json; ids start with YYYY-MM (L95)"
+ },
+ {
+  "id": "c06",
+  "kind": "easy",
+  "claim": "run_claude는 프롬프트를 `claude -p`의 명령행 인자로 넘긴다.",
+  "file": "fixtures/distill.py",
+  "quote": "proc = subprocess.run([claude_cmd, \"-p\"], input=prompt,",
+  "gold_section": "contradicted",
+  "gold_file": "contradicted",
+  "note": "L61 docstring and L63: argv is [claude_cmd, '-p'], prompt goes via input= (stdin)"
+ },
+ {
+  "id": "c07",
+  "kind": "easy",
+  "claim": "When no past run matches, format_query_output returns an empty string.",
+  "file": "fixtures/query.py",
+  "quote": "return \"No relevant past runs found for this task.\"",
+  "gold_section": "contradicted",
+  "gold_file": "contradicted",
+  "note": "L86-87: no matches -> returns 'No relevant past runs found for this task.'"
+ },
+ {
+  "id": "c08",
+  "kind": "easy",
+  "claim": "Cache.get은 모델 호출(compute)을 lock 밖에서 실행하므로 여러 스레드의 모델 호출이 lock 때문에 직렬화되지 않는다.",
+  "file": "fixtures/eval_route.py",
+  "quote": "value = compute()  # outside the lock so model calls still run in parallel",
+  "gold_section": "verified",
+  "gold_file": "verified",
+  "note": "L170-176: lock held only for the lookup and the store; L173 compute() runs outside it"
+ },
+ {
+  "id": "c09",
+  "kind": "subtle",
+  "claim": "memgate_verdict는 duplicate를 conflict보다 먼저 검사하므로, duplicate와 conflict 점수가 둘 다 높으면 verdict는 duplicate가 된다.",
+  "file": "fixtures/jev.py",
+  "quote": "if any(c >= CONFLICT_MIN for c in conflicts):",
+  "gold_section": "contradicted",
+  "gold_file": "contradicted",
+  "note": "L270-275: conflict is checked first (L272) and returns before the duplicate check (L274)"
+ },
+ {
+  "id": "c10",
+  "kind": "subtle",
+  "claim": "check_claim flags review: true when the confidence is exactly CHOICE_SURE.",
+  "file": "fixtures/jev.py",
+  "quote": "\"review\": answer[\"confidence\"] < CHOICE_SURE,",
+  "gold_section": "contradicted",
+  "gold_file": "contradicted",
+  "note": "L350 uses strict <, so confidence == CHOICE_SURE gives review False"
+ },
+ {
+  "id": "c11",
+  "kind": "subtle",
+  "claim": "suggestion_block treats a route whose confidence equals GATE as below the gate and emits 'No handler stands out'.",
+  "file": "fixtures/eval_route.py",
+  "quote": "if route[\"confidence\"] >= GATE:",
+  "gold_section": "contradicted",
+  "gold_file": "contradicted",
+  "note": "L141 uses >=, so confidence == GATE takes the suggestion branch (L142-145), not L147"
+ },
+ {
+  "id": "c12",
+  "kind": "subtle",
+  "claim": "search_stores breaks score ties by app name first and only then by recency.",
+  "file": "fixtures/query.py",
+  "quote": "scored.sort(key=lambda match: match[2])",
+  "gold_section": "contradicted",
+  "gold_file": "contradicted",
+  "note": "L70-72 are stable sorts applied app, then timestamp desc, then score desc, so ties go score > recency > app; the docstring at L48 says the same but is outside the window"
+ },
+ {
+  "id": "c13",
+  "kind": "subtle",
+  "claim": "같은 분에 두 번째 run이 기록되면 그 id에는 _1 접미사가 붙는다.",
+  "file": "fixtures/store.py",
+  "quote": "candidate = f\"{base}_{n}\"",
+  "gold_section": "contradicted",
+  "gold_file": "contradicted",
+  "note": "L96-99: n starts at 1 and is incremented before use, so the first collision gets _2 (docstring L94 agrees)"
+ },
+ {
+  "id": "c14",
+  "kind": "subtle",
+  "claim": "If CROSS_MEMORY_AUTOSYNC is set but empty, autosync_enabled falls back to its default argument.",
+  "file": "fixtures/sync.py",
+  "quote": "return value.strip().lower() not in _FALSEY",
+  "gold_section": "contradicted",
+  "gold_file": "contradicted",
+  "note": "L23-26: only None returns default; '' is in _FALSEY (L18) so an empty value returns False regardless of default"
+ },
+ {
+  "id": "c15",
+  "kind": "subtle",
+  "claim": "_idf는 모든 과거 task에 등장하는 토큰에 가중치 0을 준다.",
+  "file": "fixtures/query.py",
+  "quote": "return math.log((total + 1) / (doc_freq + 1)) + 1",
+  "gold_section": "contradicted",
+  "gold_file": "contradicted",
+  "note": "L25: doc_freq == total gives log(1) + 1 = 1.0; docstring L23-24 says a token in every task keeps weight 1.0"
+ },
+ {
+  "id": "c16",
+  "kind": "subtle",
+  "claim": "When the best exists score is below FIND_FOUND, cmd_find reports 'partial', not 'absent', if that score is exactly FIND_ABSENT.",
+  "file": "fixtures/jev.py",
+  "quote": "verdict = \"absent\" if exists < FIND_ABSENT else \"partial\"",
+  "gold_section": "verified",
+  "gold_file": "verified",
+  "note": "L223-226: below FIND_FOUND the else branch uses strict <, so exists == FIND_ABSENT gives 'partial'"
+ },
+ {
+  "id": "c17",
+  "kind": "subtle",
+  "claim": "conflict나 duplicate가 없을 때, reuse 점수가 unsure band 하한과 정확히 같으면 memgate_verdict는 uncertain이 아니라 skip을 반환한다.",
+  "file": "fixtures/jev.py",
+  "quote": "lo, hi = UNSURE_BAND",
+  "gold_section": "verified",
+  "gold_file": "verified",
+  "note": "L276 skip check uses p <= lo and runs before the uncertain check at L278"
+ },
+ {
+  "id": "c18",
+  "kind": "subtle",
+  "claim": "locate_quote can match a quote that spans a blank line, because blank lines are dropped before the lines are joined.",
+  "file": "fixtures/jev.py",
+  "quote": "if not norm:",
+  "gold_section": "verified",
+  "gold_file": "verified",
+  "note": "L316-322: blank lines are skipped (continue) and the rest joined with single spaces, so text around a blank line is contiguous"
+ },
+ {
+  "id": "c19",
+  "kind": "subtle",
+  "claim": "parse_label은 출력에 서로 다른 라벨이 두 개 언급되면(예: 'not fast-worker, use self') 첫 번째 라벨이 아니라 None을 반환한다.",
+  "file": "fixtures/eval_route.py",
+  "quote": "return found[0] if len(set(found)) == 1 else None",
+  "gold_section": "verified",
+  "gold_file": "verified",
+  "note": "L157-158: findall collects every label; two distinct labels -> len(set) == 2 -> None"
+ },
+ {
+  "id": "c20",
+  "kind": "subtle",
+  "claim": "approve는 proposed.md의 bullet이 전부 기존 rules와 중복이어도 proposed.md를 삭제한다.",
+  "file": "fixtures/distill.py",
+  "quote": "store.proposed_path.unlink()",
+  "gold_section": "verified",
+  "gold_file": "verified",
+  "note": "L106-113: unlink at L113 is outside the `if new:` block, so it runs even when new is empty"
+ },
+ {
+  "id": "c21",
+  "kind": "subtle",
+  "claim": "CROSS_MEMORY_AUTOSYNC=' OFF ' (padded, upper-case) disables autosync.",
+  "file": "fixtures/sync.py",
+  "quote": "value = os.environ.get(AUTOSYNC_ENV)",
+  "gold_section": "verified",
+  "gold_file": "verified",
+  "note": "L26 strips and lowercases before checking _FALSEY (L18 contains 'off'), so ' OFF ' -> False"
+ },
+ {
+  "id": "c22",
+  "kind": "subtle",
+  "claim": "load_index rebuilds the index from runs/ when index.json is valid JSON but has no 'runs' key.",
+  "file": "fixtures/store.py",
+  "quote": "except (OSError, ValueError, KeyError, TypeError):",
+  "gold_section": "verified",
+  "gold_file": "verified",
+  "note": "L126 data['runs'] raises KeyError, caught at L127, which returns rebuild_index() (L128)"
+ },
+ {
+  "id": "c23",
+  "kind": "outside_window",
+  "claim": "read_text refuses to send a file named id_ed25519.pub.",
+  "file": "fixtures/jev.py",
+  "quote": "if SECRET_NAME.match(p.name):",
+  "gold_section": "unsupported",
+  "gold_file": "verified",
+  "note": "L180 checks SECRET_NAME; the pattern id_(rsa|dsa|ecdsa|ed25519).* that matches id_ed25519.pub is at L42, outside 165-195"
+ },
+ {
+  "id": "c24",
+  "kind": "outside_window",
+  "claim": "conflict나 duplicate가 없으면, memgate는 noise 점수가 0.7 이상일 때 skip을 반환한다.",
+  "file": "fixtures/jev.py",
+  "quote": "if any(p <= lo for p in wanted) or scores[\"noise\"] >= hi:",
+  "gold_section": "unsupported",
+  "gold_file": "verified",
+  "note": "L276 skips on noise >= hi; hi = UNSURE_BAND[1] = 0.7 is defined at L19, outside 261-291"
+ },
+ {
+  "id": "c25",
+  "kind": "outside_window",
+  "claim": "The section check_claim sends to Jev covers 10 lines on each side of the quote.",
+  "file": "fixtures/jev.py",
+  "quote": "section = \"\\n\".join(lines[max(0, first - 1 - CLAIM_CONTEXT_LINES) : last + CLAIM_CONTEXT_LINES])",
+  "gold_section": "unsupported",
+  "gold_file": "contradicted",
+  "note": "L343 uses CLAIM_CONTEXT_LINES, which is 15 (L38, outside 328-358), not 10"
+ },
+ {
+  "id": "c26",
+  "kind": "outside_window",
+  "claim": "screen에서 contains_answer_evidence 점수가 정확히 0.55인 passage는 include로 분류된다.",
+  "file": "fixtures/jev.py",
+  "quote": "if answers[\"contains_answer_evidence\"] > SCREEN[\"evidence_min\"]:",
+  "gold_section": "unsupported",
+  "gold_file": "contradicted",
+  "note": "L385 needs > evidence_min; evidence_min = 0.55 at L28 (outside 370-400), so 0.55 falls to exclude/no_evidence"
+ },
+ {
+  "id": "c27",
+  "kind": "outside_window",
+  "claim": "rebuild_index가 만드는 인덱스 항목에는 learnings가 없고 id, timestamp, task, outcome 필드만 들어간다.",
+  "file": "fixtures/store.py",
+  "quote": "entries.append({key: record.get(key, \"\") for key in INDEX_FIELDS})",
+  "gold_section": "unsupported",
+  "gold_file": "verified",
+  "note": "L138 copies INDEX_FIELDS, defined at L14 as (id, timestamp, task, outcome), outside 123-153"
+ },
+ {
+  "id": "c28",
+  "kind": "outside_window",
+  "claim": "compose_rules는 noul 점수가 0.4 이상이면 해당 규칙을 yes로 본다.",
+  "file": "fixtures/eval_route.py",
+  "quote": "yes = {k: v >= NOUL_YES for k, v in nouls.items()}",
+  "gold_section": "unsupported",
+  "gold_file": "contradicted",
+  "note": "L127 compares against NOUL_YES, which is 0.5 at L35 (outside 112-142), so 0.4-0.49 counts as no"
+ },
+ {
+  "id": "c29",
+  "kind": "outside_window",
+  "claim": "run_claude gives the claude CLI 60 seconds before raising a timeout error.",
+  "file": "fixtures/distill.py",
+  "quote": "raise CrossMemoryError(f\"claude CLI timed out after {CLAUDE_TIMEOUT}s\")",
+  "gold_section": "unsupported",
+  "gold_file": "contradicted",
+  "note": "L64/L69 use CLAUDE_TIMEOUT, which is 300 at L16 (outside 54-84), not 60"
+ },
+ {
+  "id": "c30",
+  "kind": "outside_window",
+  "claim": "sync_to_git gives git push a 30-second timeout.",
+  "file": "fixtures/sync.py",
+  "quote": "push = _git(root, \"push\", timeout=PUSH_TIMEOUT)",
+  "gold_section": "unsupported",
+  "gold_file": "verified",
+  "note": "L57 passes PUSH_TIMEOUT, defined as 30 at L15, outside 42-72"
+ },
+ {
+  "id": "c31",
+  "kind": "unrelated",
+  "claim": "locate_quote는 10만 줄짜리 파일에서도 50ms 안에 끝난다.",
+  "file": "fixtures/jev.py",
+  "quote": "hit = \" \".join(parts).find(needle)",
+  "gold_section": "unsupported",
+  "gold_file": "unsupported",
+  "note": "performance claim; no timing or size data anywhere in the file"
+ },
+ {
+  "id": "c32",
+  "kind": "unrelated",
+  "claim": "cmd_claims is invoked by a git pre-commit hook in this repository.",
+  "file": "fixtures/jev.py",
+  "quote": "return {\"claims\": pmap(lambda c: check_claim(c, ask), claims)}",
+  "gold_section": "unsupported",
+  "gold_file": "unsupported",
+  "note": "claim about an external caller; the file only wires cmd_claims to the argparse subcommand (L441-443)"
+ },
+ {
+  "id": "c33",
+  "kind": "unrelated",
+  "claim": "TypeSafeClient는 429 rate limit 응답을 받으면 SDK 내부에서 지수 백오프로 재시도한다.",
+  "file": "fixtures/jev.py",
+  "quote": "response = client.system_one(state, questions)",
+  "gold_section": "unsupported",
+  "gold_file": "unsupported",
+  "note": "behaviour of the external typesafe_sdk client; the file only calls client.system_one"
+ },
+ {
+  "id": "c34",
+  "kind": "unrelated",
+  "claim": "The claude -p calls in this eval usually finish in under 10 seconds.",
+  "file": "fixtures/eval_route.py",
+  "quote": "capture_output=True, text=True, timeout=300, cwd=gettempdir(),",
+  "gold_section": "unsupported",
+  "gold_file": "unsupported",
+  "note": "typical latency is not in the code; timeout=300 (L193) is only an upper bound"
+ },
+ {
+  "id": "c35",
+  "kind": "unrelated",
+  "claim": "Opus 모델은 이 라우팅 eval의 52개 케이스를 모두 맞혔다.",
+  "file": "fixtures/eval_route.py",
+  "quote": "CLAUDE_MODEL = \"opus\"",
+  "gold_section": "unsupported",
+  "gold_file": "unsupported",
+  "note": "results are in results.json/report.md, not in the code"
+ },
+ {
+  "id": "c36",
+  "kind": "unrelated",
+  "claim": "record_run is called by the CLI's `record` subcommand after it validates the arguments.",
+  "file": "fixtures/store.py",
+  "quote": "def record_run(self, task: str, outcome: str, result: str,",
+  "gold_section": "unsupported",
+  "gold_file": "unsupported",
+  "note": "caller lives in cli.py, not in this file"
+ },
+ {
+  "id": "c37",
+  "kind": "unrelated",
+  "claim": "search_stores는 run이 1만 건인 저장소에서 한 번 조회에 100ms 이상 걸린다.",
+  "file": "fixtures/query.py",
+  "quote": "corpus = [(entry, tokenize(entry[\"task\"]), app, store)",
+  "gold_section": "unsupported",
+  "gold_file": "unsupported",
+  "note": "performance claim; no timing data in the file"
+ },
+ {
+  "id": "c38",
+  "kind": "unrelated",
+  "claim": "`cross-memory brief` reuses format_query_output to print its past-run section.",
+  "file": "fixtures/query.py",
+  "quote": "record = owner.load_run(entry[\"id\"]) or entry",
+  "gold_section": "unsupported",
+  "gold_file": "unsupported",
+  "note": "claim about a caller in brief.py, which is not in this file; the file never mentions brief"
+ },
+ {
+  "id": "c39",
+  "kind": "unrelated",
+  "claim": "distill은 매일 밤 cron 작업으로 자동 실행된다.",
+  "file": "fixtures/distill.py",
+  "quote": "def distill(store: MemoryStore, runner: Callable[[str], str] = run_claude,",
+  "gold_section": "unsupported",
+  "gold_file": "unsupported",
+  "note": "scheduling is outside this module; the file only defines the function"
+ },
+ {
+  "id": "c40",
+  "kind": "unrelated",
+  "claim": "cross-memory에서 git 명령은 이 sync 모듈을 통해서만 실행되고, 다른 모듈은 git을 직접 호출하지 않는다.",
+  "file": "fixtures/sync.py",
+  "quote": "return subprocess.run([\"git\", \"-C\", str(cwd), *args],",
+  "gold_section": "unsupported",
+  "gold_file": "unsupported",
+  "note": "overreach: other modules (cli.py etc.) are not in this file, so 'only through this module' cannot be settled"
+ }
+]

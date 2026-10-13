@@ -1,0 +1,191 @@
+{
+ "af1c24356b65860d8cddd56389936d41c7a89911ac951e682bf3e6b7982563c2": {
+  "text": "self",
+  "input_tokens": 2,
+  "output_tokens": 3,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 5196,
+  "cost_usd": 0.041636,
+  "duration_ms": 3739
+ },
+ "1b36301976f1c4f0bc662f30fb9491272b47919fc7998ade3544b953b6481237": {
+  "text": "self",
+  "input_tokens": 2,
+  "output_tokens": 62,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 5740,
+  "cost_usd": 0.047168,
+  "duration_ms": 4853
+ },
+ "fc14dba0490a6e4766642d192870d61b0d38677095053c9b28731130c98b28a3": {
+  "text": "self",
+  "input_tokens": 2,
+  "output_tokens": 3,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 5730,
+  "cost_usd": 0.045908,
+  "duration_ms": 2501
+ },
+ "2d6f2129eaf7757f6aab1106e413c593068c4901ae0f39662fbaca8cef882daa": {
+  "text": "self",
+  "input_tokens": 2,
+  "output_tokens": 3,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 5001,
+  "cost_usd": 0.040076,
+  "duration_ms": 3277
+ },
+ "15055bc4dccfa322b7762e5eb1e3c4e0fb47e82bd2c27958792d36c52ae9990f": {
+  "text": "self",
+  "input_tokens": 2,
+  "output_tokens": 121,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 5406,
+  "cost_usd": 0.045676,
+  "duration_ms": 3466
+ },
+ "845fa0d63977483d48416092d7d7795febf09898066077888d63a3a3fcf258b4": {
+  "text": "self",
+  "input_tokens": 2,
+  "output_tokens": 3,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 5545,
+  "cost_usd": 0.044427999999999995,
+  "duration_ms": 6108
+ },
+ "b13e33ac69ba86c80645dd7f0ae47fe6d15b90c4a3cec94d5301025e9a5c0bf3": {
+  "text": "self",
+  "input_tokens": 2,
+  "output_tokens": 3,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 5366,
+  "cost_usd": 0.042996,
+  "duration_ms": 2413
+ },
+ "ac4a1ea7bd6d6b020aa5f43ab3ab8e87a5404c3fa3114614258bd366fcb09671": {
+  "text": "self",
+  "input_tokens": 2,
+  "output_tokens": 3,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 5677,
+  "cost_usd": 0.045484,
+  "duration_ms": 2652
+ },
+ "280f639e02a8dbb9211a70cef255ee88e735567224e38cbc22dd9936bee7310a": {
+  "text": "self",
+  "input_tokens": 2,
+  "output_tokens": 3,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 5133,
+  "cost_usd": 0.041132,
+  "duration_ms": 3206
+ },
+ "76113eaaf9db4d8dfda298149a0748742e6351227760e9b272d04b40f50c38a1": {
+  "text": "self",
+  "input_tokens": 2,
+  "output_tokens": 3,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 5333,
+  "cost_usd": 0.042732,
+  "duration_ms": 3572
+ },
+ "a55c27e2a9aa53ef80dee83f9cd988ad70401ea66784013e2a45a99657681ad4": {
+  "text": "deep-reasoner",
+  "input_tokens": 2,
+  "output_tokens": 9,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 4975,
+  "cost_usd": 0.039988,
+  "duration_ms": 2398
+ },
+ "d306d4db795f428253172c140bbb4b92e5353347f8c5f828acc2c0f9beb14938": {
+  "text": "deep-reasoner",
+  "input_tokens": 2,
+  "output_tokens": 9,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 5331,
+  "cost_usd": 0.042836,
+  "duration_ms": 5763
+ },
+ "0a65fc74d68b394350949e7bb12256260b3de14b64a9ca91897588cad4eb4c31": {
+  "text": "deep-reasoner",
+  "input_tokens": 2,
+  "output_tokens": 9,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 5278,
+  "cost_usd": 0.042412,
+  "duration_ms": 2566
+ },
+ "41ead5cb2f7ab93e7a430092e96f961703197ef7838480e60c33ecf1706d8781": {
+  "text": "deep-reasoner",
+  "input_tokens": 2,
+  "output_tokens": 9,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 5232,
+  "cost_usd": 0.042044,
+  "duration_ms": 6340
+ },
+ "65533a9c81a8b5f9473b05e84effffb8fde1f760f7e6479ccef2d6c011b75cb2": {
+  "text": "deep-reasoner",
+  "input_tokens": 2,
+  "output_tokens": 9,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 4792,
+  "cost_usd": 0.038524,
+  "duration_ms": 3447
+ },
+ "a2e3040ed14af9d441defc2f700abe831753c5836e5b929eb2911245767cf632": {
+  "text": "deep-reasoner",
+  "input_tokens": 2,
+  "output_tokens": 9,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 4855,
+  "cost_usd": 0.039028,
+  "duration_ms": 2681
+ },
+ "bd577544e26864698be7b48e8f08dda7e46d630551e197f0852b043344a34a89": {
+  "text": "feature-developer",
+  "input_tokens": 2,
+  "output_tokens": 133,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 5351,
+  "cost_usd": 0.045476,
+  "duration_ms": 3665
+ },
+ "f845a5155134e079b6a80dac49f2d3a3d44a0b7843f870e9e060d7d467798963": {
+  "text": "feature-developer",
+  "input_tokens": 2,
+  "output_tokens": 182,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 5366,
+  "cost_usd": 0.046576,
+  "duration_ms": 5296
+ },
+ "2165e6e5b8309218f8a6ceb9363335160a22db13c2b7480ff011b0c34060578a": {
+  "text": "feature-developer",
+  "input_tokens": 2,
+  "output_tokens": 407,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 5063,
+  "cost_usd": 0.048652,
+  "duration_ms": 12060
+ },
+ "8dc516557e94145521418f651d3d11cb0a20976b1429fac4d4c40174eca45c2b": {
+  "text": "fast-worker",
+  "input_tokens": 2,
+  "output_tokens": 394,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 4665,
+  "cost_usd": 0.045208,
+  "duration_ms": 8553
+ },
+ "6ee754399884e937272d3931e2d2acd83768e2625d549e9ad601ec611b517127": {
+  "text": "fast-worker",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 4998,
+  "cost_usd": 0.040132,
+  "duration_ms": 3618
+ }
+}

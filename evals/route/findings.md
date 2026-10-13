@@ -59,3 +59,13 @@ handler name, and one added difficulty hint (w11 "기계적으로 반복하면 �
   a long context, and weaker main-session models (Sonnet/Haiku), where the cookbook saw its gains.
 - Latency: Jev Choice-only call with a 6k-char transcript state, 5 uncached calls: median 0.24 s,
   max 0.30 s (network included); answers matched the 7-question request.
+
+## Run 4: Claude on the raw transcript context (2026-09-28)
+
+`measure_claude_raw.py` runs the `claude` arm (claude -p opus, same system prompt) on the 21
+`raw_contexts.json` tails, one call at a time; per-case rows in `claude_raw_results.json`.
+
+- Claude routed 21/21 (clear 18/18), the same as Jev raw: the raw tail gives Jev no accuracy edge.
+- Latency per isolated call: median 3.57 s (2.40-12.06 s; the 12 s case produced 407 output tokens),
+  including claude -p process start. Jev on the same state: 0.24 s (run 3).
+- Cost per isolated call: median $0.043 (about 5.3k cache-creation tokens, output median 9 tokens).

@@ -1,0 +1,3947 @@
+{
+ "b20cc46a28a6cfb01f5d628f559deb1378123f1f1780b275ea07b541ff975476": {
+  "answers": {
+   "relation": {
+    "choice": "contradicts",
+    "probabilities": {
+     "contradicts": 1.0,
+     "supports": 0.0,
+     "says_nothing": 0.0
+    },
+    "confidence": 1.0
+   }
+  },
+  "seconds": 0.234
+ },
+ "705bee36b44f6050f56d864000e5d51934b608f0d2716a154f81119dbb147d38": {
+  "answers": {
+   "relation": {
+    "choice": "contradicts",
+    "probabilities": {
+     "contradicts": 0.99,
+     "says_nothing": 0.0,
+     "supports": 0.01
+    },
+    "confidence": 0.99
+   }
+  },
+  "seconds": 0.264
+ },
+ "de4b7d1b6e3bf1a3dcdc20cd8393d22acf3156a823fdd993b9b2a24cb9752e6e": {
+  "answers": {
+   "relation": {
+    "choice": "supports",
+    "probabilities": {
+     "says_nothing": 0.0,
+     "contradicts": 0.0,
+     "supports": 1.0
+    },
+    "confidence": 1.0
+   }
+  },
+  "seconds": 0.288
+ },
+ "227c83dc27e537d2784fec32921bfdd42190bcc17a6253cb87f6b5f8eb83f26c": {
+  "answers": {
+   "relation": {
+    "choice": "supports",
+    "probabilities": {
+     "says_nothing": 0.02,
+     "contradicts": 0.0,
+     "supports": 0.98
+    },
+    "confidence": 0.96
+   }
+  },
+  "seconds": 0.291
+ },
+ "79c96459bb662c37ae282bdd5cd58ebd6ba851e7da7f0458d89bec6c5f77df19": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1307,
+  "cost_usd": 0.010584,
+  "duration_ms": 2471
+ },
+ "a65f63cf38dd619d406c460d52fa15893b4f348d1fc4f7bfb1d4de1737d4942f": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1242,
+  "cost_usd": 0.010024,
+  "duration_ms": 2621
+ },
+ "7cb948c383e64fe9af6c2cc55915140787e20a72f3863a6bc882854088538179": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1167,
+  "cost_usd": 0.009464,
+  "duration_ms": 2611
+ },
+ "2d2a6ffef5a13f4164e99f8640d9bbb405cd3b72f76b850e833c632b8da8fac4": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 8976,
+  "cost_usd": 0.071936,
+  "duration_ms": 2608
+ },
+ "633e39c3ff6dd0fe076a287e15258501677c4617b7165a0efe20a68c8bac6070": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 8960,
+  "cost_usd": 0.071808,
+  "duration_ms": 2916
+ },
+ "82ba49c739731ca82b6025da99e9e513d895e8efb1a53dc19a8798e69f5b4336": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 8966,
+  "cost_usd": 0.071816,
+  "duration_ms": 2956
+ },
+ "8d6a234dbc547227b71974c5d96bb6b9fbfcf6a20898fb912cf5ded237b757c4": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 157,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1237,
+  "cost_usd": 0.013044,
+  "duration_ms": 7442
+ },
+ "41081ef791f1df8e70c3a947a09cfefbec1be5383c93f091a448ac69d29c30a6": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 8960,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.00192,
+  "duration_ms": 2319
+ },
+ "e7f5312381c35a6caa74c4f0ad343bab9e0889f38d40799cac84af4bf888af24": {
+  "answers": {
+   "relation": {
+    "choice": "supports",
+    "probabilities": {
+     "says_nothing": 0.0,
+     "supports": 1.0,
+     "contradicts": 0.0
+    },
+    "confidence": 1.0
+   }
+  },
+  "seconds": 0.241
+ },
+ "ec23f3697e3a977b159f0de3b8a637faf69de4c012ee45b95be1434c1755d438": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 8966,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0018812,
+  "duration_ms": 2368
+ },
+ "ccaf63e549cc127c9088696bf846b33cc6550564221c5213e913527a65adb492": {
+  "answers": {
+   "relation": {
+    "choice": "contradicts",
+    "probabilities": {
+     "contradicts": 0.97,
+     "says_nothing": 0.0,
+     "supports": 0.03
+    },
+    "confidence": 0.95
+   }
+  },
+  "seconds": 0.226
+ },
+ "03f43196abc1110d6d4ecd6af0b7717c8783de077bca490b2b5eabc68f1e5297": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 8976,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0019232000000000001,
+  "duration_ms": 4249
+ },
+ "7b1cccaa84ad4a4d5985a579d6b2d4920a57ae05c42b5fafbe3c5649555d5af2": {
+  "answers": {
+   "relation": {
+    "choice": "contradicts",
+    "probabilities": {
+     "supports": 0.0,
+     "says_nothing": 0.0,
+     "contradicts": 1.0
+    },
+    "confidence": 1.0
+   }
+  },
+  "seconds": 0.194
+ },
+ "ae43478051adc91f7c00ce18b77b027d08ae915ec899dcbffde4953ff214246b": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 181,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 8955,
+  "cost_usd": 0.075268,
+  "duration_ms": 7178
+ },
+ "f2b219faf3c3d705f159072909806e8dbf6173b428edeedcfc426fa4ca0e959c": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1191,
+  "cost_usd": 0.009616,
+  "duration_ms": 3818
+ },
+ "f7d02e9ac4784c54f9c9694215fa8a0dfe210c6c954d7a2e461ba5bc31ad9ee5": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1241,
+  "cost_usd": 0.010055999999999999,
+  "duration_ms": 3806
+ },
+ "00c06d5f39f1bd7ec4d6b1b54e7e2e4d5936d67c227c6161a81d852ae69ea552": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1234,
+  "cost_usd": 0.01,
+  "duration_ms": 2582
+ },
+ "0ee815e1f4e70bdbf6f0fa684ba141dc8782ab7194ee4bfbe9d486daed860675": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 8955,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.001879,
+  "duration_ms": 2322
+ },
+ "72bc98400d8afae15fbb65f0d7dca64f3de21a1bc4ed3cc243792615ede20518": {
+  "answers": {
+   "relation": {
+    "choice": "supports",
+    "probabilities": {
+     "says_nothing": 0.0,
+     "contradicts": 0.0,
+     "supports": 1.0
+    },
+    "confidence": 0.99
+   }
+  },
+  "seconds": 0.216
+ },
+ "30437484cc855606cc20454d9bb6189d8a2a3bd157425a448c307b1d438b2aaf": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 3627,
+  "cost_usd": 0.029104,
+  "duration_ms": 2732
+ },
+ "0290d6a34289df2f0c7905c120d55383f0a823c3b03cee6d0a1704d30308e32b": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2750,
+  "cost_usd": 0.022128,
+  "duration_ms": 3358
+ },
+ "9a3033d877cee5a135311cbc4d76001e6fc1aed916d5479b1a920043c0493aa6": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2514,
+  "cost_usd": 0.02024,
+  "duration_ms": 5269
+ },
+ "91be54cae01992d1cc24d292c277a2b4c7c42387e91a99187dfa5a9ca49d64dd": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 3627,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0008134,
+  "duration_ms": 2296
+ },
+ "fe17d193aa0ed0b61cbc441e5f76471868d44f98a421de5f1e130f1aac4e23da": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1101,
+  "cost_usd": 0.008896,
+  "duration_ms": 3340
+ },
+ "7e0ca7c2df10ed5e86635b72d2a78cf798e0b4af8e06a571a2b8eeae92666537": {
+  "answers": {
+   "relation": {
+    "choice": "contradicts",
+    "probabilities": {
+     "supports": 0.0,
+     "contradicts": 1.0,
+     "says_nothing": 0.0
+    },
+    "confidence": 0.99
+   }
+  },
+  "seconds": 0.195
+ },
+ "ee533bff7a9c8c35e6451fdbb1fdd724c883a4a39657b9c2601a25bcd5fe5789": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 2750,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.000678,
+  "duration_ms": 3193
+ },
+ "2c498a8b24d92108342e2f22442b5330aab3c990dc6293471c775efdac6e7d9b": {
+  "answers": {
+   "relation": {
+    "choice": "contradicts",
+    "probabilities": {
+     "supports": 0.03,
+     "says_nothing": 0.06,
+     "contradicts": 0.91
+    },
+    "confidence": 0.86
+   }
+  },
+  "seconds": 0.215
+ },
+ "a8185d5f6d6fd7d0f49c0b1afae66a37360b446ac9219392e1f6382f12d0f417": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 2514,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0006308,
+  "duration_ms": 2708
+ },
+ "e45f4c8e4e8fc4347c8c8d0c226ee9eaa056801bc86e357941d2d9c577b1ede5": {
+  "answers": {
+   "relation": {
+    "choice": "contradicts",
+    "probabilities": {
+     "says_nothing": 0.0,
+     "contradicts": 0.94,
+     "supports": 0.06
+    },
+    "confidence": 0.9
+   }
+  },
+  "seconds": 0.217
+ },
+ "1addca747484b4b7ef803591fb4781b7eac5f1540ec7b79d7f36e3039cee4f4f": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1208,
+  "cost_usd": 0.009792,
+  "duration_ms": 2731
+ },
+ "6f8e45b6292caefac8e3b5dce6fd8eadb4575a563ac027ff677129328a2f0e7a": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 7653,
+  "cost_usd": 0.061312,
+  "duration_ms": 2547
+ },
+ "b16aaeb3e67fef0d629c23da8fc421191ccfed979cb3b351417779290850024f": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1237,
+  "cost_usd": 0.010024,
+  "duration_ms": 2906
+ },
+ "3ef5b9bd40c7bb663a3e97f432aba3a131ca187d9294683265a338c55afd13f3": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1196,
+  "cost_usd": 0.009696,
+  "duration_ms": 2488
+ },
+ "6e12e1c985261011556367117a96851978a9ee5b8688e3c85aff60974082c069": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 8991,
+  "cost_usd": 0.07205600000000001,
+  "duration_ms": 2471
+ },
+ "a198f077d51fb0fb4064ee5e07fb6e87f97f4e2aaae68d30f45db34fb0dc3e04": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 8951,
+  "cost_usd": 0.07173600000000001,
+  "duration_ms": 2419
+ },
+ "c7b714214970b3a917987c30afc2fc8e9afc510ad0564998bb88bc4d1ef69820": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 7626,
+  "cost_usd": 0.061136,
+  "duration_ms": 2508
+ },
+ "4068b40358d6c9bd09bc3c2dc3cd8822c015bbf484b98f84ff3abd324fe62a3d": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 7653,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0016186,
+  "duration_ms": 5740
+ },
+ "9631543777214dec3b8c744d2e9a019dabc9a51d03c7f0df7606cef5df64a361": {
+  "answers": {
+   "relation": {
+    "choice": "contradicts",
+    "probabilities": {
+     "supports": 0.19,
+     "contradicts": 0.8,
+     "says_nothing": 0.01
+    },
+    "confidence": 0.7
+   }
+  },
+  "seconds": 0.252
+ },
+ "50ed8d7decba98105e530ec85836b5b4b7da983b295c137a3c3198fbdf8dca61": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 8991,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0019262000000000003,
+  "duration_ms": 2392
+ },
+ "4fff0d79d578915113397003f31971514b30e700757479e14633bddc58dc68d3": {
+  "answers": {
+   "relation": {
+    "choice": "contradicts",
+    "probabilities": {
+     "supports": 0.07,
+     "contradicts": 0.93,
+     "says_nothing": 0.0
+    },
+    "confidence": 0.9
+   }
+  },
+  "seconds": 0.21
+ },
+ "3647ba7494c38366fa8d810527b7de2a162bedd2ff843a7fccf03b194556a6d2": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 8951,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0019182000000000003,
+  "duration_ms": 2607
+ },
+ "0bb8ea98f2395e23b8694833de148b0f4146e5c5d4d8aa994384ae830e96e41d": {
+  "answers": {
+   "relation": {
+    "choice": "contradicts",
+    "probabilities": {
+     "says_nothing": 0.02,
+     "contradicts": 0.84,
+     "supports": 0.14
+    },
+    "confidence": 0.77
+   }
+  },
+  "seconds": 0.223
+ },
+ "236fea58ac94e00e3655ab2d8f1febcdb8606d0ba369c3af7fbe4f87f1801b0d": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 7626,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0016532,
+  "duration_ms": 2676
+ },
+ "50de58e64be9cef641eb0bb03ace9682edd9b3bd955a54529919a2dc93bacf4b": {
+  "answers": {
+   "relation": {
+    "choice": "contradicts",
+    "probabilities": {
+     "contradicts": 1.0,
+     "supports": 0.0,
+     "says_nothing": 0.0
+    },
+    "confidence": 1.0
+   }
+  },
+  "seconds": 0.221
+ },
+ "5945f73716c8c49e512ffc76deaa559f06dfe302feed7c13307e80db96ff27fd": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 73,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1108,
+  "cost_usd": 0.010332000000000001,
+  "duration_ms": 3601
+ },
+ "e1c1e2dcbb1095efe282188f1ed4e34f632c92cb1604432ca18e0c566cdd652e": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1246,
+  "cost_usd": 0.010095999999999999,
+  "duration_ms": 3429
+ },
+ "c01c05d37df2d73d15b37f87827c9f86b90358a0b6c0acff4bc2a44e52bfce6c": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1123,
+  "cost_usd": 0.009112,
+  "duration_ms": 2644
+ },
+ "160a38a0120276bf4478a12c1693a0bee1d235501670da701b9e336c2cde2cc3": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1197,
+  "cost_usd": 0.009703999999999999,
+  "duration_ms": 3053
+ },
+ "9a3cfdf4db09bd783a8bf8d0e3f7d5338bf575b9597f588369ba9c6381e54d9c": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2516,
+  "cost_usd": 0.020256,
+  "duration_ms": 2347
+ },
+ "9c21abf848c93e2bdc3f84cef030e6e435d57d3f82edafd70a71ea72ba7578ea": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 3621,
+  "cost_usd": 0.029096,
+  "duration_ms": 3334
+ },
+ "ccf8379b52f1e9c5f27428303bd6e4f549668f18b252dca3e0e85f5a4a9e2fde": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2155,
+  "cost_usd": 0.017367999999999998,
+  "duration_ms": 2399
+ },
+ "97474117d121103cd0ea215b7b7716b79c6aacff27a0adea87e8e773ca2e4aa9": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2529,
+  "cost_usd": 0.02036,
+  "duration_ms": 2786
+ },
+ "d82ad168440edd73ae7ea32afcbd01ec4ff3a60088d184cf29a4e4445f5f3f51": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 2516,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0006312,
+  "duration_ms": 2411
+ },
+ "b40ea73a522cb8bd0845093f6d304a4e3a5ee8c66c1391b6676dac90edf6cc4f": {
+  "answers": {
+   "relation": {
+    "choice": "supports",
+    "probabilities": {
+     "says_nothing": 0.01,
+     "contradicts": 0.41,
+     "supports": 0.58
+    },
+    "confidence": 0.38
+   }
+  },
+  "seconds": 0.202
+ },
+ "a7a41a8da437e65f03cb22a9dfad94190960cefaed993fcf9fcbf8378ccb0663": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 3621,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0008522,
+  "duration_ms": 2512
+ },
+ "28211890a69c9dec9555350a11d0a868f4b57c7ca6e1d63edb86e887a46b8ca8": {
+  "answers": {
+   "relation": {
+    "choice": "supports",
+    "probabilities": {
+     "contradicts": 0.05,
+     "says_nothing": 0.0,
+     "supports": 0.95
+    },
+    "confidence": 0.92
+   }
+  },
+  "seconds": 0.203
+ },
+ "b888272c5e0f5c6ac054fcfd15b1bba38bb1883d5da71c91eb2519781f29cea7": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 2155,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0005589999999999999,
+  "duration_ms": 3202
+ },
+ "e07ccc4dbf92c18ddf4fec16951d7bd3eb9f84e061236d9c35f9e9d26bf05c1a": {
+  "answers": {
+   "relation": {
+    "choice": "supports",
+    "probabilities": {
+     "supports": 0.96,
+     "says_nothing": 0.01,
+     "contradicts": 0.03
+    },
+    "confidence": 0.95
+   }
+  },
+  "seconds": 0.202
+ },
+ "710f1f28b48093a4176bc5282492d7a0e7871ff4bf69e5c90c81e920709add4e": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 2529,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0006338,
+  "duration_ms": 2706
+ },
+ "2e4821e40ec733dbbd97a9dc7dba97419aaf2fc2bb4dc2ce43521569436ead98": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1198,
+  "cost_usd": 0.009672,
+  "duration_ms": 2474
+ },
+ "61d674b0ceaf1717415ae39c0962b26565e01232caa1c26ba5d1a9ed70408572": {
+  "answers": {
+   "relation": {
+    "choice": "supports",
+    "probabilities": {
+     "says_nothing": 0.01,
+     "supports": 0.98,
+     "contradicts": 0.01
+    },
+    "confidence": 0.97
+   }
+  },
+  "seconds": 0.2
+ },
+ "ff15bd704994159b8ca5d1489749d391594547b8dbc46fd10e68a8f733dec473": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 29,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1220,
+  "cost_usd": 0.010348,
+  "duration_ms": 3115
+ },
+ "42276744b2574d82ce06ecbac36dc6b4fe6d4268ce5ac735bff7803d07db8df9": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1132,
+  "cost_usd": 0.009144,
+  "duration_ms": 2526
+ },
+ "c5ab7e21696429590995b1d2eaf1bb6176abcdc276e4f4fc8c7c13aa2f3232cb": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1195,
+  "cost_usd": 0.009648,
+  "duration_ms": 2443
+ },
+ "982d0d205ed5192e878bdf391ea54771ea77df6734e07aaffdf8b0e4a966cbe4": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 8992,
+  "cost_usd": 0.072024,
+  "duration_ms": 2397
+ },
+ "9dc58d473e35f4e257e89b87c6e0f4f76c5069fdbb2067a0062e58f14ca52052": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 8975,
+  "cost_usd": 0.07188800000000001,
+  "duration_ms": 5368
+ },
+ "e31fc8835940dad5371c1e5f9253ae16e462cd63ae296ab3a8f01e82e1def89f": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 71,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 8958,
+  "cost_usd": 0.073092,
+  "duration_ms": 3206
+ },
+ "42d87167a272877e1cc9e2589dd4383c24665fc7f8beab31ff8f233a32f894aa": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 7656,
+  "cost_usd": 0.061335999999999995,
+  "duration_ms": 2524
+ },
+ "4be7695c647ca001aeef84b6b71240202b0f7ded7a0a100ecc0082944fa2ac40": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 8992,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0018864,
+  "duration_ms": 2487
+ },
+ "6bed064606350c6244cfe61ba27f20558e66377235e70f5bc58ad95c088043ac": {
+  "answers": {
+   "relation": {
+    "choice": "supports",
+    "probabilities": {
+     "contradicts": 0.01,
+     "says_nothing": 0.0,
+     "supports": 0.99
+    },
+    "confidence": 0.98
+   }
+  },
+  "seconds": 0.221
+ },
+ "10bf3ace754fdfe148f618dc830db23db274874cefd62fee52980fcad4b13851": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 8975,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0018830000000000001,
+  "duration_ms": 2509
+ },
+ "56396e0e2399e14326c903d95a28cf00914d21dce9b610cf5bb881b074efafcf": {
+  "answers": {
+   "relation": {
+    "choice": "supports",
+    "probabilities": {
+     "says_nothing": 0.02,
+     "supports": 0.88,
+     "contradicts": 0.1
+    },
+    "confidence": 0.83
+   }
+  },
+  "seconds": 0.245
+ },
+ "ba024c281638b66c4de9a395f21e5a32a4ef1fcf594d64dc29b86c38466333d6": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 7656,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0016192,
+  "duration_ms": 2662
+ },
+ "8aae20b688677100433d176d37464b1dcab20f32b3da384dba5dc2b5dfbc233d": {
+  "answers": {
+   "relation": {
+    "choice": "supports",
+    "probabilities": {
+     "supports": 0.98,
+     "contradicts": 0.02,
+     "says_nothing": 0.0
+    },
+    "confidence": 0.97
+   }
+  },
+  "seconds": 0.227
+ },
+ "db7c5e444be7bf0bfd6e57d23e73e23855b5723069e95ade9f6d16e356232b68": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 79,
+  "cache_read_tokens": 8958,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0033796,
+  "duration_ms": 5251
+ },
+ "7a2519265585baecdcd99a63312e4fe21018d50db4b02d547deb444a9e0bf57e": {
+  "answers": {
+   "relation": {
+    "choice": "supports",
+    "probabilities": {
+     "supports": 0.6,
+     "contradicts": 0.18,
+     "says_nothing": 0.22
+    },
+    "confidence": 0.39
+   }
+  },
+  "seconds": 0.201
+ },
+ "cfc82cf3bba13bc267fc35d05ba1fee6a8288a6e04cb8834e8a5e5c5bd8abc95": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1026,
+  "cost_usd": 0.008296,
+  "duration_ms": 4353
+ },
+ "90792a5ad91cd41fe887900e2b9eb7941ddb3359bead46eca2aec1ddc1ea4d1f": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1119,
+  "cost_usd": 0.00904,
+  "duration_ms": 5133
+ },
+ "8c0d14547ff6bd3d17f0dcfe208df240693b2b8dbcf6631e7a372586490c415f": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1128,
+  "cost_usd": 0.009112,
+  "duration_ms": 4520
+ },
+ "1aecee29f87a1b45ed62e9a9db5b83e92e59780d13e6adb35508c96852129662": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 48,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1054,
+  "cost_usd": 0.0094,
+  "duration_ms": 4052
+ },
+ "5b77d1e4ace2d582068710169c7af6b4ca129b99f11e788f57b1af156e19787f": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2760,
+  "cost_usd": 0.022168,
+  "duration_ms": 2666
+ },
+ "cc6b96368234e23b5c1d800a064f0660e904396b8f1029eb11c50ce2ec7568a3": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2154,
+  "cost_usd": 0.017320000000000002,
+  "duration_ms": 2456
+ },
+ "4688e2674b1ecdcc8a8e17d3ad9d3ad4c7bd16117e42a974ad3d230f39f05a0d": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 3618,
+  "cost_usd": 0.029032000000000002,
+  "duration_ms": 3227
+ },
+ "f2cc5ecf1f2d3a3603a918ff5edda37cfda8c242724436f58a77e1b0ad2b49e1": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 8944,
+  "cost_usd": 0.07164000000000001,
+  "duration_ms": 2764
+ },
+ "5dbba2630bcb83779bdb030de14839e954bc09880dd7259db3f380b71111ab33": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 2154,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0005188,
+  "duration_ms": 2533
+ },
+ "1ece003a497a8e5be486766754073d1177cb0e5317ebd73f9ae732fbbf7d88b2": {
+  "answers": {
+   "relation": {
+    "choice": "supports",
+    "probabilities": {
+     "says_nothing": 0.01,
+     "supports": 0.95,
+     "contradicts": 0.04
+    },
+    "confidence": 0.93
+   }
+  },
+  "seconds": 0.273
+ },
+ "4a08dedeca73677753b7d46cabebe645f83c3dac38c2ce5e7308901abb14698a": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 2760,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0006399999999999999,
+  "duration_ms": 5352
+ },
+ "f75f7f65dd33668fb33cf29b6bcb4a923ea832e4b732617f1c3e8bed221864d8": {
+  "answers": {
+   "relation": {
+    "choice": "says_nothing",
+    "probabilities": {
+     "contradicts": 0.09,
+     "says_nothing": 0.76,
+     "supports": 0.15
+    },
+    "confidence": 0.64
+   }
+  },
+  "seconds": 0.213
+ },
+ "caf51e5e6a1b15405d85a23d9473767ecb1a6004a4f818c4952c4af3b9cbb23b": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 3618,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0008116,
+  "duration_ms": 2585
+ },
+ "c2494fd65ce47e2319a27f17b489322b2cd69c768fb3f21972e1840764ac092d": {
+  "answers": {
+   "relation": {
+    "choice": "supports",
+    "probabilities": {
+     "contradicts": 0.22,
+     "supports": 0.39,
+     "says_nothing": 0.39
+    },
+    "confidence": 0.09
+   }
+  },
+  "seconds": 0.211
+ },
+ "6a5cb87c6ffa90b9982acd945e5844287989a3c14ace01b21512c3d0e79a3fdf": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 140,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1226,
+  "cost_usd": 0.012616,
+  "duration_ms": 4089
+ },
+ "3d9ad01d544527beae5405512cfb9326be30374f5c27f745b39eb2a6e678ec8a": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 54,
+  "cache_read_tokens": 8944,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0028768,
+  "duration_ms": 6293
+ },
+ "25062ee6938e4405294d5a1192e27e5a56b0f0651345187a9c933080ab8911a3": {
+  "answers": {
+   "relation": {
+    "choice": "says_nothing",
+    "probabilities": {
+     "supports": 0.4,
+     "says_nothing": 0.55,
+     "contradicts": 0.05
+    },
+    "confidence": 0.33
+   }
+  },
+  "seconds": 0.194
+ },
+ "e8c9d855763801bf18d0f5f90abb17812ee5f29a1601494cfc91a9a49dbd0f3f": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1190,
+  "cost_usd": 0.009668000000000001,
+  "duration_ms": 3750
+ },
+ "4c7c1c971c851bce0a17f011b2bf839899d22a662dcb1cb1a0b88b2e12e3beb0": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 194,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1237,
+  "cost_usd": 0.013784000000000001,
+  "duration_ms": 4478
+ },
+ "d420ec0d4ec5fbc494e7d839d46dc755fb3d55dd826dd53fe71b0dd1432f7451": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 8969,
+  "cost_usd": 0.07184,
+  "duration_ms": 2428
+ },
+ "a6d31a9f7e4ec09119e64d9664a0f0a22047980e2894b76d6f6c57d179add01d": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1218,
+  "cost_usd": 0.009892,
+  "duration_ms": 3419
+ },
+ "0302cda726857457bbc9d30eb2d0b76fa0c409d50557fdd25239c6f080add199": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 8950,
+  "cost_usd": 0.071728,
+  "duration_ms": 2916
+ },
+ "d94c396a19cd92da2e58675bd7a91654a6fe4b307a8467786486ac91fa13c0fc": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 8963,
+  "cost_usd": 0.07183200000000001,
+  "duration_ms": 3147
+ },
+ "36260a34145b73a0dd37825bcda755ad2e427061853efc5ae84242b1a4b2526a": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 8969,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0018817999999999999,
+  "duration_ms": 2485
+ },
+ "e465bcfbf7fc0a8c38c004dfd2b5eaac68d0ab26f707807465cb63950bdaca81": {
+  "answers": {
+   "relation": {
+    "choice": "supports",
+    "probabilities": {
+     "supports": 0.59,
+     "contradicts": 0.03,
+     "says_nothing": 0.38
+    },
+    "confidence": 0.37
+   }
+  },
+  "seconds": 0.202
+ },
+ "7618ed2a1fe317b089f7bbce210a9002e8262952dd3d221b8176465878465bba": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 3635,
+  "cost_usd": 0.029168000000000003,
+  "duration_ms": 2608
+ },
+ "0b1ea7cb7f40a75f3a5e9017fda0ec19c7c17bc2ac8128150b85e85bb8f4d7c5": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 8950,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.001918,
+  "duration_ms": 2739
+ },
+ "702999a6a19a1ae7c0e0960a0dedcd21378d9f66783627137b153d886725db88": {
+  "answers": {
+   "relation": {
+    "choice": "says_nothing",
+    "probabilities": {
+     "contradicts": 0.07,
+     "says_nothing": 0.6799999999999999,
+     "supports": 0.25
+    },
+    "confidence": 0.53
+   }
+  },
+  "seconds": 0.202
+ },
+ "c5f30ea86b72e31ece23d98b987eeae461d65b36e77127c04f995144c8aabca4": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 8963,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0019206000000000002,
+  "duration_ms": 3016
+ },
+ "7d6712d700f2747ed098395852f826b5b2d9e82ec87d2e2727c4d0b78f663485": {
+  "answers": {
+   "relation": {
+    "choice": "says_nothing",
+    "probabilities": {
+     "contradicts": 0.03,
+     "says_nothing": 0.75,
+     "supports": 0.22
+    },
+    "confidence": 0.62
+   }
+  },
+  "seconds": 0.244
+ },
+ "7b0025fc51e68f7ccc49578deef3d1b283df609303994c7555dff8dd43209fe7": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 52,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1146,
+  "cost_usd": 0.010216000000000001,
+  "duration_ms": 3341
+ },
+ "bfd02c689f809e85cde337873d52181b615abf1a56d882917060bb7334017bb4": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 3635,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0008150000000000001,
+  "duration_ms": 2516
+ },
+ "ff97b4e53a84dd328d98560244d41e45c6fe080bb4baf734daf83abd30459824": {
+  "answers": {
+   "relation": {
+    "choice": "says_nothing",
+    "probabilities": {
+     "contradicts": 0.14,
+     "says_nothing": 0.84,
+     "supports": 0.02
+    },
+    "confidence": 0.76
+   }
+  },
+  "seconds": 0.205
+ },
+ "04ec62473ce07211872e50b4a2acece7ada1e7b6c55374168a008b3400b42f69": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1257,
+  "cost_usd": 0.010204000000000001,
+  "duration_ms": 2722
+ },
+ "700b2f595788a5a54cddcc4e973f6d2947bb424e88633d8789de0ddf0af44c53": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1171,
+  "cost_usd": 0.009516,
+  "duration_ms": 2697
+ },
+ "804a489eb00c96aeb0574442ebb0cee5316a1b4f2e404226b4c3a2f10e175533": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 7626,
+  "cost_usd": 0.061136,
+  "duration_ms": 2665
+ },
+ "34946d260a6fed064b82187fc9db718c44310bc25395310d659ef74182e57d9f": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1104,
+  "cost_usd": 0.00898,
+  "duration_ms": 2606
+ },
+ "0faae052323ee2ff2cf3b95c92ea7c641cebca7c3c85ebbf823edebd27f3a794": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2132,
+  "cost_usd": 0.017144000000000003,
+  "duration_ms": 2433
+ },
+ "3aa32cd55d19493a1b5abb0a2c845ff8758401c11538a7c5ed42ca525079bff7": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2742,
+  "cost_usd": 0.022064,
+  "duration_ms": 5875
+ },
+ "36d3378444ad5bffde77dc7808873aee133b8abbeec1f30306ea9099c9aa1e9d": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 7626,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0016532,
+  "duration_ms": 3050
+ },
+ "ad295850a9ea4963559bc8e7629a84345046dc78c626fddabe8217db24b811c0": {
+  "answers": {
+   "relation": {
+    "choice": "says_nothing",
+    "probabilities": {
+     "contradicts": 0.01,
+     "says_nothing": 0.98,
+     "supports": 0.01
+    },
+    "confidence": 0.98
+   }
+  },
+  "seconds": 0.21
+ },
+ "c5bcf3fae5d139b6ac7b681363daf95a0287862567afab3721eb33a992276bcc": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 8957,
+  "cost_usd": 0.07180399999999999,
+  "duration_ms": 2431
+ },
+ "182425bfbc612b26c22f2162a5a5cdf6596b8cc2d5b145d6057aaf298fd99587": {
+  "text": "supports",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 2132,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0005144,
+  "duration_ms": 2525
+ },
+ "d48b7ccb32c692721a9c26aad49c90027578cdc772eafc749b2e53830764b126": {
+  "answers": {
+   "relation": {
+    "choice": "says_nothing",
+    "probabilities": {
+     "says_nothing": 1.0,
+     "supports": 0.0,
+     "contradicts": 0.0
+    },
+    "confidence": 1.0
+   }
+  },
+  "seconds": 0.227
+ },
+ "e26381ce3191fdbd2dbfd9299780492ee134b74ce256b136fb919d72bfe0ae40": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1220,
+  "cost_usd": 0.009908,
+  "duration_ms": 2446
+ },
+ "648afb5534d3b16116644d69a39c54e0c1f63c1de90ab191ec0b7361d13b2243": {
+  "text": "contradicts",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 2742,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0006764,
+  "duration_ms": 3443
+ },
+ "eeb88ea4b2eb06f226518a29dc5e95f2443cea463347b28e1983f90436f4c9b7": {
+  "answers": {
+   "relation": {
+    "choice": "says_nothing",
+    "probabilities": {
+     "contradicts": 0.09,
+     "says_nothing": 0.9,
+     "supports": 0.01
+    },
+    "confidence": 0.86
+   }
+  },
+  "seconds": 0.192
+ },
+ "95eeffd09a86d8a2a815c1c3f34230b4ab0b3e9a055c54bb38e396ab3755f50a": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 8957,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0019394,
+  "duration_ms": 3375
+ },
+ "d3c847ecc2769080ddabc508f4017264c4b7719952da1e4e74f61a8bae25dddd": {
+  "answers": {
+   "relation": {
+    "choice": "says_nothing",
+    "probabilities": {
+     "contradicts": 0.0,
+     "says_nothing": 0.99,
+     "supports": 0.01
+    },
+    "confidence": 0.98
+   }
+  },
+  "seconds": 0.226
+ },
+ "934caa36482aa4e394434f44831266e0f4e5c0874f1a06d863414e162d720091": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 978,
+  "cost_usd": 0.007972,
+  "duration_ms": 2613
+ },
+ "8fca329923b2d9590187afe827e68c163724d9ed8603bd2ebcf3b04c12e0225e": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 8948,
+  "cost_usd": 0.07173199999999999,
+  "duration_ms": 2485
+ },
+ "3604b0c7c28ca6dd7424c5b643393aaa737fb2d603b3ceb138a0238ea75bc8ce": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1164,
+  "cost_usd": 0.009460000000000001,
+  "duration_ms": 2751
+ },
+ "4c02aa65546ce6c13578ba04688367e1b365af0bbc7e49f49abb7a6c9e2d282e": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1325,
+  "cost_usd": 0.010748,
+  "duration_ms": 2676
+ },
+ "243ecb838f5459ed4bd92d9069657426bb6e0f1033f7ab57851a0b031309854e": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 8971,
+  "cost_usd": 0.071916,
+  "duration_ms": 2717
+ },
+ "673a6bdc6d58f62c0aac38128f28da6cb8d606fd3266fd7e78fae1fc2da119b3": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 8948,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0019375999999999998,
+  "duration_ms": 2458
+ },
+ "9c3ad5b20d9ef02473a61d30caccc992a58b815bc0a66f6340fee07068fac061": {
+  "answers": {
+   "relation": {
+    "choice": "says_nothing",
+    "probabilities": {
+     "says_nothing": 1.0,
+     "supports": 0.0,
+     "contradicts": 0.0
+    },
+    "confidence": 1.0
+   }
+  },
+  "seconds": 0.211
+ },
+ "3eaeae8df4311d3d38681857e7339ac48a7edf6d832a124cdfdf8dc9041ee05b": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 7624,
+  "cost_usd": 0.06114,
+  "duration_ms": 2538
+ },
+ "f9274e14bce2322bf5d65f269d749d7822d74ca99022fb5b4382b5342c0d9e8a": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 7612,
+  "cost_usd": 0.061044,
+  "duration_ms": 3559
+ },
+ "8f87b0fccb629add75ddcbbd40c007289340cd0a2309f65dde25d681270c55b9": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 8971,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0019422,
+  "duration_ms": 2604
+ },
+ "83dd5a846af2ead63ed185482b1bb738c035db31d09fdb512b99ff83c5989ef0": {
+  "answers": {
+   "relation": {
+    "choice": "says_nothing",
+    "probabilities": {
+     "says_nothing": 0.97,
+     "supports": 0.02,
+     "contradicts": 0.01
+    },
+    "confidence": 0.96
+   }
+  },
+  "seconds": 0.2
+ },
+ "8ad8bb454de5454accd1cb01f539e2eff89a9813fd54eb4d0c367116f8677626": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1219,
+  "cost_usd": 0.0099,
+  "duration_ms": 3487
+ },
+ "67d3dbd6fd9daa16eb837fb420037d083b6eec65f24facaede4c1b014db43c6d": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 7624,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0016728,
+  "duration_ms": 2360
+ },
+ "a24b894f6b1aad2531052fa34825f2a41dc294e121bdd03015c920609a0b3611": {
+  "answers": {
+   "relation": {
+    "choice": "says_nothing",
+    "probabilities": {
+     "says_nothing": 0.93,
+     "supports": 0.05,
+     "contradicts": 0.02
+    },
+    "confidence": 0.89
+   }
+  },
+  "seconds": 0.229
+ },
+ "89b821911f115c57271ce32e6affc767d3f998193c9e697aedf738d56abad48d": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 7612,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0016704,
+  "duration_ms": 2539
+ },
+ "9715650c0806b642bcb8638540fca0a00f259a2106201eca6bb7e81153bb9598": {
+  "answers": {
+   "relation": {
+    "choice": "says_nothing",
+    "probabilities": {
+     "contradicts": 0.0,
+     "says_nothing": 1.0,
+     "supports": 0.0
+    },
+    "confidence": 1.0
+   }
+  },
+  "seconds": 0.228
+ },
+ "3725417b4a04f76f326e2c72b4b3d76b112755b98c033cc2e06b518ad5f7de99": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1123,
+  "cost_usd": 0.009132000000000001,
+  "duration_ms": 2867
+ },
+ "f7ad9402275b7a7fed17e362adee1881563a2c3712c1fe2faa988d393f2ec226": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1198,
+  "cost_usd": 0.009732000000000001,
+  "duration_ms": 2521
+ },
+ "e4e37d1e056cfb0dd05e613a4dd8369a3e3d1d68df32c3a91fdd926998b589ab": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1290,
+  "cost_usd": 0.010468,
+  "duration_ms": 2827
+ },
+ "7b55bbe4a3e2497a35f62fdc55ae7b857c10d63f9bfe126b38840cd188e39de3": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 3610,
+  "cost_usd": 0.029027999999999998,
+  "duration_ms": 6922
+ },
+ "8babc72f5adbea313f0f86e76e52bf29bc52eb1bda4e89ae26eafd9e77ebaf1f": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2536,
+  "cost_usd": 0.020436,
+  "duration_ms": 4496
+ },
+ "3b17ff95c3163a5b162b68ed63afc2f7f29ab7a18941c79df2fb0063a3818c48": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2520,
+  "cost_usd": 0.020308,
+  "duration_ms": 2745
+ },
+ "9f1fdb4503e465c9193f4149a40f9021e376843a59ec778ff142c4d3a41734e3": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2741,
+  "cost_usd": 0.022076,
+  "duration_ms": 2507
+ },
+ "67e22f4a8aec33508daa44381be3c2bf81fb96ae50cf3113ec97d10fa6406a56": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 3610,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.00087,
+  "duration_ms": 2559
+ },
+ "b3097717998c0e16d0afb3b68ee4284c7caee7b03e33c85ef3b61f42b6567312": {
+  "answers": {
+   "relation": {
+    "choice": "supports",
+    "probabilities": {
+     "supports": 0.48,
+     "contradicts": 0.11,
+     "says_nothing": 0.41
+    },
+    "confidence": 0.23
+   }
+  },
+  "seconds": 0.208
+ },
+ "3072d0fd9c377cbba1bab0cf04873cb256ddc29b08dc7dff5e2760dc3449213c": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 2520,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.000652,
+  "duration_ms": 3023
+ },
+ "f37f6cfbcfadea9549945ae2af50dec2e4bac40653000b5d3d46871ccd00b4cc": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 2741,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0006962,
+  "duration_ms": 2544
+ },
+ "7d3889274ac4db2f86a8c9e219d9ba2a839458657346cd6866e30552bb935414": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 2536,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0006552000000000001,
+  "duration_ms": 5884
+ },
+ "bd430784fcdd9cb54516ad4b0b32163d4cc3e319565135299194db85f5889589": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1161,
+  "cost_usd": 0.009436,
+  "duration_ms": 5010
+ },
+ "13e2bbc3e9083e24be05d1375d164ac936a50a5d09f013bdb8ebca1386d5741d": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2171,
+  "cost_usd": 0.017516,
+  "duration_ms": 4567
+ },
+ "6eb11b967892054fee85d4e918637fcc246213f51d9bdfac125f44e933915da5": {
+  "text": "says_nothing",
+  "input_tokens": 2,
+  "output_tokens": 7,
+  "cache_read_tokens": 2171,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0005822000000000001,
+  "duration_ms": 4898
+ },
+ "88b017d624ff65f4c364845991f8ddda6d8c8dd005018ea87552ec1e400f1501": {
+  "answers": {
+   "reuse": 0.79,
+   "durable": 0.71,
+   "actionable": 0.91,
+   "noise": 0.11
+  },
+  "seconds": 0.211
+ },
+ "fa3c6e85d388892be9aafda2cc02925034117064203d284ee10187e3abfcda97": {
+  "answers": {
+   "reuse": 0.8,
+   "durable": 0.71,
+   "actionable": 0.91,
+   "noise": 0.09
+  },
+  "seconds": 0.215
+ },
+ "7bc943c2cd48eb1fceef8a1451a865598b35d57935139f8fb835d6f4789d2c30": {
+  "answers": {
+   "reuse": 0.86,
+   "durable": 0.84,
+   "actionable": 0.94,
+   "noise": 0.08
+  },
+  "seconds": 0.243
+ },
+ "44d7666746e815ba5058327c1029cc27bcb06c2d39592a336582db70b854d131": {
+  "answers": {
+   "reuse": 0.79,
+   "durable": 0.81,
+   "actionable": 0.9,
+   "noise": 0.09
+  },
+  "seconds": 0.268
+ },
+ "ea36e5624147fc295d17ec5f77681db3bffcbc4dce238a066ba47d5701df5c30": {
+  "answers": {
+   "duplicate": 0.19,
+   "conflict": 0.17
+  },
+  "seconds": 0.187
+ },
+ "f2e4d1b8e701e49095f54d2e845217f7d5127f3446fa5cf05c6c22dc2d93af35": {
+  "answers": {
+   "duplicate": 0.08,
+   "conflict": 0.21
+  },
+  "seconds": 0.197
+ },
+ "6b2818ad7468172fc291d3ad4f1429a1fd4b9836162e83bb14e82836a4083cd6": {
+  "answers": {
+   "duplicate": 0.24,
+   "conflict": 0.14
+  },
+  "seconds": 0.208
+ },
+ "9267be99a1647fc2e1a9f7b9f5370dd8376cf327588979a636b4542019e3b516": {
+  "answers": {
+   "duplicate": 0.06,
+   "conflict": 0.4
+  },
+  "seconds": 0.208
+ },
+ "7c9684bafa60b73d6e94277583e4d80bb531a494a5072fd5b0d2c21f93511cae": {
+  "answers": {
+   "duplicate": 0.16,
+   "conflict": 0.24
+  },
+  "seconds": 0.244
+ },
+ "db7089dc3fcf76aa9e5d801ac810142ecf919fa5d9976dddd4521318abe29de1": {
+  "answers": {
+   "duplicate": 0.15,
+   "conflict": 0.46
+  },
+  "seconds": 0.251
+ },
+ "c66611edd38f07e79ad7a789f84da511c188ebc13ee8c124ded8c5ccd8b07e6f": {
+  "answers": {
+   "duplicate": 0.05,
+   "conflict": 0.22
+  },
+  "seconds": 0.245
+ },
+ "b60a2e50078db057d528a461a1c19eb7967dee0e4e43767394719340eed11f17": {
+  "answers": {
+   "duplicate": 0.1,
+   "conflict": 0.19
+  },
+  "seconds": 0.219
+ },
+ "6a6bdfbd377ddd9c7bda4d9885c3031dd439c2f1d8e343b436f97ac5e7d256e5": {
+  "answers": {
+   "duplicate": 0.15,
+   "conflict": 0.28
+  },
+  "seconds": 0.229
+ },
+ "1d778df79942358cf94c31e275acb47e554e516941f61a873c41ccd55a6c527f": {
+  "answers": {
+   "duplicate": 0.23,
+   "conflict": 0.11
+  },
+  "seconds": 0.233
+ },
+ "448794979b3340941027b62068e12f4fc27f6f4d75a7090beba055ee55a457bf": {
+  "answers": {
+   "duplicate": 0.27,
+   "conflict": 0.21
+  },
+  "seconds": 0.2
+ },
+ "36befb896c85d1e511153cfeca6305919fc15de75bb1eacd23fa24f3a73a43c8": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 3,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 3069,
+  "cost_usd": 0.02462,
+  "duration_ms": 3015
+ },
+ "69efaa28fa02c624fa2ed4e77f93d7d6997fe0ed9c295c74c00c605f4fee69a3": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 196,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 1776,
+  "cost_usd": 0.018136,
+  "duration_ms": 4146
+ },
+ "bd5370ba9bc43a047a0301db86d4720705753234118a3c21b693e8e716ce95a6": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 248,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 4648,
+  "cost_usd": 0.042152,
+  "duration_ms": 4507
+ },
+ "7499883faaac1052ee9c6a84f7797fe32d69a934beccd131506437b459ae9c6a": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 267,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2342,
+  "cost_usd": 0.024083999999999998,
+  "duration_ms": 5242
+ },
+ "6deffb96b2eb8b7e3ab6a48da01e413c3183efc5b70e654aa6fd705af29c31ba": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 3,
+  "cache_read_tokens": 3069,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0006818000000000001,
+  "duration_ms": 2698
+ },
+ "ad56c09d296d49fbada504194b66b099bf73a9d611edfb6cbd8c43a47664bf10": {
+  "answers": {
+   "reuse": 0.8,
+   "durable": 0.77,
+   "actionable": 0.9,
+   "noise": 0.11
+  },
+  "seconds": 0.246
+ },
+ "776e87cc1331b2933d3c25340bce4c6daa041576996fa13b3e1376422d167f89": {
+  "answers": {
+   "duplicate": 0.15,
+   "conflict": 0.28
+  },
+  "seconds": 0.198
+ },
+ "f5014850eb52c55dc279dc9c618f60eb11eaf8b868e7ee91d85aa62ac07da7a8": {
+  "answers": {
+   "duplicate": 0.06,
+   "conflict": 0.41
+  },
+  "seconds": 0.203
+ },
+ "991026efaa6570b6769755b3bff1e87abd8e9301992584714fcf586760811652": {
+  "answers": {
+   "duplicate": 0.17,
+   "conflict": 0.29
+  },
+  "seconds": 0.215
+ },
+ "6f4505666ca9944b6da10d0bd29dd5a4f680eaadf98b8afe9e66f0ad0c3903b1": {
+  "answers": {
+   "duplicate": 0.24,
+   "conflict": 0.55
+  },
+  "seconds": 0.256
+ },
+ "dc3c98855a697c0ba2fb6326822b68c084745c7b342be5ca0e2a1862077b86a0": {
+  "answers": {
+   "duplicate": 0.13,
+   "conflict": 0.21
+  },
+  "seconds": 0.182
+ },
+ "a72222a425dd3da9f6da80af9da33ca10805584b192de7b80b0a0b3105241d17": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 165,
+  "cache_read_tokens": 1776,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0036632,
+  "duration_ms": 3712
+ },
+ "712e4eebf6f9d9376af537a7a977c55b524877ad02e1890292ca8ac4a516e9db": {
+  "answers": {
+   "reuse": 0.82,
+   "durable": 0.81,
+   "actionable": 0.92,
+   "noise": 0.09
+  },
+  "seconds": 0.179
+ },
+ "b603a390a1b44588db5a040b5777e5c50b9a7502d3d7247805526bcef6561f01": {
+  "answers": {
+   "duplicate": 0.05,
+   "conflict": 0.6
+  },
+  "seconds": 0.191
+ },
+ "95de8b14a6c67728a243aaf6f7b76496aad797c8cffabd55e984d2e18f4e9068": {
+  "answers": {
+   "duplicate": 0.12,
+   "conflict": 0.24
+  },
+  "seconds": 0.211
+ },
+ "3f1d29abb198df23e5f8ea8848d047dd3381a71a81dabc8916742a95a647eaa4": {
+  "answers": {
+   "duplicate": 0.09,
+   "conflict": 0.21
+  },
+  "seconds": 0.224
+ },
+ "d5ce9102f2854fc56ee03b2505bb7f6b1ef093db00c514aa558b71c708ec1d29": {
+  "answers": {
+   "duplicate": 0.06,
+   "conflict": 0.35
+  },
+  "seconds": 0.259
+ },
+ "99523d7ee1c570401a80c501660903e815d4ade26d260f28b80102a80524de5c": {
+  "answers": {
+   "duplicate": 0.13,
+   "conflict": 0.69
+  },
+  "seconds": 0.188
+ },
+ "7aa009020066c575f5f1dcd203008174b94739dbf3637e23cde8ec90ecd78b6f": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 244,
+  "cache_read_tokens": 4648,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0058176,
+  "duration_ms": 4752
+ },
+ "f78f31739ffb45b06db963c240cfc301ef7384ff955edc32e57bae9b8178b76e": {
+  "answers": {
+   "reuse": 0.75,
+   "durable": 0.71,
+   "actionable": 0.92,
+   "noise": 0.11
+  },
+  "seconds": 0.192
+ },
+ "ec2599328f35460c5381b92ccde14eeb7ab27ee22f33f474ccdfd27717810f3e": {
+  "answers": {
+   "duplicate": 0.06,
+   "conflict": 0.77
+  },
+  "seconds": 0.194
+ },
+ "7c0bea2f784b4759737417671517a336a591321253dfee45889cbeecaf330447": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.07
+  },
+  "seconds": 0.198
+ },
+ "81d0777f39b324a7c92123034474851ca6d23f721096fd5555e16606012b6e59": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 355,
+  "cache_read_tokens": 2342,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0075764000000000005,
+  "duration_ms": 5758
+ },
+ "44fc0c5e939148e7942c5794e917b5dbf512fd387792fe79ff098874983a3758": {
+  "answers": {
+   "reuse": 0.76,
+   "durable": 0.82,
+   "actionable": 0.87,
+   "noise": 0.14
+  },
+  "seconds": 0.234
+ },
+ "94e0adbfd3d3b0d6f7f63a94ed75d054eb90bc4f991951348bf9f5565bb18243": {
+  "answers": {
+   "duplicate": 0.04,
+   "conflict": 0.09
+  },
+  "seconds": 0.193
+ },
+ "f49fd81cfb940ed9e284278a4a8b858e8327880adad217f8f61b2456127f42c7": {
+  "answers": {
+   "duplicate": 0.42,
+   "conflict": 0.36
+  },
+  "seconds": 0.233
+ },
+ "fd966ea40a339c7673de3164f8bb4ecc6997207afd0f6f11d80b8e0e43a452d5": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 318,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 4454,
+  "cost_usd": 0.042112,
+  "duration_ms": 5361
+ },
+ "942ae04ac672ae6c2895592d2fefaa5d8334a1e06aa87bf196be7744724a0328": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 94,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 4210,
+  "cost_usd": 0.03568,
+  "duration_ms": 3123
+ },
+ "e6319d2ad4933d017a42b804843a79906defbc6cb01e68f29f44d650766745cd": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 210,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2335,
+  "cost_usd": 0.023,
+  "duration_ms": 4378
+ },
+ "b83f294d9a7ae5d501415ba128641640c87612d04d3e53466c7b2e1be77b7955": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2215,
+  "cost_usd": 0.01796,
+  "duration_ms": 4186
+ },
+ "82926e0c56bffbded977877be0cbcc959dc9820053aac12bef7e0bef50abf4fb": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 119,
+  "cache_read_tokens": 4770,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0033420000000000004,
+  "duration_ms": 3408
+ },
+ "ecfda26423e1bef6e5f09df7be59284f7fa40676e4d89664c4e7e36c1492e749": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 203,
+  "cache_read_tokens": 5014,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0050708,
+  "duration_ms": 3999
+ },
+ "a85ebb3c4d696f1324db1a7e03a4b51d22fdc531cef24d18d1dcac440d6db21c": {
+  "answers": {
+   "reuse": 0.69,
+   "durable": 0.74,
+   "actionable": 0.83,
+   "noise": 0.16
+  },
+  "seconds": 0.22
+ },
+ "a090c20c5e1d226f092d35da77dcbb99a9f2dc9997253348b367a592cda01178": {
+  "answers": {
+   "reuse": 0.4,
+   "durable": 0.44,
+   "actionable": 0.68,
+   "noise": 0.23
+  },
+  "seconds": 0.193
+ },
+ "af82aeab95b67443757a15181c0ec5896e95c3cd575a191dd7d80a74240e6928": {
+  "answers": {
+   "duplicate": 0.63,
+   "conflict": 0.59
+  },
+  "seconds": 0.215
+ },
+ "e8ac00fa171687e798a3dc820b2af71cbbc93cd5049c3f1649c63ba21c778c7f": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.05
+  },
+  "seconds": 0.216
+ },
+ "8eb4ec30f7bf6a1cc2d5431f82d7fa7c865234593713ad50f548657cb51dd254": {
+  "answers": {
+   "duplicate": 0.04,
+   "conflict": 0.03
+  },
+  "seconds": 0.224
+ },
+ "0f2ed1442e071e407ba83ba2862eef232de9971e7a8fdf568306832ad31afece": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.05
+  },
+  "seconds": 0.242
+ },
+ "62e4f3e5bc15d0e2e1d7877c5f1e930089b5937f51a810e4649ab29c0a65ca66": {
+  "answers": {
+   "duplicate": 0.08,
+   "conflict": 0.36
+  },
+  "seconds": 0.214
+ },
+ "3eecc597c73a18c41da39d47895c377d3cb86a9e6df264323e152e1945b9f9af": {
+  "answers": {
+   "duplicate": 0.05,
+   "conflict": 0.29
+  },
+  "seconds": 0.214
+ },
+ "dd8f8f23e3f5372a836f815899cacd6d2dc2b3a025485692622de042e8557554": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.09
+  },
+  "seconds": 0.218
+ },
+ "a20cfca8067e594cdcee41e144c8ba6ebbf1e9084b2640ba7643d70a005a3f90": {
+  "answers": {
+   "duplicate": 0.05,
+   "conflict": 0.33
+  },
+  "seconds": 0.26
+ },
+ "c1a756490f935016db4f398e50f94598e2a34683dd1c26ca9125ce8057d92d44": {
+  "answers": {
+   "duplicate": 0.04,
+   "conflict": 0.28
+  },
+  "seconds": 0.199
+ },
+ "6aa2dcda96ff57ab7812b76ea068a7c8301933924e16f4753122d48ff4753c2e": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 2775,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.000683,
+  "duration_ms": 2785
+ },
+ "c517c234adf80cfb5c2c120d9300f70aa9d2e200f17fc842cb5a433bd1e39654": {
+  "answers": {
+   "reuse": 0.75,
+   "durable": 0.54,
+   "actionable": 0.9,
+   "noise": 0.17
+  },
+  "seconds": 0.331
+ },
+ "f073fe3841a7359fafdce42c714f0993ab72d4dad9d829888f7df22475c04b08": {
+  "answers": {
+   "duplicate": 0.21,
+   "conflict": 0.81
+  },
+  "seconds": 0.184
+ },
+ "7d556a6960943a3ffd6a4e3702bd0186098a12b10d12cb4e513612eef6959efd": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 430,
+  "cache_read_tokens": 2895,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.009186999999999999,
+  "duration_ms": 6040
+ },
+ "25e7a0571f0b2d7ec1f55886aa6f0777e3e09213c0e4f0505cb2fab2085b4e93": {
+  "answers": {
+   "reuse": 0.78,
+   "durable": 0.69,
+   "actionable": 0.88,
+   "noise": 0.14
+  },
+  "seconds": 0.199
+ },
+ "6f5c19e1836b6f8cd9d821082f89f3d93a8dc0b020c5d211df5af4223c956eca": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.07
+  },
+  "seconds": 0.179
+ },
+ "1638b0766026663aa2f99dda0be7c2fe596b10d2aacdd8d627d4dd6701e38cf0": {
+  "answers": {
+   "duplicate": 0.08,
+   "conflict": 0.42
+  },
+  "seconds": 0.189
+ },
+ "8de88bef366bcec4ca8ea24a5f56c24f6e0dc99c5d615aa3fb2a9caf9096b09f": {
+  "answers": {
+   "duplicate": 0.98,
+   "conflict": 0.02
+  },
+  "seconds": 0.197
+ },
+ "01b51acf0e95f23a6d52c294d33eba1915cb173d52ec7d8c81c373900ef01331": {
+  "answers": {
+   "duplicate": 0.15,
+   "conflict": 0.29
+  },
+  "seconds": 0.232
+ },
+ "25cc00a9b18b402af4a0899e3c24382ad64a1b3d625b9ba2b01f029945e926e6": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 3123,
+  "cost_usd": 0.025183999999999998,
+  "duration_ms": 2542
+ },
+ "ae6c950c2f86459b79060cec9a7851814a8a1c3483b00ecf4559124da648ba84": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.09
+  },
+  "seconds": 0.239
+ },
+ "ae0f93e2774bcd53829091caccffa7531815869f65e7d76747bb414e3277e629": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 123,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 3298,
+  "cost_usd": 0.028964000000000004,
+  "duration_ms": 3332
+ },
+ "7bd3c870359ae16ce64d68aa585dfef1b79d27c064418c16eb841fca0e14a0dd": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 3683,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0008246,
+  "duration_ms": 2525
+ },
+ "5acc9cb18bb212c36b00cec369f0a4ff9dd8e91f317bcbcbb1982e3253d84ac4": {
+  "answers": {
+   "reuse": 0.78,
+   "durable": 0.83,
+   "actionable": 0.9,
+   "noise": 0.12
+  },
+  "seconds": 0.265
+ },
+ "51ec9ce301d05c0e763697134e72ba0a911e5dd9f6fec6e7e65f5d2e656f848b": {
+  "answers": {
+   "duplicate": 0.27,
+   "conflict": 0.18
+  },
+  "seconds": 0.174
+ },
+ "da36838f21314b5a1f2340e4eda1bf103a54eccc328dae6de6e9dd29d02104b6": {
+  "answers": {
+   "duplicate": 0.05,
+   "conflict": 0.19
+  },
+  "seconds": 0.188
+ },
+ "bde6df911f1bb1d7fe158c14e34623c5ee058dfef1bd0a38cd75bd0abda9f9e7": {
+  "answers": {
+   "duplicate": 0.11,
+   "conflict": 0.17
+  },
+  "seconds": 0.197
+ },
+ "8aed3fa80f66b9ea28dcbcae919aca9011b05a1d738bb5ffc38e88d0ae4ec7b9": {
+  "answers": {
+   "duplicate": 0.17,
+   "conflict": 0.34
+  },
+  "seconds": 0.225
+ },
+ "387d2a09deb5f4164850a48e79461aa6a1e5dd84c9df684ddb29cd77ca9f3a71": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.07
+  },
+  "seconds": 0.221
+ },
+ "845b943e6671b9cd4f616d624e774c81b41bbe1d2465d00ea3dc480dd5d41f99": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 93,
+  "cache_read_tokens": 3858,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0026395999999999998,
+  "duration_ms": 3572
+ },
+ "63a4fe7346699d59dfa10ff114510e2fbf3ccea965e1aa95fbf32253cd3620b2": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 389,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 913,
+  "cost_usd": 0.015204,
+  "duration_ms": 6080
+ },
+ "b99986561e19e49bfabff8b0105b81989ed81cb835e3d2c4cf3e5e7f20013ee6": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 171,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 3239,
+  "cost_usd": 0.029452000000000002,
+  "duration_ms": 4034
+ },
+ "78eddf8a97c7916cb16048baecb36a27050e82bff7a1c7ea25d8cc516e9bc77f": {
+  "answers": {
+   "reuse": 0.74,
+   "durable": 0.81,
+   "actionable": 0.89,
+   "noise": 0.11
+  },
+  "seconds": 0.199
+ },
+ "66d1366314e1a08f220974ebd574b83e18c0f9eb563ab20313c0d47aa45d1a8b": {
+  "answers": {
+   "duplicate": 0.13,
+   "conflict": 0.2
+  },
+  "seconds": 0.185
+ },
+ "0697ac94ccfa1f88af40221703c85e86cea3dc2fc3afaf46d4460b6164467937": {
+  "answers": {
+   "duplicate": 0.12,
+   "conflict": 0.28
+  },
+  "seconds": 0.185
+ },
+ "93ab35408b6f1f2b70d5fd0fd4dbae8e603dfc388f06c3bee5b95f6f769235db": {
+  "answers": {
+   "duplicate": 0.98,
+   "conflict": 0.02
+  },
+  "seconds": 0.195
+ },
+ "4a6bbdec0b437edfe9de326c17d15b822a099d9feb5ba30000a68430a59f9935": {
+  "answers": {
+   "duplicate": 0.05,
+   "conflict": 0.25
+  },
+  "seconds": 0.204
+ },
+ "60fc9efd2fdb5b6fb42dec5b02fae2474c139e9068a908dcbf41f358daea2afc": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.11
+  },
+  "seconds": 0.177
+ },
+ "aafa8879732cb971c43509dd3e45e43d17ad21c5a3f5be0ad8aa403a2b954788": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2877,
+  "cost_usd": 0.023256,
+  "duration_ms": 2929
+ },
+ "6912ba927ded05a59236b4b552a0db26a6ba2310878039c4910f872296dced94": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 191,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2934,
+  "cost_usd": 0.027412,
+  "duration_ms": 4434
+ },
+ "30369a88de7cb454b88a0c34e63b89b1643025e329df734efb389046c05bd61e": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 234,
+  "cache_read_tokens": 3799,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0054478,
+  "duration_ms": 4771
+ },
+ "4d0f8f8dd83dae83c7a2150d1aa52f41160dd69e82fec5384c00df707d9b5b80": {
+  "answers": {
+   "reuse": 0.78,
+   "durable": 0.65,
+   "actionable": 0.92,
+   "noise": 0.15
+  },
+  "seconds": 0.228
+ },
+ "f4e28ec171440c5a1212ae7e68cc9c50e8d99828a3509ff3be3dc31f5846aab0": {
+  "answers": {
+   "duplicate": 0.02,
+   "conflict": 0.04
+  },
+  "seconds": 0.194
+ },
+ "930dfeff892467b7894d83af431cdc18621a9eae3eb0de83e0d5569a86d52ee1": {
+  "answers": {
+   "duplicate": 0.02,
+   "conflict": 0.04
+  },
+  "seconds": 0.211
+ },
+ "71fac9fb6c133ed024a1e57c17f95fba9597ba7d736abc0f43b23fda1a07e286": {
+  "answers": {
+   "duplicate": 0.02,
+   "conflict": 0.04
+  },
+  "seconds": 0.249
+ },
+ "dc7fb143cac8f8fe2edc6f9ec4611205ee3b876502bbf7545c4cb17bd36c70c9": {
+  "answers": {
+   "duplicate": 0.02,
+   "conflict": 0.04
+  },
+  "seconds": 0.252
+ },
+ "10722db888759ebc7c81776636cc896dd4bdebc5e4c212d1be7f472cf5fd3a6d": {
+  "answers": {
+   "duplicate": 0.02,
+   "conflict": 0.03
+  },
+  "seconds": 0.205
+ },
+ "6922b9409dfcdb31be86010d81d96504d2d6c648696da9cdd30b2b885cce1d47": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 414,
+  "cache_read_tokens": 1473,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0085826,
+  "duration_ms": 6726
+ },
+ "6422dcf169feca02677336ce6656534c5275b6b1dba6a1519e14b8fa7cdd212f": {
+  "answers": {
+   "reuse": 0.64,
+   "durable": 0.69,
+   "actionable": 0.84,
+   "noise": 0.27
+  },
+  "seconds": 0.189
+ },
+ "2d8172dd5c9024ef211cf507c38fa8bce47ff410c4e190f6ebd3ce900ffd15e3": {
+  "answers": {
+   "duplicate": 0.04,
+   "conflict": 0.07
+  },
+  "seconds": 0.181
+ },
+ "9c8aecb636dbd4dba01954e2add7d9b9635be9b67619b1ceb1bdf2088784456d": {
+  "answers": {
+   "duplicate": 0.37,
+   "conflict": 0.78
+  },
+  "seconds": 0.19
+ },
+ "652ebeb195e1fe4c670ad1e6730893c62b14aa2090a7cf0547720762cbe3c16f": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.06
+  },
+  "seconds": 0.196
+ },
+ "de95273d4d65dfa91693d77b260cfd211cc97fef349684dde73df3f10f1a8b14": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.14
+  },
+  "seconds": 0.201
+ },
+ "8606c6944ed3a9dab73e269db13baa1e9d13ccb1e6e2256d268a83fb880cdc0c": {
+  "answers": {
+   "duplicate": 0.04,
+   "conflict": 0.05
+  },
+  "seconds": 0.184
+ },
+ "d446cc1b9823a1ff6b41451d61ee6556103ddcbb624d5514faa68ed9ee7738f3": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 3437,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0008154,
+  "duration_ms": 2986
+ },
+ "cc2e8c9a21c79a446189cc0d63dc767fd8bc7d29890bc40e58cecfe491c47b78": {
+  "answers": {
+   "reuse": 0.8,
+   "durable": 0.58,
+   "actionable": 0.84,
+   "noise": 0.16
+  },
+  "seconds": 0.22
+ },
+ "e1c6114123ed80b9c78fd593e1fdeda5feca40be7b8f6599251cdb5a706e3df0": {
+  "answers": {
+   "duplicate": 0.05,
+   "conflict": 0.15
+  },
+  "seconds": 0.186
+ },
+ "f1b000bbe35c5adfe7482ae3e0fbd323be1f37022477e201a432a963fdf17404": {
+  "answers": {
+   "duplicate": 0.04,
+   "conflict": 0.11
+  },
+  "seconds": 0.196
+ },
+ "511461da98240abfeabcc869d8e1645bb66b0182a59f5b85f2755db122c2fa18": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.07
+  },
+  "seconds": 0.244
+ },
+ "48f5811c4334334b0b6433357265a7fd8747ec7011faf5577518ce9fcb8ebc49": {
+  "answers": {
+   "duplicate": 0.52,
+   "conflict": 0.49
+  },
+  "seconds": 0.267
+ },
+ "0d6d8f052610e572d39faac84e4a265e87b130f2f7c92ea709670051631f7334": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.08
+  },
+  "seconds": 0.222
+ },
+ "4062ea972c91819369c54bfc66eb21e3b47b087c942cbfe0d12cfd6bb94ccebf": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 188,
+  "cache_read_tokens": 3494,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0044668,
+  "duration_ms": 4815
+ },
+ "66039070714637d05ba95934bf98434a187635f675b6775ba9569d721ddd6349": {
+  "answers": {
+   "reuse": 0.79,
+   "durable": 0.62,
+   "actionable": 0.83,
+   "noise": 0.15
+  },
+  "seconds": 0.219
+ },
+ "e4c8f3b6ae33cc78ae8b32a2c85b5314e15cbdd4d0d213002e9a853db8e1f329": {
+  "answers": {
+   "duplicate": 0.05,
+   "conflict": 0.15
+  },
+  "seconds": 0.186
+ },
+ "44d3927f0f41c121afa5fdd5f830d64cc600a82fd9912f3a31ff443ddd86e377": {
+  "answers": {
+   "duplicate": 0.72,
+   "conflict": 0.15
+  },
+  "seconds": 0.217
+ },
+ "8536b7726c4bb8634a0c4cb60bb72468853324b70c92b2c56beac5673f7ea2f3": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.07
+  },
+  "seconds": 0.23
+ },
+ "66e6f95aa936279ff37ab1f236f7fb0524cc8c963e8f353dc3103990e36b624d": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.12
+  },
+  "seconds": 0.233
+ },
+ "aa409b4177a8d9f0729dd5c9bd2e98b05d773932ab3c4c98cac085cacc209d75": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.07
+  },
+  "seconds": 0.195
+ },
+ "5e88f90ae19c254687cc29d4fc874918030da75845255a90bfdc1448058774fe": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 3,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2808,
+  "cost_usd": 0.022644,
+  "duration_ms": 4241
+ },
+ "8c159d1573e2f9a8877f3aa80ee4cdf5867ce287be2e7ab1537e5f1b61805a20": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 215,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 3002,
+  "cost_usd": 0.028436,
+  "duration_ms": 4488
+ },
+ "98026dfc61a5c2418ee264eedc99c7746bf47f50e2d99e069ea1c77e4e49358a": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 150,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2809,
+  "cost_usd": 0.025592,
+  "duration_ms": 5092
+ },
+ "4b3ba1620707b3064a652798db170bb2d1d502b37b12433a15e28be7b6540b02": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 3,
+  "cache_read_tokens": 3368,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0007416,
+  "duration_ms": 2633
+ },
+ "648a2d77291d78299e65c63f693944ad70ac7fd399164a152de19dbd2f133973": {
+  "answers": {
+   "reuse": 0.56,
+   "durable": 0.76,
+   "actionable": 0.82,
+   "noise": 0.12
+  },
+  "seconds": 0.231
+ },
+ "34bf2e7559406768375663f85c80b6c1db1bd983498cff06aacf9cecf6beb45d": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.11
+  },
+  "seconds": 0.195
+ },
+ "b2b49d723848da98224462ff82a5e149472c7a6e443b10d10acf8b6081203447": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.05
+  },
+  "seconds": 0.202
+ },
+ "b7410628e2c0174bc8399a7b6042829e9167db222e92e02908658cdf0753e92f": {
+  "answers": {
+   "duplicate": 0.97,
+   "conflict": 0.1
+  },
+  "seconds": 0.247
+ },
+ "cbd7f7b1e5c2a16a4525d595cc6bee0c505e43cf650c096e576197d47149c0fb": {
+  "answers": {
+   "duplicate": 0.02,
+   "conflict": 0.06
+  },
+  "seconds": 0.277
+ },
+ "012f3c20e2419ddaaa6223508b8f3ff1f9b006192bf63a18ae823c7b68281112": {
+  "answers": {
+   "duplicate": 0.02,
+   "conflict": 0.07
+  },
+  "seconds": 0.202
+ },
+ "d1602f979ae8491ade591dc5fd0862f1b220c6e21ff58b32006b25346004ad03": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 263,
+  "cache_read_tokens": 3562,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0059804,
+  "duration_ms": 4929
+ },
+ "9e81a7ec0ed0a8d0ed3f8a01454bcdde332702687bf9296384dd0b63b72078a7": {
+  "answers": {
+   "reuse": 0.69,
+   "durable": 0.79,
+   "actionable": 0.84,
+   "noise": 0.16
+  },
+  "seconds": 0.221
+ },
+ "98f1006d37367a34587946c3976456eef99587843bf6cad7a6a536c80b72a084": {
+  "answers": {
+   "duplicate": 0.97,
+   "conflict": 0.07
+  },
+  "seconds": 0.18
+ },
+ "16c14ff23ab882ca4f4fbdd93d49efb9a814f3895353a1b982f91f908d711375": {
+  "answers": {
+   "duplicate": 0.05,
+   "conflict": 0.08
+  },
+  "seconds": 0.18
+ },
+ "eec57abe0df7ca69c7d3febea3037b8c724c0fab649b94b5c62493e8fb826ac0": {
+  "answers": {
+   "duplicate": 0.04,
+   "conflict": 0.1
+  },
+  "seconds": 0.184
+ },
+ "8c42eed05d241212246960031fcc8bab0cec0cfe9e255f523cf5d6886570c216": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.07
+  },
+  "seconds": 0.206
+ },
+ "0f1edb32c22fa7a2053e2244c738a12573603a3f705a0598369be2bf47c2adb2": {
+  "answers": {
+   "duplicate": 0.02,
+   "conflict": 0.05
+  },
+  "seconds": 0.182
+ },
+ "19967c4cfc26277b2b82499458c95f209bfb6ecf7c8c95ac6cbbbd1950d43367": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2646,
+  "cost_usd": 0.021408,
+  "duration_ms": 2514
+ },
+ "f91a68689a7b8c26c74a0e2d7a1cb0d702703df171d60e76d35bd26ff64741c8": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 147,
+  "cache_read_tokens": 3369,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0036218,
+  "duration_ms": 3737
+ },
+ "93d5e7553c9923a7c591b432364b379616ac7d06a3a2bcb6b8b2588b89b1e291": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 422,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2933,
+  "cost_usd": 0.032024,
+  "duration_ms": 8964
+ },
+ "a23747d363aa2731be926ef7777650c1a4ac9b83d3770bb7d77c9650757767c5": {
+  "answers": {
+   "reuse": 0.77,
+   "durable": 0.79,
+   "actionable": 0.88,
+   "noise": 0.14
+  },
+  "seconds": 0.193
+ },
+ "3cd1a5fae8e942d43511b0fc0e0848f7a39933cb4a6faf47ceea93bacde9345e": {
+  "answers": {
+   "duplicate": 0.67,
+   "conflict": 0.08
+  },
+  "seconds": 0.178
+ },
+ "bcd1f7ce6050c46e003f0157152ed5f6dbf3fd1943890ff9aa1eb0450d6149d6": {
+  "answers": {
+   "duplicate": 0.97,
+   "conflict": 0.33
+  },
+  "seconds": 0.182
+ },
+ "c5399d9b0a51649acd949f8aa22e7351994cfba852e5606630e8ac65b177a359": {
+  "answers": {
+   "duplicate": 0.06,
+   "conflict": 0.07
+  },
+  "seconds": 0.185
+ },
+ "d932c9b31a54ee6a7b165520348430445f7196d71774d443213273f9398318a5": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.06
+  },
+  "seconds": 0.224
+ },
+ "eb305fcfade936134ba4e7fabf7437301551e32f5e5f514ebf0f8ee7f8a3b4d1": {
+  "answers": {
+   "duplicate": 0.04,
+   "conflict": 0.08
+  },
+  "seconds": 0.197
+ },
+ "e6eaf1cfac6f81d15fd469d4e6cf16ff88540fe2144091e889ccceaa8969e491": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 3206,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0007692,
+  "duration_ms": 2438
+ },
+ "47472727d2da18cce301b7fba14d5e076b33c93f2ebda0fd94e24831cdfee378": {
+  "answers": {
+   "reuse": 0.72,
+   "durable": 0.8,
+   "actionable": 0.87,
+   "noise": 0.16
+  },
+  "seconds": 0.183
+ },
+ "1b4bc62b15f2ebcbea79a05c75bc788a9877de997525ad6c103d6ec5daf9a79f": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2687,
+  "cost_usd": 0.021736000000000002,
+  "duration_ms": 2682
+ },
+ "10f5d7629f8b6da29db67f3a0d173924cc45e1b1e1e97e741b27d7735258d20d": {
+  "answers": {
+   "duplicate": 0.94,
+   "conflict": 0.39
+  },
+  "seconds": 0.188
+ },
+ "57651134331cd87ac8cf58a013225a85dfafac4f7f8c190cab3aa82f6cb8275c": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.08
+  },
+  "seconds": 0.19
+ },
+ "a7c299377215631a560a75926af7623711980e9d4d2bed1a993068e75d45bb36": {
+  "answers": {
+   "duplicate": 0.04,
+   "conflict": 0.11
+  },
+  "seconds": 0.198
+ },
+ "adc01277aeee3aac7e34a1d836ea7bbd491aa8652d2f236209386cd9d3145096": {
+  "answers": {
+   "duplicate": 0.06,
+   "conflict": 0.12
+  },
+  "seconds": 0.229
+ },
+ "138b4e937304cad26a8b26c4bfe7afa8f1fd519ec78a51d405598f6596c3fc4e": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2453,
+  "cost_usd": 0.019864,
+  "duration_ms": 2489
+ },
+ "a6f12f130e06d60efec3fb0da088dd88d6d7cc84a3b8dd66c2744690391f52a9": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 252,
+  "cache_read_tokens": 3493,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0057466,
+  "duration_ms": 4842
+ },
+ "f3f6a84438a831c6a3f3853ed745e866b66553fc8fd6edf2b0c785bedb063119": {
+  "answers": {
+   "reuse": 0.82,
+   "durable": 0.85,
+   "actionable": 0.91,
+   "noise": 0.12
+  },
+  "seconds": 0.248
+ },
+ "d2a3d7386414e38e7455f4640dfccb9df4fc66c422e6972d31e6244c603904fa": {
+  "answers": {
+   "duplicate": 0.16,
+   "conflict": 0.24
+  },
+  "seconds": 0.196
+ },
+ "6cc64b38ba70638477d9d001e771bd2697488b8a7e953e1fcbd61d527d91b98d": {
+  "answers": {
+   "duplicate": 0.05,
+   "conflict": 0.12
+  },
+  "seconds": 0.196
+ },
+ "11ed56e42fb641eb987408b72a8188fee8f7c802a94207beed78ec347238642e": {
+  "answers": {
+   "duplicate": 0.96,
+   "conflict": 0.06
+  },
+  "seconds": 0.227
+ },
+ "e22e5f9cba4b45d73211e8ceebcb38aba5c9527e0484b5e1d42e3b584b631eac": {
+  "answers": {
+   "duplicate": 0.04,
+   "conflict": 0.12
+  },
+  "seconds": 0.235
+ },
+ "179823dc4fd2a5bb43025092317709dcd3e268fa9f83538d76cb223134b45f82": {
+  "answers": {
+   "duplicate": 0.05,
+   "conflict": 0.12
+  },
+  "seconds": 0.199
+ },
+ "13f20c25a421b1b359a122a39217edbec3b6fd89c85f1461a68dd36d5113f21d": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2252,
+  "cost_usd": 0.018256,
+  "duration_ms": 2562
+ },
+ "de26e91e56d3eff854fb860c859e5feebd809d3358f5b667c30ed1f26bb28e14": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 3247,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0007774,
+  "duration_ms": 3092
+ },
+ "bb06578f27b17f6bd70567535c31c9fcc15fd2969f68c55be982369809c270b8": {
+  "answers": {
+   "reuse": 0.71,
+   "durable": 0.84,
+   "actionable": 0.88,
+   "noise": 0.12
+  },
+  "seconds": 0.2
+ },
+ "ff9ce62519c013cf5a74c29ec18033bae001e5c59dd166e10ee11ad4bc093443": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 3013,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0007306,
+  "duration_ms": 2454
+ },
+ "799c332c9ceb84dd2bdbd01ca66f9b5434ed99ad427278cabcb8e3997261ed4e": {
+  "answers": {
+   "duplicate": 0.98,
+   "conflict": 0.05
+  },
+  "seconds": 0.187
+ },
+ "2e8d2f7bd919e82fa7aa9acf500156e2d4e788a0a4317254e6802c8a5ef957b0": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.06
+  },
+  "seconds": 0.203
+ },
+ "d8c1220348b49295ac2e437cfb24c6c417bc1600d7b9313758072385eec953f8": {
+  "answers": {
+   "reuse": 0.62,
+   "durable": 0.54,
+   "actionable": 0.63,
+   "noise": 0.28
+  },
+  "seconds": 0.212
+ },
+ "4b9c669aaecb1bed7d19ecf014ae273b0dc3ad84b2e638f6ea794073175e839a": {
+  "answers": {
+   "duplicate": 0.33,
+   "conflict": 0.11
+  },
+  "seconds": 0.218
+ },
+ "41b0ca42a534e9f102c3b0962253a8a4dee4001b2a2c13ce39452e5ce9ee4b20": {
+  "answers": {
+   "duplicate": 0.15,
+   "conflict": 0.1
+  },
+  "seconds": 0.236
+ },
+ "eb43db534c88b341aad87e5293b06470ea006c177f38842d07261b142569a975": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.04
+  },
+  "seconds": 0.223
+ },
+ "9575844150f329dd74f511f50702bade721e5c0fd2cc9b436f1f7ae1cded4e43": {
+  "answers": {
+   "duplicate": 0.07,
+   "conflict": 0.84
+  },
+  "seconds": 0.198
+ },
+ "ac7f21338eafa128f1624a035d14453d1f1433897fcc1782d59bc2976610df4f": {
+  "answers": {
+   "duplicate": 0.04,
+   "conflict": 0.96
+  },
+  "seconds": 0.202
+ },
+ "a7fa791328976f502ca11a37e9ff9b6861b7536c84e36672c9aa21de9302d9fb": {
+  "answers": {
+   "duplicate": 0.14,
+   "conflict": 0.8
+  },
+  "seconds": 0.206
+ },
+ "b1ceb9d34fd3f548ab7c3dddd7f6ac9d6d526dcb6ff783bc1aaf9b4e51c935a0": {
+  "answers": {
+   "duplicate": 0.08,
+   "conflict": 0.48
+  },
+  "seconds": 0.222
+ },
+ "56803e36ae1cfbcadb2508d3d6387c2a5f3f68c1fe9b2fd8957d169839e1cc89": {
+  "answers": {
+   "duplicate": 0.15,
+   "conflict": 0.39
+  },
+  "seconds": 0.176
+ },
+ "6c735adb51da8ffab2b17bf4069898962d5acab43934b6f6c0519d7f65960f6e": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 3904,
+  "cost_usd": 0.031472,
+  "duration_ms": 2549
+ },
+ "703ef8db581c34fd3e0b24778d758eebf9d0a0b17ca4a06c910ef9b8948f072e": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 2812,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0006904,
+  "duration_ms": 2743
+ },
+ "d7fc03b70cfcced838d76a3d5871ae4d7294992b23d0c361f40539720c77dcba": {
+  "answers": {
+   "reuse": 0.65,
+   "durable": 0.6,
+   "actionable": 0.86,
+   "noise": 0.2
+  },
+  "seconds": 0.193
+ },
+ "a16d9cd7e7390a6e4bd26646941c87a560ee41ab3b7909ba54f937cb766d64e5": {
+  "answers": {
+   "duplicate": 0.07,
+   "conflict": 0.76
+  },
+  "seconds": 0.179
+ },
+ "83d21bf94e68843ebb902dfd0b83139b23b575006104087a5e79189e322cce15": {
+  "answers": {
+   "duplicate": 0.06,
+   "conflict": 0.17
+  },
+  "seconds": 0.201
+ },
+ "048f7892d8fd111d66c8e4807e59c1925163a4f3fd118bb50265432a07740469": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.08
+  },
+  "seconds": 0.209
+ },
+ "36d2912e5d99ed5a1ee356d5ee0df2b7cd0775c0320e93f2f8b9b01973cc0161": {
+  "answers": {
+   "duplicate": 0.08,
+   "conflict": 0.34
+  },
+  "seconds": 0.228
+ },
+ "b5f33a318026ca96ead080b3c11f1489fb7c5faac69d5a702c045ed4bb186c6b": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2640,
+  "cost_usd": 0.02136,
+  "duration_ms": 2342
+ },
+ "2bc09fb65f27281935bd98e3354c029aca904819e3c802a95279d02170ae1f2d": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 5,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 4443,
+  "cost_usd": 0.035764,
+  "duration_ms": 2417
+ },
+ "d36b478a0bbd157ead98df3226889edc65d6990a11bf9c18d76b77b9d965f0c5": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 4464,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0010208,
+  "duration_ms": 2534
+ },
+ "4a7340b20e026e3c860796c0c54c66847ecb9ab89b471f321702ad9342043671": {
+  "answers": {
+   "reuse": 0.81,
+   "durable": 0.89,
+   "actionable": 0.88,
+   "noise": 0.13
+  },
+  "seconds": 0.222
+ },
+ "39537355df5fe6069f298cb1de9b6c2718bd893fb4f80f04bf22c203be5ef004": {
+  "answers": {
+   "duplicate": 0.04,
+   "conflict": 0.04
+  },
+  "seconds": 0.191
+ },
+ "537de11215c7cb621ed1f6910d07fdfeadb1e30a5946b1c36369b5d8ec1b752b": {
+  "answers": {
+   "duplicate": 0.13,
+   "conflict": 0.35
+  },
+  "seconds": 0.204
+ },
+ "fc267fa7859279c62e4695d7528ea7ad0a316de7067a13b042bb5fddca5377b4": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.05
+  },
+  "seconds": 0.225
+ },
+ "3e1591be64b1d01c03b0faf316d857ad8eaf960b90ff0af487bc2cdef3af0f7d": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.07
+  },
+  "seconds": 0.256
+ },
+ "efa9faeb3f0855afb37db376139e68d755b6becad9d74023105981c8da70ffcb": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.04
+  },
+  "seconds": 0.213
+ },
+ "2435cfb56ba4e978a92ef6f0d80030a8825de9c223e0378904fd46267d23ced8": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 5,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 1725,
+  "cost_usd": 0.01402,
+  "duration_ms": 2478
+ },
+ "9771f48ad49649ef5a1a21468cee14bc80d6841b31c447799c68183332518bcf": {
+  "text": "duplicate",
+  "input_tokens": 2,
+  "output_tokens": 6,
+  "cache_read_tokens": 3200,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.000768,
+  "duration_ms": 2352
+ },
+ "ffc92b7a949899936d359cfd960b55195c460a713a8b97577e82398325294bbb": {
+  "answers": {
+   "reuse": 0.66,
+   "durable": 0.63,
+   "actionable": 0.87,
+   "noise": 0.14
+  },
+  "seconds": 0.201
+ },
+ "bcd12eedaafa3ccce33b7dd536029a1b305d674900f823a9f3e45b7c468f1308": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 5,
+  "cache_read_tokens": 5003,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0011086,
+  "duration_ms": 2420
+ },
+ "c8139d9208fa1ac8447393ba988a9b722628b3669b2cbb82ae35cfd527b6e90f": {
+  "answers": {
+   "duplicate": 0.75,
+   "conflict": 0.13
+  },
+  "seconds": 0.183
+ },
+ "d77b011afc1cdc3d01c55b660cfdd347b7c62806f1a67c5036d28ea0f0940fc3": {
+  "answers": {
+   "duplicate": 0.1,
+   "conflict": 0.29
+  },
+  "seconds": 0.193
+ },
+ "50762cc06f242d6d1dbe562bba4236c65a47201f61f217f736807e5b9d313dae": {
+  "answers": {
+   "duplicate": 0.2,
+   "conflict": 0.16
+  },
+  "seconds": 0.203
+ },
+ "5129d9082289ebb81f77551e29f2b4a94cf887b9cb00e5e6b710ec4e71c6a371": {
+  "answers": {
+   "duplicate": 0.13,
+   "conflict": 0.14
+  },
+  "seconds": 0.232
+ },
+ "b612fbe049f4b80cc0bddf7bb0e633ccf33005d293fadef4df77e91a50e358e4": {
+  "answers": {
+   "reuse": 0.7,
+   "durable": 0.62,
+   "actionable": 0.85,
+   "noise": 0.25
+  },
+  "seconds": 0.216
+ },
+ "f088de81e01115d1b506a2d0cad2239448030d073ddc0d057a57c83410eadd65": {
+  "answers": {
+   "duplicate": 0.58,
+   "conflict": 0.11
+  },
+  "seconds": 0.187
+ },
+ "859accde5dd5981740d61cc608daff0f32a994289b2b25057c1b3a8bd930d352": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.08
+  },
+  "seconds": 0.177
+ },
+ "c9547017bcb71b0553ba2fbc4cd3ceb9b278b62e7895ae94ab2b014557e2def0": {
+  "answers": {
+   "duplicate": 0.07,
+   "conflict": 0.11
+  },
+  "seconds": 0.179
+ },
+ "94a61a0b8a222a4dcf9a588216adbed81cbc02d6640d3a9899ccad8a192167b4": {
+  "answers": {
+   "duplicate": 0.05,
+   "conflict": 0.11
+  },
+  "seconds": 0.185
+ },
+ "3c79debc16f61ad20279a70782141a6d2260ec2d607c01f22f69c98842864756": {
+  "answers": {
+   "duplicate": 0.06,
+   "conflict": 0.12
+  },
+  "seconds": 0.185
+ },
+ "a5244a620270b607c51f58f135443bbf7bbdce822477a0dee8d102d6f0d74c55": {
+  "text": "conflict",
+  "input_tokens": 2,
+  "output_tokens": 5,
+  "cache_read_tokens": 2285,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0005650000000000001,
+  "duration_ms": 2625
+ },
+ "b0bd792bfa7c2443ec6483c812fd0ae41855f53eb8721ad86bbcffdcccbb0661": {
+  "answers": {
+   "reuse": 0.57,
+   "durable": 0.66,
+   "actionable": 0.84,
+   "noise": 0.19
+  },
+  "seconds": 0.175
+ },
+ "06779cbf9954ffb88ec02c8d1ed57d5fdd66753c1501c4dc5406080962eec2be": {
+  "answers": {
+   "duplicate": 0.04,
+   "conflict": 0.07
+  },
+  "seconds": 0.177
+ },
+ "3e1a14ca7aa2c2ca095893c8fc5098e9dccfd81ad9136597ea0798d4114055d6": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.07
+  },
+  "seconds": 0.183
+ },
+ "877d413406bc29854f0ea5e16022090353c841b37472dc4cce73fd389b40dcf2": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.05
+  },
+  "seconds": 0.188
+ },
+ "7f122267afbecd612e73b7849d2fd22605940810fdb290362d7564c2ff4a2334": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.05
+  },
+  "seconds": 0.367
+ },
+ "48ba37d68fe35a26ba70b2f6b0d73c669a2cf9dcac05b03fb59ab78ed5d901a3": {
+  "answers": {
+   "duplicate": 0.02,
+   "conflict": 0.03
+  },
+  "seconds": 0.209
+ },
+ "ae9887aa922dce564f8a5a378d680f7c0c29bed86ccc89c7ba77fe1dac665797": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 3,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2181,
+  "cost_usd": 0.017628,
+  "duration_ms": 2593
+ },
+ "56ee937c88af2cd79f8e995b029cea84cf7efcfb725d585ed52e660db4c7b220": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 328,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2656,
+  "cost_usd": 0.027928,
+  "duration_ms": 5590
+ },
+ "ca6c8216b5792176dc530ebda5966666e80b225dc861b6473d9ca7efa9dbd975": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 267,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 4244,
+  "cost_usd": 0.039412,
+  "duration_ms": 5194
+ },
+ "820d95881bd5932f9875da5a64b2122d4861c858a9f9389be9d59eaeffba6caf": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 3,
+  "cache_read_tokens": 2741,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0006162,
+  "duration_ms": 2473
+ },
+ "728a4aaa549f8789fbf0ec54358bb1fbec954506b10807fb5f10071eaec78b00": {
+  "answers": {
+   "reuse": 0.74,
+   "durable": 0.75,
+   "actionable": 0.88,
+   "noise": 0.17
+  },
+  "seconds": 0.174
+ },
+ "3cc9bb9341f594b6a84718bec63cf0be195bf1bed27b9f5db63c80352be4be0f": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 3,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2423,
+  "cost_usd": 0.019563999999999998,
+  "duration_ms": 2881
+ },
+ "d92fd079d5c25d38c4abe9eb4124e1c88de0c63e2aca28a6440e8d7768b6957b": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.06
+  },
+  "seconds": 0.182
+ },
+ "432634a14d3cfb56e3e85b4bcc4fa2cb4250f646d6261412ff109642419f5563": {
+  "answers": {
+   "duplicate": 0.5,
+   "conflict": 0.14
+  },
+  "seconds": 0.185
+ },
+ "fd26e2ebdcbfb7edf2eb9a13160e5cfb942f7800a42d041d4afa6e89b762d092": {
+  "answers": {
+   "duplicate": 0.04,
+   "conflict": 0.07
+  },
+  "seconds": 0.206
+ },
+ "eeee362e55212a2217796f8167c8a8b73f25be0c57a2a932c2c4158ad2c9231b": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.08
+  },
+  "seconds": 0.247
+ },
+ "890ac61c3779303e4375d6fde22af38bfc1bd938df98735f2557c54ccb50b73e": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 198,
+  "cache_read_tokens": 4804,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0049288000000000005,
+  "duration_ms": 4603
+ },
+ "996178146c21f52f8ea034417a993ec2cc2244030ddc776458cc32039da137bb": {
+  "answers": {
+   "reuse": 0.42,
+   "durable": 0.46,
+   "actionable": 0.45,
+   "noise": 0.27
+  },
+  "seconds": 0.221
+ },
+ "c3b6bdb75a1d65db6317b2b5885a9f992eade6847d9a30afe5ac98d97924e3d3": {
+  "answers": {
+   "duplicate": 0.68,
+   "conflict": 0.14
+  },
+  "seconds": 0.199
+ },
+ "b09d6c324a5cfead8946b200684e0f002f1cb7a49a1ecaad3dbec41c9f4ef402": {
+  "answers": {
+   "duplicate": 0.27,
+   "conflict": 0.26
+  },
+  "seconds": 0.206
+ },
+ "e71376a122e75b893e68a6fadcb25eebfd9b486e87b85e9d747750ec748fd8c4": {
+  "answers": {
+   "duplicate": 0.05,
+   "conflict": 0.12
+  },
+  "seconds": 0.227
+ },
+ "6928770b3324b1fea641134a3d00a797eb7c7ef8d1ee0a811c4b08d882ed5853": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 3,
+  "cache_read_tokens": 2983,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0006646000000000001,
+  "duration_ms": 2821
+ },
+ "3d6b037ac287147ca27b0be3e8e99a396c59dd1c5900f78429d87c634f369eb9": {
+  "answers": {
+   "duplicate": 0.17,
+   "conflict": 0.22
+  },
+  "seconds": 0.354
+ },
+ "1499110b1da530a61a5a908f5378c64dfb286159f178994a52238084c701782e": {
+  "answers": {
+   "duplicate": 0.18,
+   "conflict": 0.22
+  },
+  "seconds": 0.223
+ },
+ "ede2d3ab90ddf259d3775b0459b54d0a537677f5338f56537957e653c77fb50b": {
+  "answers": {
+   "reuse": 0.47,
+   "durable": 0.3,
+   "actionable": 0.71,
+   "noise": 0.43
+  },
+  "seconds": 0.224
+ },
+ "9816b7d4b67a62c346208809c47f5aa11faaeb486f960fc65864550d0c866708": {
+  "answers": {
+   "duplicate": 0.06,
+   "conflict": 0.17
+  },
+  "seconds": 0.185
+ },
+ "2ca15b9574bd5507a04b0ace6030ff2227ea32eb51737167a55bad641b756829": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.05
+  },
+  "seconds": 0.189
+ },
+ "8f0d669f0be0d1b1ea7dc62c7333498f98be278b980c7b5b398c88f9b5094b1e": {
+  "answers": {
+   "duplicate": 0.05,
+   "conflict": 0.13
+  },
+  "seconds": 0.194
+ },
+ "b964c4ea91ed3307b0653e606e5a397d1b243b88a0909551b2a9929ef0ddba23": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.1
+  },
+  "seconds": 0.222
+ },
+ "0c56532c1db6d735d2f2b2f453a472616f4f7fc52f47a1dd8df2b59af978ea0d": {
+  "answers": {
+   "duplicate": 0.07,
+   "conflict": 0.16
+  },
+  "seconds": 0.209
+ },
+ "689628fc4244400d9cd4e0f6b97d6838e7c5d6faecd11edb97a4226bbe8c26d2": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 465,
+  "cache_read_tokens": 3216,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0099512,
+  "duration_ms": 7276
+ },
+ "e65c9acdacb95823506cd1d403447c1f64792ff05734de86d59bece05800c8fa": {
+  "answers": {
+   "reuse": 0.45,
+   "durable": 0.3,
+   "actionable": 0.59,
+   "noise": 0.71
+  },
+  "seconds": 0.19
+ },
+ "dcff7ba3351a50eb36305aa155c02699db05c7cdc9bc286ef95b8f4d5f63f3d5": {
+  "answers": {
+   "duplicate": 0.08,
+   "conflict": 0.31
+  },
+  "seconds": 0.179
+ },
+ "58315371225af3ce0ba667f526c6c9c270a03ca3b02138884be214bfca1169d7": {
+  "answers": {
+   "duplicate": 0.08,
+   "conflict": 0.2
+  },
+  "seconds": 0.2
+ },
+ "15989db2d5f80c709e0309555a181d5dc9970ecc40657bd954e2d7ead8f4bafa": {
+  "answers": {
+   "duplicate": 0.07,
+   "conflict": 0.26
+  },
+  "seconds": 0.224
+ },
+ "1c4ee08f0a6801ef740495ec29573567a3cd3dce716d95a81840e498401a0c1f": {
+  "answers": {
+   "duplicate": 0.16,
+   "conflict": 0.22
+  },
+  "seconds": 0.227
+ },
+ "3f748d46dc42e8f165fc57be282f7412ff59a6558e801d14a52a5f1f54434d0f": {
+  "answers": {
+   "duplicate": 0.13,
+   "conflict": 0.33
+  },
+  "seconds": 0.192
+ },
+ "f4a6538a4e38e122ac169b55d311e8d4eadc5f85aa9bb47b2dd4aa13adeec100": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 189,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2229,
+  "cost_usd": 0.021732,
+  "duration_ms": 5287
+ },
+ "087dc1ce7d826f982820e1e46057323eea35ad56cb82f802bd410787d91149b4": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2569,
+  "cost_usd": 0.020752,
+  "duration_ms": 2822
+ },
+ "fd3151333dbf5f5840f7d76fd87a75263adec223dae9bab2f74cf4643043718b": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2499,
+  "cost_usd": 0.020191999999999998,
+  "duration_ms": 2697
+ },
+ "e0cc9d1925e4f72cf9ea54a47d3c5ade75567a3b50fff46828c76c872ed17bc5": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 4239,
+  "cost_usd": 0.034111999999999996,
+  "duration_ms": 2684
+ },
+ "2421b7224c139994f04a21919304c60cdd29bc122d009fa33f69930cb6e15d6a": {
+  "text": "record",
+  "input_tokens": 2,
+  "output_tokens": 151,
+  "cache_read_tokens": 2789,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0035858,
+  "duration_ms": 4961
+ },
+ "32cac8c09e938cf2a11da3310a1d8dc77636a3f074318d7d7b1274ea2bdbe678": {
+  "answers": {
+   "reuse": 0.15,
+   "durable": 0.51,
+   "actionable": 0.27,
+   "noise": 0.5
+  },
+  "seconds": 0.23
+ },
+ "e5069ab4a0653538fce63ff47b60a2f21fd4f05fb37f217bdca4b5b516d366e0": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.09
+  },
+  "seconds": 0.188
+ },
+ "0155c9d194c9bbcd8ab92b7a9505e97a11793c37fe56ec529ac02027d9a07689": {
+  "answers": {
+   "duplicate": 0.06,
+   "conflict": 0.12
+  },
+  "seconds": 0.21
+ },
+ "7d14293461f1bb07363aa90ad1e4b822f3b55b88b0ebd89567ee06304c6e710f": {
+  "answers": {
+   "duplicate": 0.04,
+   "conflict": 0.07
+  },
+  "seconds": 0.212
+ },
+ "ba06a5447e7c370725af11bf9da368b43b4b691ce4c3e1a19eb38f6216123446": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.07
+  },
+  "seconds": 0.218
+ },
+ "6fddc13603c347493430b79931b5bb314001ead9b6ef9697b07ef5451cb96786": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 3129,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0007138,
+  "duration_ms": 2843
+ },
+ "2716ae67cba6a94894551efc4f34ac4641f6536c4ceab39e56697fde79093b59": {
+  "answers": {
+   "duplicate": 0.02,
+   "conflict": 0.06
+  },
+  "seconds": 0.226
+ },
+ "388e707c9271245c665f869732d507456c9c6e5d22909b87533142d54b5f29bd": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 3059,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0006998,
+  "duration_ms": 2689
+ },
+ "3d52fa08428e983b2c7152e38a63587f039ac709dd851dc858bcddb739e22d45": {
+  "answers": {
+   "reuse": 0.2,
+   "durable": 0.4,
+   "actionable": 0.25,
+   "noise": 0.69
+  },
+  "seconds": 0.26
+ },
+ "355072c846dbdcd31598f93daae5fe9b1d052d9c330eee138bd4c83b027264c1": {
+  "answers": {
+   "duplicate": 0.19,
+   "conflict": 0.12
+  },
+  "seconds": 0.181
+ },
+ "af9b239bde3ec53e946b3fc69932a63a83c1c2905df63d84eaed3b4b4da95022": {
+  "answers": {
+   "duplicate": 0.12,
+   "conflict": 0.1
+  },
+  "seconds": 0.189
+ },
+ "b829563b7750577edbceb3ad7d18d815ec87c2b3b7b6fc4b7a3280bec22e85ec": {
+  "answers": {
+   "duplicate": 0.77,
+   "conflict": 0.06
+  },
+  "seconds": 0.196
+ },
+ "1deb373602051e26a8363b6e69e0991b572171e7d46072445d2506be367b32ba": {
+  "answers": {
+   "duplicate": 0.15,
+   "conflict": 0.1
+  },
+  "seconds": 0.198
+ },
+ "e8d97ad6787c67da8a9c243693530615035e79c14d144a79206e6aa2a0e61323": {
+  "answers": {
+   "reuse": 0.37,
+   "durable": 0.38,
+   "actionable": 0.58,
+   "noise": 0.43
+  },
+  "seconds": 0.318
+ },
+ "3df9dbf31ee2e6fba63d32185385ae945c21074824c0b36c518002f71955c4bd": {
+  "answers": {
+   "duplicate": 0.27,
+   "conflict": 0.42
+  },
+  "seconds": 0.189
+ },
+ "274c4c0dea37ab9719c850f900c8662994a1a7168125aba311a90e1ff46897ee": {
+  "answers": {
+   "duplicate": 0.06,
+   "conflict": 0.1
+  },
+  "seconds": 0.188
+ },
+ "aa2b6bbadc8f9295da29a544ae5d4f17108715874e6984fd871b5029e549b5e8": {
+  "answers": {
+   "duplicate": 0.05,
+   "conflict": 0.12
+  },
+  "seconds": 0.216
+ },
+ "470a07a128dfd2e1a434e0ec04e66f5dcec738556257fca85497f386dc46a7fb": {
+  "answers": {
+   "duplicate": 0.04,
+   "conflict": 0.13
+  },
+  "seconds": 0.219
+ },
+ "ebbed04adbcdf92138794291da51095a58ada339be9b507cfa746f83e0bcddab": {
+  "answers": {
+   "duplicate": 0.06,
+   "conflict": 0.09
+  },
+  "seconds": 0.235
+ },
+ "7bb5c4d40d48803e9e527bfc490d559d785f5fd71355eea26876e2f6aa267332": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 4799,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0010478000000000002,
+  "duration_ms": 2814
+ },
+ "a74ac45de4e36bf4de4d245bc84764ef1d5e2797415a24707037b77b53b77d5c": {
+  "answers": {
+   "reuse": 0.26,
+   "durable": 0.27,
+   "actionable": 0.36,
+   "noise": 0.48
+  },
+  "seconds": 0.202
+ },
+ "337249aea61a0d8bbebbcdb07d86aa5e07db8cec3a02c4f340b9b4f8cf3e2276": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.06
+  },
+  "seconds": 0.18
+ },
+ "784615cf5184d3eec482406e43b5003ffb9d7fe41687268ca57efa2c789ba760": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.04
+  },
+  "seconds": 0.223
+ },
+ "d9d9d92633299df86a65770a704510b4b0625fe521a0952af045ef66f4ac8488": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.05
+  },
+  "seconds": 0.232
+ },
+ "b47166f200f0599f4c003c5e6879622f15df798bead6d1579e2fcbf771a72aee": {
+  "answers": {
+   "duplicate": 0.04,
+   "conflict": 0.05
+  },
+  "seconds": 0.232
+ },
+ "731965a558b9b2e7f1f94b7497c24fbb5bac70ca174535972251b9878af06d04": {
+  "answers": {
+   "duplicate": 0.02,
+   "conflict": 0.05
+  },
+  "seconds": 0.188
+ },
+ "eeff452932368f707bc30db68cfe4fca284727bc3ea52ba92cd87ba836af3726": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2571,
+  "cost_usd": 0.020768,
+  "duration_ms": 2469
+ },
+ "bd331515107411ff5864af41632582ccd01af07fb91899829a0391de6f704c5e": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2529,
+  "cost_usd": 0.020432,
+  "duration_ms": 2441
+ },
+ "54ecf994add20025698eab50102953b8ed4eeeabf5aec96299aea9a14fc23b4a": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2581,
+  "cost_usd": 0.020848,
+  "duration_ms": 2416
+ },
+ "f7ab9aa081bd8a9717d366c5991c23ec05df17d7047a3a2d8b0d5652422c149c": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2538,
+  "cost_usd": 0.020503999999999998,
+  "duration_ms": 5261
+ },
+ "aebc09448908af1a741f689809d275e49a588b7a096a22ebe32a1d6f7be78b0c": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 3131,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0007142,
+  "duration_ms": 2938
+ },
+ "026aff36f44d3c75ebcc5bc5109db63ce4ba5d9bf29e60217918ab310e7b7a03": {
+  "answers": {
+   "reuse": 0.41,
+   "durable": 0.21,
+   "actionable": 0.7,
+   "noise": 0.49
+  },
+  "seconds": 0.301
+ },
+ "c5493a6691a86605fff5ee23b188127a17208402ee7c1f3fa4b9a6bfe2d25d83": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 3089,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0007058,
+  "duration_ms": 2812
+ },
+ "ef96fd86d222a444d223d2cafb60dc558e83eb96e93aa136686167b5b95ac991": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.09
+  },
+  "seconds": 0.208
+ },
+ "4c00e9c4f15d479c4ea95b704871d1e6e25ae5fdb320987c803fd4a84ad40c9a": {
+  "answers": {
+   "duplicate": 0.11,
+   "conflict": 0.23
+  },
+  "seconds": 0.221
+ },
+ "a4f0e29ab4011d1afd051f1d506a5674fb2ad8e86ad360fe8dace9a275ea1bd7": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.08
+  },
+  "seconds": 0.244
+ },
+ "7b9aea5fad401fa88f7dfb1ff0dc1b921f02be5e7aa7b5b34fb1a059c2b15cc5": {
+  "answers": {
+   "duplicate": 0.03,
+   "conflict": 0.08
+  },
+  "seconds": 0.259
+ },
+ "2ad7a47f80f1b954ff71eaf8320fba2cd15013c1f1c379477507b4c5f769482b": {
+  "answers": {
+   "reuse": 0.8,
+   "durable": 0.84,
+   "actionable": 0.71,
+   "noise": 0.59
+  },
+  "seconds": 0.237
+ },
+ "7b1ec1fdfd0b52752e4dd866199a8be2b35cab0056c085c94b19b18e07fc8d3f": {
+  "answers": {
+   "duplicate": 0.04,
+   "conflict": 0.13
+  },
+  "seconds": 0.198
+ },
+ "6d66197a6cf9e20be43fbcd1cbd5e8929ec00356f17b71e82a18989d912c0ddc": {
+  "answers": {
+   "duplicate": 0.34,
+   "conflict": 0.05
+  },
+  "seconds": 0.192
+ },
+ "bc0d8a94b54aa8530d023114d438f228f15c1c2f8274dd18c90b8d7ec466c48a": {
+  "answers": {
+   "duplicate": 0.39,
+   "conflict": 0.06
+  },
+  "seconds": 0.191
+ },
+ "da25c54a121c38bb0ca42f64954f9e2f242a0c68b35ce121a7def49632c9d212": {
+  "answers": {
+   "duplicate": 0.43,
+   "conflict": 0.09
+  },
+  "seconds": 0.209
+ },
+ "c49e644aefb885b401d32b626024c21a7d7e9dddec1caec3633e5066befa7ef3": {
+  "answers": {
+   "duplicate": 0.18,
+   "conflict": 0.07
+  },
+  "seconds": 0.239
+ },
+ "db763c94f0b50767ac74de4c6b4f1638ab160a402266cad34bfa59d06f7cc303": {
+  "answers": {
+   "duplicate": 0.22,
+   "conflict": 0.08
+  },
+  "seconds": 0.227
+ },
+ "22b82ba1311357ed45fd53c1554133fe0b9138617c74a618ca8836d8cc3b3d7f": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 3141,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0007162000000000001,
+  "duration_ms": 2594
+ },
+ "343924808f7350e41037851ce0d6586dd4ef79d56ce60c566460e135d0294697": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 3109,
+  "cost_usd": 0.025071999999999997,
+  "duration_ms": 2825
+ },
+ "9df54356fc60cdf6000b2ae54e6f1c570a69bcc05400892a8e1092651ac8356e": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 560,
+  "cache_creation_tokens": 2546,
+  "cost_usd": 0.020568,
+  "duration_ms": 2628
+ },
+ "2e066327004c9add4930132b36f0e7709cfd29a1b6d7a76917a8639082215e9d": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 3098,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0007076000000000001,
+  "duration_ms": 5865
+ },
+ "6ea3a622ef584cd4d6edcb8be5178d798d5a802c6176ddf52a15911149f41ec4": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 3669,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0008218,
+  "duration_ms": 2774
+ },
+ "5d2131257aed166390f7bdfc86654cdc11e3a6c44121598b45528471c78bb47e": {
+  "text": "skip",
+  "input_tokens": 2,
+  "output_tokens": 4,
+  "cache_read_tokens": 3106,
+  "cache_creation_tokens": 0,
+  "cost_usd": 0.0007092,
+  "duration_ms": 2561
+ }
+}

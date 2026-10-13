@@ -1,0 +1,242 @@
+[
+ {
+  "id": "m01",
+  "label": "record",
+  "ambiguous": true,
+  "note": "Adds new learnings (cross-symbol BTC+ETH+pooled threshold rule, keep BASE prompt byte-identical for SHA-256 caches) beyond #1, which only overlaps on OUTCOME>feature prompts. Possible conflict with #1: #1 says robust=false / threshold tuning alone does not meet the OOS bar, while candidate ships th0.65 as a 'verified' config."
+ },
+ {
+  "id": "m02",
+  "label": "record",
+  "ambiguous": true,
+  "note": "New, high-value learning (intrabar/straddle resolution must be ON; conservative-LOSS biases win rate and return) not in #1/#2. Possible conflict with #2: its figures (baseline 67% win, +2.9% cum) were measured with intrabar OFF and are superseded by the corrected 71%/+7.8%."
+ },
+ {
+  "id": "m03",
+  "label": "record",
+  "ambiguous": false,
+  "note": "Distill design learnings (target actual outcomes, train/serve skew, re-pick threshold on own score scale, free-mode reuse) are not in #1/#2/#3."
+ },
+ {
+  "id": "m04",
+  "label": "record",
+  "ambiguous": false,
+  "note": "New results/learnings (RR pruned, factor weights, heuristic fails ETH holdout, offline cache runs keyless) complement #1 plan and #2 regime audit; consistent with #4 (th0.65 cross-symbol)."
+ },
+ {
+  "id": "m05",
+  "label": "conflict",
+  "ambiguous": true,
+  "note": "Conflicts with #2: #2 says gate DOES-NOT-PASS and 'stopped at Task4 (no live wiring)', candidate reports the later state (BTC-scoped heuristic wired live at th0.56, 'passes' BTC-alone). Reviewer could call it record since the user reframing makes the claims complementary and the live-wiring learnings are new."
+ },
+ {
+  "id": "m06",
+  "label": "conflict",
+  "ambiguous": false,
+  "note": "Conflicts with #5 (and #3): #5 says LLM OUTCOME+th0.65 passed BTC 74.1%/+7.83%; candidate's fresh re-score does not reproduce it (71.18%/+6.24%) and calls th0.65 a bad point due to score drift."
+ },
+ {
+  "id": "m07",
+  "label": "record",
+  "ambiguous": true,
+  "note": "Useful new learnings (3-way parallel parity-verification method, logback->logging.rs port fact) not in #1/#2. Could be conflict with #1 (candidate says '48 tests' is stale, now 53) or skip-leaning because the logging test bug is a soon-to-be-fixed one-off state."
+ },
+ {
+  "id": "m08",
+  "label": "conflict",
+  "ambiguous": true,
+  "note": "Conflicts with #1: #1 says the two logging.rs tests are failing and will 'permanently fail' after the commit day; candidate reports the later state where they are fixed (53/53 green). Alternative: duplicate of #1, which already states the fix (use write_at instead of write_all); candidate only generalizes it."
+ },
+ {
+  "id": "m09",
+  "label": "conflict",
+  "ambiguous": false,
+  "note": "Conflicts with #2 on the port target: #2 says the filter was ported into docs/swing_points_strategy.pine; candidate says it lives in docs/swing_points_strategy_fakeout.pine and swing_points_strategy.pine has no filter. Learnings are otherwise identical."
+ },
+ {
+  "id": "m10",
+  "label": "skip",
+  "ambiguous": false,
+  "note": "Stale test count in a CLAUDE.md is an ephemeral, low-value fact (counts change with every added test); no existing entry states the count now."
+ },
+ {
+  "id": "m11",
+  "label": "conflict",
+  "ambiguous": false,
+  "note": "Conflicts with #1: #1 says autosync push works after loading the SSH key into the macOS keychain; candidate says push fails with publickey denied (agent has no identities, socket hangs)."
+ },
+ {
+  "id": "m12",
+  "label": "conflict",
+  "ambiguous": true,
+  "note": "Conflicts with #2: candidate recommends resolving the optional bean via @Qualifier(name) ObjectProvider.getIfAvailable, which #2 shows silently ignores a wrong-typed bean and advises getBean(name, T) instead. Otherwise a near-verbatim duplicate of #1 (same task, same learnings)."
+ },
+ {
+  "id": "m13",
+  "label": "record",
+  "ambiguous": true,
+  "note": "Learnings 1-2 duplicate #1, but learning 3 (StaticListableBeanFactory.getBeanProvider ignores names/qualifiers, so use a real context) is a new useful detail. Reviewer could call it duplicate of #1."
+ },
+ {
+  "id": "m14",
+  "label": "duplicate",
+  "ambiguous": false,
+  "note": "Same task, result and learnings as #1."
+ },
+ {
+  "id": "m15",
+  "label": "record",
+  "ambiguous": false,
+  "note": "archify tool learnings (validate --layout-json has no geometry, detour behavior, 1440px viewer cap -> 3 lanes) are reusable and not in any existing entry."
+ },
+ {
+  "id": "m16",
+  "label": "duplicate",
+  "ambiguous": true,
+  "note": "#1 already covers the exec failure and the 'bash script.sh' workaround (more precisely: quarantine xattr, chained scripts still fail). Could be read as conflict with #1 because the candidate attributes the failure to the scratchpad location and presents bash script.sh as a full fix."
+ },
+ {
+  "id": "m17",
+  "label": "conflict",
+  "ambiguous": true,
+  "note": "Conflicts with #1: candidate says routing from a raw transcript tail is untested and the Noul router scored 69%; #1 (later) reports 21/21 from raw transcript tails and 48-69%. Otherwise duplicate of #1 (claude -p isolation, prompt-only 50%, Choice beats Nouls)."
+ },
+ {
+  "id": "m18",
+  "label": "duplicate",
+  "ambiguous": true,
+  "note": "All 4 learnings are verbatim in #1. Could be conflict: candidate result says suggestion benefit and harm are untested, while #1 reports a harm test (0/45 broken, 0/7 swayed)."
+ },
+ {
+  "id": "m19",
+  "label": "duplicate",
+  "ambiguous": false,
+  "note": "#2 already has the kotlinx.coroutines debug-mode thread-name suffix learning (use startsWith)."
+ },
+ {
+  "id": "m20",
+  "label": "duplicate",
+  "ambiguous": false,
+  "note": "Korean restatement of #1's learning on @Around advice returning lazy Mono on void methods."
+ },
+ {
+  "id": "m21",
+  "label": "duplicate",
+  "ambiguous": false,
+  "note": "#1 already states the Bash tool env is snapshotted at session start; verify with zsh -lc."
+ },
+ {
+  "id": "m22",
+  "label": "duplicate",
+  "ambiguous": false,
+  "note": "#1 already states query scores only task text and \\w+ keeps CROSS_MEMORY_AUTOSYNC as one token; use plain keywords."
+ },
+ {
+  "id": "m23",
+  "label": "duplicate",
+  "ambiguous": false,
+  "note": "#1 already has the intrabar/straddle-ON learning in more detail."
+ },
+ {
+  "id": "m24",
+  "label": "duplicate",
+  "ambiguous": false,
+  "note": "#1 already has the CompletableFuture.runAsync RejectedExecutionException lock-leak learning."
+ },
+ {
+  "id": "m25",
+  "label": "conflict",
+  "ambiguous": false,
+  "note": "Conflicts with #1: #1 says a fresh re-score did NOT reproduce th0.65 (score drift, use percentile); candidate claims it reproduced exactly and scores are stable."
+ },
+ {
+  "id": "m26",
+  "label": "conflict",
+  "ambiguous": false,
+  "note": "Conflicts with #3: #3 says autosync push needs an upstream set manually (git push -u or push.autoSetupRemote); candidate reports autosync now sets upstream itself."
+ },
+ {
+  "id": "m27",
+  "label": "record",
+  "ambiguous": true,
+  "note": "Complements #1 (DST fix) with a testing technique (inject java.time.Clock to pin the overlap hour). Reviewer could call it conflict with #1 (#1 result says nowToEpochTime returns System.currentTimeMillis; candidate replaces that with an injected Clock) or skip as general Java testing knowledge."
+ },
+ {
+  "id": "m28",
+  "label": "record",
+  "ambiguous": true,
+  "note": "Empirical confirmation that a per-run percentile threshold survives LLM score drift (top 8%, same blocked set within 3 trades). Could be duplicate: #1 and #5 already recommend a percentile/relative threshold, though untested."
+ },
+ {
+  "id": "m29",
+  "label": "record",
+  "ambiguous": false,
+  "note": "New Jev design pitfall (Choice probabilities sum to 1, so gate with an existence Noul); no existing entry covers it."
+ },
+ {
+  "id": "m30",
+  "label": "record",
+  "ambiguous": true,
+  "note": "New practical fact (claude -p --output-format json reports total_cost_usd) useful for eval cost comparison. Reviewer could call it skip as easily found in docs / low value."
+ },
+ {
+  "id": "m31",
+  "label": "record",
+  "ambiguous": false,
+  "note": "Complements #1 with a new detail: Hangul particles stay attached to the token under \\w+, so Korean task keywords must be written bare."
+ },
+ {
+  "id": "m32",
+  "label": "skip",
+  "ambiguous": false,
+  "note": "Test/build pass status for a version bump is ephemeral and not a reusable learning."
+ },
+ {
+  "id": "m33",
+  "label": "skip",
+  "ambiguous": false,
+  "note": "One-off transient SSH agent hang that resolved on retry; no lasting lesson."
+ },
+ {
+  "id": "m34",
+  "label": "skip",
+  "ambiguous": false,
+  "note": "A single backtest result dated 'today'; ephemeral numbers, no decision-changing learning."
+ },
+ {
+  "id": "m35",
+  "label": "skip",
+  "ambiguous": false,
+  "note": "Typo fix; no reusable learning."
+ },
+ {
+  "id": "m36",
+  "label": "skip",
+  "ambiguous": false,
+  "note": "Test pass count; ephemeral status, not a learning."
+ },
+ {
+  "id": "m37",
+  "label": "skip",
+  "ambiguous": false,
+  "note": "One-off rebase conflict resolution; no reusable learning."
+ },
+ {
+  "id": "m38",
+  "label": "skip",
+  "ambiguous": false,
+  "note": "Location of an exported file for a one-time demo; ephemeral."
+ },
+ {
+  "id": "m39",
+  "label": "skip",
+  "ambiguous": false,
+  "note": "One-time gateway outage; no lasting lesson (#1's rate-limit advice is unrelated and not contradicted)."
+ },
+ {
+  "id": "m40",
+  "label": "skip",
+  "ambiguous": false,
+  "note": "Vague platitude ('Thorough testing pays off') with no actionable content."
+ }
+]

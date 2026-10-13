@@ -15,19 +15,18 @@ Every model call is cached in cache.json keyed on its inputs, so re-runs are fre
 Run with the jev venv: ~/.local/pipx/venvs/jev/bin/python eval_route.py
 """
 
-import hashlib
 import json
 import re
-import subprocess
 import sys
-import threading
 from collections import Counter
 from pathlib import Path
-from tempfile import gettempdir
 
 from typesafe_sdk import Choice, Noul
 
 import jev
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # evals/, for evalkit
+from evalkit import Cache, accuracy, flips, run_claude  # noqa: E402
 
 HERE = Path(__file__).parent
 LABELS = ["self", "deep-reasoner", "feature-developer", "fast-worker"]
@@ -159,45 +158,17 @@ def parse_label(text: str) -> str | None:
 
 
 # --- Cached model calls ---
-class Cache:
-    def __init__(self, path: Path):
-        self.path = path
-        self.data = json.loads(path.read_text()) if path.exists() else {}
-        self.lock = threading.Lock()  # pmap threads insert and save concurrently
-
-    def get(self, key_parts, compute):
-        key = hashlib.sha256(json.dumps(key_parts, ensure_ascii=False).encode()).hexdigest()
-        with self.lock:
-            if key in self.data:
-                return self.data[key]
-        value = compute()  # outside the lock so model calls still run in parallel
-        with self.lock:
-            self.data[key] = value
-            self.path.write_text(json.dumps(self.data, ensure_ascii=False, indent=1))
-        return value
-
-
 def ask_jev(cache: Cache, ask, state: dict) -> dict:
     questions = {"route": ROUTE, **RULE_QUESTIONS}
     return cache.get(["jev", state, repr(questions)], lambda: ask(state, questions))
 
 
 def ask_claude(cache: Cache, arm: str, case_input: str) -> str:
-    def run():
-        result = subprocess.run(
-            [
-                "claude", "-p", "--model", CLAUDE_MODEL, "--tools", "", "--setting-sources", "",
-                "--strict-mcp-config", "--no-session-persistence",
-                "--system-prompt", CLAUDE_SYSTEM, case_input,
-            ],
-            capture_output=True, text=True, timeout=300, cwd=gettempdir(),
-        )
-        if result.returncode != 0:
-            raise RuntimeError(f"claude -p failed: {result.stderr.strip()}")
-        return result.stdout.strip()
-
     # `arm` is in the key so claude and claude_rep sample independently
-    return cache.get(["claude", arm, CLAUDE_MODEL, CLAUDE_SYSTEM, case_input], run)
+    return cache.get(
+        ["claude", arm, CLAUDE_MODEL, CLAUDE_SYSTEM, case_input],
+        lambda: run_claude(CLAUDE_SYSTEM, case_input, CLAUDE_MODEL),
+    )
 
 
 def claude_input(case: dict) -> str:
@@ -205,18 +176,6 @@ def claude_input(case: dict) -> str:
 
 
 # --- Scoring ---
-def accuracy(rows, arm, subset=lambda r: True):
-    picked = [r for r in rows if subset(r)]
-    hits = sum(r[arm] == r["gold"] for r in picked)
-    return f"{hits}/{len(picked)} ({hits / len(picked):.0%})" if picked else "-"
-
-
-def flips(rows, before, after):
-    fixed = [r["id"] for r in rows if r[before] != r["gold"] and r[after] == r["gold"]]
-    broken = [r["id"] for r in rows if r[before] == r["gold"] and r[after] != r["gold"]]
-    return fixed, broken
-
-
 def run(cases, independent, ask, raw_contexts=None):
     raw_contexts = raw_contexts or {}
     cache = Cache(HERE / "cache.json")

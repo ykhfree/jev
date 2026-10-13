@@ -1,0 +1,5261 @@
+{
+ "claims": [
+  {
+   "id": "c01",
+   "kind": "easy",
+   "gold_section": "verified",
+   "gold_file": "verified",
+   "clear": false,
+   "jev": "verified",
+   "jev_confidence": 1.0,
+   "jev_review": false,
+   "jev_seconds": [
+    0.288
+   ],
+   "claude_section": "verified",
+   "claude_file": "verified",
+   "claude_rep": "verified",
+   "raw": {
+    "claude_section": "supports",
+    "claude_file": "supports",
+    "claude_rep": "supports"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 157,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1237,
+     "cost_usd": 0.013044,
+     "duration_ms": 7442
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 181,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 8955,
+     "cost_usd": 0.075268,
+     "duration_ms": 7178
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 8955,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.001879,
+     "duration_ms": 2322
+    }
+   }
+  },
+  {
+   "id": "c02",
+   "kind": "easy",
+   "gold_section": "contradicted",
+   "gold_file": "contradicted",
+   "clear": true,
+   "jev": "contradicted",
+   "jev_confidence": 0.99,
+   "jev_review": false,
+   "jev_seconds": [
+    0.264
+   ],
+   "claude_section": "contradicted",
+   "claude_file": "contradicted",
+   "claude_rep": "contradicted",
+   "raw": {
+    "claude_section": "contradicts",
+    "claude_file": "contradicts",
+    "claude_rep": "contradicts"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1167,
+     "cost_usd": 0.009464,
+     "duration_ms": 2611
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 8976,
+     "cost_usd": 0.071936,
+     "duration_ms": 2608
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 8976,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0019232000000000001,
+     "duration_ms": 4249
+    }
+   }
+  },
+  {
+   "id": "c03",
+   "kind": "easy",
+   "gold_section": "verified",
+   "gold_file": "verified",
+   "clear": true,
+   "jev": "verified",
+   "jev_confidence": 0.96,
+   "jev_review": false,
+   "jev_seconds": [
+    0.291
+   ],
+   "claude_section": "verified",
+   "claude_file": "verified",
+   "claude_rep": "verified",
+   "raw": {
+    "claude_section": "supports",
+    "claude_file": "supports",
+    "claude_rep": "supports"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1242,
+     "cost_usd": 0.010024,
+     "duration_ms": 2621
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 8966,
+     "cost_usd": 0.071816,
+     "duration_ms": 2956
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 8966,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0018812,
+     "duration_ms": 2368
+    }
+   }
+  },
+  {
+   "id": "c04",
+   "kind": "easy",
+   "gold_section": "contradicted",
+   "gold_file": "contradicted",
+   "clear": true,
+   "jev": "contradicted",
+   "jev_confidence": 1.0,
+   "jev_review": false,
+   "jev_seconds": [
+    0.234
+   ],
+   "claude_section": "contradicted",
+   "claude_file": "contradicted",
+   "claude_rep": "contradicted",
+   "raw": {
+    "claude_section": "contradicts",
+    "claude_file": "contradicts",
+    "claude_rep": "contradicts"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1307,
+     "cost_usd": 0.010584,
+     "duration_ms": 2471
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 8960,
+     "cost_usd": 0.071808,
+     "duration_ms": 2916
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 8960,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.00192,
+     "duration_ms": 2319
+    }
+   }
+  },
+  {
+   "id": "c05",
+   "kind": "easy",
+   "gold_section": "verified",
+   "gold_file": "verified",
+   "clear": true,
+   "jev": "verified",
+   "jev_confidence": 1.0,
+   "jev_review": false,
+   "jev_seconds": [
+    0.241
+   ],
+   "claude_section": "verified",
+   "claude_file": "verified",
+   "claude_rep": "verified",
+   "raw": {
+    "claude_section": "supports",
+    "claude_file": "supports",
+    "claude_rep": "supports"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1191,
+     "cost_usd": 0.009616,
+     "duration_ms": 3818
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 3627,
+     "cost_usd": 0.029104,
+     "duration_ms": 2732
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 3627,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0008134,
+     "duration_ms": 2296
+    }
+   }
+  },
+  {
+   "id": "c06",
+   "kind": "easy",
+   "gold_section": "contradicted",
+   "gold_file": "contradicted",
+   "clear": true,
+   "jev": "contradicted",
+   "jev_confidence": 0.95,
+   "jev_review": false,
+   "jev_seconds": [
+    0.226
+   ],
+   "claude_section": "contradicted",
+   "claude_file": "contradicted",
+   "claude_rep": "contradicted",
+   "raw": {
+    "claude_section": "contradicts",
+    "claude_file": "contradicts",
+    "claude_rep": "contradicts"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1241,
+     "cost_usd": 0.010055999999999999,
+     "duration_ms": 3806
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 2750,
+     "cost_usd": 0.022128,
+     "duration_ms": 3358
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 2750,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.000678,
+     "duration_ms": 3193
+    }
+   }
+  },
+  {
+   "id": "c07",
+   "kind": "easy",
+   "gold_section": "contradicted",
+   "gold_file": "contradicted",
+   "clear": true,
+   "jev": "contradicted",
+   "jev_confidence": 1.0,
+   "jev_review": false,
+   "jev_seconds": [
+    0.194
+   ],
+   "claude_section": "contradicted",
+   "claude_file": "contradicted",
+   "claude_rep": "contradicted",
+   "raw": {
+    "claude_section": "contradicts",
+    "claude_file": "contradicts",
+    "claude_rep": "contradicts"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1234,
+     "cost_usd": 0.01,
+     "duration_ms": 2582
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 2514,
+     "cost_usd": 0.02024,
+     "duration_ms": 5269
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 2514,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0006308,
+     "duration_ms": 2708
+    }
+   }
+  },
+  {
+   "id": "c08",
+   "kind": "easy",
+   "gold_section": "verified",
+   "gold_file": "verified",
+   "clear": true,
+   "jev": "verified",
+   "jev_confidence": 0.99,
+   "jev_review": false,
+   "jev_seconds": [
+    0.216
+   ],
+   "claude_section": "verified",
+   "claude_file": "verified",
+   "claude_rep": "verified",
+   "raw": {
+    "claude_section": "supports",
+    "claude_file": "supports",
+    "claude_rep": "supports"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1101,
+     "cost_usd": 0.008896,
+     "duration_ms": 3340
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 7653,
+     "cost_usd": 0.061312,
+     "duration_ms": 2547
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 7653,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0016186,
+     "duration_ms": 5740
+    }
+   }
+  },
+  {
+   "id": "c09",
+   "kind": "subtle",
+   "gold_section": "contradicted",
+   "gold_file": "contradicted",
+   "clear": true,
+   "jev": "contradicted",
+   "jev_confidence": 0.99,
+   "jev_review": false,
+   "jev_seconds": [
+    0.195
+   ],
+   "claude_section": "contradicted",
+   "claude_file": "contradicted",
+   "claude_rep": "contradicted",
+   "raw": {
+    "claude_section": "contradicts",
+    "claude_file": "contradicts",
+    "claude_rep": "contradicts"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1208,
+     "cost_usd": 0.009792,
+     "duration_ms": 2731
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 8991,
+     "cost_usd": 0.07205600000000001,
+     "duration_ms": 2471
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 8991,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0019262000000000003,
+     "duration_ms": 2392
+    }
+   }
+  },
+  {
+   "id": "c10",
+   "kind": "subtle",
+   "gold_section": "contradicted",
+   "gold_file": "contradicted",
+   "clear": true,
+   "jev": "contradicted",
+   "jev_confidence": 0.86,
+   "jev_review": false,
+   "jev_seconds": [
+    0.215
+   ],
+   "claude_section": "contradicted",
+   "claude_file": "contradicted",
+   "claude_rep": "contradicted",
+   "raw": {
+    "claude_section": "contradicts",
+    "claude_file": "contradicts",
+    "claude_rep": "contradicts"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1237,
+     "cost_usd": 0.010024,
+     "duration_ms": 2906
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 8951,
+     "cost_usd": 0.07173600000000001,
+     "duration_ms": 2419
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 8951,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0019182000000000003,
+     "duration_ms": 2607
+    }
+   }
+  },
+  {
+   "id": "c11",
+   "kind": "subtle",
+   "gold_section": "contradicted",
+   "gold_file": "contradicted",
+   "clear": true,
+   "jev": "contradicted",
+   "jev_confidence": 0.9,
+   "jev_review": false,
+   "jev_seconds": [
+    0.217
+   ],
+   "claude_section": "contradicted",
+   "claude_file": "contradicted",
+   "claude_rep": "contradicted",
+   "raw": {
+    "claude_section": "contradicts",
+    "claude_file": "contradicts",
+    "claude_rep": "contradicts"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1196,
+     "cost_usd": 0.009696,
+     "duration_ms": 2488
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 7626,
+     "cost_usd": 0.061136,
+     "duration_ms": 2508
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 7626,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0016532,
+     "duration_ms": 2676
+    }
+   }
+  },
+  {
+   "id": "c12",
+   "kind": "subtle",
+   "gold_section": "contradicted",
+   "gold_file": "contradicted",
+   "clear": true,
+   "jev": "contradicted",
+   "jev_confidence": 0.7,
+   "jev_review": true,
+   "jev_seconds": [
+    0.252
+   ],
+   "claude_section": "contradicted",
+   "claude_file": "contradicted",
+   "claude_rep": "contradicted",
+   "raw": {
+    "claude_section": "contradicts",
+    "claude_file": "contradicts",
+    "claude_rep": "contradicts"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 73,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1108,
+     "cost_usd": 0.010332000000000001,
+     "duration_ms": 3601
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 2516,
+     "cost_usd": 0.020256,
+     "duration_ms": 2347
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 2516,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0006312,
+     "duration_ms": 2411
+    }
+   }
+  },
+  {
+   "id": "c13",
+   "kind": "subtle",
+   "gold_section": "contradicted",
+   "gold_file": "contradicted",
+   "clear": true,
+   "jev": "contradicted",
+   "jev_confidence": 0.9,
+   "jev_review": false,
+   "jev_seconds": [
+    0.21
+   ],
+   "claude_section": "contradicted",
+   "claude_file": "contradicted",
+   "claude_rep": "contradicted",
+   "raw": {
+    "claude_section": "contradicts",
+    "claude_file": "contradicts",
+    "claude_rep": "contradicts"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1246,
+     "cost_usd": 0.010095999999999999,
+     "duration_ms": 3429
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 3621,
+     "cost_usd": 0.029096,
+     "duration_ms": 3334
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 3621,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0008522,
+     "duration_ms": 2512
+    }
+   }
+  },
+  {
+   "id": "c14",
+   "kind": "subtle",
+   "gold_section": "contradicted",
+   "gold_file": "contradicted",
+   "clear": true,
+   "jev": "contradicted",
+   "jev_confidence": 0.77,
+   "jev_review": true,
+   "jev_seconds": [
+    0.223
+   ],
+   "claude_section": "contradicted",
+   "claude_file": "contradicted",
+   "claude_rep": "contradicted",
+   "raw": {
+    "claude_section": "contradicts",
+    "claude_file": "contradicts",
+    "claude_rep": "contradicts"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1123,
+     "cost_usd": 0.009112,
+     "duration_ms": 2644
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 2155,
+     "cost_usd": 0.017367999999999998,
+     "duration_ms": 2399
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 2155,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0005589999999999999,
+     "duration_ms": 3202
+    }
+   }
+  },
+  {
+   "id": "c15",
+   "kind": "subtle",
+   "gold_section": "contradicted",
+   "gold_file": "contradicted",
+   "clear": true,
+   "jev": "contradicted",
+   "jev_confidence": 1.0,
+   "jev_review": false,
+   "jev_seconds": [
+    0.221
+   ],
+   "claude_section": "contradicted",
+   "claude_file": "contradicted",
+   "claude_rep": "contradicted",
+   "raw": {
+    "claude_section": "contradicts",
+    "claude_file": "contradicts",
+    "claude_rep": "contradicts"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1197,
+     "cost_usd": 0.009703999999999999,
+     "duration_ms": 3053
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 2529,
+     "cost_usd": 0.02036,
+     "duration_ms": 2786
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 2529,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0006338,
+     "duration_ms": 2706
+    }
+   }
+  },
+  {
+   "id": "c16",
+   "kind": "subtle",
+   "gold_section": "verified",
+   "gold_file": "verified",
+   "clear": true,
+   "jev": "verified",
+   "jev_confidence": 0.38,
+   "jev_review": true,
+   "jev_seconds": [
+    0.202
+   ],
+   "claude_section": "verified",
+   "claude_file": "verified",
+   "claude_rep": "verified",
+   "raw": {
+    "claude_section": "supports",
+    "claude_file": "supports",
+    "claude_rep": "supports"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1198,
+     "cost_usd": 0.009672,
+     "duration_ms": 2474
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 8975,
+     "cost_usd": 0.07188800000000001,
+     "duration_ms": 5368
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 8975,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0018830000000000001,
+     "duration_ms": 2509
+    }
+   }
+  },
+  {
+   "id": "c17",
+   "kind": "subtle",
+   "gold_section": "verified",
+   "gold_file": "verified",
+   "clear": true,
+   "jev": "verified",
+   "jev_confidence": 0.92,
+   "jev_review": false,
+   "jev_seconds": [
+    0.203
+   ],
+   "claude_section": "verified",
+   "claude_file": "verified",
+   "claude_rep": "verified",
+   "raw": {
+    "claude_section": "supports",
+    "claude_file": "supports",
+    "claude_rep": "supports"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 29,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1220,
+     "cost_usd": 0.010348,
+     "duration_ms": 3115
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 8992,
+     "cost_usd": 0.072024,
+     "duration_ms": 2397
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 8992,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0018864,
+     "duration_ms": 2487
+    }
+   }
+  },
+  {
+   "id": "c18",
+   "kind": "subtle",
+   "gold_section": "verified",
+   "gold_file": "verified",
+   "clear": true,
+   "jev": "verified",
+   "jev_confidence": 0.95,
+   "jev_review": false,
+   "jev_seconds": [
+    0.202
+   ],
+   "claude_section": "verified",
+   "claude_file": "verified",
+   "claude_rep": "verified",
+   "raw": {
+    "claude_section": "supports",
+    "claude_file": "supports",
+    "claude_rep": "supports"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1132,
+     "cost_usd": 0.009144,
+     "duration_ms": 2526
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 71,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 8958,
+     "cost_usd": 0.073092,
+     "duration_ms": 3206
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 79,
+     "cache_read_tokens": 8958,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0033796,
+     "duration_ms": 5251
+    }
+   }
+  },
+  {
+   "id": "c19",
+   "kind": "subtle",
+   "gold_section": "verified",
+   "gold_file": "verified",
+   "clear": true,
+   "jev": "verified",
+   "jev_confidence": 0.97,
+   "jev_review": false,
+   "jev_seconds": [
+    0.2
+   ],
+   "claude_section": "verified",
+   "claude_file": "verified",
+   "claude_rep": "verified",
+   "raw": {
+    "claude_section": "supports",
+    "claude_file": "supports",
+    "claude_rep": "supports"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1195,
+     "cost_usd": 0.009648,
+     "duration_ms": 2443
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 7656,
+     "cost_usd": 0.061335999999999995,
+     "duration_ms": 2524
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 7656,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0016192,
+     "duration_ms": 2662
+    }
+   }
+  },
+  {
+   "id": "c20",
+   "kind": "subtle",
+   "gold_section": "verified",
+   "gold_file": "verified",
+   "clear": true,
+   "jev": "verified",
+   "jev_confidence": 0.98,
+   "jev_review": false,
+   "jev_seconds": [
+    0.221
+   ],
+   "claude_section": "verified",
+   "claude_file": "verified",
+   "claude_rep": "verified",
+   "raw": {
+    "claude_section": "supports",
+    "claude_file": "supports",
+    "claude_rep": "supports"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1026,
+     "cost_usd": 0.008296,
+     "duration_ms": 4353
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 2760,
+     "cost_usd": 0.022168,
+     "duration_ms": 2666
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 2760,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0006399999999999999,
+     "duration_ms": 5352
+    }
+   }
+  },
+  {
+   "id": "c21",
+   "kind": "subtle",
+   "gold_section": "verified",
+   "gold_file": "verified",
+   "clear": true,
+   "jev": "verified",
+   "jev_confidence": 0.83,
+   "jev_review": false,
+   "jev_seconds": [
+    0.245
+   ],
+   "claude_section": "verified",
+   "claude_file": "verified",
+   "claude_rep": "verified",
+   "raw": {
+    "claude_section": "supports",
+    "claude_file": "supports",
+    "claude_rep": "supports"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1119,
+     "cost_usd": 0.00904,
+     "duration_ms": 5133
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 2154,
+     "cost_usd": 0.017320000000000002,
+     "duration_ms": 2456
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 2154,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0005188,
+     "duration_ms": 2533
+    }
+   }
+  },
+  {
+   "id": "c22",
+   "kind": "subtle",
+   "gold_section": "verified",
+   "gold_file": "verified",
+   "clear": true,
+   "jev": "verified",
+   "jev_confidence": 0.97,
+   "jev_review": false,
+   "jev_seconds": [
+    0.227
+   ],
+   "claude_section": "verified",
+   "claude_file": "verified",
+   "claude_rep": "verified",
+   "raw": {
+    "claude_section": "supports",
+    "claude_file": "supports",
+    "claude_rep": "supports"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1128,
+     "cost_usd": 0.009112,
+     "duration_ms": 4520
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 3618,
+     "cost_usd": 0.029032000000000002,
+     "duration_ms": 3227
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 3618,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0008116,
+     "duration_ms": 2585
+    }
+   }
+  },
+  {
+   "id": "c23",
+   "kind": "outside_window",
+   "gold_section": "unsupported",
+   "gold_file": "verified",
+   "clear": true,
+   "jev": "verified",
+   "jev_confidence": 0.39,
+   "jev_review": true,
+   "jev_seconds": [
+    0.201
+   ],
+   "claude_section": "unsupported",
+   "claude_file": "verified",
+   "claude_rep": "verified",
+   "raw": {
+    "claude_section": "says_nothing",
+    "claude_file": "supports",
+    "claude_rep": "supports"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 48,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1054,
+     "cost_usd": 0.0094,
+     "duration_ms": 4052
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 8944,
+     "cost_usd": 0.07164000000000001,
+     "duration_ms": 2764
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 54,
+     "cache_read_tokens": 8944,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0028768,
+     "duration_ms": 6293
+    }
+   }
+  },
+  {
+   "id": "c24",
+   "kind": "outside_window",
+   "gold_section": "unsupported",
+   "gold_file": "verified",
+   "clear": true,
+   "jev": "verified",
+   "jev_confidence": 0.93,
+   "jev_review": false,
+   "jev_seconds": [
+    0.273
+   ],
+   "claude_section": "unsupported",
+   "claude_file": "verified",
+   "claude_rep": "verified",
+   "raw": {
+    "claude_section": "says_nothing",
+    "claude_file": "supports",
+    "claude_rep": "supports"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 140,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1226,
+     "cost_usd": 0.012616,
+     "duration_ms": 4089
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 8969,
+     "cost_usd": 0.07184,
+     "duration_ms": 2428
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 8969,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0018817999999999999,
+     "duration_ms": 2485
+    }
+   }
+  },
+  {
+   "id": "c25",
+   "kind": "outside_window",
+   "gold_section": "unsupported",
+   "gold_file": "contradicted",
+   "clear": true,
+   "jev": "unsupported",
+   "jev_confidence": 0.64,
+   "jev_review": true,
+   "jev_seconds": [
+    0.213
+   ],
+   "claude_section": "unsupported",
+   "claude_file": "contradicted",
+   "claude_rep": "contradicted",
+   "raw": {
+    "claude_section": "says_nothing",
+    "claude_file": "contradicts",
+    "claude_rep": "contradicts"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1190,
+     "cost_usd": 0.009668000000000001,
+     "duration_ms": 3750
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 8950,
+     "cost_usd": 0.071728,
+     "duration_ms": 2916
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 8950,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.001918,
+     "duration_ms": 2739
+    }
+   }
+  },
+  {
+   "id": "c26",
+   "kind": "outside_window",
+   "gold_section": "unsupported",
+   "gold_file": "contradicted",
+   "clear": true,
+   "jev": "verified",
+   "jev_confidence": 0.09,
+   "jev_review": true,
+   "jev_seconds": [
+    0.211
+   ],
+   "claude_section": "unsupported",
+   "claude_file": "contradicted",
+   "claude_rep": "contradicted",
+   "raw": {
+    "claude_section": "says_nothing",
+    "claude_file": "contradicts",
+    "claude_rep": "contradicts"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 194,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1237,
+     "cost_usd": 0.013784000000000001,
+     "duration_ms": 4478
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 8963,
+     "cost_usd": 0.07183200000000001,
+     "duration_ms": 3147
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 8963,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0019206000000000002,
+     "duration_ms": 3016
+    }
+   }
+  },
+  {
+   "id": "c27",
+   "kind": "outside_window",
+   "gold_section": "unsupported",
+   "gold_file": "verified",
+   "clear": true,
+   "jev": "unsupported",
+   "jev_confidence": 0.33,
+   "jev_review": true,
+   "jev_seconds": [
+    0.194
+   ],
+   "claude_section": "unsupported",
+   "claude_file": "verified",
+   "claude_rep": "verified",
+   "raw": {
+    "claude_section": "says_nothing",
+    "claude_file": "supports",
+    "claude_rep": "supports"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1218,
+     "cost_usd": 0.009892,
+     "duration_ms": 3419
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 3635,
+     "cost_usd": 0.029168000000000003,
+     "duration_ms": 2608
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 3635,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0008150000000000001,
+     "duration_ms": 2516
+    }
+   }
+  },
+  {
+   "id": "c28",
+   "kind": "outside_window",
+   "gold_section": "unsupported",
+   "gold_file": "contradicted",
+   "clear": true,
+   "jev": "verified",
+   "jev_confidence": 0.37,
+   "jev_review": true,
+   "jev_seconds": [
+    0.202
+   ],
+   "claude_section": "unsupported",
+   "claude_file": "contradicted",
+   "claude_rep": "contradicted",
+   "raw": {
+    "claude_section": "says_nothing",
+    "claude_file": "contradicts",
+    "claude_rep": "contradicts"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 52,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1146,
+     "cost_usd": 0.010216000000000001,
+     "duration_ms": 3341
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 7626,
+     "cost_usd": 0.061136,
+     "duration_ms": 2665
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 7626,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0016532,
+     "duration_ms": 3050
+    }
+   }
+  },
+  {
+   "id": "c29",
+   "kind": "outside_window",
+   "gold_section": "unsupported",
+   "gold_file": "contradicted",
+   "clear": true,
+   "jev": "unsupported",
+   "jev_confidence": 0.53,
+   "jev_review": true,
+   "jev_seconds": [
+    0.202
+   ],
+   "claude_section": "unsupported",
+   "claude_file": "contradicted",
+   "claude_rep": "contradicted",
+   "raw": {
+    "claude_section": "says_nothing",
+    "claude_file": "contradicts",
+    "claude_rep": "contradicts"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1257,
+     "cost_usd": 0.010204000000000001,
+     "duration_ms": 2722
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 2742,
+     "cost_usd": 0.022064,
+     "duration_ms": 5875
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 2742,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0006764,
+     "duration_ms": 3443
+    }
+   }
+  },
+  {
+   "id": "c30",
+   "kind": "outside_window",
+   "gold_section": "unsupported",
+   "gold_file": "verified",
+   "clear": true,
+   "jev": "unsupported",
+   "jev_confidence": 0.62,
+   "jev_review": true,
+   "jev_seconds": [
+    0.244
+   ],
+   "claude_section": "unsupported",
+   "claude_file": "verified",
+   "claude_rep": "verified",
+   "raw": {
+    "claude_section": "says_nothing",
+    "claude_file": "supports",
+    "claude_rep": "supports"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1171,
+     "cost_usd": 0.009516,
+     "duration_ms": 2697
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 2132,
+     "cost_usd": 0.017144000000000003,
+     "duration_ms": 2433
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 2132,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0005144,
+     "duration_ms": 2525
+    }
+   }
+  },
+  {
+   "id": "c31",
+   "kind": "unrelated",
+   "gold_section": "unsupported",
+   "gold_file": "unsupported",
+   "clear": true,
+   "jev": "unsupported",
+   "jev_confidence": 0.76,
+   "jev_review": true,
+   "jev_seconds": [
+    0.205
+   ],
+   "claude_section": "unsupported",
+   "claude_file": "unsupported",
+   "claude_rep": "unsupported",
+   "raw": {
+    "claude_section": "says_nothing",
+    "claude_file": "says_nothing",
+    "claude_rep": "says_nothing"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1104,
+     "cost_usd": 0.00898,
+     "duration_ms": 2606
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 8957,
+     "cost_usd": 0.07180399999999999,
+     "duration_ms": 2431
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 8957,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0019394,
+     "duration_ms": 3375
+    }
+   }
+  },
+  {
+   "id": "c32",
+   "kind": "unrelated",
+   "gold_section": "unsupported",
+   "gold_file": "unsupported",
+   "clear": true,
+   "jev": "unsupported",
+   "jev_confidence": 0.98,
+   "jev_review": false,
+   "jev_seconds": [
+    0.21
+   ],
+   "claude_section": "unsupported",
+   "claude_file": "unsupported",
+   "claude_rep": "unsupported",
+   "raw": {
+    "claude_section": "says_nothing",
+    "claude_file": "says_nothing",
+    "claude_rep": "says_nothing"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1220,
+     "cost_usd": 0.009908,
+     "duration_ms": 2446
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 8948,
+     "cost_usd": 0.07173199999999999,
+     "duration_ms": 2485
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 8948,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0019375999999999998,
+     "duration_ms": 2458
+    }
+   }
+  },
+  {
+   "id": "c33",
+   "kind": "unrelated",
+   "gold_section": "unsupported",
+   "gold_file": "unsupported",
+   "clear": true,
+   "jev": "unsupported",
+   "jev_confidence": 1.0,
+   "jev_review": false,
+   "jev_seconds": [
+    0.227
+   ],
+   "claude_section": "unsupported",
+   "claude_file": "unsupported",
+   "claude_rep": "unsupported",
+   "raw": {
+    "claude_section": "says_nothing",
+    "claude_file": "says_nothing",
+    "claude_rep": "says_nothing"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 978,
+     "cost_usd": 0.007972,
+     "duration_ms": 2613
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 8971,
+     "cost_usd": 0.071916,
+     "duration_ms": 2717
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 8971,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0019422,
+     "duration_ms": 2604
+    }
+   }
+  },
+  {
+   "id": "c34",
+   "kind": "unrelated",
+   "gold_section": "unsupported",
+   "gold_file": "unsupported",
+   "clear": true,
+   "jev": "unsupported",
+   "jev_confidence": 0.86,
+   "jev_review": false,
+   "jev_seconds": [
+    0.192
+   ],
+   "claude_section": "unsupported",
+   "claude_file": "unsupported",
+   "claude_rep": "unsupported",
+   "raw": {
+    "claude_section": "says_nothing",
+    "claude_file": "says_nothing",
+    "claude_rep": "says_nothing"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1164,
+     "cost_usd": 0.009460000000000001,
+     "duration_ms": 2751
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 7612,
+     "cost_usd": 0.061044,
+     "duration_ms": 3559
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 7612,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0016704,
+     "duration_ms": 2539
+    }
+   }
+  },
+  {
+   "id": "c35",
+   "kind": "unrelated",
+   "gold_section": "unsupported",
+   "gold_file": "unsupported",
+   "clear": true,
+   "jev": "unsupported",
+   "jev_confidence": 0.98,
+   "jev_review": false,
+   "jev_seconds": [
+    0.226
+   ],
+   "claude_section": "unsupported",
+   "claude_file": "unsupported",
+   "claude_rep": "unsupported",
+   "raw": {
+    "claude_section": "says_nothing",
+    "claude_file": "says_nothing",
+    "claude_rep": "says_nothing"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1325,
+     "cost_usd": 0.010748,
+     "duration_ms": 2676
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 7624,
+     "cost_usd": 0.06114,
+     "duration_ms": 2538
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 7624,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0016728,
+     "duration_ms": 2360
+    }
+   }
+  },
+  {
+   "id": "c36",
+   "kind": "unrelated",
+   "gold_section": "unsupported",
+   "gold_file": "unsupported",
+   "clear": true,
+   "jev": "unsupported",
+   "jev_confidence": 1.0,
+   "jev_review": false,
+   "jev_seconds": [
+    0.211
+   ],
+   "claude_section": "unsupported",
+   "claude_file": "unsupported",
+   "claude_rep": "unsupported",
+   "raw": {
+    "claude_section": "says_nothing",
+    "claude_file": "says_nothing",
+    "claude_rep": "says_nothing"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1219,
+     "cost_usd": 0.0099,
+     "duration_ms": 3487
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 3610,
+     "cost_usd": 0.029027999999999998,
+     "duration_ms": 6922
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 3610,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.00087,
+     "duration_ms": 2559
+    }
+   }
+  },
+  {
+   "id": "c37",
+   "kind": "unrelated",
+   "gold_section": "unsupported",
+   "gold_file": "unsupported",
+   "clear": true,
+   "jev": "unsupported",
+   "jev_confidence": 0.96,
+   "jev_review": false,
+   "jev_seconds": [
+    0.2
+   ],
+   "claude_section": "unsupported",
+   "claude_file": "unsupported",
+   "claude_rep": "unsupported",
+   "raw": {
+    "claude_section": "says_nothing",
+    "claude_file": "says_nothing",
+    "claude_rep": "says_nothing"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1123,
+     "cost_usd": 0.009132000000000001,
+     "duration_ms": 2867
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 2536,
+     "cost_usd": 0.020436,
+     "duration_ms": 4496
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 2536,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0006552000000000001,
+     "duration_ms": 5884
+    }
+   }
+  },
+  {
+   "id": "c38",
+   "kind": "unrelated",
+   "gold_section": "unsupported",
+   "gold_file": "unsupported",
+   "clear": true,
+   "jev": "unsupported",
+   "jev_confidence": 0.89,
+   "jev_review": false,
+   "jev_seconds": [
+    0.229
+   ],
+   "claude_section": "unsupported",
+   "claude_file": "unsupported",
+   "claude_rep": "unsupported",
+   "raw": {
+    "claude_section": "says_nothing",
+    "claude_file": "says_nothing",
+    "claude_rep": "says_nothing"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1198,
+     "cost_usd": 0.009732000000000001,
+     "duration_ms": 2521
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 2520,
+     "cost_usd": 0.020308,
+     "duration_ms": 2745
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 2520,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.000652,
+     "duration_ms": 3023
+    }
+   }
+  },
+  {
+   "id": "c39",
+   "kind": "unrelated",
+   "gold_section": "unsupported",
+   "gold_file": "unsupported",
+   "clear": true,
+   "jev": "unsupported",
+   "jev_confidence": 1.0,
+   "jev_review": false,
+   "jev_seconds": [
+    0.228
+   ],
+   "claude_section": "unsupported",
+   "claude_file": "unsupported",
+   "claude_rep": "unsupported",
+   "raw": {
+    "claude_section": "says_nothing",
+    "claude_file": "says_nothing",
+    "claude_rep": "says_nothing"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1290,
+     "cost_usd": 0.010468,
+     "duration_ms": 2827
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 2741,
+     "cost_usd": 0.022076,
+     "duration_ms": 2507
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 2741,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0006962,
+     "duration_ms": 2544
+    }
+   }
+  },
+  {
+   "id": "c40",
+   "kind": "unrelated",
+   "gold_section": "unsupported",
+   "gold_file": "unsupported",
+   "clear": true,
+   "jev": "verified",
+   "jev_confidence": 0.23,
+   "jev_review": true,
+   "jev_seconds": [
+    0.208
+   ],
+   "claude_section": "unsupported",
+   "claude_file": "unsupported",
+   "claude_rep": "unsupported",
+   "raw": {
+    "claude_section": "says_nothing",
+    "claude_file": "says_nothing",
+    "claude_rep": "says_nothing"
+   },
+   "usage": {
+    "claude_section": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1161,
+     "cost_usd": 0.009436,
+     "duration_ms": 5010
+    },
+    "claude_file": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 2171,
+     "cost_usd": 0.017516,
+     "duration_ms": 4567
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 7,
+     "cache_read_tokens": 2171,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0005822000000000001,
+     "duration_ms": 4898
+    }
+   }
+  }
+ ],
+ "memgate": [
+  {
+   "id": "m01",
+   "gold": "record",
+   "clear": false,
+   "jev": "uncertain",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.8,
+     "durable": 0.71,
+     "actionable": 0.91,
+     "noise": 0.09
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-06-11 [trading-bot] — \"Dynamic workflow verification of LLM fakeout-filter prompt variants (base/structure/momentum/outcome) on 5yr BTC\" (match 0.18)",
+      "score": 0.15
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-06-11 [trading-bot] — \"Dynamic workflow verification of LLM fakeout-filter prompt variants (base/structure/momentum/outcome) on 5yr BTC\" (match 0.18)",
+      "score": 0.46
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.215,
+    0.251
+   ],
+   "claude": "record",
+   "claude_rep": "record",
+   "raw": {
+    "claude": "record",
+    "claude_rep": "record"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 196,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 1776,
+     "cost_usd": 0.018136,
+     "duration_ms": 4146
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 165,
+     "cache_read_tokens": 1776,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0036632,
+     "duration_ms": 3712
+    }
+   }
+  },
+  {
+   "id": "m02",
+   "gold": "record",
+   "clear": false,
+   "jev": "uncertain",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.86,
+     "durable": 0.84,
+     "actionable": 0.94,
+     "noise": 0.08
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-06-11 [trading-bot] — \"Apply+validate verified fakeout-filter config (OUTCOME variant + th0.65) and document\" (match 0.09)",
+      "score": 0.05
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-06-11 [trading-bot] — \"Dynamic workflow verification of LLM fakeout-filter prompt variants (base/structure/momentum/outcome) on 5yr BTC\" (match 0.09)",
+      "score": 0.06
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-06-11 [trading-bot] — \"Apply+validate verified fakeout-filter config (OUTCOME variant + th0.65) and document\" (match 0.09)",
+      "score": 0.22
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-06-11 [trading-bot] — \"Dynamic workflow verification of LLM fakeout-filter prompt variants (base/structure/momentum/outcome) on 5yr BTC\" (match 0.09)",
+      "score": 0.4
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.243,
+    0.245,
+    0.208
+   ],
+   "claude": "conflict",
+   "claude_rep": "conflict",
+   "raw": {
+    "claude": "conflict",
+    "claude_rep": "conflict"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 267,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 2342,
+     "cost_usd": 0.024083999999999998,
+     "duration_ms": 5242
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 355,
+     "cache_read_tokens": 2342,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0075764000000000005,
+     "duration_ms": 5758
+    }
+   }
+  },
+  {
+   "id": "m03",
+   "gold": "record",
+   "clear": true,
+   "jev": "record",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.79,
+     "durable": 0.81,
+     "actionable": 0.9,
+     "noise": 0.09
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-06-11 [trading-bot] — \"Dynamic workflow verification of LLM fakeout-filter prompt variants (base/structure/momentum/outcome) on 5yr BTC\" (match 0.18)",
+      "score": 0.23
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-06-11 [trading-bot] — \"Investigate low win rate in fakeout-filter tuning study (user noticed ~80% expectation)\" (match 0.10)",
+      "score": 0.1
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-06-11 [trading-bot] — \"Apply+validate verified fakeout-filter config (OUTCOME variant + th0.65) and document\" (match 0.10)",
+      "score": 0.15
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-06-11 [trading-bot] — \"Dynamic workflow verification of LLM fakeout-filter prompt variants (base/structure/momentum/outcome) on 5yr BTC\" (match 0.18)",
+      "score": 0.11
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-06-11 [trading-bot] — \"Investigate low win rate in fakeout-filter tuning study (user noticed ~80% expectation)\" (match 0.10)",
+      "score": 0.19
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-06-11 [trading-bot] — \"Apply+validate verified fakeout-filter config (OUTCOME variant + th0.65) and document\" (match 0.10)",
+      "score": 0.28
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.268,
+    0.233,
+    0.229,
+    0.219
+   ],
+   "claude": "record",
+   "claude_rep": "record",
+   "raw": {
+    "claude": "record",
+    "claude_rep": "record"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 3,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 3069,
+     "cost_usd": 0.02462,
+     "duration_ms": 3015
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 3,
+     "cache_read_tokens": 3069,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0006818000000000001,
+     "duration_ms": 2698
+    }
+   }
+  },
+  {
+   "id": "m04",
+   "gold": "record",
+   "clear": true,
+   "jev": "record",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.79,
+     "durable": 0.71,
+     "actionable": 0.91,
+     "noise": 0.11
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-06-14 [trading-bot] — \"Write distill plan: LLM fakeout filter -> deterministic heuristic filter (runtime LLM-free)\" (match 0.46)",
+      "score": 0.16
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-06-15 [trading-bot] — \"Regime-robustness skeptic audit of distilled heuristic fakeout filter (BTC/ETH 5yr, by-year/by-side, th0.55+0.70)\" (match 0.14)",
+      "score": 0.24
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-06-11 [trading-bot] — \"Dynamic workflow verification of LLM fakeout-filter prompt variants (base/structure/momentum/outcome) on 5yr BTC\" (match 0.14)",
+      "score": 0.19
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-06-11 [trading-bot] — \"Investigate low win rate in fakeout-filter tuning study (user noticed ~80% expectation)\" (match 0.08)",
+      "score": 0.08
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-06-11 [trading-bot] — \"Apply+validate verified fakeout-filter config (OUTCOME variant + th0.65) and document\" (match 0.08)",
+      "score": 0.27
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-06-14 [trading-bot] — \"Write distill plan: LLM fakeout filter -> deterministic heuristic filter (runtime LLM-free)\" (match 0.46)",
+      "score": 0.24
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-06-15 [trading-bot] — \"Regime-robustness skeptic audit of distilled heuristic fakeout filter (BTC/ETH 5yr, by-year/by-side, th0.55+0.70)\" (match 0.14)",
+      "score": 0.14
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-06-11 [trading-bot] — \"Dynamic workflow verification of LLM fakeout-filter prompt variants (base/structure/momentum/outcome) on 5yr BTC\" (match 0.14)",
+      "score": 0.17
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-06-11 [trading-bot] — \"Investigate low win rate in fakeout-filter tuning study (user noticed ~80% expectation)\" (match 0.08)",
+      "score": 0.21
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-06-11 [trading-bot] — \"Apply+validate verified fakeout-filter config (OUTCOME variant + th0.65) and document\" (match 0.08)",
+      "score": 0.21
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.211,
+    0.208,
+    0.244,
+    0.2,
+    0.187,
+    0.197
+   ],
+   "claude": "record",
+   "claude_rep": "record",
+   "raw": {
+    "claude": "record",
+    "claude_rep": "record"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 248,
+     "cache_read_tokens": 0,
+     "cache_creation_tokens": 4648,
+     "cost_usd": 0.042152,
+     "duration_ms": 4507
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 244,
+     "cache_read_tokens": 4648,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0058176,
+     "duration_ms": 4752
+    }
+   }
+  },
+  {
+   "id": "m05",
+   "gold": "record",
+   "clear": false,
+   "jev": "uncertain",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.8,
+     "durable": 0.77,
+     "actionable": 0.9,
+     "noise": 0.11
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-06-15 [trading-bot] — \"Regime-robustness skeptic audit of distilled heuristic fakeout filter (BTC/ETH 5yr, by-year/by-side, th0.55+0.70)\" (match 0.19)",
+      "score": 0.15
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-06-15 [trading-bot] — \"Implement heuristic-distill plan: LLM fakeout filter -> deterministic offline-learned filter, with LLM-parity validation\" (match 0.18)",
+      "score": 0.24
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-06-14 [trading-bot] — \"Write distill plan: LLM fakeout filter -> deterministic heuristic filter (runtime LLM-free)\" (match 0.18)",
+      "score": 0.17
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-06-11 [trading-bot] — \"Investigate low win rate in fakeout-filter tuning study (user noticed ~80% expectation)\" (match 0.11)",
+      "score": 0.06
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-06-11 [trading-bot] — \"Dynamic workflow verification of LLM fakeout-filter prompt variants (base/structure/momentum/outcome) on 5yr BTC\" (match 0.10)",
+      "score": 0.13
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-06-15 [trading-bot] — \"Regime-robustness skeptic audit of distilled heuristic fakeout filter (BTC/ETH 5yr, by-year/by-side, th0.55+0.70)\" (match 0.19)",
+      "score": 0.28
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-06-15 [trading-bot] — \"Implement heuristic-distill plan: LLM fakeout filter -> deterministic offline-learned filter, with LLM-parity validation\" (match 0.18)",
+      "score": 0.55
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-06-14 [trading-bot] — \"Write distill plan: LLM fakeout filter -> deterministic heuristic filter (runtime LLM-free)\" (match 0.18)",
+      "score": 0.29
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-06-11 [trading-bot] — \"Investigate low win rate in fakeout-filter tuning study (user noticed ~80% expectation)\" (match 0.11)",
+      "score": 0.41
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-06-11 [trading-bot] — \"Dynamic workflow verification of LLM fakeout-filter prompt variants (base/structure/momentum/outcome) on 5yr BTC\" (match 0.10)",
+      "score": 0.21
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.246,
+    0.198,
+    0.203,
+    0.256,
+    0.215,
+    0.182
+   ],
+   "claude": "conflict",
+   "claude_rep": "conflict",
+   "raw": {
+    "claude": "conflict",
+    "claude_rep": "conflict"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 318,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 4454,
+     "cost_usd": 0.042112,
+     "duration_ms": 5361
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 203,
+     "cache_read_tokens": 5014,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0050708,
+     "duration_ms": 3999
+    }
+   }
+  },
+  {
+   "id": "m06",
+   "gold": "conflict",
+   "clear": true,
+   "jev": "uncertain",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.82,
+     "durable": 0.81,
+     "actionable": 0.92,
+     "noise": 0.09
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-06-11 [trading-bot] — \"Dynamic workflow verification of LLM fakeout-filter prompt variants (base/structure/momentum/outcome) on 5yr BTC\" (match 0.36)",
+      "score": 0.12
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-06-15 [trading-bot] — \"Regime-robustness skeptic audit of distilled heuristic fakeout filter (BTC/ETH 5yr, by-year/by-side, th0.55+0.70)\" (match 0.17)",
+      "score": 0.09
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-06-11 [trading-bot] — \"Apply+validate verified fakeout-filter config (OUTCOME variant + th0.65) and document\" (match 0.12)",
+      "score": 0.05
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-06-15 [trading-bot] — \"Heuristic distill Task 5: wire BTC-scoped deterministic fakeout filter into live TradingStrategy (after user reframed to ignore ETH)\" (match 0.11)",
+      "score": 0.06
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-06-15 [trading-bot] — \"Implement heuristic-distill plan: LLM fakeout filter -> deterministic offline-learned filter, with LLM-parity validation\" (match 0.11)",
+      "score": 0.13
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-06-11 [trading-bot] — \"Dynamic workflow verification of LLM fakeout-filter prompt variants (base/structure/momentum/outcome) on 5yr BTC\" (match 0.36)",
+      "score": 0.24
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-06-15 [trading-bot] — \"Regime-robustness skeptic audit of distilled heuristic fakeout filter (BTC/ETH 5yr, by-year/by-side, th0.55+0.70)\" (match 0.17)",
+      "score": 0.21
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-06-11 [trading-bot] — \"Apply+validate verified fakeout-filter config (OUTCOME variant + th0.65) and document\" (match 0.12)",
+      "score": 0.6
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-06-15 [trading-bot] — \"Heuristic distill Task 5: wire BTC-scoped deterministic fakeout filter into live TradingStrategy (after user reframed to ignore ETH)\" (match 0.11)",
+      "score": 0.35
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-06-15 [trading-bot] — \"Implement heuristic-distill plan: LLM fakeout filter -> deterministic offline-learned filter, with LLM-parity validation\" (match 0.11)",
+      "score": 0.69
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.179,
+    0.211,
+    0.191,
+    0.224,
+    0.259,
+    0.188
+   ],
+   "claude": "conflict",
+   "claude_rep": "conflict",
+   "raw": {
+    "claude": "conflict",
+    "claude_rep": "conflict"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 94,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 4210,
+     "cost_usd": 0.03568,
+     "duration_ms": 3123
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 119,
+     "cache_read_tokens": 4770,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0033420000000000004,
+     "duration_ms": 3408
+    }
+   }
+  },
+  {
+   "id": "m07",
+   "gold": "record",
+   "clear": false,
+   "jev": "conflict",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.75,
+     "durable": 0.71,
+     "actionable": 0.92,
+     "noise": 0.11
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-07-03 [trading-bot] — \"Kotlin trading-bot(~/private/trading-bot)을 Rust로 완전 포팅 (~/RustroverProjects/trading-bot): 전략 로직 100% 파리티 + 42개 테스트 전부 포팅\" (match 0.36)",
+      "score": 0.06
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-06-17 [trading-bot] — \"trading-bot fakeout-filter 스코어링 실행: FilterTuningRunner 인자와 genai-gateway rate-limit 대응\" (match 0.11)",
+      "score": 0.03
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-07-03 [trading-bot] — \"Kotlin trading-bot(~/private/trading-bot)을 Rust로 완전 포팅 (~/RustroverProjects/trading-bot): 전략 로직 100% 파리티 + 42개 테스트 전부 포팅\" (match 0.36)",
+      "score": 0.77
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-06-17 [trading-bot] — \"trading-bot fakeout-filter 스코어링 실행: FilterTuningRunner 인자와 genai-gateway rate-limit 대응\" (match 0.11)",
+      "score": 0.07
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.192,
+    0.194,
+    0.198
+   ],
+   "claude": "conflict",
+   "claude_rep": "conflict",
+   "raw": {
+    "claude": "conflict",
+    "claude_rep": "conflict"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 210,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2335,
+     "cost_usd": 0.023,
+     "duration_ms": 4378
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 430,
+     "cache_read_tokens": 2895,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.009186999999999999,
+     "duration_ms": 6040
+    }
+   }
+  },
+  {
+   "id": "m08",
+   "gold": "duplicate",
+   "clear": false,
+   "jev": "uncertain",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.76,
+     "durable": 0.82,
+     "actionable": 0.87,
+     "noise": 0.14
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-07-04 [trading-bot-rust] — \"trading-bot-rust ↔ Kotlin(~/Private/trading-bot) 포팅 패리티 검증 (전략코어/인프라/테스트 3-way 병렬 비교)\" (match 0.06)",
+      "score": 0.42
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-07-03 [trading-bot] — \"Kotlin trading-bot(~/private/trading-bot)을 Rust로 완전 포팅 (~/RustroverProjects/trading-bot): 전략 로직 100% 파리티 + 42개 테스트 전부 포팅\" (match 0.06)",
+      "score": 0.04
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-07-04 [trading-bot-rust] — \"trading-bot-rust ↔ Kotlin(~/Private/trading-bot) 포팅 패리티 검증 (전략코어/인프라/테스트 3-way 병렬 비교)\" (match 0.06)",
+      "score": 0.36
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-07-03 [trading-bot] — \"Kotlin trading-bot(~/private/trading-bot)을 Rust로 완전 포팅 (~/RustroverProjects/trading-bot): 전략 로직 100% 파리티 + 42개 테스트 전부 포팅\" (match 0.06)",
+      "score": 0.09
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.234,
+    0.233,
+    0.193
+   ],
+   "claude": "duplicate",
+   "claude_rep": "duplicate",
+   "raw": {
+    "claude": "duplicate",
+    "claude_rep": "duplicate"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2215,
+     "cost_usd": 0.01796,
+     "duration_ms": 4186
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 2775,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.000683,
+     "duration_ms": 2785
+    }
+   }
+  },
+  {
+   "id": "m09",
+   "gold": "conflict",
+   "clear": true,
+   "jev": "uncertain",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.69,
+     "durable": 0.74,
+     "actionable": 0.83,
+     "noise": 0.16
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-07-04 [trading-bot-rust] — \"logging.rs 날짜 의존 테스트 2개 수정 (2026-07-04_2304에서 발견한 버그)\" (match 0.18)",
+      "score": 0.04
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-07-01 [trading-bot] — \"Port HeuristicFakeoutFilterClient into docs/swing_points_strategy.pine\" (match 0.18)",
+      "score": 0.63
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-07-04 [trading-bot-rust] — \"trading-bot-rust ↔ Kotlin(~/Private/trading-bot) 포팅 패리티 검증 (전략코어/인프라/테스트 3-way 병렬 비교)\" (match 0.08)",
+      "score": 0.03
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-07-03 [trading-bot] — \"Kotlin trading-bot(~/private/trading-bot)을 Rust로 완전 포팅 (~/RustroverProjects/trading-bot): 전략 로직 100% 파리티 + 42개 테스트 전부 포팅\" (match 0.08)",
+      "score": 0.03
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-07-04 [trading-bot-rust] — \"logging.rs 날짜 의존 테스트 2개 수정 (2026-07-04_2304에서 발견한 버그)\" (match 0.18)",
+      "score": 0.03
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-07-01 [trading-bot] — \"Port HeuristicFakeoutFilterClient into docs/swing_points_strategy.pine\" (match 0.18)",
+      "score": 0.59
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-07-04 [trading-bot-rust] — \"trading-bot-rust ↔ Kotlin(~/Private/trading-bot) 포팅 패리티 검증 (전략코어/인프라/테스트 3-way 병렬 비교)\" (match 0.08)",
+      "score": 0.05
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-07-03 [trading-bot] — \"Kotlin trading-bot(~/private/trading-bot)을 Rust로 완전 포팅 (~/RustroverProjects/trading-bot): 전략 로직 100% 파리티 + 42개 테스트 전부 포팅\" (match 0.08)",
+      "score": 0.05
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.22,
+    0.224,
+    0.242,
+    0.215,
+    0.216
+   ],
+   "claude": "conflict",
+   "claude_rep": "conflict",
+   "raw": {
+    "claude": "conflict",
+    "claude_rep": "conflict"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 123,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 3298,
+     "cost_usd": 0.028964000000000004,
+     "duration_ms": 3332
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 93,
+     "cache_read_tokens": 3858,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0026395999999999998,
+     "duration_ms": 3572
+    }
+   }
+  },
+  {
+   "id": "m10",
+   "gold": "skip",
+   "clear": true,
+   "jev": "uncertain",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.4,
+     "durable": 0.44,
+     "actionable": 0.68,
+     "noise": 0.23
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [trading-bot-rust] — \"[orig 2026-07-03] Kotlin trading-bot(~/IdeaProjects/trading-bot, main fcb73cf)을 Rust(~/RustroverProjects/trading-bot-rust)로 완전 포팅: 전략 로직 파리티 + Kotlin 42개 테스트 전부 포팅\" (match 0.38)",
+      "score": 0.05
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-07-04 [trading-bot-rust] — \"trading-bot-rust ↔ Kotlin(~/IdeaProjects/trading-bot) 포팅 패리티 검증 (전략코어/인프라/테스트 3-way 병렬 비교)\" (match 0.38)",
+      "score": 0.08
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-27 [ai] — \"Split the Jev delegation section of the global CLAUDE.md into 'Jev decides' (verdicts acted on without re-judging) and 'Jev advises' tiers, based on jev.py thresholds\" (match 0.18)",
+      "score": 0.03
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-27 [ai] — \"Evaluate whether TypeSafe Jev can route coding-agent tasks per the global CLAUDE.md Orchestration rules (52 synthetic cases, 21 raw-transcript cases, harm test; Jev vs isolated claude -p opus)\" (match 0.18)",
+      "score": 0.05
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-26 [ai] — \"prompt-audit of ~/.claude CLAUDE.md, agents, skillify; then applied the diff\" (match 0.18)",
+      "score": 0.04
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [trading-bot-rust] — \"[orig 2026-07-03] Kotlin trading-bot(~/IdeaProjects/trading-bot, main fcb73cf)을 Rust(~/RustroverProjects/trading-bot-rust)로 완전 포팅: 전략 로직 파리티 + Kotlin 42개 테스트 전부 포팅\" (match 0.38)",
+      "score": 0.33
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-07-04 [trading-bot-rust] — \"trading-bot-rust ↔ Kotlin(~/IdeaProjects/trading-bot) 포팅 패리티 검증 (전략코어/인프라/테스트 3-way 병렬 비교)\" (match 0.38)",
+      "score": 0.36
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-27 [ai] — \"Split the Jev delegation section of the global CLAUDE.md into 'Jev decides' (verdicts acted on without re-judging) and 'Jev advises' tiers, based on jev.py thresholds\" (match 0.18)",
+      "score": 0.09
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-27 [ai] — \"Evaluate whether TypeSafe Jev can route coding-agent tasks per the global CLAUDE.md Orchestration rules (52 synthetic cases, 21 raw-transcript cases, harm test; Jev vs isolated claude -p opus)\" (match 0.18)",
+      "score": 0.29
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-26 [ai] — \"prompt-audit of ~/.claude CLAUDE.md, agents, skillify; then applied the diff\" (match 0.18)",
+      "score": 0.28
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.193,
+    0.26,
+    0.218,
+    0.214,
+    0.214,
+    0.199
+   ],
+   "claude": "skip",
+   "claude_rep": "skip",
+   "raw": {
+    "claude": "skip",
+    "claude_rep": "skip"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 3123,
+     "cost_usd": 0.025183999999999998,
+     "duration_ms": 2542
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 3683,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0008246,
+     "duration_ms": 2525
+    }
+   }
+  },
+  {
+   "id": "m11",
+   "gold": "conflict",
+   "clear": true,
+   "jev": "conflict",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.75,
+     "durable": 0.54,
+     "actionable": 0.9,
+     "noise": 0.17
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-25 [cross-memory-cli] — \"Verify CROSS_MEMORY_AUTOSYNC push works on this Mac\" (match 1.00)",
+      "score": 0.21
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-25 [cross-memory-cli] — \"Verify CROSS_MEMORY_AUTOSYNC push works on this Mac\" (match 1.00)",
+      "score": 0.81
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.331,
+    0.184
+   ],
+   "claude": "duplicate",
+   "claude_rep": "conflict",
+   "raw": {
+    "claude": "duplicate",
+    "claude_rep": "conflict"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 389,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 913,
+     "cost_usd": 0.015204,
+     "duration_ms": 6080
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 414,
+     "cache_read_tokens": 1473,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0085826,
+     "duration_ms": 6726
+    }
+   }
+  },
+  {
+   "id": "m12",
+   "gold": "conflict",
+   "clear": false,
+   "jev": "duplicate",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.78,
+     "durable": 0.69,
+     "actionable": 0.88,
+     "noise": 0.14
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 1.00)",
+      "score": 0.98
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.40)",
+      "score": 0.15
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.27)",
+      "score": 0.08
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.11)",
+      "score": 0.03
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.07)",
+      "score": 0.03
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 1.00)",
+      "score": 0.02
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.40)",
+      "score": 0.29
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.27)",
+      "score": 0.42
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.11)",
+      "score": 0.07
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.07)",
+      "score": 0.09
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.199,
+    0.197,
+    0.189,
+    0.239,
+    0.232,
+    0.179
+   ],
+   "claude": "conflict",
+   "claude_rep": "conflict",
+   "raw": {
+    "claude": "conflict",
+    "claude_rep": "conflict"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 171,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 3239,
+     "cost_usd": 0.029452000000000002,
+     "duration_ms": 4034
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 234,
+     "cache_read_tokens": 3799,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0054478,
+     "duration_ms": 4771
+    }
+   }
+  },
+  {
+   "id": "m13",
+   "gold": "duplicate",
+   "clear": false,
+   "jev": "uncertain",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.78,
+     "durable": 0.83,
+     "actionable": 0.9,
+     "noise": 0.12
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.87)",
+      "score": 0.11
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.47)",
+      "score": 0.17
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.43)",
+      "score": 0.05
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.20)",
+      "score": 0.27
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.07)",
+      "score": 0.03
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.87)",
+      "score": 0.17
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.47)",
+      "score": 0.34
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.43)",
+      "score": 0.19
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.20)",
+      "score": 0.18
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.07)",
+      "score": 0.07
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.265,
+    0.197,
+    0.188,
+    0.225,
+    0.174,
+    0.221
+   ],
+   "claude": "record",
+   "claude_rep": "record",
+   "raw": {
+    "claude": "record",
+    "claude_rep": "record"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 191,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2934,
+     "cost_usd": 0.027412,
+     "duration_ms": 4434
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 188,
+     "cache_read_tokens": 3494,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0044668,
+     "duration_ms": 4815
+    }
+   }
+  },
+  {
+   "id": "m14",
+   "gold": "duplicate",
+   "clear": true,
+   "jev": "duplicate",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.74,
+     "durable": 0.81,
+     "actionable": 0.89,
+     "noise": 0.11
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 1.00)",
+      "score": 0.98
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.41)",
+      "score": 0.13
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.25)",
+      "score": 0.05
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.17)",
+      "score": 0.12
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.11)",
+      "score": 0.03
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 1.00)",
+      "score": 0.02
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.41)",
+      "score": 0.2
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.25)",
+      "score": 0.25
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.17)",
+      "score": 0.28
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.11)",
+      "score": 0.11
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.199,
+    0.195,
+    0.185,
+    0.204,
+    0.185,
+    0.177
+   ],
+   "claude": "duplicate",
+   "claude_rep": "duplicate",
+   "raw": {
+    "claude": "duplicate",
+    "claude_rep": "duplicate"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2877,
+     "cost_usd": 0.023256,
+     "duration_ms": 2929
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 3437,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0008154,
+     "duration_ms": 2986
+    }
+   }
+  },
+  {
+   "id": "m15",
+   "gold": "record",
+   "clear": true,
+   "jev": "uncertain",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.78,
+     "durable": 0.65,
+     "actionable": 0.92,
+     "noise": 0.15
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.19)",
+      "score": 0.02
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.19)",
+      "score": 0.02
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.19)",
+      "score": 0.02
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.12)",
+      "score": 0.02
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.12)",
+      "score": 0.02
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.19)",
+      "score": 0.04
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.19)",
+      "score": 0.04
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.19)",
+      "score": 0.04
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.12)",
+      "score": 0.04
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.12)",
+      "score": 0.03
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.228,
+    0.249,
+    0.194,
+    0.205,
+    0.211,
+    0.252
+   ],
+   "claude": "record",
+   "claude_rep": "record",
+   "raw": {
+    "claude": "record",
+    "claude_rep": "record"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 3,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2808,
+     "cost_usd": 0.022644,
+     "duration_ms": 4241
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 3,
+     "cache_read_tokens": 3368,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0007416,
+     "duration_ms": 2633
+    }
+   }
+  },
+  {
+   "id": "m16",
+   "gold": "conflict",
+   "clear": false,
+   "jev": "conflict",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.64,
+     "durable": 0.69,
+     "actionable": 0.84,
+     "noise": 0.27
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [ai] — \"prompt-audit of ~/.claude CLAUDE.md, agents, skillify; then applied the diff\" (match 0.70)",
+      "score": 0.37
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-27 [ai] — \"Evaluate whether TypeSafe Jev can route coding-agent tasks per the global CLAUDE.md Orchestration rules (52 synthetic cases, 21 raw-transcript cases, harm test; Jev vs isolated claude -p opus)\" (match 0.34)",
+      "score": 0.04
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-27 [ai] — \"Split the Jev delegation section of the global CLAUDE.md into 'Jev decides' (verdicts acted on without re-judging) and 'Jev advises' tiers, based on jev.py thresholds\" (match 0.20)",
+      "score": 0.03
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-11] Apply+validate fakeout-filter config (OUTCOME prompt variant + th0.65) and document\" (match 0.12)",
+      "score": 0.03
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-26 [trading-bot] — \"Audit trading-bot cross-memory store against Knowledge & memory guidelines (4 criteria + duplicate/conflict) and curate it\" (match 0.10)",
+      "score": 0.04
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [ai] — \"prompt-audit of ~/.claude CLAUDE.md, agents, skillify; then applied the diff\" (match 0.70)",
+      "score": 0.78
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-27 [ai] — \"Evaluate whether TypeSafe Jev can route coding-agent tasks per the global CLAUDE.md Orchestration rules (52 synthetic cases, 21 raw-transcript cases, harm test; Jev vs isolated claude -p opus)\" (match 0.34)",
+      "score": 0.07
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-27 [ai] — \"Split the Jev delegation section of the global CLAUDE.md into 'Jev decides' (verdicts acted on without re-judging) and 'Jev advises' tiers, based on jev.py thresholds\" (match 0.20)",
+      "score": 0.14
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-11] Apply+validate fakeout-filter config (OUTCOME prompt variant + th0.65) and document\" (match 0.12)",
+      "score": 0.06
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-26 [trading-bot] — \"Audit trading-bot cross-memory store against Knowledge & memory guidelines (4 criteria + duplicate/conflict) and curate it\" (match 0.10)",
+      "score": 0.05
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.189,
+    0.19,
+    0.201,
+    0.181,
+    0.196,
+    0.184
+   ],
+   "claude": "duplicate",
+   "claude_rep": "duplicate",
+   "raw": {
+    "claude": "duplicate",
+    "claude_rep": "duplicate"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 215,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 3002,
+     "cost_usd": 0.028436,
+     "duration_ms": 4488
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 263,
+     "cache_read_tokens": 3562,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0059804,
+     "duration_ms": 4929
+    }
+   }
+  },
+  {
+   "id": "m17",
+   "gold": "conflict",
+   "clear": false,
+   "jev": "uncertain",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.8,
+     "durable": 0.58,
+     "actionable": 0.84,
+     "noise": 0.16
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-27 [ai] — \"Evaluate whether TypeSafe Jev can route coding-agent tasks per the global CLAUDE.md Orchestration rules (52 synthetic cases, 21 raw-transcript cases, harm test; Jev vs isolated claude -p opus)\" (match 1.00)",
+      "score": 0.52
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-27 [ai] — \"Split the Jev delegation section of the global CLAUDE.md into 'Jev decides' (verdicts acted on without re-judging) and 'Jev advises' tiers, based on jev.py thresholds\" (match 0.16)",
+      "score": 0.05
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-25 [ai] — \"build jev CLI and call TypeSafe API from Claude Bash tool\" (match 0.11)",
+      "score": 0.04
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [ai] — \"TypeSafe Jev question design: indexed questions over a multi-entry state are unreliable; jev memgate pairwise duplicate check and conflict check\" (match 0.08)",
+      "score": 0.03
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-26 [ai] — \"prompt-audit of ~/.claude CLAUDE.md, agents, skillify; then applied the diff\" (match 0.08)",
+      "score": 0.03
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-27 [ai] — \"Evaluate whether TypeSafe Jev can route coding-agent tasks per the global CLAUDE.md Orchestration rules (52 synthetic cases, 21 raw-transcript cases, harm test; Jev vs isolated claude -p opus)\" (match 1.00)",
+      "score": 0.49
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-27 [ai] — \"Split the Jev delegation section of the global CLAUDE.md into 'Jev decides' (verdicts acted on without re-judging) and 'Jev advises' tiers, based on jev.py thresholds\" (match 0.16)",
+      "score": 0.15
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-25 [ai] — \"build jev CLI and call TypeSafe API from Claude Bash tool\" (match 0.11)",
+      "score": 0.11
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [ai] — \"TypeSafe Jev question design: indexed questions over a multi-entry state are unreliable; jev memgate pairwise duplicate check and conflict check\" (match 0.08)",
+      "score": 0.07
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-26 [ai] — \"prompt-audit of ~/.claude CLAUDE.md, agents, skillify; then applied the diff\" (match 0.08)",
+      "score": 0.08
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.22,
+    0.267,
+    0.196,
+    0.186,
+    0.244,
+    0.222
+   ],
+   "claude": "conflict",
+   "claude_rep": "conflict",
+   "raw": {
+    "claude": "conflict",
+    "claude_rep": "conflict"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 150,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2809,
+     "cost_usd": 0.025592,
+     "duration_ms": 5092
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 147,
+     "cache_read_tokens": 3369,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0036218,
+     "duration_ms": 3737
+    }
+   }
+  },
+  {
+   "id": "m18",
+   "gold": "duplicate",
+   "clear": false,
+   "jev": "duplicate",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.79,
+     "durable": 0.62,
+     "actionable": 0.83,
+     "noise": 0.15
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-27 [ai] — \"Evaluate whether TypeSafe Jev can route coding-agent tasks per the global CLAUDE.md Orchestration rules (52 synthetic cases, 21 raw-transcript cases, harm test; Jev vs isolated claude -p opus)\" (match 1.00)",
+      "score": 0.72
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-27 [ai] — \"Split the Jev delegation section of the global CLAUDE.md into 'Jev decides' (verdicts acted on without re-judging) and 'Jev advises' tiers, based on jev.py thresholds\" (match 0.14)",
+      "score": 0.05
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-25 [ai] — \"build jev CLI and call TypeSafe API from Claude Bash tool\" (match 0.10)",
+      "score": 0.03
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [ai] — \"TypeSafe Jev question design: indexed questions over a multi-entry state are unreliable; jev memgate pairwise duplicate check and conflict check\" (match 0.07)",
+      "score": 0.03
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-26 [ai] — \"prompt-audit of ~/.claude CLAUDE.md, agents, skillify; then applied the diff\" (match 0.07)",
+      "score": 0.03
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-27 [ai] — \"Evaluate whether TypeSafe Jev can route coding-agent tasks per the global CLAUDE.md Orchestration rules (52 synthetic cases, 21 raw-transcript cases, harm test; Jev vs isolated claude -p opus)\" (match 1.00)",
+      "score": 0.15
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-27 [ai] — \"Split the Jev delegation section of the global CLAUDE.md into 'Jev decides' (verdicts acted on without re-judging) and 'Jev advises' tiers, based on jev.py thresholds\" (match 0.14)",
+      "score": 0.15
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-25 [ai] — \"build jev CLI and call TypeSafe API from Claude Bash tool\" (match 0.10)",
+      "score": 0.12
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [ai] — \"TypeSafe Jev question design: indexed questions over a multi-entry state are unreliable; jev memgate pairwise duplicate check and conflict check\" (match 0.07)",
+      "score": 0.07
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-26 [ai] — \"prompt-audit of ~/.claude CLAUDE.md, agents, skillify; then applied the diff\" (match 0.07)",
+      "score": 0.07
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.219,
+    0.217,
+    0.233,
+    0.186,
+    0.23,
+    0.195
+   ],
+   "claude": "duplicate",
+   "claude_rep": "conflict",
+   "raw": {
+    "claude": "duplicate",
+    "claude_rep": "conflict"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 422,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2933,
+     "cost_usd": 0.032024,
+     "duration_ms": 8964
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 252,
+     "cache_read_tokens": 3493,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0057466,
+     "duration_ms": 4842
+    }
+   }
+  },
+  {
+   "id": "m19",
+   "gold": "duplicate",
+   "clear": true,
+   "jev": "duplicate",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.56,
+     "durable": 0.76,
+     "actionable": 0.82,
+     "noise": 0.12
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.42)",
+      "score": 0.03
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.33)",
+      "score": 0.97
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.23)",
+      "score": 0.02
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.14)",
+      "score": 0.03
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.14)",
+      "score": 0.02
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.42)",
+      "score": 0.11
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.33)",
+      "score": 0.1
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.23)",
+      "score": 0.06
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.14)",
+      "score": 0.05
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.14)",
+      "score": 0.07
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.231,
+    0.195,
+    0.277,
+    0.247,
+    0.202,
+    0.202
+   ],
+   "claude": "duplicate",
+   "claude_rep": "duplicate",
+   "raw": {
+    "claude": "duplicate",
+    "claude_rep": "duplicate"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2646,
+     "cost_usd": 0.021408,
+     "duration_ms": 2514
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 3206,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0007692,
+     "duration_ms": 2438
+    }
+   }
+  },
+  {
+   "id": "m20",
+   "gold": "duplicate",
+   "clear": true,
+   "jev": "duplicate",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.69,
+     "durable": 0.79,
+     "actionable": 0.84,
+     "noise": 0.16
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.30)",
+      "score": 0.97
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.20)",
+      "score": 0.03
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.20)",
+      "score": 0.05
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.12)",
+      "score": 0.04
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.12)",
+      "score": 0.02
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.30)",
+      "score": 0.07
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.20)",
+      "score": 0.07
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.20)",
+      "score": 0.08
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.12)",
+      "score": 0.1
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.12)",
+      "score": 0.05
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.221,
+    0.18,
+    0.18,
+    0.206,
+    0.182,
+    0.184
+   ],
+   "claude": "duplicate",
+   "claude_rep": "duplicate",
+   "raw": {
+    "claude": "duplicate",
+    "claude_rep": "duplicate"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2687,
+     "cost_usd": 0.021736000000000002,
+     "duration_ms": 2682
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 3247,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0007774,
+     "duration_ms": 3092
+    }
+   }
+  },
+  {
+   "id": "m21",
+   "gold": "duplicate",
+   "clear": true,
+   "jev": "duplicate",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.77,
+     "durable": 0.79,
+     "actionable": 0.88,
+     "noise": 0.14
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-25 [ai] — \"build jev CLI and call TypeSafe API from Claude Bash tool\" (match 0.57)",
+      "score": 0.97
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-27 [ai] — \"Evaluate whether TypeSafe Jev can route coding-agent tasks per the global CLAUDE.md Orchestration rules (52 synthetic cases, 21 raw-transcript cases, harm test; Jev vs isolated claude -p opus)\" (match 0.21)",
+      "score": 0.06
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [cross-memory] — \"Claude Code Bash env var visible mid-session via settings.json env; set CROSS_MEMORY_STORE_ROOT for federated cross-memory query across project stores\" (match 0.15)",
+      "score": 0.67
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [ai] — \"TypeSafe Jev question design: indexed questions over a multi-entry state are unreliable; jev memgate pairwise duplicate check and conflict check\" (match 0.14)",
+      "score": 0.03
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-27 [ai] — \"Split the Jev delegation section of the global CLAUDE.md into 'Jev decides' (verdicts acted on without re-judging) and 'Jev advises' tiers, based on jev.py thresholds\" (match 0.13)",
+      "score": 0.04
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-25 [ai] — \"build jev CLI and call TypeSafe API from Claude Bash tool\" (match 0.57)",
+      "score": 0.33
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-27 [ai] — \"Evaluate whether TypeSafe Jev can route coding-agent tasks per the global CLAUDE.md Orchestration rules (52 synthetic cases, 21 raw-transcript cases, harm test; Jev vs isolated claude -p opus)\" (match 0.21)",
+      "score": 0.07
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [cross-memory] — \"Claude Code Bash env var visible mid-session via settings.json env; set CROSS_MEMORY_STORE_ROOT for federated cross-memory query across project stores\" (match 0.15)",
+      "score": 0.08
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [ai] — \"TypeSafe Jev question design: indexed questions over a multi-entry state are unreliable; jev memgate pairwise duplicate check and conflict check\" (match 0.14)",
+      "score": 0.06
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-27 [ai] — \"Split the Jev delegation section of the global CLAUDE.md into 'Jev decides' (verdicts acted on without re-judging) and 'Jev advises' tiers, based on jev.py thresholds\" (match 0.13)",
+      "score": 0.08
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.193,
+    0.182,
+    0.178,
+    0.185,
+    0.197,
+    0.224
+   ],
+   "claude": "duplicate",
+   "claude_rep": "duplicate",
+   "raw": {
+    "claude": "duplicate",
+    "claude_rep": "duplicate"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2453,
+     "cost_usd": 0.019864,
+     "duration_ms": 2489
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 3013,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0007306,
+     "duration_ms": 2454
+    }
+   }
+  },
+  {
+   "id": "m22",
+   "gold": "duplicate",
+   "clear": true,
+   "jev": "duplicate",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.72,
+     "durable": 0.8,
+     "actionable": 0.87,
+     "noise": 0.16
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [cross-memory-cli] — \"Audit cross-memory store records: recording criteria, query recall, task keywords\" (match 0.69)",
+      "score": 0.94
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [cross-memory] — \"Claude Code Bash env var visible mid-session via settings.json env; set CROSS_MEMORY_STORE_ROOT for federated cross-memory query across project stores\" (match 0.32)",
+      "score": 0.04
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [trading-bot] — \"Audit trading-bot cross-memory store against Knowledge & memory guidelines (4 criteria + duplicate/conflict) and curate it\" (match 0.21)",
+      "score": 0.06
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Heuristic distill Task 5: wire BTC-scoped deterministic fakeout filter into Kotlin TradingStrategy (after user reframed to ignore ETH)\" (match 0.11)",
+      "score": 0.03
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [cross-memory-cli] — \"Audit cross-memory store records: recording criteria, query recall, task keywords\" (match 0.69)",
+      "score": 0.39
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [cross-memory] — \"Claude Code Bash env var visible mid-session via settings.json env; set CROSS_MEMORY_STORE_ROOT for federated cross-memory query across project stores\" (match 0.32)",
+      "score": 0.11
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [trading-bot] — \"Audit trading-bot cross-memory store against Knowledge & memory guidelines (4 criteria + duplicate/conflict) and curate it\" (match 0.21)",
+      "score": 0.12
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Heuristic distill Task 5: wire BTC-scoped deterministic fakeout filter into Kotlin TradingStrategy (after user reframed to ignore ETH)\" (match 0.11)",
+      "score": 0.08
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.183,
+    0.188,
+    0.229,
+    0.198,
+    0.19
+   ],
+   "claude": "duplicate",
+   "claude_rep": "duplicate",
+   "raw": {
+    "claude": "duplicate",
+    "claude_rep": "duplicate"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2252,
+     "cost_usd": 0.018256,
+     "duration_ms": 2562
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 2812,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0006904,
+     "duration_ms": 2743
+    }
+   }
+  },
+  {
+   "id": "m23",
+   "gold": "duplicate",
+   "clear": true,
+   "jev": "duplicate",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.82,
+     "durable": 0.85,
+     "actionable": 0.91,
+     "noise": 0.12
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-11] Investigate low win rate in fakeout-filter tuning study (user expected ~80%)\" (match 0.31)",
+      "score": 0.96
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-06-17 [trading-bot] — \"trading-bot fakeout-filter 스코어링 실행: FilterTuningRunner 인자와 genai-gateway rate-limit 대응\" (match 0.21)",
+      "score": 0.16
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-11] Apply+validate fakeout-filter config (OUTCOME prompt variant + th0.65) and document\" (match 0.12)",
+      "score": 0.04
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Implement heuristic-distill plan: LLM fakeout filter -> deterministic offline-learned filter, with LLM-parity validation and regime skeptic audit\" (match 0.12)",
+      "score": 0.05
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Heuristic distill Task 5: wire BTC-scoped deterministic fakeout filter into Kotlin TradingStrategy (after user reframed to ignore ETH)\" (match 0.12)",
+      "score": 0.05
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-11] Investigate low win rate in fakeout-filter tuning study (user expected ~80%)\" (match 0.31)",
+      "score": 0.06
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-06-17 [trading-bot] — \"trading-bot fakeout-filter 스코어링 실행: FilterTuningRunner 인자와 genai-gateway rate-limit 대응\" (match 0.21)",
+      "score": 0.24
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-11] Apply+validate fakeout-filter config (OUTCOME prompt variant + th0.65) and document\" (match 0.12)",
+      "score": 0.12
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Implement heuristic-distill plan: LLM fakeout filter -> deterministic offline-learned filter, with LLM-parity validation and regime skeptic audit\" (match 0.12)",
+      "score": 0.12
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Heuristic distill Task 5: wire BTC-scoped deterministic fakeout filter into Kotlin TradingStrategy (after user reframed to ignore ETH)\" (match 0.12)",
+      "score": 0.12
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.248,
+    0.227,
+    0.235,
+    0.199,
+    0.196,
+    0.196
+   ],
+   "claude": "duplicate",
+   "claude_rep": "duplicate",
+   "raw": {
+    "claude": "duplicate",
+    "claude_rep": "duplicate"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 3904,
+     "cost_usd": 0.031472,
+     "duration_ms": 2549
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 4464,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0010208,
+     "duration_ms": 2534
+    }
+   }
+  },
+  {
+   "id": "m24",
+   "gold": "duplicate",
+   "clear": true,
+   "jev": "duplicate",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.71,
+     "durable": 0.84,
+     "actionable": 0.88,
+     "noise": 0.12
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.76)",
+      "score": 0.98
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.52)",
+      "score": 0.15
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.52)",
+      "score": 0.33
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.24)",
+      "score": 0.03
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.16)",
+      "score": 0.03
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.76)",
+      "score": 0.05
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.52)",
+      "score": 0.1
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.52)",
+      "score": 0.11
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.24)",
+      "score": 0.06
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.16)",
+      "score": 0.04
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.2,
+    0.187,
+    0.218,
+    0.236,
+    0.203,
+    0.223
+   ],
+   "claude": "duplicate",
+   "claude_rep": "duplicate",
+   "raw": {
+    "claude": "duplicate",
+    "claude_rep": "duplicate"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2640,
+     "cost_usd": 0.02136,
+     "duration_ms": 2342
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 6,
+     "cache_read_tokens": 3200,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.000768,
+     "duration_ms": 2352
+    }
+   }
+  },
+  {
+   "id": "m25",
+   "gold": "conflict",
+   "clear": true,
+   "jev": "conflict",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.62,
+     "durable": 0.54,
+     "actionable": 0.63,
+     "noise": 0.28
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-17] Add MDD/Calmar metrics + remeasure BTC 5yr LLM OUTCOME fakeout filter (deck slide 7 verification)\" (match 0.53)",
+      "score": 0.04
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-11] Apply+validate fakeout-filter config (OUTCOME prompt variant + th0.65) and document\" (match 0.37)",
+      "score": 0.07
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Heuristic distill Task 5: wire BTC-scoped deterministic fakeout filter into Kotlin TradingStrategy (after user reframed to ignore ETH)\" (match 0.28)",
+      "score": 0.08
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Implement heuristic-distill plan: LLM fakeout filter -> deterministic offline-learned filter, with LLM-parity validation and regime skeptic audit\" (match 0.18)",
+      "score": 0.14
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-06-14 [trading-bot] — \"Write distill plan: LLM fakeout filter -> deterministic heuristic filter (runtime LLM-free)\" (match 0.18)",
+      "score": 0.15
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-17] Add MDD/Calmar metrics + remeasure BTC 5yr LLM OUTCOME fakeout filter (deck slide 7 verification)\" (match 0.53)",
+      "score": 0.96
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-11] Apply+validate fakeout-filter config (OUTCOME prompt variant + th0.65) and document\" (match 0.37)",
+      "score": 0.84
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Heuristic distill Task 5: wire BTC-scoped deterministic fakeout filter into Kotlin TradingStrategy (after user reframed to ignore ETH)\" (match 0.28)",
+      "score": 0.48
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Implement heuristic-distill plan: LLM fakeout filter -> deterministic offline-learned filter, with LLM-parity validation and regime skeptic audit\" (match 0.18)",
+      "score": 0.8
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-06-14 [trading-bot] — \"Write distill plan: LLM fakeout filter -> deterministic heuristic filter (runtime LLM-free)\" (match 0.18)",
+      "score": 0.39
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.212,
+    0.202,
+    0.222,
+    0.198,
+    0.206,
+    0.176
+   ],
+   "claude": "conflict",
+   "claude_rep": "conflict",
+   "raw": {
+    "claude": "conflict",
+    "claude_rep": "conflict"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 5,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 4443,
+     "cost_usd": 0.035764,
+     "duration_ms": 2417
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 5,
+     "cache_read_tokens": 5003,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0011086,
+     "duration_ms": 2420
+    }
+   }
+  },
+  {
+   "id": "m26",
+   "gold": "conflict",
+   "clear": true,
+   "jev": "conflict",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.65,
+     "durable": 0.6,
+     "actionable": 0.86,
+     "noise": 0.2
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [trading-bot] — \"Audit trading-bot cross-memory store against Knowledge & memory guidelines (4 criteria + duplicate/conflict) and curate it\" (match 0.27)",
+      "score": 0.08
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [cross-memory-cli] — \"Audit cross-memory store records: recording criteria, query recall, task keywords\" (match 0.27)",
+      "score": 0.06
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-25 [cross-memory-cli] — \"Verify CROSS_MEMORY_AUTOSYNC push works on this Mac\" (match 0.22)",
+      "score": 0.07
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [cross-memory] — \"Claude Code Bash env var visible mid-session via settings.json env; set CROSS_MEMORY_STORE_ROOT for federated cross-memory query across project stores\" (match 0.17)",
+      "score": 0.03
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [trading-bot] — \"Audit trading-bot cross-memory store against Knowledge & memory guidelines (4 criteria + duplicate/conflict) and curate it\" (match 0.27)",
+      "score": 0.34
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [cross-memory-cli] — \"Audit cross-memory store records: recording criteria, query recall, task keywords\" (match 0.27)",
+      "score": 0.17
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-25 [cross-memory-cli] — \"Verify CROSS_MEMORY_AUTOSYNC push works on this Mac\" (match 0.22)",
+      "score": 0.76
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [cross-memory] — \"Claude Code Bash env var visible mid-session via settings.json env; set CROSS_MEMORY_STORE_ROOT for federated cross-memory query across project stores\" (match 0.17)",
+      "score": 0.08
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.193,
+    0.228,
+    0.179,
+    0.201,
+    0.209
+   ],
+   "claude": "conflict",
+   "claude_rep": "conflict",
+   "raw": {
+    "claude": "conflict",
+    "claude_rep": "conflict"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 5,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 1725,
+     "cost_usd": 0.01402,
+     "duration_ms": 2478
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 5,
+     "cache_read_tokens": 2285,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0005650000000000001,
+     "duration_ms": 2625
+    }
+   }
+  },
+  {
+   "id": "m27",
+   "gold": "record",
+   "clear": false,
+   "jev": "uncertain",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.81,
+     "durable": 0.89,
+     "actionable": 0.88,
+     "noise": 0.13
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.53)",
+      "score": 0.13
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.37)",
+      "score": 0.03
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.22)",
+      "score": 0.03
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.22)",
+      "score": 0.04
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.22)",
+      "score": 0.03
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.53)",
+      "score": 0.35
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.37)",
+      "score": 0.07
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.22)",
+      "score": 0.05
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.22)",
+      "score": 0.04
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.22)",
+      "score": 0.04
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.222,
+    0.204,
+    0.225,
+    0.256,
+    0.191,
+    0.213
+   ],
+   "claude": "record",
+   "claude_rep": "record",
+   "raw": {
+    "claude": "record",
+    "claude_rep": "record"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 328,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2656,
+     "cost_usd": 0.027928,
+     "duration_ms": 5590
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 465,
+     "cache_read_tokens": 3216,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0099512,
+     "duration_ms": 7276
+    }
+   }
+  },
+  {
+   "id": "m28",
+   "gold": "record",
+   "clear": false,
+   "jev": "duplicate",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.66,
+     "durable": 0.63,
+     "actionable": 0.87,
+     "noise": 0.14
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-17] Add MDD/Calmar metrics + remeasure BTC 5yr LLM OUTCOME fakeout filter (deck slide 7 verification)\" (match 0.34)",
+      "score": 0.75
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-11] Apply+validate fakeout-filter config (OUTCOME prompt variant + th0.65) and document\" (match 0.25)",
+      "score": 0.1
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Implement heuristic-distill plan: LLM fakeout filter -> deterministic offline-learned filter, with LLM-parity validation and regime skeptic audit\" (match 0.24)",
+      "score": 0.2
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-06-14 [trading-bot] — \"Write distill plan: LLM fakeout filter -> deterministic heuristic filter (runtime LLM-free)\" (match 0.24)",
+      "score": 0.13
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-11] Investigate low win rate in fakeout-filter tuning study (user expected ~80%)\" (match 0.14)",
+      "score": 0.58
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-17] Add MDD/Calmar metrics + remeasure BTC 5yr LLM OUTCOME fakeout filter (deck slide 7 verification)\" (match 0.34)",
+      "score": 0.13
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-11] Apply+validate fakeout-filter config (OUTCOME prompt variant + th0.65) and document\" (match 0.25)",
+      "score": 0.29
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Implement heuristic-distill plan: LLM fakeout filter -> deterministic offline-learned filter, with LLM-parity validation and regime skeptic audit\" (match 0.24)",
+      "score": 0.16
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-06-14 [trading-bot] — \"Write distill plan: LLM fakeout filter -> deterministic heuristic filter (runtime LLM-free)\" (match 0.24)",
+      "score": 0.14
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-11] Investigate low win rate in fakeout-filter tuning study (user expected ~80%)\" (match 0.14)",
+      "score": 0.11
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.201,
+    0.193,
+    0.183,
+    0.187,
+    0.203,
+    0.232
+   ],
+   "claude": "record",
+   "claude_rep": "record",
+   "raw": {
+    "claude": "record",
+    "claude_rep": "record"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 267,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 4244,
+     "cost_usd": 0.039412,
+     "duration_ms": 5194
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 198,
+     "cache_read_tokens": 4804,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0049288000000000005,
+     "duration_ms": 4603
+    }
+   }
+  },
+  {
+   "id": "m29",
+   "gold": "record",
+   "clear": true,
+   "jev": "uncertain",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.7,
+     "durable": 0.62,
+     "actionable": 0.85,
+     "noise": 0.25
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-27 [ai] — \"Split the Jev delegation section of the global CLAUDE.md into 'Jev decides' (verdicts acted on without re-judging) and 'Jev advises' tiers, based on jev.py thresholds\" (match 0.20)",
+      "score": 0.05
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-27 [ai] — \"Evaluate whether TypeSafe Jev can route coding-agent tasks per the global CLAUDE.md Orchestration rules (52 synthetic cases, 21 raw-transcript cases, harm test; Jev vs isolated claude -p opus)\" (match 0.08)",
+      "score": 0.07
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [ai] — \"TypeSafe Jev question design: indexed questions over a multi-entry state are unreliable; jev memgate pairwise duplicate check and conflict check\" (match 0.08)",
+      "score": 0.06
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-25 [ai] — \"build jev CLI and call TypeSafe API from Claude Bash tool\" (match 0.08)",
+      "score": 0.03
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-27 [ai] — \"Split the Jev delegation section of the global CLAUDE.md into 'Jev decides' (verdicts acted on without re-judging) and 'Jev advises' tiers, based on jev.py thresholds\" (match 0.20)",
+      "score": 0.11
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-27 [ai] — \"Evaluate whether TypeSafe Jev can route coding-agent tasks per the global CLAUDE.md Orchestration rules (52 synthetic cases, 21 raw-transcript cases, harm test; Jev vs isolated claude -p opus)\" (match 0.08)",
+      "score": 0.11
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [ai] — \"TypeSafe Jev question design: indexed questions over a multi-entry state are unreliable; jev memgate pairwise duplicate check and conflict check\" (match 0.08)",
+      "score": 0.12
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-25 [ai] — \"build jev CLI and call TypeSafe API from Claude Bash tool\" (match 0.08)",
+      "score": 0.08
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.216,
+    0.185,
+    0.185,
+    0.179,
+    0.177
+   ],
+   "claude": "record",
+   "claude_rep": "record",
+   "raw": {
+    "claude": "record",
+    "claude_rep": "record"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 3,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2181,
+     "cost_usd": 0.017628,
+     "duration_ms": 2593
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 3,
+     "cache_read_tokens": 2741,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0006162,
+     "duration_ms": 2473
+    }
+   }
+  },
+  {
+   "id": "m30",
+   "gold": "record",
+   "clear": false,
+   "jev": "uncertain",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.57,
+     "durable": 0.66,
+     "actionable": 0.84,
+     "noise": 0.19
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-27 [ai] — \"Evaluate whether TypeSafe Jev can route coding-agent tasks per the global CLAUDE.md Orchestration rules (52 synthetic cases, 21 raw-transcript cases, harm test; Jev vs isolated claude -p opus)\" (match 0.48)",
+      "score": 0.04
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-27 [ai] — \"Split the Jev delegation section of the global CLAUDE.md into 'Jev decides' (verdicts acted on without re-judging) and 'Jev advises' tiers, based on jev.py thresholds\" (match 0.16)",
+      "score": 0.03
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-25 [ai] — \"build jev CLI and call TypeSafe API from Claude Bash tool\" (match 0.16)",
+      "score": 0.03
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [ai] — \"TypeSafe Jev question design: indexed questions over a multi-entry state are unreliable; jev memgate pairwise duplicate check and conflict check\" (match 0.08)",
+      "score": 0.03
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-26 [cross-memory] — \"Claude Code Bash env var visible mid-session via settings.json env; set CROSS_MEMORY_STORE_ROOT for federated cross-memory query across project stores\" (match 0.08)",
+      "score": 0.02
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-27 [ai] — \"Evaluate whether TypeSafe Jev can route coding-agent tasks per the global CLAUDE.md Orchestration rules (52 synthetic cases, 21 raw-transcript cases, harm test; Jev vs isolated claude -p opus)\" (match 0.48)",
+      "score": 0.07
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-27 [ai] — \"Split the Jev delegation section of the global CLAUDE.md into 'Jev decides' (verdicts acted on without re-judging) and 'Jev advises' tiers, based on jev.py thresholds\" (match 0.16)",
+      "score": 0.05
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-25 [ai] — \"build jev CLI and call TypeSafe API from Claude Bash tool\" (match 0.16)",
+      "score": 0.07
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [ai] — \"TypeSafe Jev question design: indexed questions over a multi-entry state are unreliable; jev memgate pairwise duplicate check and conflict check\" (match 0.08)",
+      "score": 0.05
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-26 [cross-memory] — \"Claude Code Bash env var visible mid-session via settings.json env; set CROSS_MEMORY_STORE_ROOT for federated cross-memory query across project stores\" (match 0.08)",
+      "score": 0.03
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.175,
+    0.177,
+    0.183,
+    0.209,
+    0.188,
+    0.367
+   ],
+   "claude": "record",
+   "claude_rep": "record",
+   "raw": {
+    "claude": "record",
+    "claude_rep": "record"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 3,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2423,
+     "cost_usd": 0.019563999999999998,
+     "duration_ms": 2881
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 3,
+     "cache_read_tokens": 2983,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0006646000000000001,
+     "duration_ms": 2821
+    }
+   }
+  },
+  {
+   "id": "m31",
+   "gold": "record",
+   "clear": true,
+   "jev": "uncertain",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.74,
+     "durable": 0.75,
+     "actionable": 0.88,
+     "noise": 0.17
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [cross-memory-cli] — \"Audit cross-memory store records: recording criteria, query recall, task keywords\" (match 0.65)",
+      "score": 0.5
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [cross-memory] — \"Claude Code Bash env var visible mid-session via settings.json env; set CROSS_MEMORY_STORE_ROOT for federated cross-memory query across project stores\" (match 0.37)",
+      "score": 0.03
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [trading-bot] — \"Audit trading-bot cross-memory store against Knowledge & memory guidelines (4 criteria + duplicate/conflict) and curate it\" (match 0.24)",
+      "score": 0.03
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Heuristic distill Task 5: wire BTC-scoped deterministic fakeout filter into Kotlin TradingStrategy (after user reframed to ignore ETH)\" (match 0.13)",
+      "score": 0.04
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [cross-memory-cli] — \"Audit cross-memory store records: recording criteria, query recall, task keywords\" (match 0.65)",
+      "score": 0.14
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [cross-memory] — \"Claude Code Bash env var visible mid-session via settings.json env; set CROSS_MEMORY_STORE_ROOT for federated cross-memory query across project stores\" (match 0.37)",
+      "score": 0.06
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [trading-bot] — \"Audit trading-bot cross-memory store against Knowledge & memory guidelines (4 criteria + duplicate/conflict) and curate it\" (match 0.24)",
+      "score": 0.08
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Heuristic distill Task 5: wire BTC-scoped deterministic fakeout filter into Kotlin TradingStrategy (after user reframed to ignore ETH)\" (match 0.13)",
+      "score": 0.07
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.174,
+    0.185,
+    0.182,
+    0.247,
+    0.206
+   ],
+   "claude": "record",
+   "claude_rep": "record",
+   "raw": {
+    "claude": "record",
+    "claude_rep": "record"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 189,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2229,
+     "cost_usd": 0.021732,
+     "duration_ms": 5287
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 151,
+     "cache_read_tokens": 2789,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0035858,
+     "duration_ms": 4961
+    }
+   }
+  },
+  {
+   "id": "m32",
+   "gold": "skip",
+   "clear": true,
+   "jev": "uncertain",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.42,
+     "durable": 0.46,
+     "actionable": 0.45,
+     "noise": 0.27
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.19)",
+      "score": 0.68
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.19)",
+      "score": 0.05
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.19)",
+      "score": 0.27
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.19)",
+      "score": 0.17
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.19)",
+      "score": 0.18
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.19)",
+      "score": 0.14
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.19)",
+      "score": 0.12
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.19)",
+      "score": 0.26
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.19)",
+      "score": 0.22
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.19)",
+      "score": 0.22
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.221,
+    0.199,
+    0.206,
+    0.227,
+    0.354,
+    0.223
+   ],
+   "claude": "skip",
+   "claude_rep": "skip",
+   "raw": {
+    "claude": "skip",
+    "claude_rep": "skip"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2569,
+     "cost_usd": 0.020752,
+     "duration_ms": 2822
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 3129,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0007138,
+     "duration_ms": 2843
+    }
+   }
+  },
+  {
+   "id": "m33",
+   "gold": "skip",
+   "clear": true,
+   "jev": "skip",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.47,
+     "durable": 0.3,
+     "actionable": 0.71,
+     "noise": 0.43
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [cross-memory-cli] — \"Audit cross-memory store records: recording criteria, query recall, task keywords\" (match 0.64)",
+      "score": 0.06
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [trading-bot] — \"Audit trading-bot cross-memory store against Knowledge & memory guidelines (4 criteria + duplicate/conflict) and curate it\" (match 0.45)",
+      "score": 0.05
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [cross-memory] — \"Claude Code Bash env var visible mid-session via settings.json env; set CROSS_MEMORY_STORE_ROOT for federated cross-memory query across project stores\" (match 0.29)",
+      "score": 0.03
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Heuristic distill Task 5: wire BTC-scoped deterministic fakeout filter into Kotlin TradingStrategy (after user reframed to ignore ETH)\" (match 0.18)",
+      "score": 0.03
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [cross-memory-cli] — \"Verify CROSS_MEMORY_AUTOSYNC push works on this Mac\" (match 0.18)",
+      "score": 0.07
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [cross-memory-cli] — \"Audit cross-memory store records: recording criteria, query recall, task keywords\" (match 0.64)",
+      "score": 0.17
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [trading-bot] — \"Audit trading-bot cross-memory store against Knowledge & memory guidelines (4 criteria + duplicate/conflict) and curate it\" (match 0.45)",
+      "score": 0.13
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [cross-memory] — \"Claude Code Bash env var visible mid-session via settings.json env; set CROSS_MEMORY_STORE_ROOT for federated cross-memory query across project stores\" (match 0.29)",
+      "score": 0.1
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Heuristic distill Task 5: wire BTC-scoped deterministic fakeout filter into Kotlin TradingStrategy (after user reframed to ignore ETH)\" (match 0.18)",
+      "score": 0.05
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [cross-memory-cli] — \"Verify CROSS_MEMORY_AUTOSYNC push works on this Mac\" (match 0.18)",
+      "score": 0.16
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.224,
+    0.185,
+    0.222,
+    0.194,
+    0.189,
+    0.209
+   ],
+   "claude": "skip",
+   "claude_rep": "skip",
+   "raw": {
+    "claude": "skip",
+    "claude_rep": "skip"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2499,
+     "cost_usd": 0.020191999999999998,
+     "duration_ms": 2697
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 3059,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0006998,
+     "duration_ms": 2689
+    }
+   }
+  },
+  {
+   "id": "m34",
+   "gold": "skip",
+   "clear": true,
+   "jev": "skip",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.45,
+     "durable": 0.3,
+     "actionable": 0.59,
+     "noise": 0.71
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Heuristic distill Task 5: wire BTC-scoped deterministic fakeout filter into Kotlin TradingStrategy (after user reframed to ignore ETH)\" (match 0.37)",
+      "score": 0.08
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-17] Add MDD/Calmar metrics + remeasure BTC 5yr LLM OUTCOME fakeout filter (deck slide 7 verification)\" (match 0.37)",
+      "score": 0.07
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-11] Apply+validate fakeout-filter config (OUTCOME prompt variant + th0.65) and document\" (match 0.21)",
+      "score": 0.08
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-11] Investigate low win rate in fakeout-filter tuning study (user expected ~80%)\" (match 0.21)",
+      "score": 0.16
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Implement heuristic-distill plan: LLM fakeout filter -> deterministic offline-learned filter, with LLM-parity validation and regime skeptic audit\" (match 0.21)",
+      "score": 0.13
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Heuristic distill Task 5: wire BTC-scoped deterministic fakeout filter into Kotlin TradingStrategy (after user reframed to ignore ETH)\" (match 0.37)",
+      "score": 0.31
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-17] Add MDD/Calmar metrics + remeasure BTC 5yr LLM OUTCOME fakeout filter (deck slide 7 verification)\" (match 0.37)",
+      "score": 0.26
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-11] Apply+validate fakeout-filter config (OUTCOME prompt variant + th0.65) and document\" (match 0.21)",
+      "score": 0.2
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-11] Investigate low win rate in fakeout-filter tuning study (user expected ~80%)\" (match 0.21)",
+      "score": 0.22
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-15] Implement heuristic-distill plan: LLM fakeout filter -> deterministic offline-learned filter, with LLM-parity validation and regime skeptic audit\" (match 0.21)",
+      "score": 0.33
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.19,
+    0.179,
+    0.2,
+    0.224,
+    0.227,
+    0.192
+   ],
+   "claude": "skip",
+   "claude_rep": "skip",
+   "raw": {
+    "claude": "skip",
+    "claude_rep": "skip"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 4239,
+     "cost_usd": 0.034111999999999996,
+     "duration_ms": 2684
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 4799,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0010478000000000002,
+     "duration_ms": 2814
+    }
+   }
+  },
+  {
+   "id": "m35",
+   "gold": "skip",
+   "clear": true,
+   "jev": "skip",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.15,
+     "durable": 0.51,
+     "actionable": 0.27,
+     "noise": 0.5
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.49)",
+      "score": 0.03
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.49)",
+      "score": 0.06
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.30)",
+      "score": 0.03
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.30)",
+      "score": 0.04
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.30)",
+      "score": 0.02
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.49)",
+      "score": 0.09
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.49)",
+      "score": 0.12
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.30)",
+      "score": 0.07
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.30)",
+      "score": 0.07
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.30)",
+      "score": 0.06
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.23,
+    0.188,
+    0.218,
+    0.21,
+    0.226,
+    0.212
+   ],
+   "claude": "skip",
+   "claude_rep": "skip",
+   "raw": {
+    "claude": "skip",
+    "claude_rep": "skip"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2571,
+     "cost_usd": 0.020768,
+     "duration_ms": 2469
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 3131,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0007142,
+     "duration_ms": 2938
+    }
+   }
+  },
+  {
+   "id": "m36",
+   "gold": "skip",
+   "clear": true,
+   "jev": "duplicate",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.2,
+     "durable": 0.4,
+     "actionable": 0.25,
+     "noise": 0.69
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.34)",
+      "score": 0.15
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-27 [ai] — \"Split the Jev delegation section of the global CLAUDE.md into 'Jev decides' (verdicts acted on without re-judging) and 'Jev advises' tiers, based on jev.py thresholds\" (match 0.25)",
+      "score": 0.12
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-27 [ai] — \"Evaluate whether TypeSafe Jev can route coding-agent tasks per the global CLAUDE.md Orchestration rules (52 synthetic cases, 21 raw-transcript cases, harm test; Jev vs isolated claude -p opus)\" (match 0.25)",
+      "score": 0.19
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [ai] — \"TypeSafe Jev question design: indexed questions over a multi-entry state are unreliable; jev memgate pairwise duplicate check and conflict check\" (match 0.25)",
+      "score": 0.77
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [ai] — \"build jev CLI and call TypeSafe API from Claude Bash tool\" (match 0.25)",
+      "score": 0.27
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.34)",
+      "score": 0.1
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-27 [ai] — \"Split the Jev delegation section of the global CLAUDE.md into 'Jev decides' (verdicts acted on without re-judging) and 'Jev advises' tiers, based on jev.py thresholds\" (match 0.25)",
+      "score": 0.1
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-27 [ai] — \"Evaluate whether TypeSafe Jev can route coding-agent tasks per the global CLAUDE.md Orchestration rules (52 synthetic cases, 21 raw-transcript cases, harm test; Jev vs isolated claude -p opus)\" (match 0.25)",
+      "score": 0.12
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [ai] — \"TypeSafe Jev question design: indexed questions over a multi-entry state are unreliable; jev memgate pairwise duplicate check and conflict check\" (match 0.25)",
+      "score": 0.06
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [ai] — \"build jev CLI and call TypeSafe API from Claude Bash tool\" (match 0.25)",
+      "score": 0.42
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.26,
+    0.198,
+    0.181,
+    0.189,
+    0.196,
+    0.189
+   ],
+   "claude": "skip",
+   "claude_rep": "skip",
+   "raw": {
+    "claude": "skip",
+    "claude_rep": "skip"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2529,
+     "cost_usd": 0.020432,
+     "duration_ms": 2441
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 3089,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0007058,
+     "duration_ms": 2812
+    }
+   }
+  },
+  {
+   "id": "m37",
+   "gold": "skip",
+   "clear": true,
+   "jev": "uncertain",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.37,
+     "durable": 0.38,
+     "actionable": 0.58,
+     "noise": 0.43
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [trading-bot-rust] — \"[orig 2026-07-03] Kotlin trading-bot(~/IdeaProjects/trading-bot, main fcb73cf)을 Rust(~/RustroverProjects/trading-bot-rust)로 완전 포팅: 전략 로직 파리티 + Kotlin 42개 테스트 전부 포팅\" (match 0.34)",
+      "score": 0.04
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [trading-bot] — \"Audit trading-bot cross-memory store against Knowledge & memory guidelines (4 criteria + duplicate/conflict) and curate it\" (match 0.20)",
+      "score": 0.06
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-07-04 [trading-bot-rust] — \"trading-bot-rust ↔ Kotlin(~/IdeaProjects/trading-bot) 포팅 패리티 검증 (전략코어/인프라/테스트 3-way 병렬 비교)\" (match 0.20)",
+      "score": 0.05
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-06-17 [trading-bot] — \"trading-bot fakeout-filter 스코어링 실행: FilterTuningRunner 인자와 genai-gateway rate-limit 대응\" (match 0.20)",
+      "score": 0.06
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [trading-bot-rust] — \"[orig 2026-07-03] Kotlin trading-bot(~/IdeaProjects/trading-bot, main fcb73cf)을 Rust(~/RustroverProjects/trading-bot-rust)로 완전 포팅: 전략 로직 파리티 + Kotlin 42개 테스트 전부 포팅\" (match 0.34)",
+      "score": 0.13
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [trading-bot] — \"Audit trading-bot cross-memory store against Knowledge & memory guidelines (4 criteria + duplicate/conflict) and curate it\" (match 0.20)",
+      "score": 0.09
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-07-04 [trading-bot-rust] — \"trading-bot-rust ↔ Kotlin(~/IdeaProjects/trading-bot) 포팅 패리티 검증 (전략코어/인프라/테스트 3-way 병렬 비교)\" (match 0.20)",
+      "score": 0.12
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-06-17 [trading-bot] — \"trading-bot fakeout-filter 스코어링 실행: FilterTuningRunner 인자와 genai-gateway rate-limit 대응\" (match 0.20)",
+      "score": 0.1
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.318,
+    0.219,
+    0.216,
+    0.235,
+    0.188
+   ],
+   "claude": "skip",
+   "claude_rep": "skip",
+   "raw": {
+    "claude": "skip",
+    "claude_rep": "skip"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2538,
+     "cost_usd": 0.020503999999999998,
+     "duration_ms": 5261
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 3098,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0007076000000000001,
+     "duration_ms": 5865
+    }
+   }
+  },
+  {
+   "id": "m38",
+   "gold": "skip",
+   "clear": true,
+   "jev": "skip",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.26,
+     "durable": 0.27,
+     "actionable": 0.36,
+     "noise": 0.48
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.19)",
+      "score": 0.03
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.19)",
+      "score": 0.03
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.19)",
+      "score": 0.03
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.19)",
+      "score": 0.04
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.19)",
+      "score": 0.02
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.19)",
+      "score": 0.06
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.19)",
+      "score": 0.05
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.19)",
+      "score": 0.04
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.19)",
+      "score": 0.05
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.19)",
+      "score": 0.05
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.202,
+    0.18,
+    0.223,
+    0.232,
+    0.188,
+    0.232
+   ],
+   "claude": "skip",
+   "claude_rep": "skip",
+   "raw": {
+    "claude": "skip",
+    "claude_rep": "skip"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2581,
+     "cost_usd": 0.020848,
+     "duration_ms": 2416
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 3141,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0007162000000000001,
+     "duration_ms": 2594
+    }
+   }
+  },
+  {
+   "id": "m39",
+   "gold": "skip",
+   "clear": true,
+   "jev": "skip",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.41,
+     "durable": 0.21,
+     "actionable": 0.7,
+     "noise": 0.49
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-06-17 [trading-bot] — \"trading-bot fakeout-filter 스코어링 실행: FilterTuningRunner 인자와 genai-gateway rate-limit 대응\" (match 0.58)",
+      "score": 0.11
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [trading-bot] — \"Audit trading-bot cross-memory store against Knowledge & memory guidelines (4 criteria + duplicate/conflict) and curate it\" (match 0.18)",
+      "score": 0.03
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [trading-bot-rust] — \"[orig 2026-07-03] Kotlin trading-bot(~/IdeaProjects/trading-bot, main fcb73cf)을 Rust(~/RustroverProjects/trading-bot-rust)로 완전 포팅: 전략 로직 파리티 + Kotlin 42개 테스트 전부 포팅\" (match 0.18)",
+      "score": 0.03
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-07-04 [trading-bot-rust] — \"trading-bot-rust ↔ Kotlin(~/IdeaProjects/trading-bot) 포팅 패리티 검증 (전략코어/인프라/테스트 3-way 병렬 비교)\" (match 0.18)",
+      "score": 0.03
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-11] Apply+validate fakeout-filter config (OUTCOME prompt variant + th0.65) and document\" (match 0.15)",
+      "score": 0.04
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-06-17 [trading-bot] — \"trading-bot fakeout-filter 스코어링 실행: FilterTuningRunner 인자와 genai-gateway rate-limit 대응\" (match 0.58)",
+      "score": 0.23
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [trading-bot] — \"Audit trading-bot cross-memory store against Knowledge & memory guidelines (4 criteria + duplicate/conflict) and curate it\" (match 0.18)",
+      "score": 0.09
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-26 [trading-bot-rust] — \"[orig 2026-07-03] Kotlin trading-bot(~/IdeaProjects/trading-bot, main fcb73cf)을 Rust(~/RustroverProjects/trading-bot-rust)로 완전 포팅: 전략 로직 파리티 + Kotlin 42개 테스트 전부 포팅\" (match 0.18)",
+      "score": 0.08
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-07-04 [trading-bot-rust] — \"trading-bot-rust ↔ Kotlin(~/IdeaProjects/trading-bot) 포팅 패리티 검증 (전략코어/인프라/테스트 3-way 병렬 비교)\" (match 0.18)",
+      "score": 0.08
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-26 [trading-bot] — \"[orig 2026-06-11] Apply+validate fakeout-filter config (OUTCOME prompt variant + th0.65) and document\" (match 0.15)",
+      "score": 0.13
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.301,
+    0.221,
+    0.259,
+    0.208,
+    0.244,
+    0.198
+   ],
+   "claude": "skip",
+   "claude_rep": "skip",
+   "raw": {
+    "claude": "skip",
+    "claude_rep": "skip"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 3109,
+     "cost_usd": 0.025071999999999997,
+     "duration_ms": 2825
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 3669,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0008218,
+     "duration_ms": 2774
+    }
+   }
+  },
+  {
+   "id": "m40",
+   "gold": "skip",
+   "clear": true,
+   "jev": "uncertain",
+   "jev_detail": {
+    "scores": {
+     "reuse": 0.8,
+     "durable": 0.84,
+     "actionable": 0.71,
+     "noise": 0.59
+    },
+    "duplicates": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.64)",
+      "score": 0.34
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.35)",
+      "score": 0.18
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.35)",
+      "score": 0.39
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.21)",
+      "score": 0.43
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.21)",
+      "score": 0.22
+     }
+    ],
+    "conflicts": [
+     {
+      "entry": "1. [SUCCESS] 2026-09-26 [req-shield] — \"Fix req-shield review findings: core rejection unlock guard, reactor scheduler-rejection lock leak, fail-fast name lookup for aspect executor/scheduler/scope beans, non-vacuous tests\" (match 0.64)",
+      "score": 0.05
+     },
+     {
+      "entry": "2. [SUCCESS] 2026-09-26 [req-shield] — \"Review req-shield changes: Spring adapters resolve optional named executor/scheduler/scope beans; reactor cancel releases lock; core handles executor rejection\" (match 0.35)",
+      "score": 0.07
+     },
+     {
+      "entry": "3. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield: fix DST skew in nowToEpochTime and document WebFlux adapter Mono-only limitation\" (match 0.35)",
+      "score": 0.06
+     },
+     {
+      "entry": "4. [SUCCESS] 2026-09-26 [req-shield] — \"req-shield pre-release: stop Spring adapters from registering executor/scheduler/coroutine-scope beans; aspects resolve an optional app bean by name, else own a default\" (match 0.21)",
+      "score": 0.09
+     },
+     {
+      "entry": "5. [SUCCESS] 2026-09-25 [req-shield] — \"req-shield core: handle executor rejection in ReqShield background cache write/refresh\" (match 0.21)",
+      "score": 0.08
+     }
+    ]
+   },
+   "jev_seconds": [
+    0.237,
+    0.192,
+    0.191,
+    0.239,
+    0.209,
+    0.227
+   ],
+   "claude": "skip",
+   "claude_rep": "skip",
+   "raw": {
+    "claude": "skip",
+    "claude_rep": "skip"
+   },
+   "usage": {
+    "claude": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 560,
+     "cache_creation_tokens": 2546,
+     "cost_usd": 0.020568,
+     "duration_ms": 2628
+    },
+    "claude_rep": {
+     "input_tokens": 2,
+     "output_tokens": 4,
+     "cache_read_tokens": 3106,
+     "cache_creation_tokens": 0,
+     "cost_usd": 0.0007092,
+     "duration_ms": 2561
+    }
+   }
+  }
+ ]
+}

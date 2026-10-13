@@ -280,12 +280,14 @@ def memgate_verdict(scores: dict, duplicates: list[float], conflicts: list[float
     return "record"
 
 
+def memgate_record(args) -> dict:
+    """The record as Jev is shown it: the given fields, empty ones dropped."""
+    fields = {"task": args.task, "outcome": args.outcome, "result": args.result, "learnings": args.learning}
+    return {k: v for k, v in fields.items() if v}
+
+
 def cmd_memgate(args, ask):
-    record = {
-        k: v
-        for k, v in {"task": args.task, "outcome": args.outcome, "result": args.result, "learnings": args.learning}.items()
-        if v
-    }
+    record = memgate_record(args)
     scores = ask({"record": record}, MEMGATE_QUESTIONS)
     existing = parse_numbered(read_text(args.existing)) if args.existing else []
     pairs = pmap(lambda entry: ask({"record": record, "existing": entry}, MEMGATE_PAIR_QUESTIONS), existing)
@@ -328,6 +330,12 @@ def locate_quote(text: str, quote: str) -> tuple[int, int] | None:
     return numbers[first], numbers[last]
 
 
+def claim_section(text: str, first: int, last: int) -> str:
+    """Lines first..last (1-based) plus CLAIM_CONTEXT_LINES of context on each side."""
+    lines = text.splitlines()
+    return "\n".join(lines[max(0, first - 1 - CLAIM_CONTEXT_LINES) : last + CLAIM_CONTEXT_LINES])
+
+
 def check_claim(claim: dict, ask) -> dict:
     out = {"claim": claim["claim"], "file": claim["file"]}
     try:
@@ -339,8 +347,7 @@ def check_claim(claim: dict, ask) -> dict:
         # Deterministic string match failed: no model call, nothing to review.
         return {**out, "verdict": "fabricated", "review": False}
     first, last = span
-    lines = text.splitlines()
-    section = "\n".join(lines[max(0, first - 1 - CLAIM_CONTEXT_LINES) : last + CLAIM_CONTEXT_LINES])
+    section = claim_section(text, first, last)
     answer = ask({"claim": claim["claim"], "section": section}, {"relation": RELATION_QUESTION})["relation"]
     return {
         **out,
