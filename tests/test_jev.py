@@ -1,5 +1,6 @@
 import io
 import json
+import subprocess
 
 import pytest
 from typesafe_sdk import TypeSafeError
@@ -373,4 +374,458 @@ def test_main_refuses_secret_file(tmp_path, capsys):
     ask = fake(lambda s, q: {})
     code, _, err = run(["find", str(env), "-q", "token"], ask, capsys)
     assert code == 1 and "secret" in err
+    assert ask.calls == []
+
+
+# --- search ---
+
+
+def search_ask(dirs=0.9, files=0.9, units=0.9):
+    """Fake ask for search. Each argument is a score or a function of the state;
+    the request kind is told apart by state content, never by call order."""
+
+    def respond(state, questions):
+        if "directory" in state:
+            rule = dirs
+        elif "source" in state:
+            rule = units
+        else:
+            rule = files
+        score = rule(state) if callable(rule) else rule
+        return {k: score for k in questions}
+
+    return fake(respond)
+
+
+def states(ask, key):
+    """Recorded states of one kind: "directory", "preview" (file) or "source" (unit)."""
+    return [state for state, _ in ask.calls if key in state]
+
+
+def write_tree(root, files):
+    for rel, content in files.items():
+        path = root / rel
+        path.parent.mkdir(parents=True, exist_ok=True)
+        if isinstance(content, bytes):
+            path.write_bytes(content)
+        else:
+            path.write_text(content)
+
+
+def git(root, *args):
+    subprocess.run(["git", *args], cwd=root, check=True, capture_output=True)
+
+
+@pytest.fixture
+def hermetic_git(monkeypatch, tmp_path_factory):
+    """Keep the developer's global git config and excludes file out of git-mode tests."""
+    home = tmp_path_factory.mktemp("home")
+    monkeypatch.setenv("HOME", str(home))
+    monkeypatch.setenv("XDG_CONFIG_HOME", str(home))
+    monkeypatch.setenv("GIT_CONFIG_NOSYSTEM", "1")
+
+
+@pytest.mark.parametrize("use_git", [False, True], ids=["walk", "git"])
+def test_search_inventory_never_sends_excluded_files(tmp_path, capsys, monkeypatch, hermetic_git, use_git):
+    monkeypatch.setattr(jev, "SEARCH_FILE_BYTES", 100)
+    root = tmp_path / "repo"
+    write_tree(tmp_path, {"outside/target.py": "OUTSIDE_ROOT = 1\n"})
+    write_tree(
+        root,
+        {
+            "src/app.py": "def run():\n    return 1\n",
+            "src/.hidden.py": "HIDDEN_FILE = 1\n",
+            ".config/settings.py": "HIDDEN_DIR = 1\n",
+            "node_modules/lib/index.js": "SKIPPED_DIR = 1\n",
+            "pkg.egg-info/PKG-INFO": "EGG_INFO = 1\n",
+            "credentials.json": '{"token": "SECRET_VALUE"}',
+            "src/server.pem": "SECRET_PEM",
+            "logo.png": b"\x89PNG\x00BINARY_BYTES",
+            "big.txt": "OVERSIZED " * 20,
+            "empty.txt": "",
+        },
+    )
+    (root / "src" / "link.py").symlink_to(tmp_path / "outside" / "target.py")
+    if use_git:
+        git(root, "init", "-q")  # every file is untracked and not ignored, so git lists them all
+
+    ask = search_ask()
+    code, out, _ = run(["search", str(root), "-q", "run"], ask, capsys)
+
+    assert code == 0  # a secret-named file is skipped, not fatal
+    sent = json.dumps([state for state, _ in ask.calls])
+    for marker in [
+        ".hidden", "HIDDEN", ".config", "node_modules", "SKIPPED_DIR", "egg-info", "EGG_INFO", "credentials",
+        "SECRET", "server.pem", "logo.png", "BINARY", "big.txt", "OVERSIZED", "empty.txt", "link.py", "OUTSIDE",
+    ]:
+        assert marker not in sent, marker
+    assert [f["path"] for f in out["files"]] == ["src/app.py"]
+    assert out["stats"]["files_eligible"] == 1
+    assert out["stats"]["skipped_secret"] == 2
+
+
+def test_search_in_a_git_subtree_honours_gitignore_and_drops_deleted_entries(tmp_path, capsys, hermetic_git):
+    write_tree(
+        tmp_path,
+        {
+            ".gitignore": "ignored.py\nout/\n",
+            "sub/keep.py": "KEEP = 1\n",
+            "sub/ignored.py": "IGNORED = 1\n",
+            "sub/out/gen.py": "GENERATED = 1\n",
+            "sub/gone.py": "GONE = 1\n",
+        },
+    )
+    git(tmp_path, "init", "-q")
+    git(tmp_path, "add", "sub/gone.py")
+    (tmp_path / "sub" / "gone.py").unlink()  # still in the index, gone from disk
+
+    ask = search_ask()
+    code, out, _ = run(["search", str(tmp_path / "sub"), "-q", "q"], ask, capsys)
+
+    assert code == 0
+    sent = json.dumps([state for state, _ in ask.calls])
+    for marker in ["ignored", "IGNORED", "gen.py", "GENERATED", "gone", "GONE"]:
+        assert marker not in sent, marker
+    # Paths are relative to ROOT even when ROOT is below the repository top.
+    assert [s["path"] for s in states(ask, "preview")] == ["keep.py"]
+    assert out["stats"]["files_eligible"] == 1
+
+
+@pytest.mark.parametrize("git_state", ["no repo", "git missing"])
+def test_search_walks_the_tree_without_git(tmp_path, capsys, monkeypatch, hermetic_git, git_state):
+    write_tree(
+        tmp_path,
+        {
+            ".gitignore": "ignored.py\n",
+            "keep.py": "KEEP = 1\n",
+            "ignored.py": "IGNORED = 1\n",
+            "lib/deep/util.py": "UTIL = 1\n",
+            "node_modules/x.js": "X = 1\n",
+        },
+    )
+    if git_state == "git missing":
+        git(tmp_path, "init", "-q")
+
+        def no_git(*args, **kwargs):
+            raise FileNotFoundError("git")
+
+        monkeypatch.setattr(jev.subprocess, "run", no_git)
+
+    ask = search_ask()
+    code, out, _ = run(["search", str(tmp_path), "-q", "q"], ask, capsys)
+
+    assert code == 0
+    # The walk does not read .gitignore, but it still prunes SKIP_DIRS.
+    assert sorted(s["path"] for s in states(ask, "preview")) == ["ignored.py", "keep.py", "lib/deep/util.py"]
+    assert out["stats"]["files_eligible"] == 3
+
+
+@pytest.mark.parametrize("score, explored", [(0.49, False), (0.5, True)])
+def test_search_prunes_a_directory_below_dir_min(tmp_path, capsys, score, explored):
+    write_tree(
+        tmp_path,
+        {
+            "auth/login.py": "LOGIN = 1\n",
+            "auth/deep/token.py": "TOKEN = 1\n",
+            "images/resize.py": "RESIZE = 1\n",
+            "images/sub/crop.py": "CROP = 1\n",
+        },
+    )
+    ask = search_ask(dirs=lambda s: score if s["directory"].startswith("images") else 0.9)
+    _, out, _ = run(["search", str(tmp_path), "-q", "login"], ask, capsys)
+
+    seen = {state.get("directory", state.get("path")) for state, _ in ask.calls}
+    below = {p for p in seen if p.startswith("images/")}
+    if explored:
+        assert below == {"images/sub", "images/resize.py", "images/sub/crop.py"}
+        assert out["stats"]["dirs_judged"] == 4
+    else:
+        assert below == set()
+        assert out["stats"]["dirs_judged"] == 3  # auth, images, auth/deep
+    assert "auth/deep/token.py" in seen
+    # A pruned directory was judged, not cut by the budget.
+    assert out["complete"] is True and out["unexplored"] == []
+
+
+PY_UNITS = """import os
+
+LIMIT = 3
+
+
+@decorator
+def decorated(a):
+    return a
+
+
+class Box:
+    size = 1
+
+    def open(self):
+        return 1
+
+    async def close(self):
+        return 2
+
+
+class Plain:
+    x = 1
+
+
+async def top():
+    pass
+"""
+
+
+def test_source_units_split_python_at_declarations():
+    units = jev.source_units("m.py", PY_UNITS)
+    assert [(name, lines) for name, lines, _ in units] == [
+        (None, "1-5"),  # imports and module constants: a gap unit
+        ("decorated", "6-8"),  # starts at its decorator
+        (None, "9-13"),  # class header and attribute
+        ("Box.open", "14-15"),
+        ("Box.close", "17-18"),
+        ("Plain", "21-22"),  # a class without methods is one unit
+        ("top", "25-26"),
+    ]  # blank-only gaps (16, 19-20, 23-24) are dropped
+    sources = {lines: source for _, lines, source in units}
+    assert sources["6-8"] == "@decorator\ndef decorated(a):\n    return a"
+    assert sources["1-5"] == "import os\n\nLIMIT = 3\n\n"
+
+
+def test_source_units_count_lines_like_ast_despite_form_feeds():
+    # splitlines() would break at the form feed too, so ast's line 4 would hold a blank.
+    text = "def f():\n    return 1\n\x0c\ndef g():\n    return 2\n"
+    assert jev.source_units("m.py", text) == [
+        ("f", "1-2", "def f():\n    return 1"),
+        ("g", "4-5", "def g():\n    return 2"),
+    ]  # line 3 holds only the form feed: blank, dropped
+
+
+def test_source_units_split_a_long_declaration_into_parts(monkeypatch):
+    monkeypatch.setattr(jev, "UNIT_LINES", 2)
+    text = "def long():\n    a = 1\n    b = 2\n    return a + b\n"
+    assert [(name, lines) for name, lines, _ in jev.source_units("m.py", text)] == [
+        ("long (part 1)", "1-2"),
+        ("long (part 2)", "3-4"),
+    ]
+
+
+def test_source_units_split_a_declaration_over_unit_chars(monkeypatch):
+    monkeypatch.setattr(jev, "UNIT_CHARS", 30)
+    text = "def wide():\n    a = 'xxxxxxxxxxxxxxxx'\n    return a\n"
+    assert [(name, lines) for name, lines, _ in jev.source_units("m.py", text)] == [
+        ("wide (part 1)", "1-1"),
+        ("wide (part 2)", "2-2"),
+        ("wide (part 3)", "3-3"),
+    ]
+
+
+@pytest.mark.parametrize(
+    "path, text, expected",
+    [
+        ("broken.py", "def f(:\n    x\ny = 1\n", [(None, "1-2"), (None, "3-3")]),
+        ("nul.py", "a = 1\x00\nb = 2\nc = 3\n", [(None, "1-2"), (None, "3-3")]),
+        ("notes.md", "a\nb\nc\n", [(None, "1-2"), (None, "3-3")]),
+        ("gaps.txt", "a\n\n\n\nb\n", [(None, "1-2"), (None, "5-5")]),  # blank-only chunk dropped
+    ],
+)
+def test_source_units_fall_back_to_line_chunks(monkeypatch, path, text, expected):
+    monkeypatch.setattr(jev, "UNIT_LINES", 2)
+    assert [(name, lines) for name, lines, _ in jev.source_units(path, text)] == expected
+
+
+TWO_FUNCS = "def a():\n    pass\n\n\ndef b():\n    pass\n"
+
+
+def test_search_budget_caps_navigation_and_cuts_units(tmp_path, capsys, monkeypatch):
+    monkeypatch.setattr(jev, "SEARCH_NAV_REQUESTS", 2)
+    monkeypatch.setattr(jev, "SEARCH_MAX_REQUESTS", 5)
+    write_tree(tmp_path, {f"d{i}/f{i}.py": TWO_FUNCS for i in range(1, 5)})
+    ask = search_ask()
+    _, out, _ = run(["search", str(tmp_path), "-q", "q"], ask, capsys)
+
+    stats = out["stats"]
+    assert len(ask.calls) == stats["requests"] == 5
+    # 2 of 4 dirs (nav cap), both of their files, then 1 of 4 units (total cap).
+    assert (stats["dirs_judged"], stats["files_judged"], stats["units_judged"]) == (2, 2, 1)
+    assert out["complete"] is False
+    assert out["unexplored"] == ["d3/", "d4/", "d1/f1.py", "d2/f2.py"]
+
+
+def test_search_budget_judges_files_of_higher_scored_dirs_first(tmp_path, capsys, monkeypatch):
+    monkeypatch.setattr(jev, "SEARCH_MAX_REQUESTS", 3)
+    monkeypatch.setattr(jev, "UNEXPLORED_SHOWN", 1)
+    write_tree(tmp_path, {"d1/f1.py": TWO_FUNCS, "d2/f2.py": TWO_FUNCS})
+    ask = search_ask(dirs=lambda s: {"d1": 0.6, "d2": 0.9}[s["directory"]])
+    _, out, _ = run(["search", str(tmp_path), "-q", "q"], ask, capsys)
+
+    assert len(ask.calls) == out["stats"]["requests"] == 3
+    assert [s["path"] for s in states(ask, "preview")] == ["d2/f2.py"]
+    assert states(ask, "source") == []
+    assert out["complete"] is False
+    assert out["unexplored"] == ["d1/f1.py"]  # cut to UNEXPLORED_SHOWN
+    # Admitted, but its units were cut: a lead, not an excerpt.
+    assert out["leads"] == ["d2/f2.py"] and out["excerpts"] == []
+
+
+def test_search_budget_caps_files_so_units_are_still_judged(tmp_path, capsys, monkeypatch):
+    monkeypatch.setattr(jev, "SEARCH_FILE_REQUESTS", 2)
+    monkeypatch.setattr(jev, "SEARCH_MAX_REQUESTS", 10)
+    write_tree(tmp_path, {f"f{i}.py": TWO_FUNCS for i in range(1, 7)})
+    ask = search_ask()
+    _, out, _ = run(["search", str(tmp_path), "-q", "q"], ask, capsys)
+
+    stats = out["stats"]
+    # Without the file cap, 6 file judgments would leave 4 requests; with it, units get 8.
+    assert (stats["files_judged"], stats["units_judged"]) == (2, 4)
+    assert len(out["excerpts"]) == 4
+    assert out["complete"] is False
+    assert out["unexplored"] == ["f3.py", "f4.py", "f5.py", "f6.py"]
+
+
+def test_search_no_match_when_every_file_scores_low(tmp_path, capsys):
+    write_tree(tmp_path, {"a.py": TWO_FUNCS, "lib/b.py": TWO_FUNCS})
+    ask = search_ask(files=0.2)
+    code, out, _ = run(["search", str(tmp_path), "-q", "q"], ask, capsys)
+
+    assert code == 0
+    assert (out["no_match"], out["uncertain"], out["complete"]) == (True, False, True)
+    assert out["files"] == out["excerpts"] == out["leads"] == []
+    assert states(ask, "source") == []  # no unit of a rejected file is judged
+
+
+@pytest.mark.parametrize(
+    "best, no_match, uncertain",
+    [(0.9, False, False), (0.65, False, True), (0.6, False, True), (0.5, True, True), (0.1, True, False)],
+)
+def test_search_flags_an_uncertain_best_file(tmp_path, capsys, best, no_match, uncertain):
+    write_tree(tmp_path, {"best.py": "B = 1\n", "other.py": "O = 1\n"})
+    ask = search_ask(files=lambda s: best if s["path"] == "best.py" else 0.05)
+    _, out, _ = run(["search", str(tmp_path), "-q", "q"], ask, capsys)
+    assert (out["no_match"], out["uncertain"]) == (no_match, uncertain)
+
+
+def test_search_dir_state_previews_entries_and_counts_files_below(tmp_path, capsys, monkeypatch):
+    monkeypatch.setattr(jev, "DIR_PREVIEW_ENTRIES", 2)
+    write_tree(tmp_path, {"pkg/b.py": "B = 1\n", "pkg/a.md": "a\n", "pkg/sub/c.py": "C = 1\n", "pkg/sub/Makefile": "all:\n"})
+    ask = search_ask(files=0.1)
+    run(["search", str(tmp_path), "-q", "q"], ask, capsys)
+
+    state = next(s for s in states(ask, "directory") if s["directory"] == "pkg")
+    assert state == {
+        "query": "q",
+        "guidance": jev.GUIDANCE,
+        "directory": "pkg",
+        "entries": ["sub/", "a.md"],  # dirs first; cut to DIR_PREVIEW_ENTRIES
+        "truncated": True,
+        "file_count": 4,
+        "extensions": {".py": 2, ".md": 1, "(none)": 1},
+    }
+
+
+SESSION_PY = (
+    "import time\n"
+    "\n"
+    "\n"
+    "def check(session):\n"
+    '    """Reject a session whose expiry time has passed."""\n'
+    '    return session["expires"] > time.time()\n'
+    "\n"
+    "\n"
+    "def refresh(s):\n"
+    "    return s\n"
+)
+
+
+def test_search_end_to_end(tmp_path, capsys, monkeypatch):
+    monkeypatch.setattr(jev, "EXCERPT_CHARS", 40)
+    monkeypatch.setattr(jev, "FILE_HEAD_CHARS", 20)
+    write_tree(
+        tmp_path,
+        {
+            "README.md": "# Demo\n",
+            "auth/session.py": SESSION_PY,
+            "auth/helpers.py": "def pad(s):\n    return s\n",
+            "auth/tests/test_session.py": "def test_expired():\n    assert not check({'expires': 0})\n",
+        },
+    )
+    file_scores = {"README.md": 0.2, "auth/session.py": 0.9, "auth/tests/test_session.py": 0.8, "auth/helpers.py": 0.7}
+    unit_scores = {"check": 0.95, "refresh": 0.8, "test_expired": 0.7, "pad": 0.2, None: 0.1}
+    ask = search_ask(files=lambda s: file_scores[s["path"]], units=lambda s: unit_scores[s["name"]])
+    query = "where are expired sessions rejected?"
+    code, out, _ = run(["search", str(tmp_path), "-q", query, "--top", "2"], ask, capsys)
+
+    assert code == 0
+    assert set(out) == {"no_match", "uncertain", "complete", "files", "excerpts", "leads", "unexplored", "stats"}
+    assert (out["no_match"], out["uncertain"], out["complete"], out["unexplored"]) == (False, False, True, [])
+    assert out["files"] == [
+        {"path": "auth/session.py", "score": 0.9},
+        {"path": "auth/tests/test_session.py", "score": 0.8},
+        {"path": "auth/helpers.py", "score": 0.7},
+    ]
+    check_source = "\n".join(SESSION_PY.split("\n")[3:6])
+    assert out["excerpts"] == [  # score desc, cut to --top
+        {"path": "auth/session.py", "name": "check", "lines": "4-6", "score": 0.95,
+         "source": check_source[:40], "truncated": True},
+        {"path": "auth/session.py", "name": "refresh", "lines": "9-10", "score": 0.8,
+         "source": "def refresh(s):\n    return s", "truncated": False},
+    ]
+    # test_session.py has a kept unit, but it fell past --top; helpers.py has none.
+    assert out["leads"] == ["auth/tests/test_session.py", "auth/helpers.py"]
+    assert out["stats"] == {
+        "files_eligible": 4,
+        "skipped_secret": 0,
+        "dirs_judged": 2,
+        "files_judged": 4,
+        "units_judged": 5,  # session.py: imports gap, check, refresh; one each in the other two
+        "requests": 11,
+    }
+    assert len(ask.calls) == 11
+
+    expected_question = {"directory": jev.DIR_QUESTION, "preview": jev.FILE_QUESTION, "source": jev.UNIT_QUESTION}
+    for state, questions in ask.calls:
+        assert (state["query"], state["guidance"]) == (query, jev.GUIDANCE)
+        kind = next(k for k in expected_question if k in state)
+        assert list(questions.values()) == [expected_question[kind]]
+    preview = next(s for s in states(ask, "preview") if s["path"] == "auth/session.py")
+    assert (preview["preview"], preview["truncated"]) == (SESSION_PY[:20], True)
+    unit = next(s for s in states(ask, "source") if s["name"] == "check")
+    assert unit == {
+        "query": query,
+        "guidance": jev.GUIDANCE,
+        "path": "auth/session.py",
+        "name": "check",
+        "lines": "4-6",
+        "source": check_source,
+    }
+    assert not any(s["path"] == "README.md" for s in states(ask, "source"))
+
+
+def test_search_caps_unit_source_sent_at_unit_chars(tmp_path, capsys, monkeypatch):
+    monkeypatch.setattr(jev, "UNIT_CHARS", 10)
+    write_tree(tmp_path, {"min.js": "x" * 25 + "\n"})  # one line longer than UNIT_CHARS
+    ask = search_ask()
+    run(["search", str(tmp_path), "-q", "q"], ask, capsys)
+    assert [s["source"] for s in states(ask, "source")] == ["x" * 10]
+
+
+def test_search_reads_a_file_named_dash_from_disk_not_stdin(tmp_path, capsys, monkeypatch):
+    (tmp_path / "-").write_text("FROM_DISK = 1\n")
+    monkeypatch.chdir(tmp_path)
+    ask = search_ask()
+    # ROOT defaults to ".", and Path(".") / "-" would be "-", which read_text takes as stdin.
+    code, _, _ = run(["search", "-q", "q"], ask, capsys, stdin="FROM_STDIN", monkeypatch=monkeypatch)
+    assert code == 0
+    assert [s["preview"] for s in states(ask, "preview")] == ["FROM_DISK = 1\n"]
+
+
+@pytest.mark.parametrize(
+    "target, message",
+    [("a.txt", "not a directory"), ("missing", "not a directory"), ("only_hidden", "no eligible files")],
+)
+def test_search_fails_without_a_searchable_directory(tmp_path, capsys, target, message):
+    write_tree(tmp_path, {"a.txt": "text\n", "only_hidden/.notes": "x\n"})
+    ask = search_ask()
+    code, _, err = run(["search", str(tmp_path / target), "-q", "q"], ask, capsys)
+    assert code == 1 and message in err
     assert ask.calls == []

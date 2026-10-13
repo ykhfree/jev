@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-`jev` is a CLI that lets a coding agent hand narrow judgments (find / rank / memgate / screen) to TypeSafe's Jev model via `typesafe-sdk`. Every subcommand prints exactly one JSON object on stdout; errors go to stderr as `jev: <message>` with exit code 1. The whole tool is the single module `jev.py`.
+`jev` is a CLI that lets a coding agent hand narrow judgments (find / rank / memgate / screen / search) to TypeSafe's Jev model via `typesafe-sdk`. Every subcommand prints exactly one JSON object on stdout; errors go to stderr as `jev: <message>` with exit code 1. The whole tool is the single module `jev.py`.
 
 The primary consumer is the "Jev delegation" section of `~/.claude/CLAUDE.md`, which documents the commands and relies on exit code 1 and on these output fields: `uncertain`, `no_match`, `verdict` (including `partial`, `absent`) and the `prompt_injection` reason. It no longer uses `claims` or `memgate` (evals showed Claude as accurate on inputs it already holds); both stay in the CLI. If you change a command's flags or output shape, update that section too.
 
@@ -27,7 +27,7 @@ Live tests call the paid API (one request per `ask`) and assert on real model sc
 
 ## Architecture
 
-- **Tuning lives at the top of `jev.py`**: thresholds (`UNSURE_BAND`, `FIND_*`, `DUPLICATE_MIN`, `CONFLICT_MIN`, `SCREEN`), request sizing (`CHUNK_*`, `PASSAGE_CHARS`, …), and every `Noul`/`Choice` question. Each model subcommand's section is labelled with the TypeSafe cookbook it follows. Redesign questions/thresholds with the `typesafe:typesafe-ai` skill, not ad hoc.
+- **Tuning lives at the top of `jev.py`**: thresholds (`UNSURE_BAND`, `FIND_*`, `DUPLICATE_MIN`, `CONFLICT_MIN`, `SCREEN`, `SEARCH`), request sizing (`CHUNK_*`, `PASSAGE_CHARS`, `SEARCH_*`, `UNIT_*`, …), and every `Noul`/`Choice` question. Each model subcommand's section is labelled with the TypeSafe cookbook it follows. Redesign questions/thresholds with the `typesafe:typesafe-ai` skill, not ad hoc.
 - **One model seam**: `make_ask()` returns `ask(state, questions) -> {id: float | {"choice", "probabilities", "confidence"}}` (Noul → float, Choice → dict). `main(argv, ask=None)` accepts an injected `ask`; `tests/test_jev.py` drives the full CLI through `main` with a recording fake (`fake(respond)`), so no test in that file touches the network.
 - **Subcommands** are `cmd_<name>(args, ask) -> dict`, registered in `build_parser()` via `set_defaults(run=...)`. Raise `JevError` for user-facing failures; `main` turns `JevError`/`TypeSafeError`/`OSError` into exit 1.
 - **Parallelism**: `pmap` fans requests out over a thread pool (`WORKERS`), so `ask` call order is nondeterministic. Tests match recorded calls by content, never by index.
@@ -40,6 +40,7 @@ Live tests call the paid API (one request per `ask`) and assert on real model sc
 - **`find`**: `Choice` probabilities sum to 1 within every chunk, so line scores are weighted by that chunk's `exists` noul; otherwise a chunk without the answer would still produce a confident line.
 - **`memgate`**: verdict precedence is `conflict` > `duplicate` > `skip` > `uncertain` > `record` (a conflict means a stored record may be stale, so it outranks everything). `--existing` is parsed from `cross-memory query` numbered output by `parse_numbered`.
 - **`screen`**: paragraphs are never merged (an injected paragraph would drag clean ones down), and an excluded `prompt_injection` passage is reported without its text or preview.
+- **`search`**: walks directory → file → source unit with one request per item. Navigation thresholds are lenient (`dir_min` 0.5 < `file_min`/`unit_min` 0.6) because pruning a directory loses everything below it. The inventory skips secret-named files and counts them in `stats.skipped_secret` instead of raising, because `read_text` raising would abort the whole search; its binary sniff is a local raw read, and content sent to Jev still goes through `read_text`. Requests are capped by `SEARCH_MAX_REQUESTS` (directories also by `SEARCH_NAV_REQUESTS`, files by `SEARCH_FILE_REQUESTS` so source units keep part of the budget); items cut by the budget are listed in `unexplored` and set `complete` to false. Chunks respect both `UNIT_LINES` and `UNIT_CHARS`, like `find`.
 
 ## Environment
 

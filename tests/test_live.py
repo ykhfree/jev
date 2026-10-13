@@ -190,3 +190,24 @@ def test_memgate_does_not_call_a_complementary_learning_a_conflict(tmp_path, cap
     out = run(["memgate", "--existing", str(existing), "--task", "set env var", "--result", "done", "--learning", learning], capsys)
     assert out["conflicts"][0]["score"] < jev.CONFLICT_MIN, out
     assert out["verdict"] not in ("conflict", "duplicate"), out
+
+
+def test_search_finds_the_auth_module_and_not_the_unrelated_one(tmp_path, capsys):
+    (tmp_path / "auth").mkdir()
+    (tmp_path / "auth" / "session.py").write_text(
+        "import time\n\n\n"
+        "def is_session_valid(session: dict) -> bool:\n"
+        '    """Reject a login session whose expiry time has passed."""\n'
+        '    return session["expires_at"] > time.time()\n'
+    )
+    (tmp_path / "imaging").mkdir()
+    (tmp_path / "imaging" / "resize.py").write_text(
+        "from PIL import Image\n\n\n"
+        "def resize(path: str, width: int) -> Image.Image:\n"
+        "    image = Image.open(path)\n"
+        "    return image.resize((width, int(image.height * width / image.width)))\n"
+    )
+    out = run(["search", str(tmp_path), "-q", "Where is an expired login session rejected?"], capsys)
+    paths = [f["path"] for f in out["files"]]
+    assert "auth/session.py" in paths, out
+    assert "imaging/resize.py" not in paths, out
