@@ -1,8 +1,10 @@
 import io
 import json
 import subprocess
+from types import SimpleNamespace
 
 import pytest
+from PIL import Image as PILImage
 from typesafe_sdk import TypeSafeError
 
 import jev
@@ -829,3 +831,140 @@ def test_search_fails_without_a_searchable_directory(tmp_path, capsys, target, m
     code, _, err = run(["search", str(tmp_path / target), "-q", "q"], ask, capsys)
     assert code == 1 and message in err
     assert ask.calls == []
+
+
+# --- which: screenshots ---
+
+
+def screenshot(path, size=(1280, 800), color="white"):
+    PILImage.new("RGB", size, color).save(path)
+    return str(path)
+
+
+def screen_color(state):
+    """The strongest channel of the image read_image sent, to tell fixture images apart (JPEG shifts exact values)."""
+    with PILImage.open(io.BytesIO(bytes(state["screen"].data))) as img:
+        rgb = img.getpixel((0, 0))
+    return ("red", "green", "blue")[rgb.index(max(rgb))]
+
+
+def test_which_ranks_screens_and_sends_one_resized_image_per_request(tmp_path, capsys):
+    shots = [screenshot(tmp_path / "a.png", (2560, 1600), "red"), screenshot(tmp_path / "b.png", color="blue"),
+             screenshot(tmp_path / "c.jpg", color="green")]
+    scores = {"red": 0.1, "blue": 0.97, "green": 0.4}
+    ask = fake(lambda state, q: {"shows": scores[screen_color(state)]})
+    code, out, _ = run(["which", "-q", "a 'Create account' button", "--top", "2", *shots], ask, capsys)
+
+    assert code == 0
+    assert out["ranked"] == [{"candidate": shots[1], "score": 0.97}, {"candidate": shots[2], "score": 0.4}]
+    assert (out["no_match"], out["uncertain"]) == (False, False)
+    assert len(ask.calls) == 3
+    assert {q["shows"].instructions for _, q in ask.calls} == {"Does `screen` show a 'Create account' button?"}
+    sizes = {screen_color(s): PILImage.open(io.BytesIO(bytes(s["screen"].data))).size for s, _ in ask.calls}
+    assert sizes["red"] == (1568, 980)  # a retina capture is scaled down to the API limit
+
+
+@pytest.mark.parametrize("best, no_match, uncertain", [(0.05, True, False), (0.6, False, True)])
+def test_which_flags_weak_best_match(tmp_path, capsys, best, no_match, uncertain):
+    ask = fake(lambda state, q: {"shows": best})
+    _, out, _ = run(["which", "-q", "a map", screenshot(tmp_path / "s.png")], ask, capsys)
+    assert (out["no_match"], out["uncertain"]) == (no_match, uncertain)
+
+
+def test_which_refuses_secret_named_files_and_non_images(tmp_path, capsys):
+    ask = fake(lambda state, q: {"shows": 0.9})
+    code, _, err = run(["which", "-q", "x", screenshot(tmp_path / "id_rsa.png")], ask, capsys)
+    assert code == 1 and "secret" in err
+    notes = tmp_path / "notes.png"
+    notes.write_text("not an image")
+    code, _, err = run(["which", "-q", "x", str(notes)], ask, capsys)
+    assert code == 1 and "notes.png" in err
+    assert ask.calls == []
+
+
+@pytest.mark.parametrize("size, expected", [
+    ((2560, 1600), (1568, 980)),  # retina desktop
+    ((1170, 2532), (725, 1568)),  # retina phone, long side limited
+    ((1280, 800), (1280, 800)),  # already inside the limits
+    ((120, 200), (280, 467)),  # a small crop is scaled up
+])
+def test_image_size_fits_the_api_limits(size, expected):
+    assert jev.image_size(*size) == expected
+
+
+def test_image_size_rejects_a_full_page_capture_with_advice():
+    with pytest.raises(jev.JevError, match="one viewport"):
+        jev.image_size(1280, 12000)
+
+
+def test_make_ask_pins_the_vision_model_only_for_image_requests(monkeypatch):
+    sent = []
+
+    class Client:
+        def system_one(self, state, questions, **kwargs):
+            sent.append(kwargs)
+            edges = SimpleNamespace(model_dump=lambda: {"left": 0.1, "top": 0.2, "right": 0.3, "bottom": 0.4})
+            return SimpleNamespace(nouls={"q": SimpleNamespace(noul=0.8)}, choices={},
+                                   boxes={"b": SimpleNamespace(box=edges, confidence=0.7)})
+
+    monkeypatch.setattr(jev, "TypeSafeClient", Client)
+    ask = jev.make_ask()
+    assert ask({"text": "plain"}, {"q": jev.shows_question("x")})["q"] == 0.8
+    assert ask("L1| a string state, as find sends", {"q": jev.shows_question("x")})["q"] == 0.8
+    answers = ask({"screen": jev.Image(b"png bytes")}, {"q": jev.shows_question("x"), "b": jev.box_question("x")})
+    assert answers["b"] == {"left": 0.1, "top": 0.2, "right": 0.3, "bottom": 0.4, "confidence": 0.7}
+    assert sent == [{}, {}, {"model": jev.VISION_MODEL, "extra_headers": jev.VISION_HEADERS}]
+
+
+# --- locate ---
+
+CANCEL_BOX = {"left": 0.4, "top": 0.5, "right": 0.6, "bottom": 0.7, "confidence": 0.8}
+
+
+def locate_ask(present, on_target, box=CANCEL_BOX):
+    def respond(state, questions):
+        if "where" in questions:
+            return {"present": present, "where": box}
+        return {"on_target": on_target}
+
+    return fake(respond)
+
+
+def test_locate_returns_a_checked_click_point(tmp_path, capsys):
+    ask = locate_ask(0.99, 0.95)
+    code, out, _ = run(["locate", "-q", "the 'Cancel' button", screenshot(tmp_path / "s.png", (2560, 1600))], ask, capsys)
+
+    assert code == 0
+    assert out["verdict"] == "ok" and out["uncertain"] is False
+    assert out["box"] == {"left": 0.4, "top": 0.5, "right": 0.6, "bottom": 0.7}
+    assert out["click"] == {"x": 0.5, "y": 0.6}
+    assert out["click_px"] == [1280, 960] and out["image_size"] == [2560, 1600]  # the file's pixels, not the resized copy
+    (first, q1), (second, q2) = ask.calls
+    assert q1["where"].instructions == "the 'Cancel' button in `screen`"
+    assert q2["on_target"].instructions == "In `screen`, is the red circle marker placed on the 'Cancel' button?"
+    with PILImage.open(io.BytesIO(bytes(second["screen"].data))) as marked:
+        assert marked.size == (1568, 980) and marked.getpixel((784, 588)) == (255, 0, 0)  # marker on the click point
+    with PILImage.open(io.BytesIO(bytes(first["screen"].data))) as plain:
+        assert plain.getpixel((784, 588)) == (255, 255, 255)
+
+
+def test_locate_stops_after_one_request_when_the_target_is_absent(tmp_path, capsys):
+    ask = locate_ask(0.04, 0.99)
+    _, out, _ = run(["locate", "-q", "the 'Delete account' button", screenshot(tmp_path / "s.png")], ask, capsys)
+    assert out == {"verdict": "absent", "present": 0.04, "uncertain": False}
+    assert len(ask.calls) == 1
+
+
+@pytest.mark.parametrize("on_target, verdict, uncertain", [(0.01, "unverified", False), (0.35, "unverified", True),
+                                                          (0.6, "ok", True)])
+def test_locate_marker_check_decides_the_verdict(tmp_path, capsys, on_target, verdict, uncertain):
+    _, out, _ = run(["locate", "-q", "x", screenshot(tmp_path / "s.png")], locate_ask(0.99, on_target), capsys)
+    assert (out["verdict"], out["uncertain"]) == (verdict, uncertain)
+    assert "click" in out  # an unverified box is still reported, for the caller to check
+
+
+def test_with_marker_leaves_the_input_unchanged():
+    img = PILImage.new("RGB", (600, 400), "white")
+    marked = jev.with_marker(img, {"left": 0.4, "top": 0.4, "right": 0.6, "bottom": 0.6})
+    assert marked.getpixel((300, 200)) == (255, 0, 0) and marked.getpixel((10, 10)) == (255, 255, 255)
+    assert img.getpixel((300, 200)) == (255, 255, 255)

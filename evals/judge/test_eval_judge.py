@@ -401,3 +401,25 @@ def test_run_claude_raises_instead_of_returning_an_error_as_an_answer(monkeypatc
     monkeypatch.setattr(evalkit.subprocess, "run", completed(stdout, returncode))
     with pytest.raises(RuntimeError, match="claude -p failed"):
         evalkit.run_claude("SYS", "INPUT", "opus", json_output=True)
+
+
+def test_run_claude_sends_images_through_stream_json(monkeypatch):
+    seen = {}
+    events = [{"type": "system"}, {"type": "assistant"},
+              {"type": "result", "is_error": False, "result": " {\"present\": true}\n", "total_cost_usd": 0.03,
+               "duration_ms": 900, "usage": {"input_tokens": 1500, "output_tokens": 9}}]
+
+    def fake_run(command, **kwargs):
+        seen.update(command=command, **kwargs)
+        return completed("\n".join(map(json.dumps, events)))(command)
+
+    monkeypatch.setattr(evalkit.subprocess, "run", fake_run)
+    reply = evalkit.run_claude("SYS", "FIND", "opus", json_output=True, images=[b"\x89PNG one", b"\x89PNG two"])
+
+    assert reply["text"] == '{"present": true}' and reply["cost_usd"] == 0.03 and reply["input_tokens"] == 1500
+    command = seen["command"]
+    assert command[-2:] == ["--system-prompt", "SYS"] and "FIND" not in command  # the text travels on stdin
+    assert ("--input-format", "stream-json") in list(zip(command, command[1:]))
+    content = json.loads(seen["input"])["message"]["content"]
+    assert [c["type"] for c in content] == ["image", "image", "text"] and content[2]["text"] == "FIND"
+    assert content[1]["source"]["data"] == "iVBORyB0d28="  # base64 of the second image

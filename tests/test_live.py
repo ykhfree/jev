@@ -211,3 +211,35 @@ def test_search_finds_the_auth_module_and_not_the_unrelated_one(tmp_path, capsys
     paths = [f["path"] for f in out["files"]]
     assert "auth/session.py" in paths, out
     assert "imaging/resize.py" not in paths, out
+
+
+# --- images (Danger Zone, VISION_MODEL); fixtures are evals/vision screens with no real data ---
+SCREENS = Path(__file__).parent / "fixtures" / "screens"
+
+
+def test_which_picks_the_screen_that_shows_the_target(capsys):
+    shots = [str(SCREENS / n) for n in ("orders.png", "signup.png", "m_settings.png")]
+    out = run(["which", "-q", "a 'Create account' button", *shots], capsys)
+    assert out["ranked"][0]["candidate"].endswith("signup.png") and out["ranked"][0]["score"] > 0.9
+    assert out["ranked"][1]["score"] < 0.1
+
+
+def test_which_reports_no_match(capsys):
+    out = run(["which", "-q", "a map", str(SCREENS / "orders.png")], capsys)
+    assert out["no_match"] is True
+
+
+def test_locate_checks_its_click_point(capsys):
+    # evals/vision: the Box for this row button lands on it; for Cancel it lands on Create account
+    edit = run(["locate", "-q", "the 'Edit' button in the row of order #103", str(SCREENS / "orders.png")], capsys)
+    assert edit["verdict"] == "ok"
+    assert 1717 <= edit["click_px"][0] <= 1848 and 660 <= edit["click_px"][1] <= 736  # DOM box x2 (DPR 2)
+    cancel = run(["locate", "-q", "the 'Cancel' button", str(SCREENS / "signup.png")], capsys)
+    assert cancel["verdict"] in ("ok", "unverified")
+    if cancel["verdict"] == "ok":  # a correct box is fine; an unchecked wrong one is not
+        assert 366 <= cancel["click_px"][0] <= 542 and 706 <= cancel["click_px"][1] <= 782
+
+
+def test_locate_reports_an_absent_target(capsys):
+    out = run(["locate", "-q", "the 'Delete account' row", str(SCREENS / "m_settings.png")], capsys)
+    assert out["verdict"] == "absent"

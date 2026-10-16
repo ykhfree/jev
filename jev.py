@@ -8,6 +8,7 @@ with the TypeSafe skill, not ad hoc.
 import argparse
 import ast
 import bisect
+import io
 import json
 import os
 import re
@@ -19,7 +20,9 @@ from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path, PurePosixPath
 
-from typesafe_sdk import Choice, Noul, NoulCriteria, TypeSafeClient, TypeSafeError
+from PIL import Image as PILImage
+from PIL import ImageDraw
+from typesafe_sdk import Box, Choice, Image, Noul, NoulCriteria, TypeSafeClient, TypeSafeError
 
 # --- Thresholds: starting values from the TypeSafe cookbooks; tune on real use ---
 UNSURE_BAND = (0.3, 0.7)  # a noul strictly inside this band is flagged uncertain
@@ -35,6 +38,8 @@ SCREEN = {  # classifying_rag_passages cookbook
 }
 # Navigation is lenient on purpose: pruning a directory loses everything below it.
 SEARCH = {"dir_min": 0.5, "file_min": 0.6, "unit_min": 0.6}
+# evals/vision: presence >= 0.97 vs <= 0.07; the marker check flagged 5/5 wrong boxes and 1/25 right ones
+LOCATE = {"present_min": 0.5, "on_target_min": 0.5}
 
 # --- Request sizing: Jev allows 32k tokens for state + longest question and 255
 # Choice options. Char caps are conservative because Korean can be ~1 token/char.
@@ -54,6 +59,10 @@ UNIT_LINES = 120
 UNIT_CHARS = 12_000
 EXCERPT_CHARS = 3_000
 UNEXPLORED_SHOWN = 20
+# Images are a TypeSafe Danger Zone feature: the format and accuracy can change between releases.
+VISION_MODEL = "jev-1.14.0"  # the model evals/vision measured; jev-latest may move
+VISION_HEADERS = {"TypeSafe-Danger-Zone-Images": "true"}
+IMAGE_MIN, IMAGE_MAX = 280, 1568  # pixel limits per side; images are resized to fit
 
 SECRET_NAME = re.compile(
     r"^(\.env(\..*)?|.*\.(pem|key|p12|pfx)|id_(rsa|dsa|ecdsa|ed25519).*|credentials.*)$",
@@ -79,6 +88,18 @@ def exists_question(query: str) -> Noul:
             false="No line of the document addresses this",
         ),
     )
+
+
+def shows_question(query: str) -> Noul:
+    return Noul(instructions=f"Does `screen` show {query}?")
+
+
+def box_question(query: str) -> Box:
+    return Box(instructions=f"{query} in `screen`")
+
+
+def marker_question(query: str) -> Noul:
+    return Noul(instructions=f"In `screen`, is the red circle marker placed on {query}?")
 
 
 RELEVANT_QUESTION = Noul(
@@ -192,11 +213,15 @@ class JevError(Exception):
 
 
 def make_ask():
-    """Return ask(state, questions) -> {id: noul float | choice dict} backed by the API."""
+    """Return ask(state, questions) -> {id: noul float | choice dict | box dict} backed by the API.
+    A state that holds an Image is sent to VISION_MODEL with the Danger Zone header."""
     client = TypeSafeClient()
 
     def ask(state, questions):
-        response = client.system_one(state, questions)
+        # find sends its state as one string; only dict states can hold an image
+        vision = isinstance(state, dict) and any(isinstance(v, Image) for v in state.values())
+        extra = {"model": VISION_MODEL, "extra_headers": VISION_HEADERS} if vision else {}
+        response = client.system_one(state, questions, **extra)
         answers = {k: a.noul for k, a in response.nouls.items()}
         answers.update(
             {
@@ -204,6 +229,7 @@ def make_ask():
                 for k, a in response.choices.items()
             }
         )
+        answers.update({k: {**a.box.model_dump(), "confidence": a.confidence} for k, a in response.boxes.items()})
         return answers
 
     return ask
@@ -282,6 +308,16 @@ def cmd_find(args, ask):
 
 
 # --- rank: rerank cookbook, one request per (query, candidate) pair ---
+def ranked_result(items: list[str], scores: list[float], top: int) -> dict:
+    ranked = sorted(zip(scores, items), key=lambda s: s[0], reverse=True)
+    best = ranked[0][0]
+    return {
+        "no_match": best <= UNSURE_BAND[0],
+        "uncertain": in_band(best),
+        "ranked": [{"candidate": c, "score": r3(s)} for s, c in ranked[:top]],
+    }
+
+
 def cmd_rank(args, ask):
     items = [line for line in sys.stdin.read().splitlines() if line.strip()]
     if not items:
@@ -291,12 +327,86 @@ def cmd_rank(args, ask):
         candidate = f"{item}\n{read_text(item)[:FILE_HEAD_CHARS]}" if args.files else item
         return ask({"query": args.query, "candidate": candidate}, {"relevant": RELEVANT_QUESTION})["relevant"]
 
-    ranked = sorted(zip(pmap(one, items), items), key=lambda s: s[0], reverse=True)
-    best = ranked[0][0]
+    return ranked_result(items, pmap(one, items), args.top)
+
+
+# --- which: rank for screenshots (rerank cookbook, one request per image) ---
+def image_size(w: int, h: int) -> tuple[int, int]:
+    """Scale (w, h) so each side fits IMAGE_MIN..IMAGE_MAX, keeping the aspect ratio."""
+    scale = max(min(1.0, IMAGE_MAX / max(w, h)), IMAGE_MIN / min(w, h))
+    size = round(w * scale), round(h * scale)
+    if max(size) > IMAGE_MAX:
+        raise JevError(f"a {w}x{h} image cannot fit {IMAGE_MIN}..{IMAGE_MAX} px per side; capture one viewport at a time")
+    return size
+
+
+def load_image(path: str) -> tuple[PILImage.Image, tuple[int, int]]:
+    """A PNG or JPEG file resized to the API limits, and the file's own size.
+    PIL raises OSError for a file that is not an image, which main reports."""
+    p = Path(path)
+    if SECRET_NAME.match(p.name):
+        raise JevError(f"refusing to send a likely secret file: {path}")
+    with PILImage.open(p) as img:
+        rgb = img.convert("RGB")
+    return rgb.resize(image_size(*rgb.size), PILImage.LANCZOS), rgb.size
+
+
+def as_image(img: PILImage.Image) -> Image:
+    buf = io.BytesIO()
+    img.save(buf, "PNG")
+    return Image(buf.getvalue())
+
+
+def read_image(path: str) -> Image:
+    return as_image(load_image(path)[0])
+
+
+def cmd_which(args, ask):
+    def one(path):
+        return ask({"screen": read_image(path)}, {"shows": shows_question(args.query)})["shows"]
+
+    return ranked_result(args.images, pmap(one, args.images), args.top)
+
+
+# --- locate: Box (Images docs) + a marker check, because a Box answer is the expected
+# position of each edge: between two similar elements it lands between them ---
+EDGES = ("left", "top", "right", "bottom")
+
+
+def box_center(box: dict) -> tuple[float, float]:
+    return (box["left"] + box["right"]) / 2, (box["top"] + box["bottom"]) / 2
+
+
+def with_marker(img: PILImage.Image, box: dict) -> PILImage.Image:
+    """A copy of `img` with a red ring and dot on the box's center (the click point)."""
+    marked = img.copy()
+    x, y = box_center(box)
+    x, y, r = x * marked.width, y * marked.height, max(8, round(marked.width / 120))
+    draw = ImageDraw.Draw(marked)
+    draw.ellipse((x - r, y - r, x + r, y + r), outline=(255, 0, 0), width=3)
+    draw.ellipse((x - 3, y - 3, x + 3, y + 3), fill=(255, 0, 0))
+    return marked
+
+
+def cmd_locate(args, ask):
+    img, (width, height) = load_image(args.image)
+    first = ask({"screen": as_image(img)}, {"present": shows_question(args.query), "where": box_question(args.query)})
+    present = first["present"]
+    if present < LOCATE["present_min"]:
+        return {"verdict": "absent", "present": r3(present), "uncertain": in_band(present)}
+    box = first["where"]
+    marked = as_image(with_marker(img, box))
+    on_target = ask({"screen": marked}, {"on_target": marker_question(args.query)})["on_target"]
+    x, y = box_center(box)
     return {
-        "no_match": best <= UNSURE_BAND[0],
-        "uncertain": in_band(best),
-        "ranked": [{"candidate": c, "score": r3(s)} for s, c in ranked[: args.top]],
+        "verdict": "ok" if on_target >= LOCATE["on_target_min"] else "unverified",
+        "present": r3(present),
+        "on_target": r3(on_target),
+        "uncertain": in_band(present) or in_band(on_target),
+        "box": {k: r3(box[k]) for k in EDGES},
+        "click": {"x": r3(x), "y": r3(y)},
+        "click_px": [round(x * width), round(y * height)],
+        "image_size": [width, height],
     }
 
 
@@ -723,6 +833,25 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("-q", "--query", required=True)
     p.add_argument("--top", type=int, default=8, help="max excerpts")
     p.set_defaults(run=cmd_search)
+
+    p = sub.add_parser(
+        "which",
+        help="rank screenshots (PNG/JPEG) by whether they show something; session-rendered dev screens only",
+    )
+    p.add_argument("images", nargs="+", help="screenshot files")
+    p.add_argument("-q", "--query", required=True, help="what to look for, e.g. \"a 'Create account' button\"")
+    p.add_argument("--top", type=int, default=5)
+    p.set_defaults(run=cmd_which)
+
+    p = sub.add_parser(
+        "locate",
+        help="where something is in a screenshot (PNG/JPEG), checked with a marker; session-rendered dev screens only",
+        epilog="box and click are fractions of the image; click_px is in the file's pixels "
+        "(divide by the display scale for points or CSS px).",
+    )
+    p.add_argument("image", help="screenshot file")
+    p.add_argument("-q", "--query", required=True, help="what to find, e.g. \"the 'Cancel' button\"")
+    p.set_defaults(run=cmd_locate)
     return parser
 
 

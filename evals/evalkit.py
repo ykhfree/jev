@@ -1,6 +1,7 @@
 """Shared kit for the offline evals: a JSON-file cache for paid model calls, an isolated
 `claude -p` call, and the scoring helpers both harnesses use."""
 
+import base64
 import hashlib
 import json
 import subprocess
@@ -27,27 +28,42 @@ class Cache:
         return value
 
 
-def run_claude(system: str, text: str, model: str, json_output: bool = False):
+def run_claude(system: str, text: str, model: str, json_output: bool = False, images: list[bytes] = ()):
     """One `claude -p` call isolated from user settings, hooks, MCP servers and tools, run
     from a neutral cwd so no project CLAUDE.md is picked up.
 
+    `images` are PNG files sent before the text (through stream-json input).
     Returns the stripped reply, or with json_output the reply plus its usage and cost."""
     command = [
         "claude", "-p", "--model", model, "--tools", "", "--setting-sources", "",
         "--strict-mcp-config", "--no-session-persistence",
     ]
-    if json_output:
+    stdin = None
+    if images:
+        content = [
+            {"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": base64.b64encode(png).decode()}}
+            for png in images
+        ] + [{"type": "text", "text": text}]
+        stdin = json.dumps({"type": "user", "message": {"role": "user", "content": content}}) + "\n"
+        command += ["--input-format", "stream-json", "--output-format", "stream-json", "--verbose"]
+    elif json_output:
         command += ["--output-format", "json"]
-    command += ["--system-prompt", system, text]
-    result = subprocess.run(command, capture_output=True, text=True, timeout=300, cwd=gettempdir())
+    command += ["--system-prompt", system] + ([] if images else [text])
+    result = subprocess.run(command, input=stdin, capture_output=True, text=True, timeout=300, cwd=gettempdir())
     if result.returncode != 0:
         raise RuntimeError(f"claude -p failed: {result.stderr.strip()}")
-    if not json_output:
+    if images:
+        # the stream ends with one "result" event shaped like the --output-format json object
+        data = next(e for e in map(json.loads, result.stdout.splitlines()) if e.get("type") == "result")
+    elif not json_output:
         return result.stdout.strip()
-    data = json.loads(result.stdout)
+    else:
+        data = json.loads(result.stdout)
     if data.get("is_error"):
         # raise rather than return, so an error message is never cached as an answer
         raise RuntimeError(f"claude -p failed: {data.get('result')}")
+    if images and not json_output:
+        return data["result"].strip()
     usage = data.get("usage") or {}
     return {
         "text": data["result"].strip(),
