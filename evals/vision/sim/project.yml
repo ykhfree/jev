@@ -1,0 +1,38 @@
+# xcodegen spec for the simulator fixture app. Generate with `xcodegen generate`.
+name: VisionFixture
+options:
+  bundleIdPrefix: dev.jev
+  deploymentTarget:
+    iOS: "17.0"
+targets:
+  VisionFixture:
+    type: application
+    platform: iOS
+    sources: [App]
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        PRODUCT_BUNDLE_IDENTIFIER: dev.jev.VisionFixture
+        SWIFT_VERSION: "5.0"
+        CODE_SIGN_IDENTITY: "-"
+  VisionFixtureUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [UITests]
+    dependencies:
+      - target: VisionFixture
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: VisionFixture
+        SWIFT_VERSION: "5.0"
+        CODE_SIGN_IDENTITY: "-"
+schemes:
+  VisionFixture:
+    build:
+      targets:
+        VisionFixture: all
+        VisionFixtureUITests: [test]
+    test:
+      targets: [VisionFixtureUITests]

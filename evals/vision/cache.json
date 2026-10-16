@@ -3206,5 +3206,1755 @@
   "cache_creation_tokens": 12755,
   "cost_usd": 0.102328,
   "duration_ms": 3471
+ },
+ "b58973bb2a7ab6d3a5339f665e3165a7583e0415f7d86d4fe3fd20b71c80b19d": {
+  "answers": {
+   "present": 0.98,
+   "where": {
+    "top": 0.48,
+    "bottom": 0.51,
+    "left": 0.08,
+    "right": 0.27,
+    "confidence": 0.83
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3245,
+  "sec": 0.26
+ },
+ "f4abf3135c235c75876fca942fc81dddedc12741ea9abdababdf2eefc5bafc89": {
+  "answers": {
+   "present": 0.98,
+   "where": {
+    "top": 0.48,
+    "bottom": 0.51,
+    "left": 0.31,
+    "right": 0.47,
+    "confidence": 0.54
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3246,
+  "sec": 0.28
+ },
+ "dd7eb1f4aa5cc1781608e44133f95d58880c813849e2f05160e911df14a0a34b": {
+  "answers": {
+   "present": 0.99,
+   "where": {
+    "top": 0.54,
+    "bottom": 0.58,
+    "left": 0.07,
+    "right": 0.41,
+    "confidence": 0.67
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3246,
+  "sec": 0.3
+ },
+ "bb18072f1059131e78d94f64ff247406685062efaef96124272b48653ebb46e4": {
+  "answers": {
+   "present": 0.99,
+   "where": {
+    "top": 0.38,
+    "bottom": 0.42,
+    "left": 0.06,
+    "right": 0.93,
+    "confidence": 0.63
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3255,
+  "sec": 0.3
+ },
+ "78411fb57da7b329ea3c747777951ba18f981a7b8e87deb80fdc96bab07b0578": {
+  "answers": {
+   "where": {
+    "top": 0.44,
+    "bottom": 0.57,
+    "left": 0.14,
+    "right": 0.48,
+    "confidence": 0.84
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 1763,
+  "sec": 0.18
+ },
+ "279c3fbdceade146a650fa560b7316a2646924482c3c71a83018330cc419e663": {
+  "answers": {
+   "where": {
+    "top": 0.44,
+    "bottom": 0.57,
+    "left": 0.31,
+    "right": 0.7,
+    "confidence": 0.85
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 1536,
+  "sec": 0.19
+ },
+ "ab6bbdbd9e1ec795bd0d852edcb750bf78528fb952944490700ec6b7731a31c5": {
+  "answers": {
+   "where": {
+    "top": 0.48,
+    "bottom": 0.53,
+    "left": 0.08,
+    "right": 0.41,
+    "confidence": 0.85
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 2868,
+  "sec": 0.2
+ },
+ "ac76bf61fe1df53fdc3d341bed78f3c457c8eb0d8c310c312c59957ed2e212e1": {
+  "answers": {
+   "where": {
+    "top": 0.4,
+    "bottom": 0.53,
+    "left": 0.06,
+    "right": 0.93,
+    "confidence": 0.49
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 2873,
+  "sec": 0.22
+ },
+ "d50a521a487c545b89e7041f6a54765cdee16c91957c4be05452add3cf4f4f27": {
+  "answers": {
+   "on_target": 0.98
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3234,
+  "sec": 0.19
+ },
+ "6b0d493e2c10f59b84d5f0a78b42c337ddc4ca74b2a1f990e5e33ffe0a90f293": {
+  "answers": {
+   "on_target": 0.98
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3234,
+  "sec": 0.21
+ },
+ "b68a4f8e12555761088be944db72bbfa9c126b569e57921d5eb46c1ce6c38d6a": {
+  "answers": {
+   "on_target": 0.98
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3238,
+  "sec": 0.2
+ },
+ "642fbfc65b3b6969ff43089aa87e62050e731f496f4bcb3982a3c09dc05a0377": {
+  "answers": {
+   "on_target": 0.95
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3240,
+  "sec": 0.21
+ },
+ "06c83a76f43778383b38fed3452184ac4f645fef221b044eb8f4aadd91149126": {
+  "text": "{\"present\": true, \"box\": [57, 745, 195, 807]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2126,
+  "cost_usd": 0.017495999999999998,
+  "duration_ms": 3232
+ },
+ "b252f9ca3bd969560329737703030e18ea8c567c0b1c9c3fc5edadf6fd3905d4": {
+  "answers": {
+   "present": 0.99,
+   "where": {
+    "top": 0.3,
+    "bottom": 0.37,
+    "left": 0.07,
+    "right": 0.93,
+    "confidence": 0.92
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3244,
+  "sec": 0.21
+ },
+ "a50c5ebce33c1efed40b655c4d00d4eb7dd2c077c9144af476087a16663e2bd0": {
+  "answers": {
+   "where": {
+    "top": 0.45,
+    "bottom": 0.59,
+    "left": 0.08,
+    "right": 0.93,
+    "confidence": 0.86
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 2863,
+  "sec": 0.2
+ },
+ "5be15bcf3574f93383608cd6fef200a101e0d917cb7fb8b2de5fb9f8a8fe343c": {
+  "answers": {
+   "on_target": 0.98
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3235,
+  "sec": 0.21
+ },
+ "cebb8fc3f6e63eef52b36c9ef7a96de29d2aa833df7d874e67044020fd729306": {
+  "text": "{\"present\": true, \"box\": [216, 745, 352, 806]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2126,
+  "cost_usd": 0.017495999999999998,
+  "duration_ms": 4435
+ },
+ "d2c3233f88a785bad98d4015ac8a80229af0b1283118295b52555a53fef7c41d": {
+  "text": "{\"present\": true, \"box\": [57, 863, 302, 900]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2128,
+  "cost_usd": 0.017512,
+  "duration_ms": 4531
+ },
+ "cc81ac303f1fd6a836055d04a31296a1f45b196b5b4c3552e3c47f091d45c0b5": {
+  "answers": {
+   "present": 0.01,
+   "where": {
+    "top": 0.47,
+    "bottom": 0.52,
+    "left": 0.31,
+    "right": 0.46,
+    "confidence": 0.12
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3254,
+  "sec": 0.22
+ },
+ "d357e4e1ae01f1d26670c5a6abb9328a19139f06c8dfbfb1aff1a4f577c1da74": {
+  "answers": {
+   "present": 0.28,
+   "where": {
+    "top": 0.08,
+    "bottom": 0.12,
+    "left": 0.71,
+    "right": 0.79,
+    "confidence": 0.41
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3252,
+  "sec": 0.24
+ },
+ "bbddbe446ee28307ea0fb330571e33f41f996ff109543137e019cecc01e0a35c": {
+  "answers": {
+   "where": {
+    "top": 0.27,
+    "bottom": 0.37,
+    "left": 0.42,
+    "right": 0.63,
+    "confidence": 0.64
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 1073,
+  "sec": 0.19
+ },
+ "75a54edae02b6f5d2fc70719e7cd0f9e9510993558984b1c5c8531a29d24570a": {
+  "answers": {
+   "on_target": 0.91
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3238,
+  "sec": 0.28
+ },
+ "8ad44f662bf319b70f8b4810dbd191f13e3853d845590ba6aa30261f701aee9a": {
+  "text": "{\"present\": true, \"box\": [30, 561, 691, 655]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2130,
+  "cost_usd": 0.017528,
+  "duration_ms": 6381
+ },
+ "2ea592e7260e493d10ca656ffc1f9e71e529b24c6c90cd385eb029904864f35d": {
+  "answers": {
+   "present": 0.99,
+   "where": {
+    "top": 0.08,
+    "bottom": 0.12,
+    "left": 0.81,
+    "right": 0.93,
+    "confidence": 0.58
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3258,
+  "sec": 0.22
+ },
+ "fd20899e2987f0fbc7ec16bfb6aa60715e2d1906c1683f3d375e537dd3eb1f98": {
+  "answers": {
+   "where": {
+    "top": 0.28,
+    "bottom": 0.38,
+    "left": 0.64,
+    "right": 0.82,
+    "confidence": 0.52
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 1250,
+  "sec": 0.17
+ },
+ "6f5e65d52ed6bc53e6629b2adb8e5135c145480febb49589fe1a3f3963a9ce11": {
+  "answers": {
+   "on_target": 0.92
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3240,
+  "sec": 0.23
+ },
+ "9fb83715165e6d570108fc5f3a0d8215eb9ecdf0edae8cbd3ad7c1feb8200297": {
+  "text": "{\"present\": false, \"box\": null}",
+  "input_tokens": 2,
+  "output_tokens": 13,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2130,
+  "cost_usd": 0.017308,
+  "duration_ms": 4053
+ },
+ "961af3c063a329f93972efe7879c42ba9702f9ffe7162664f146b420e443780e": {
+  "answers": {
+   "present": 0.99,
+   "where": {
+    "top": 0.9,
+    "bottom": 0.96,
+    "left": 0.33,
+    "right": 0.41,
+    "confidence": 0.54
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3245,
+  "sec": 0.21
+ },
+ "8f4006aa62c70e63e6757ff3f5f5755e7a2a4fa9343f9a73df652346e7be1c9e": {
+  "text": "{\"present\": true, \"box\": [58, 468, 664, 560]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2121,
+  "cost_usd": 0.017456,
+  "duration_ms": 5430
+ },
+ "55988b85e556fd25adc95f7de9b6fc30e11753739a1acc5fbe624bb9580f6371": {
+  "answers": {
+   "where": {
+    "top": 0.74,
+    "bottom": 0.92,
+    "left": 0.45,
+    "right": 0.68,
+    "confidence": 0.34
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 1072,
+  "sec": 0.21
+ },
+ "dfe3e412c083879c25848172a21833d03a3d5a2ec2bd1633f50ccf041ff9e77b": {
+  "answers": {
+   "present": 0.99,
+   "where": {
+    "top": 0.89,
+    "bottom": 0.97,
+    "left": 0.77,
+    "right": 0.88,
+    "confidence": 0.42
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3248,
+  "sec": 0.2
+ },
+ "b72c5d44abc6573a533482a2b8cfe83bd2c3e4954623b58db5ab7c488701d912": {
+  "answers": {
+   "on_target": 0.98
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3237,
+  "sec": 0.21
+ },
+ "3e68d4bf62187b3a679188e7e5f2f4ae889dd64db7d5dbdd63c19d7f69708c35": {
+  "answers": {
+   "where": {
+    "top": 0.73,
+    "bottom": 0.91,
+    "left": 0.37,
+    "right": 0.59,
+    "confidence": 0.68
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 1188,
+  "sec": 0.19
+ },
+ "324fd040d24775aae61b7dc46235b90cde3c989cf656f9859cda6b34e49558ef": {
+  "text": "{\"present\": true, \"box\": [523, 128, 571, 176]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2130,
+  "cost_usd": 0.017528,
+  "duration_ms": 4586
+ },
+ "a2b89a3683afb306c2ec9803d98adc6cd4f43c089a266e36c1f8d99b5ae3bc18": {
+  "answers": {
+   "on_target": 0.98
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3237,
+  "sec": 0.35
+ },
+ "7a6699faa0cbf47168801715dc3a280e6280332d1b302b72244f620fbfd4145c": {
+  "answers": {
+   "present": 1.0,
+   "where": {
+    "top": 0.37,
+    "bottom": 0.44,
+    "left": 0.06,
+    "right": 0.94,
+    "confidence": 0.82
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3249,
+  "sec": 0.21
+ },
+ "d867907919689535f8d6db49f9390494a9775c5b0ac3262b76d409afc5e349e2": {
+  "answers": {
+   "where": {
+    "top": 0.41,
+    "bottom": 0.57,
+    "left": 0.07,
+    "right": 0.94,
+    "confidence": 0.48
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 2871,
+  "sec": 0.21
+ },
+ "5c2072e93362f4de598eaecf1a8dc0770e8362398084808ce66d338241d08f1f": {
+  "answers": {
+   "on_target": 1.0
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3238,
+  "sec": 0.2
+ },
+ "cc4b2b0a06a298c92684145e74f2792ee6f29deb3aba70591fb28fb5c7399677": {
+  "text": "{\"present\": true, \"box\": [624, 130, 674, 175]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2131,
+  "cost_usd": 0.017536,
+  "duration_ms": 4188
+ },
+ "4a0d282515f24cc9dd7eca0ce9f8d70fa45ba3a0b5916a05f99905929c3543c0": {
+  "answers": {
+   "present": 0.03,
+   "where": {
+    "top": 0.07,
+    "bottom": 0.12,
+    "left": 0.73,
+    "right": 0.8,
+    "confidence": 0.29
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3246,
+  "sec": 1.2
+ },
+ "61b70b2f469a61087b044cec254a1976fa9adeaa2a4b13ccb5700cc8554625a0": {
+  "text": "{\"present\": true, \"box\": [222, 1430, 345, 1522]}",
+  "input_tokens": 2,
+  "output_tokens": 26,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2131,
+  "cost_usd": 0.017576,
+  "duration_ms": 4962
+ },
+ "a679d76aac40c08f9ba7bc32d37a4a7d49ba11c69a22c546f7b45bb4c2423b60": {
+  "answers": {
+   "present": 0.98,
+   "where": {
+    "top": 0.29,
+    "bottom": 0.36,
+    "left": 0.05,
+    "right": 0.94,
+    "confidence": 0.79
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3244,
+  "sec": 0.2
+ },
+ "1c5d9b13344da9f16c3ef3f32f7a6972e9a9c951c21924016c70b3b200c4164a": {
+  "answers": {
+   "where": {
+    "top": 0.45,
+    "bottom": 0.58,
+    "left": 0.05,
+    "right": 0.94,
+    "confidence": 0.69
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 2867,
+  "sec": 0.2
+ },
+ "2a33ac4d9be94d6526fba3bced284a5ce02cd3b758f87fe838f0991214a76434": {
+  "answers": {
+   "on_target": 0.98
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3233,
+  "sec": 0.19
+ },
+ "5f355f1c1645d196f27a95ae82d2e56dbbb0d83007c1baac483b878fba513a1a": {
+  "text": "{\"present\": true, \"box\": [545, 1430, 637, 1520]}",
+  "input_tokens": 2,
+  "output_tokens": 26,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2132,
+  "cost_usd": 0.017584000000000002,
+  "duration_ms": 4191
+ },
+ "a7859449f8bd2a5ae7a8216c881863d8d1adc0e22a316bbe98f8d9e0f45c6631": {
+  "answers": {
+   "present": 0.98,
+   "where": {
+    "top": 0.43,
+    "bottom": 0.48,
+    "left": 0.74,
+    "right": 0.88,
+    "confidence": 0.76
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3259,
+  "sec": 0.21
+ },
+ "80f6f768f4418292ca861b7f6d6f4eca0a9f33a0f1e9fc47c1dbd89239f4148a": {
+  "answers": {
+   "where": {
+    "top": 0.46,
+    "bottom": 0.54,
+    "left": 0.27,
+    "right": 0.77,
+    "confidence": 0.35
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 1426,
+  "sec": 0.2
+ },
+ "b05b25c74e332924ab7b7a25fbf5115f1832adac6793a33d272fa98ad40cbbca": {
+  "answers": {
+   "on_target": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3244,
+  "sec": 0.25
+ },
+ "3f4a6b85c0facc883c9a56f28e63f7e91b5cdba13e26f8162a3dfe53799ad88f": {
+  "text": "{\"present\": false, \"box\": null}",
+  "input_tokens": 2,
+  "output_tokens": 13,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2126,
+  "cost_usd": 0.017276,
+  "duration_ms": 3770
+ },
+ "242d946bdd5e12baf8e1565eb03036af16f57774210fb0b3cfcef3f412283a33": {
+  "answers": {
+   "present": 0.98,
+   "where": {
+    "top": 0.43,
+    "bottom": 0.48,
+    "left": 0.7,
+    "right": 0.81,
+    "confidence": 0.73
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3265,
+  "sec": 0.2
+ },
+ "b4ea850d8e2ee7d4fb1618e391589854b7822bad3b5c66d23997316a93d031b0": {
+  "answers": {
+   "where": {
+    "top": 0.46,
+    "bottom": 0.54,
+    "left": 0.33,
+    "right": 0.53,
+    "confidence": 0.86
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 1196,
+  "sec": 0.17
+ },
+ "c51ef66861b1e4f2b7b536227289acfb1aaaa8514d9ff3b56201388f9c0898e0": {
+  "answers": {
+   "on_target": 0.98
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3245,
+  "sec": 0.24
+ },
+ "1694b07775486bd3ab3728be085f350529fafe44195df8c0b128a8e7d7f8fc71": {
+  "text": "{\"present\": true, \"box\": [30, 562, 691, 692]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2126,
+  "cost_usd": 0.017495999999999998,
+  "duration_ms": 4992
+ },
+ "3b1380488f19ac039c9c18812ca08a00ba6aa042d8e916aae870086566a63076": {
+  "answers": {
+   "present": 0.99,
+   "where": {
+    "top": 0.51,
+    "bottom": 0.54,
+    "left": 0.09,
+    "right": 0.91,
+    "confidence": 0.15
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3255,
+  "sec": 0.29
+ },
+ "d00550fe23f0887d3f419fe2393cbc1734db5a5974be5aa05738e38a1ca9dcf3": {
+  "answers": {
+   "where": {
+    "top": 0.43,
+    "bottom": 0.54,
+    "left": 0.09,
+    "right": 0.91,
+    "confidence": 0.21
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 2873,
+  "sec": 0.26
+ },
+ "b7f93a7c0cadcbfcb3b5e573b488e32919ebde2bc4b670d2fa850fe5767d7274": {
+  "answers": {
+   "on_target": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3240,
+  "sec": 0.3
+ },
+ "96aeb0fea9331626a76bd4aad606ffabd762a2d5c5a94ba1fe1df0d174809f74": {
+  "text": "{\"present\": true, \"box\": [30, 468, 691, 561]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2125,
+  "cost_usd": 0.017488,
+  "duration_ms": 4044
+ },
+ "fe35aac1341ef3c6dcb4ac2f62cbf4abb38b375187da3fd48b3be16e0f07ce26": {
+  "answers": {
+   "present": 0.42,
+   "where": {
+    "top": 0.62,
+    "bottom": 0.69,
+    "left": 0.05,
+    "right": 0.63,
+    "confidence": 0.36
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3244,
+  "sec": 0.22
+ },
+ "9bc411d3ae2ee3d9c5bf771da1a31d311e94d27691c4feb206d7528402cd4bf5": {
+  "answers": {
+   "where": {
+    "top": 0.41,
+    "bottom": 0.59,
+    "left": 0.05,
+    "right": 0.95,
+    "confidence": 0.53
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 2863,
+  "sec": 0.22
+ },
+ "827a49289417373d909326093ec973e6f6591bc4dac6e7f075b429661bde7341": {
+  "answers": {
+   "on_target": 0.98
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3233,
+  "sec": 0.19
+ },
+ "97f53818dbf7851a42b00c6249f6bb8e684fdf9281a18bf4590eaeda07683cc3": {
+  "text": "{\"present\": true, \"box\": [580, 685, 662, 741]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2131,
+  "cost_usd": 0.017536,
+  "duration_ms": 4223
+ },
+ "d880e4b3b585cb2ec9677f496c903c62ac4b1b3f0bd358a05a84b499f50fa381": {
+  "answers": {
+   "present": 0.01,
+   "where": {
+    "top": 0.44,
+    "bottom": 0.46,
+    "left": 0.03,
+    "right": 0.35,
+    "confidence": 0.04
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3247,
+  "sec": 0.23
+ },
+ "1e66ea58b2259d1ee36b2f6137d7d505bbebde20c19a959cbd4e51a37a8a3e2a": {
+  "text": "{\"present\": true, \"box\": [497, 685, 579, 741]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2132,
+  "cost_usd": 0.017544,
+  "duration_ms": 3794
+ },
+ "75743ce7e941329a59562124f99d2f6f83507d8cd072ecc416e7fa194f02991c": {
+  "answers": {
+   "present": 0.98,
+   "where": {
+    "top": 0.52,
+    "bottom": 0.59,
+    "left": 0.14,
+    "right": 0.49,
+    "confidence": 0.83
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3251,
+  "sec": 0.25
+ },
+ "c92f137a9fe86e2ef0f376fc4b0af2b3600832509e352100cdaa2b8b042e300f": {
+  "answers": {
+   "where": {
+    "top": 0.41,
+    "bottom": 0.61,
+    "left": 0.14,
+    "right": 0.49,
+    "confidence": 0.87
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 2867,
+  "sec": 0.21
+ },
+ "d30426bed5daef6ed74e931e0eb886d530bfee6a6c6194c5d2ee53013bcc31a4": {
+  "answers": {
+   "on_target": 0.96
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3240,
+  "sec": 0.21
+ },
+ "05fe57d8bc42705faa968e929d531fbeea30d28ce1585a6bd3157e9ceeb56115": {
+  "text": "{\"present\": true, \"box\": [461, 789, 663, 842]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2132,
+  "cost_usd": 0.017544,
+  "duration_ms": 4197
+ },
+ "fddfadca60db0246d2c11cd83c53ef1bc495e1c5c7dd8b4d6be7753620870304": {
+  "answers": {
+   "present": 0.98,
+   "where": {
+    "top": 0.52,
+    "bottom": 0.59,
+    "left": 0.51,
+    "right": 0.87,
+    "confidence": 0.43
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3252,
+  "sec": 0.2
+ },
+ "279290f179712783ad80749d02f196f03ed0059f457b5cd984a021fb51f88b15": {
+  "answers": {
+   "where": {
+    "top": 0.41,
+    "bottom": 0.61,
+    "left": 0.51,
+    "right": 0.86,
+    "confidence": 0.33
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 2870,
+  "sec": 0.19
+ },
+ "bc44200e4632af6f7380d3a8241254ab5c3bfad04a21c1fa144e0c8e5ed9d18e": {
+  "answers": {
+   "on_target": 0.98
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3241,
+  "sec": 0.2
+ },
+ "7c435f00626341e88947faf3b09b346ca7e4a3a9d15f0baab9906ae3f4c3716e": {
+  "text": "{\"present\": true, \"box\": [56, 1004, 665, 1050]}",
+  "input_tokens": 2,
+  "output_tokens": 26,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2122,
+  "cost_usd": 0.017504000000000002,
+  "duration_ms": 4072
+ },
+ "688b7b5d985220b4f0f2b0558d86f92077c6d556e00d08ddd047bac793d2e1c7": {
+  "answers": {
+   "present": 0.01,
+   "where": {
+    "top": 0.52,
+    "bottom": 0.55,
+    "left": 0.43,
+    "right": 0.48,
+    "confidence": 0.11
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3247,
+  "sec": 0.55
+ },
+ "b64d771dd881cdf7cf1b5685b1fed35d412bfb3f866743000340cd2c113c3961": {
+  "text": "{\"present\": false, \"box\": null}",
+  "input_tokens": 2,
+  "output_tokens": 13,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2126,
+  "cost_usd": 0.017276,
+  "duration_ms": 4046
+ },
+ "0212c66b2e3dce336e39ec02d4c4ca0f1220489afdc8b5ec239056afdd49bbc2": {
+  "answers": {
+   "present": 1.0,
+   "where": {
+    "top": 0.35,
+    "bottom": 0.49,
+    "left": 0.04,
+    "right": 0.32,
+    "confidence": 0.91
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3255,
+  "sec": 0.22
+ },
+ "3499c7fcbf620d16f5e46b14b1b2bb6a385dd521b99376f0b9d1063f90e31d9a": {
+  "answers": {
+   "where": {
+    "top": 0.35,
+    "bottom": 0.66,
+    "left": 0.05,
+    "right": 0.38,
+    "confidence": 0.89
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3279,
+  "sec": 0.2
+ },
+ "c95ba21af6775c3032fb2e7fb1e0079a0b2c5dc8b9a71e02b4ed73a89989e9ea": {
+  "answers": {
+   "on_target": 1.0
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3240,
+  "sec": 0.19
+ },
+ "303756675d3b7caa3a3f1e7cb8a2259b61bbe37938df562289db5ed4afe255c8": {
+  "text": "{\"present\": true, \"box\": [368, 831, 619, 916]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2129,
+  "cost_usd": 0.017519999999999997,
+  "duration_ms": 3308
+ },
+ "bacf26764daa63d9820d05700a3e900818ce9f51c6809269dd7af1fdbd10a1f3": {
+  "answers": {
+   "present": 1.0,
+   "where": {
+    "top": 0.48,
+    "bottom": 0.63,
+    "left": 0.67,
+    "right": 0.96,
+    "confidence": 0.24
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3249,
+  "sec": 0.21
+ },
+ "9ace274a5c98499a679eb1f5047f6e80da74a2fbad7a5ad0ebf34edf2cf7ec26": {
+  "text": "{\"present\": true, \"box\": [102, 831, 353, 916]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2130,
+  "cost_usd": 0.017528,
+  "duration_ms": 5511
+ },
+ "70c506be062c3526708d7511f6796bf539eb23b01093536039653513657ff7ca": {
+  "answers": {
+   "where": {
+    "top": 0.38,
+    "bottom": 0.67,
+    "left": 0.63,
+    "right": 0.96,
+    "confidence": 0.5
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3585,
+  "sec": 0.2
+ },
+ "bfed21a4da0f04a351c2e8374bed9086411a056e5e6c52cac71094119121d98e": {
+  "answers": {
+   "present": 0.99,
+   "where": {
+    "top": 0.5,
+    "bottom": 0.63,
+    "left": 0.37,
+    "right": 0.65,
+    "confidence": 0.36
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3252,
+  "sec": 0.2
+ },
+ "8be2bda294d3d03b4a4677fde636f909de9e38e672ee588f4e4992b464fdcb71": {
+  "answers": {
+   "on_target": 1.0
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3235,
+  "sec": 0.2
+ },
+ "27c73a15932de6e6f73e1b1d35e681fb992cbf337ecf79feeb890264a9c7048a": {
+  "answers": {
+   "where": {
+    "top": 0.34,
+    "bottom": 0.66,
+    "left": 0.33,
+    "right": 0.64,
+    "confidence": 0.51
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3058,
+  "sec": 0.2
+ },
+ "2e440055485fc942842c2766a3a0f545ab7611b3103fba05c616709778e34e07": {
+  "answers": {
+   "on_target": 1.0
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3240,
+  "sec": 0.2
+ },
+ "063450a4c38ee3eede409a284eb9ddf022e6fce08448fd569a7efdf1872182e3": {
+  "text": "{\"present\": false, \"box\": null}",
+  "input_tokens": 2,
+  "output_tokens": 13,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2124,
+  "cost_usd": 0.01726,
+  "duration_ms": 5631
+ },
+ "34f3a4091d7bce87b2d762b87c23ae8308e21bc543ec6b9008f80ea84f649b46": {
+  "answers": {
+   "present": 0.01,
+   "where": {
+    "top": 0.44,
+    "bottom": 0.45,
+    "left": 0.04,
+    "right": 0.33,
+    "confidence": 0.05
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3247,
+  "sec": 0.26
+ },
+ "576c025130987bed918907594367662a6f132165636fb784eaf984650dacdca0": {
+  "text": "{\"present\": true, \"box\": [29, 558, 235, 765]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2132,
+  "cost_usd": 0.017544,
+  "duration_ms": 4636
+ },
+ "fdb392a12b6f4127203235e790442f8e5f745766eb8b08cf39f75ee5b907bdd1": {
+  "answers": {
+   "present": 0.99,
+   "where": {
+    "top": 0.19,
+    "bottom": 0.31,
+    "left": 0.03,
+    "right": 0.96,
+    "confidence": 0.95
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3245,
+  "sec": 0.27
+ },
+ "8752392c755bbf3d5b4cf2733dcb431399ef2a75d5691b4c91873f4a3c778b41": {
+  "answers": {
+   "where": {
+    "top": 0.34,
+    "bottom": 0.63,
+    "left": 0.03,
+    "right": 0.95,
+    "confidence": 0.93
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3308,
+  "sec": 0.25
+ },
+ "80740e424eb42173f8e5f7b0569fae38c1b22f83bf65d2af2a28dcdc246c6123": {
+  "text": "{\"present\": true, \"box\": [485, 787, 693, 994]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2128,
+  "cost_usd": 0.017512,
+  "duration_ms": 3687
+ },
+ "f508c67254cc7288eb318b91d7fb76aed25a4949def4e20feeb081aec00de9ae": {
+  "answers": {
+   "on_target": 0.96
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3234,
+  "sec": 0.2
+ },
+ "f17785d92c78eec378ec5a4a0079d8cb81bc6831737b32c0da0a43dc685f3c31": {
+  "answers": {
+   "present": 0.99,
+   "where": {
+    "top": 0.44,
+    "bottom": 0.5,
+    "left": 0.05,
+    "right": 0.94,
+    "confidence": 0.61
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3254,
+  "sec": 0.21
+ },
+ "49b91516a82462f365aa5fc2adfd9ef89e20dc9ea8ea9aa20623d85a724f03ad": {
+  "text": "{\"present\": true, \"box\": [257, 787, 464, 994]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2128,
+  "cost_usd": 0.017512,
+  "duration_ms": 3669
+ },
+ "44984924b3f3d73e3878733e1800038aaa86a47afdba235ef20fef63339ffe53": {
+  "answers": {
+   "where": {
+    "top": 0.43,
+    "bottom": 0.54,
+    "left": 0.07,
+    "right": 0.95,
+    "confidence": 0.5
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 2869,
+  "sec": 0.28
+ },
+ "78f059142c6b4508ad4e0c99504c8179759febeb66a5503e6e4932a8edc8b8c2": {
+  "answers": {
+   "on_target": 0.99
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3240,
+  "sec": 0.36
+ },
+ "607882be8730de9bf86e47756c9b8e170af74924ab6e5b067f0dc4ea6ee4911f": {
+  "answers": {
+   "present": 1.0,
+   "where": {
+    "top": 0.75,
+    "bottom": 0.79,
+    "left": 0.06,
+    "right": 0.94,
+    "confidence": 0.58
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3254,
+  "sec": 0.57
+ },
+ "212792f6143ba17dadb1202570a0a6c4f38709d32f37ea863982244182c93ec5": {
+  "answers": {
+   "where": {
+    "top": 0.42,
+    "bottom": 0.54,
+    "left": 0.07,
+    "right": 0.21,
+    "confidence": 0.54
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 2873,
+  "sec": 0.19
+ },
+ "74b1feef3f780ba6c6f2624c4491b354df99384a8af3359c267b0b8d04b86517": {
+  "answers": {
+   "on_target": 0.98
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3239,
+  "sec": 0.28
+ },
+ "e9e5a026a3672d419d46c55e02c677640250e1ee31a81ae1f043209849dae2a4": {
+  "text": "{\"present\": false, \"box\": null}",
+  "input_tokens": 2,
+  "output_tokens": 38,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2128,
+  "cost_usd": 0.017792000000000002,
+  "duration_ms": 4253
+ },
+ "b7c0fcadf96b222aee69416b35358d8f1e8b881964301d004208c3ba0eed155a": {
+  "answers": {
+   "present": 0.99,
+   "where": {
+    "top": 0.56,
+    "bottom": 0.62,
+    "left": 0.07,
+    "right": 0.93,
+    "confidence": 0.45
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3257,
+  "sec": 0.22
+ },
+ "f70febf4e1c8099ba39d83d6fb639acb3fdf6b72c9efd843ff84cbebbf878836": {
+  "answers": {
+   "where": {
+    "top": 0.43,
+    "bottom": 0.56,
+    "left": 0.08,
+    "right": 0.2,
+    "confidence": 0.46
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 2874,
+  "sec": 0.22
+ },
+ "7397ce87fbb7972728977cf6134dbbd88ddfeefb136939d81f3d667cc2c77b60": {
+  "answers": {
+   "on_target": 0.99
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3244,
+  "sec": 0.22
+ },
+ "877f9c807ea02a5d3f20248660e6cdefdcbc987a98b942634e3c16fca8951fe2": {
+  "text": "{\"present\": true, \"box\": [30, 302, 691, 463]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2127,
+  "cost_usd": 0.017504,
+  "duration_ms": 4160
+ },
+ "11e7052678c02045dfe719b29cb338441921b1167b93c5f7590f249e542d5d17": {
+  "answers": {
+   "present": 0.99,
+   "where": {
+    "top": 0.91,
+    "bottom": 0.97,
+    "left": 0.07,
+    "right": 0.93,
+    "confidence": 0.78
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3253,
+  "sec": 0.34
+ },
+ "68da6a078f3e8041abf7551f7962e2f7cfaf96a3d710481a540b76b0edc0cf71": {
+  "answers": {
+   "where": {
+    "top": 0.7,
+    "bottom": 0.91,
+    "left": 0.06,
+    "right": 0.93,
+    "confidence": 0.89
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 2872,
+  "sec": 0.23
+ },
+ "26c5f393389378626ce0272d9949a547885e08f814f51350bed7f4c15a55cac0": {
+  "answers": {
+   "on_target": 0.97
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3238,
+  "sec": 0.24
+ },
+ "6b15693e549e5c9a07048ea2f14374f4c440f833e9f9c89bf8f478432003d168": {
+  "text": "{\"present\": true, \"box\": [30, 684, 691, 777]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2126,
+  "cost_usd": 0.017495999999999998,
+  "duration_ms": 4694
+ },
+ "9575d4e447e338f319897b4a4388f7595546b62a9a39ca3f1fc9c773338099d1": {
+  "answers": {
+   "present": 0.01,
+   "where": {
+    "top": 0.86,
+    "bottom": 0.96,
+    "left": 0.07,
+    "right": 0.94,
+    "confidence": 0.13
+   }
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3255,
+  "sec": 0.22
+ },
+ "76a8ccd799023e78c0223762ca8a1a197f86f507400538805929f0db2ac20341": {
+  "text": "{\"present\": true, \"box\": [30, 1153, 691, 1246]}",
+  "input_tokens": 2,
+  "output_tokens": 26,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2129,
+  "cost_usd": 0.01756,
+  "duration_ms": 4183
+ },
+ "544d477b57492196c14795d461e93a886329de1993d6fe5d0d99642d5580b202": {
+  "text": "{\"present\": true, \"box\": [30, 870, 691, 964]}",
+  "input_tokens": 2,
+  "output_tokens": 24,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2132,
+  "cost_usd": 0.017544,
+  "duration_ms": 4741
+ },
+ "4a378209dcc03079f99a74895a9d040e269b82971faa6fada82ecd18e6d800b8": {
+  "text": "{\"present\": false, \"box\": null}",
+  "input_tokens": 2,
+  "output_tokens": 13,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2129,
+  "cost_usd": 0.0173,
+  "duration_ms": 3916
+ },
+ "566c497c8e2701d4de9f976c97293b069908b35301f7e4633cd9553acc36dc50": {
+  "text": "{\"present\": true, \"box\": [50, 1432, 671, 1518]}",
+  "input_tokens": 2,
+  "output_tokens": 26,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 2129,
+  "cost_usd": 0.01756,
+  "duration_ms": 4638
+ },
+ "8f2e1ff6d9c7372feb12ed2b3a4fcf2d7ac76d982e176b8ae16ff190ead3703c": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3225,
+  "sec": 0.23
+ },
+ "357008c18e733d10243de1ec03ceefcc8c698fda414052ad78c9d9ee13287b90": {
+  "answers": {
+   "present": 0.0
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3228,
+  "sec": 0.24
+ },
+ "d17d2521ceace5ef1481123553e0e31be907a39f98d80e92e6bf0590ad5ad005": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3227,
+  "sec": 0.24
+ },
+ "a2eda3a1d9de09dddb98ec9ca0cca4fed4fc7abfc5ea645c6788388d14a6086e": {
+  "answers": {
+   "present": 0.99
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3228,
+  "sec": 0.29
+ },
+ "acdde0d69a7b12457c5c37f2d796d9afd2dba9a426881ca1dc70ca6685fb0492": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3228,
+  "sec": 0.19
+ },
+ "3a642c6d623b6484ef025ab44da49a5d2ac9d8a1d31a56601c103e5f44698540": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3229,
+  "sec": 0.2
+ },
+ "d82a19242ebcd0fe6ab7aff13603501b4885e3f30a83ce758578993ef054d295": {
+  "text": "{\"screens\": [\"s_alert\"]}",
+  "input_tokens": 2,
+  "output_tokens": 16,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 9458,
+  "cost_usd": 0.07599199999999999,
+  "duration_ms": 5092
+ },
+ "a9209d66b1343d33aee0842503b6074397d650bb9342bf9567cb5addf1dd783b": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3229,
+  "sec": 0.19
+ },
+ "f80346506f0d0233f07d6463c1326168ec2100c3251f8c2d7ded5007e087df78": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3227,
+  "sec": 0.19
+ },
+ "f995af27fe082df9762c19080ca3a5289be9bf6e87105d8d728619b490860216": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3231,
+  "sec": 0.2
+ },
+ "b45f9412296148730d4d717e9b0fb66b16efedf0949754858887dac6ea94f6e5": {
+  "answers": {
+   "present": 0.99
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3228,
+  "sec": 0.23
+ },
+ "75cc389fad6570c806ad43a1a5151801a8492c2b32ee49b7a733199673caceb6": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3226,
+  "sec": 0.22
+ },
+ "1e57c8c1d741bb9327e7db153e19cfd867dafc075730b69d29d86d2412e2f2c5": {
+  "answers": {
+   "present": 0.02
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3229,
+  "sec": 0.25
+ },
+ "0c4a25f5a45c09cb98a3c6f95d5d0f066f3ca132b0a00dedf80827990a54e224": {
+  "text": "{\"screens\": [\"s_inbox\"]}",
+  "input_tokens": 2,
+  "output_tokens": 17,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 9460,
+  "cost_usd": 0.076028,
+  "duration_ms": 5173
+ },
+ "96d1749f80d34a2c66284b3ffa90dcc2f93571a30d1702a29158676c07a9af3e": {
+  "answers": {
+   "present": 0.02
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3229,
+  "sec": 0.22
+ },
+ "3639f3e04ba738470b8e4f01094a12ec05c3050defb9b0e7d7c5dbe95d1e845b": {
+  "answers": {
+   "present": 0.02
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3227,
+  "sec": 0.22
+ },
+ "794fce6af21c872e567bc5ca912cbc0fc10dcea9a82774c1a34a1cbaf0ec559b": {
+  "answers": {
+   "present": 0.99
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3225,
+  "sec": 0.25
+ },
+ "2b33085a6198c791028a4945f100150de8794f8c4903d801360d5447dd84de37": {
+  "answers": {
+   "present": 0.99
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3229,
+  "sec": 0.31
+ },
+ "89f93343e42a45ef38a75b1800f49848fb332f964228541aaa5a060029aae634": {
+  "answers": {
+   "present": 0.02
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3226,
+  "sec": 0.19
+ },
+ "c92a13bb03b69ffa5c84acda8455d70c495c1894a2c7e6658e6b8446f45656a2": {
+  "answers": {
+   "present": 0.04
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3226,
+  "sec": 0.21
+ },
+ "e2a289858ac45cdfe0353376ad9e122e46954c83e64bf2bb0f3f225addd52303": {
+  "text": "{\"screens\": [\"s_signin\", \"s_settings\"]}",
+  "input_tokens": 2,
+  "output_tokens": 22,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 9458,
+  "cost_usd": 0.076112,
+  "duration_ms": 4480
+ },
+ "bf843237e7afeeccf89b5f368028fd58ccb42a997be292f25bd3a6183b5d88dd": {
+  "answers": {
+   "present": 0.99
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3234,
+  "sec": 0.2
+ },
+ "b423aef94a58de3c230feccd1110e977cc7285c6b3e584cef9e40d8348bc5f51": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3235,
+  "sec": 0.23
+ },
+ "860c1511eb894cd8d79dbeb86e06386efe341894cd250d4809663ebbebfefaaa": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3233,
+  "sec": 0.24
+ },
+ "9525eb9d17f21d79ef3749f2446c6e57cac74205570c24a4b4af45a6bf5abac8": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3230,
+  "sec": 0.25
+ },
+ "1bb6cfdecb4bc799e4a7469948356d1f577be8964d3c52e2e3565f42b90c0b76": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3232,
+  "sec": 0.21
+ },
+ "1cdaa0275b286f5ac522ae43655fb9b7b87e6922f160fc87823c07171b792e1b": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3234,
+  "sec": 0.33
+ },
+ "6b9d4d7ab00bdb36a0c5ff73b685e52822be9071e3002bdd5b107e0e677fa55d": {
+  "text": "{\"screens\": [\"s_settings\"]}",
+  "input_tokens": 2,
+  "output_tokens": 16,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 9465,
+  "cost_usd": 0.07604799999999999,
+  "duration_ms": 6628
+ },
+ "3e6c6092bb3931c77650389963da67deb3b0bb640af5d928683bc33ffc0210c2": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3228,
+  "sec": 0.21
+ },
+ "7ee1fa193a812d082e407a13b65f7c769393f0c402a49aa44a497e5caf49ca10": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3228,
+  "sec": 0.22
+ },
+ "09b70049301f95f90259b8a6acfdd76b0e816fa8be044a2a80ab1cbc38cc9e33": {
+  "answers": {
+   "present": 0.02
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3228,
+  "sec": 0.22
+ },
+ "f519a6e770bc39f6482183ed366aac675f6d62d324ff24d274e6872ddf187a24": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3226,
+  "sec": 0.22
+ },
+ "364878d7b13418a038a3c5aba0250aca0d08f6afca931bf613a1a7773bc16363": {
+  "answers": {
+   "present": 0.99
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3229,
+  "sec": 0.2
+ },
+ "aed4b106bc700ff73467d23606554f0fc989728b89105b83202126db4068f4a6": {
+  "answers": {
+   "present": 0.05
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3229,
+  "sec": 0.22
+ },
+ "4dd04b49d5c6c1094dc4013e31619ad55ec8ed33574bc505bc4d5c71a5484663": {
+  "text": "{\"screens\": [\"s_gallery\"]}",
+  "input_tokens": 2,
+  "output_tokens": 17,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 9457,
+  "cost_usd": 0.076004,
+  "duration_ms": 4341
+ },
+ "143fbd882c8516cdbd2feec239924a41aabb36d1764398c89df550cc342a8d5d": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3228,
+  "sec": 0.2
+ },
+ "27f8849fbb2bfd17eeadd20be4851360a9bc662147b69df047ffa6d9339c0378": {
+  "answers": {
+   "present": 0.99
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3226,
+  "sec": 0.24
+ },
+ "f4c415e66dfabc0e7720db8955e6d0fdcd80309d65efdc4eb471cd32ab04c9a9": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3227,
+  "sec": 0.26
+ },
+ "707f204d82052828b6ccc5a4e224638fddca72311b5ecae97424daed18a3819b": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3230,
+  "sec": 0.28
+ },
+ "cdae0764d6235c7360d8bbb03b8458688e0f2e4e6287550675e30bad509c5a83": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3228,
+  "sec": 0.2
+ },
+ "9b1b1abdf90798b81d803809eb76678883bfd7caea96202851fe079cc0449da5": {
+  "answers": {
+   "present": 0.02
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3228,
+  "sec": 0.22
+ },
+ "e3dc0d3bf715c48756c15952e64df87780270ab2d8aaffcc16f6adedb8184195": {
+  "text": "{\"screens\": [\"s_signin\"]}",
+  "input_tokens": 2,
+  "output_tokens": 16,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 9455,
+  "cost_usd": 0.075968,
+  "duration_ms": 3771
+ },
+ "2aadf8c91175c35cd6aea3ef995d9c06d3762a89b76defdf68d2cab9506e2b5b": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3227,
+  "sec": 0.2
+ },
+ "982f28cc80e79ae7436caca46d506739ef0ee784e9f454508f196c57cd25a993": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3232,
+  "sec": 0.21
+ },
+ "bc20b9b6e2267ec970053257fd6ef4e953606554343e9119a212ed50651d4698": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3228,
+  "sec": 0.26
+ },
+ "0648388d643d55ca2a0d6774516338cd7a1966f40998a97b96aec2e6bf19a6ad": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3229,
+  "sec": 0.33
+ },
+ "39768c3e28f0fb62419cde34dc2b59c61a88aa0d8c7b1b7fdc4e3449339ffdb0": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3226,
+  "sec": 0.23
+ },
+ "9049ce61aaddfee32491b2a6862d9b381578cccb08359c2e6085471812300089": {
+  "answers": {
+   "present": 0.99
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3229,
+  "sec": 0.31
+ },
+ "dd0b5bb384f409c4ea4c743a5f861ee464861afa66504215bc011cbf1660b424": {
+  "text": "{\"screens\": [\"s_sysprefs\"]}",
+  "input_tokens": 2,
+  "output_tokens": 65,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 9456,
+  "cost_usd": 0.07695600000000001,
+  "duration_ms": 5073
+ },
+ "f623c71bb0992527337f4cf2cd019fe66b6486220d98ef3a7080ccf10c9975c7": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3224,
+  "sec": 0.2
+ },
+ "f307697963cba007b7948a91ccdc9ee9a94fb1bc61fba46e3b11615a4b55f0d7": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3227,
+  "sec": 0.21
+ },
+ "115ee048e8ae8d58484cbc26787d6f0135b9dc5f613fc1933aee42d1dd3c0eb0": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3226,
+  "sec": 0.21
+ },
+ "125d7a5690884191b45940326f1b885b01d70cb8e6b2c1c00ae6c026f619b5da": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3224,
+  "sec": 0.25
+ },
+ "7367c5bc56385abd084baa063834bbb110dc2b5776bd3c63a51131c4528264ce": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3225,
+  "sec": 0.2
+ },
+ "be109f1ede0a452e9d53639a9fcc3fda0cefd7a2eb41b6ec7d7e8019c4da15f3": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3227,
+  "sec": 0.23
+ },
+ "748b763186135dfbe71a7c64c3758e2b663feada49effe1045419047c46a078c": {
+  "text": "{\"screens\": []}",
+  "input_tokens": 2,
+  "output_tokens": 9,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 9454,
+  "cost_usd": 0.07582,
+  "duration_ms": 4199
  }
 }

@@ -71,3 +71,33 @@ def test_flagged_counts_low_verify_scores_per_hit_group():
             {"jev_hit": True, "verify": 0.2}, {"jev_hit": True, "verify": 0.95}, {"jev_hit": True, "verify": 0.6}]
     assert ev.flagged(rows, False) == "1/2"
     assert ev.flagged(rows, True) == "1/3"
+
+
+ELEMENTS = [
+    {"type": "other", "id": "remember", "label": "Remember me", "frame": [0, 100, 402, 44]},
+    {"type": "switch", "id": "remember", "label": "Remember me", "frame": [330, 106, 51, 31]},
+    {"type": "button", "id": "", "label": "Delete", "frame": [20, 400, 160, 44]},
+]
+
+
+def test_pick_element_takes_the_first_match_and_narrows_by_type():
+    assert ev.pick_element(ELEMENTS, (None, "remember", None))["type"] == "other"  # container comes first
+    assert ev.pick_element(ELEMENTS, ("switch", "remember", None))["frame"] == [330, 106, 51, 31]
+    assert ev.pick_element(ELEMENTS, ("button", None, "Delete"))["label"] == "Delete"
+    with pytest.raises(ValueError):
+        ev.pick_element(ELEMENTS, ("button", None, "Cancel"))
+
+
+def test_frame_fraction_is_relative_to_the_window():
+    assert ev.frame_fraction([100, 200, 50, 100], [0, 0, 400, 800]) == box(0.25, 0.25, 0.375, 0.375)
+    assert ev.frame_fraction([110, 220, 50, 100], [10, 20, 400, 800]) == box(0.25, 0.25, 0.375, 0.375)
+
+
+def test_sim_cases_point_at_declared_targets_and_ids_are_unique_across_suites():
+    from sim_cases import SIM_LOCATE_CASES, SIM_SCREENS, SIM_TARGETS, SIM_WHICH_CASES
+    ids = [c[0] for c in LOCATE_CASES + SIM_LOCATE_CASES] + [c[0] for c in WHICH_CASES + SIM_WHICH_CASES]
+    assert len(ids) == len(set(ids))
+    assert set(SIM_TARGETS) == set(SIM_SCREENS)
+    assert all(c[2] is None or c[2] in SIM_TARGETS[c[1]] for c in SIM_LOCATE_CASES)
+    assert all(g <= set(SIM_SCREENS) for _, _, g in SIM_WHICH_CASES)
+    assert not set(SIM_SCREENS) & set(PAGES)  # shots of both suites share one name space

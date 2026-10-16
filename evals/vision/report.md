@@ -1,8 +1,12 @@
 # Vision eval report
 
-Model `jev-1.14.0`, Claude `opus`. 38 locate cases (30 present), 8 which queries x 8 screens.
+Model `jev-1.14.0`, Claude `opus`.
 
-## Locate
+## web
+
+38 locate cases (30 present), 8 which queries x 8 screens.
+
+### Locate
 
 | metric | jev_box | jev_zoom | claude |
 |---|---|---|---|
@@ -58,7 +62,7 @@ Marker verify (flag when < 0.5): flags 5/5 jev_box misses and 1/25 jev_box hits.
 | mhome-absent | 0.070 | False |
 | mset-absent | 0.010 | False |
 
-## Which
+### Which
 
 Per (query, screen) pair correct: Jev 64/64, Claude 64/64. Jev top-1 (or no_match) correct: 8/8 (100%). Claude mean cost per query $0.10.
 
@@ -72,3 +76,71 @@ Per (query, screen) pair correct: Jev 64/64, Claude 64/64. Jev top-1 (or no_matc
 | which-map | [] | [] | [] |
 | which-cart | ['dash', 'modal', 'orders', 'shop', 'signup'] | ['dash', 'modal', 'orders', 'shop', 'signup'] | ['dash', 'modal', 'orders', 'shop', 'signup'] |
 | which-checkbox | ['signup'] | ['signup'] | ['signup'] |
+
+## sim
+
+31 locate cases (25 present), 8 which queries x 6 screens.
+
+### Locate
+
+| metric | jev_box | jev_zoom | claude |
+|---|---|---|---|
+| presence correct | 29/31 (94%) | (same) | 31/31 (100%) |
+| click point inside target | 24/25 (96%) | 22/25 (88%) | 25/25 (100%) |
+| mean IoU | 0.62 | 0.56 | 0.83 |
+| mean latency | 0.29 s | +1 request | 4.39 s |
+| mean input tokens / cost | 3250.74 tok | +2441.48 tok | $0.02 |
+
+Marker verify (flag when < 0.5): flags 1/1 jev_box misses and 1/24 jev_box hits.
+
+| case | jev hit | conf | verify | zoom hit | zoom conf | claude hit |
+|---|---|---|---|---|---|---|
+| s-signin-cancel | True | 0.83 | 0.98 | True | 0.84 | True |
+| s-signin-signin | True | 0.54 | 0.98 | True | 0.85 | True |
+| s-signin-forgot | True | 0.67 | 0.98 | True | 0.85 | True |
+| s-signin-remember | True | 0.63 | 0.95 | True | 0.49 | True |
+| s-signin-password | True | 0.92 | 0.98 | False | 0.86 | True |
+| s-inbox-filter | True | 0.41 | 0.91 | True | 0.64 | True |
+| s-inbox-compose | True | 0.58 | 0.92 | True | 0.52 | True |
+| s-inbox-tab-search | True | 0.54 | 0.98 | True | 0.34 | True |
+| s-inbox-tab-profile | True | 0.42 | 0.98 | True | 0.68 | True |
+| s-inbox-sara | True | 0.82 | 1.00 | True | 0.48 | True |
+| s-settings-bluetooth | True | 0.79 | 0.98 | True | 0.69 | True |
+| s-settings-increment | True | 0.76 | 0.01 | False | 0.35 | True |
+| s-settings-decrement | True | 0.73 | 0.98 | True | 0.86 | True |
+| s-settings-auto | False | 0.15 | 0.01 | False | 0.21 | True |
+| s-settings-volume | True | 0.36 | 0.98 | True | 0.53 | True |
+| s-alert-cancel | True | 0.83 | 0.96 | True | 0.87 | True |
+| s-alert-delete | True | 0.43 | 0.98 | True | 0.33 | True |
+| s-gallery-moon | True | 0.91 | 1.00 | True | 0.89 | True |
+| s-gallery-paw | True | 0.24 | 1.00 | True | 0.50 | True |
+| s-gallery-drop | True | 0.36 | 1.00 | True | 0.51 | True |
+| s-sys-account | True | 0.95 | 0.96 | True | 0.93 | True |
+| s-sys-general | True | 0.61 | 0.99 | True | 0.50 | True |
+| s-sys-camera | True | 0.58 | 0.98 | True | 0.54 | True |
+| s-sys-search-row | True | 0.45 | 0.99 | True | 0.46 | True |
+| s-sys-search-field | True | 0.78 | 0.97 | True | 0.89 | True |
+
+| absent case | jev presence | claude presence |
+|---|---|---|
+| s-signin-absent | 0.010 | False |
+| s-inbox-absent | 0.030 | False |
+| s-settings-absent | 0.010 | False |
+| s-alert-absent | 0.010 | False |
+| s-gallery-absent | 0.010 | False |
+| s-sys-absent | 0.010 | False |
+
+### Which
+
+Per (query, screen) pair correct: Jev 48/48, Claude 48/48. Jev top-1 (or no_match) correct: 8/8 (100%). Claude mean cost per query $0.08.
+
+| query | gold | jev >= 0.5 | claude |
+|---|---|---|---|
+| sim-which-alert | ['s_alert'] | ['s_alert'] | ['s_alert'] |
+| sim-which-tabbar | ['s_inbox'] | ['s_inbox'] | ['s_inbox'] |
+| sim-which-toggle | ['s_settings', 's_signin'] | ['s_settings', 's_signin'] | ['s_settings', 's_signin'] |
+| sim-which-stepper | ['s_settings'] | ['s_settings'] | ['s_settings'] |
+| sim-which-heart | ['s_gallery'] | ['s_gallery'] | ['s_gallery'] |
+| sim-which-password | ['s_signin'] | ['s_signin'] | ['s_signin'] |
+| sim-which-searchfield | ['s_sysprefs'] | ['s_sysprefs'] | ['s_sysprefs'] |
+| sim-which-map | [] | [] | [] |

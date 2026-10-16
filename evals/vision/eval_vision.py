@@ -1,5 +1,8 @@
 """Offline evaluation: can Jev find UI elements in screenshots (Box + presence Noul), and pick
-the screens that show something? Ground truth is the DOM box of each fixture target.
+the screens that show something? Two suites, each with exact ground truth:
+  web  pages.py screens rendered by Playwright; truth = DOM boxes
+  sim  sim/ SwiftUI fixture app + the iOS Settings app on the iPhone 17 simulator;
+       truth = accessibility frames that the XCUITest in sim/UITests dumps
 
 Arms:
   jev_box    one request on the full screenshot: presence Noul + Box
@@ -11,7 +14,9 @@ Arms:
   which_cl   Claude sees all screens at once and names the ones that show the query
 
 Every model call is cached in cache.json keyed on its inputs, so re-runs are free.
-Run with the jev venv: ~/.local/pipx/venvs/jev/bin/python eval_vision.py [--render]
+Run with the jev venv: ~/.local/pipx/venvs/jev/bin/python eval_vision.py [--render] [--import-sim DIR]
+  --render          re-render the web pages and their truth
+  --import-sim DIR  read the XCUITest capture in DIR (see sim/README.md) into sim/shots and sim/truth.json
 """
 
 import hashlib
@@ -28,12 +33,21 @@ from typesafe_sdk import Image, TypeSafeClient
 
 import jev
 from pages import LOCATE_CASES, PAGES, WHICH_CASES
+from sim_cases import SIM_LOCATE_CASES, SIM_SCREENS, SIM_TARGETS, SIM_WHICH_CASES
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # evals/, for evalkit
 from evalkit import Cache, run_claude  # noqa: E402
 
 HERE = Path(__file__).parent
 SHOTS = HERE / "shots"
+SIM = HERE / "sim"
+SUITES = {
+    "web": {"screens": list(PAGES), "shots": SHOTS, "truth": HERE / "truth.json",
+            "locate": LOCATE_CASES, "which": WHICH_CASES},
+    "sim": {"screens": SIM_SCREENS, "shots": SIM / "shots", "truth": SIM / "truth.json",
+            "locate": SIM_LOCATE_CASES, "which": SIM_WHICH_CASES},
+}
+SHOT_FILES = {n: suite["shots"] / f"{n}.png" for suite in SUITES.values() for n in suite["screens"]}
 MODEL, HEADERS = jev.VISION_MODEL, jev.VISION_HEADERS
 CLAUDE_MODEL = "opus"
 PRESENT = 0.5  # presence Noul cut; fixed before the run, not tuned
@@ -126,6 +140,35 @@ def render():
     (HERE / "truth.json").write_text(json.dumps(truth, indent=1))
 
 
+def pick_element(elements, spec):
+    """The first dumped element (tree order) matching spec = (type, id, label); None fields match anything."""
+    want = dict(zip(("type", "id", "label"), spec))
+    for el in elements:
+        if all(v is None or el[k] == v for k, v in want.items()):
+            return el
+    raise ValueError(f"no element matches {spec}")
+
+
+def frame_fraction(frame, window):
+    """An accessibility frame [x, y, w, h] in points as fractions of the window."""
+    x, y, w, h = frame
+    wx, wy, ww, wh = window
+    return {"left": (x - wx) / ww, "top": (y - wy) / wh, "right": (x + w - wx) / ww, "bottom": (y + h - wy) / wh}
+
+
+def import_sim(capture_dir):
+    """Copy the captured PNGs into sim/shots and build sim/truth.json from the dumped frames."""
+    capture_dir = Path(capture_dir)
+    SUITES["sim"]["shots"].mkdir(parents=True, exist_ok=True)
+    truth = {}
+    for name in SIM_SCREENS:
+        dump = json.loads((capture_dir / f"{name}.json").read_text())
+        (SUITES["sim"]["shots"] / f"{name}.png").write_bytes((capture_dir / f"{name}.png").read_bytes())
+        truth[name] = {t: frame_fraction(pick_element(dump["elements"], spec)["frame"], dump["window"])
+                       for t, spec in SIM_TARGETS[name].items()}
+    SUITES["sim"]["truth"].write_text(json.dumps(truth, indent=1))
+
+
 def png(img):
     buf = io.BytesIO()
     img.save(buf, "PNG")
@@ -134,7 +177,7 @@ def png(img):
 
 def shot(page, region=None, sizer=jev.image_size):
     """The page screenshot (optionally cropped to a fractional region), resized by `sizer`."""
-    img = PILImage.open(SHOTS / f"{page}.png").convert("RGB")
+    img = PILImage.open(SHOT_FILES[page]).convert("RGB")
     if region:
         W, H = img.size
         img = img.crop((round(region["left"] * W), round(region["top"] * H),
@@ -197,8 +240,7 @@ def claude_locate(cache, page, desc):
     return (*parse_claude(r["text"], w, h), r)
 
 
-def claude_which(cache, desc):
-    names = list(PAGES)
+def claude_which(cache, desc, names):
     images = [png(shot(n, sizer=claude_size)) for n in names]
     listing = ", ".join(f"image {i + 1} = {n}" for i, n in enumerate(names))
     text = (f"The images are, in order: {listing}. Which screens show {desc}? Reply with exactly one JSON object: "
@@ -238,15 +280,15 @@ def locate_row(cache, truth, case):
     return row
 
 
-def which_row(cache, case):
+def which_row(cache, case, names):
     cid, desc, gold = case
-    scores = dict(zip(PAGES, pmap(lambda n: ask_jev(cache, shot(n), {"present": jev.shows_question(desc)})["answers"]["present"], PAGES)))
+    scores = dict(zip(names, pmap(lambda n: ask_jev(cache, shot(n), {"present": jev.shows_question(desc)})["answers"]["present"], names)))
     ranked = sorted(scores, key=scores.get, reverse=True)
-    picked_cl, rc = claude_which(cache, desc)
+    picked_cl, rc = claude_which(cache, desc, names)
     return {
         "id": cid, "gold": sorted(gold), "scores": {k: round(v, 3) for k, v in scores.items()},
         "jev_top1_ok": (ranked[0] in gold) if gold else scores[ranked[0]] < PRESENT,
-        "jev_set": sorted(n for n in PAGES if scores[n] >= PRESENT),
+        "jev_set": sorted(n for n in names if scores[n] >= PRESENT),
         "cl_set": sorted(picked_cl) if picked_cl is not None else None, "cl_cost": rc["cost_usd"],
     }
 
@@ -267,19 +309,18 @@ def flagged(rows, hits):
     return f"{sum(r['verify'] < PRESENT for r in picked)}/{len(picked)}"
 
 
-def report(loc, which):
+def report_suite(name, loc, which, names):
     present = [r for r in loc if r["gold_present"]]
     for r in loc:
         r["jev_present_ok"] = (r["jev_present"] >= PRESENT) == r["gold_present"]
         r["cl_present_ok"] = r["cl_present"] == r["gold_present"]
-    pairs = [(w, n) for w in which for n in PAGES]
+    pairs = [(w, n) for w in which for n in names]
     jev_pair = sum((w["scores"][n] >= PRESENT) == (n in w["gold"]) for w, n in pairs)
     cl_pair = sum(w["cl_set"] is not None and (n in w["cl_set"]) == (n in w["gold"]) for w, n in pairs)
-    lines = [
-        "# Vision eval report", "",
-        f"Model `{MODEL}`, Claude `{CLAUDE_MODEL}`. {len(loc)} locate cases ({len(present)} present), "
-        f"{len(which)} which queries x {len(PAGES)} screens.", "",
-        "## Locate", "",
+    return [
+        f"## {name}", "",
+        f"{len(loc)} locate cases ({len(present)} present), {len(which)} which queries x {len(names)} screens.", "",
+        "### Locate", "",
         "| metric | jev_box | jev_zoom | claude |", "|---|---|---|---|",
         f"| presence correct | {rate(loc, 'jev_present_ok')} | (same) | {rate(loc, 'cl_present_ok')} |",
         f"| click point inside target | {rate(present, 'jev_hit')} | {rate(present, 'zoom_hit')} | {rate(present, 'cl_hit')} |",
@@ -294,24 +335,30 @@ def report(loc, which):
           f"| {r['cl_hit']} |" for r in present],
         "", "| absent case | jev presence | claude presence |", "|---|---|---|",
         *[f"| {r['id']} | {r['jev_present']:.3f} | {r['cl_present']} |" for r in loc if not r["gold_present"]],
-        "", "## Which", "",
+        "", "### Which", "",
         f"Per (query, screen) pair correct: Jev {jev_pair}/{len(pairs)}, Claude {cl_pair}/{len(pairs)}. "
         f"Jev top-1 (or no_match) correct: {rate(which, 'jev_top1_ok')}. Claude mean cost per query ${mean(which, 'cl_cost')}.", "",
         "| query | gold | jev >= 0.5 | claude |", "|---|---|---|---|",
         *[f"| {w['id']} | {w['gold']} | {w['jev_set']} | {w['cl_set']} |" for w in which],
+        "",
     ]
-    return "\n".join(lines) + "\n"
 
 
 def main():
-    if "--render" in sys.argv or not (HERE / "truth.json").exists():
+    if "--render" in sys.argv or not SUITES["web"]["truth"].exists():
         render()
-    truth = json.loads((HERE / "truth.json").read_text())
+    if "--import-sim" in sys.argv:
+        import_sim(sys.argv[sys.argv.index("--import-sim") + 1])
     cache = Cache(HERE / "cache.json")
-    loc = pmap(lambda c: locate_row(cache, truth, c), LOCATE_CASES)
-    which = [which_row(cache, c) for c in WHICH_CASES]
-    (HERE / "results.json").write_text(json.dumps({"locate": loc, "which": which}, indent=1))
-    (HERE / "report.md").write_text(report(loc, which))
+    results, lines = {}, ["# Vision eval report", "", f"Model `{MODEL}`, Claude `{CLAUDE_MODEL}`.", ""]
+    for name, suite in SUITES.items():
+        truth = json.loads(suite["truth"].read_text())
+        loc = pmap(lambda c: locate_row(cache, truth, c), suite["locate"])
+        which = [which_row(cache, c, suite["screens"]) for c in suite["which"]]
+        results[name] = {"locate": loc, "which": which}
+        lines += report_suite(name, loc, which, suite["screens"])
+    (HERE / "results.json").write_text(json.dumps(results, indent=1))
+    (HERE / "report.md").write_text("\n".join(lines))
     print((HERE / "report.md").read_text())
 
 
