@@ -1843,6 +1843,48 @@
     "jev_set": [],
     "cl_set": [],
     "cl_cost": 0.07582
+   },
+   {
+    "id": "sim-which-filter",
+    "gold": [
+     "s_inbox"
+    ],
+    "scores": {
+     "s_signin": 0.01,
+     "s_inbox": 0.11,
+     "s_settings": 0.01,
+     "s_alert": 0.01,
+     "s_gallery": 0.02,
+     "s_sysprefs": 0.02
+    },
+    "jev_top1_ok": true,
+    "jev_set": [],
+    "cl_set": [
+     "s_inbox"
+    ],
+    "cl_cost": 0.076012
+   },
+   {
+    "id": "sim-which-volume",
+    "gold": [
+     "s_settings"
+    ],
+    "scores": {
+     "s_signin": 0.01,
+     "s_inbox": 0.01,
+     "s_settings": 0.73,
+     "s_alert": 0.01,
+     "s_gallery": 0.01,
+     "s_sysprefs": 0.01
+    },
+    "jev_top1_ok": true,
+    "jev_set": [
+     "s_settings"
+    ],
+    "cl_set": [
+     "s_settings"
+    ],
+    "cl_cost": 0.075984
    }
   ]
  }

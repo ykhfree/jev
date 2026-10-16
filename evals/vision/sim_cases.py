@@ -91,4 +91,7 @@ SIM_WHICH_CASES = [
     ("sim-which-password", "a password field", {"s_signin"}),
     ("sim-which-searchfield", "a search text field", {"s_sysprefs"}),
     ("sim-which-map", "a map", set()),
+    # targets whose presence scored low in locate (0.28 and 0.42): does ranking still put them first?
+    ("sim-which-filter", "a filter icon button", {"s_inbox"}),
+    ("sim-which-volume", "a volume slider", {"s_settings"}),
 ]

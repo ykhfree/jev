@@ -79,7 +79,7 @@ Per (query, screen) pair correct: Jev 64/64, Claude 64/64. Jev top-1 (or no_matc
 
 ## sim
 
-31 locate cases (25 present), 8 which queries x 6 screens.
+31 locate cases (25 present), 10 which queries x 6 screens.
 
 ### Locate
 
@@ -132,7 +132,7 @@ Marker verify (flag when < 0.5): flags 1/1 jev_box misses and 1/24 jev_box hits.
 
 ### Which
 
-Per (query, screen) pair correct: Jev 48/48, Claude 48/48. Jev top-1 (or no_match) correct: 8/8 (100%). Claude mean cost per query $0.08.
+Per (query, screen) pair correct: Jev 59/60, Claude 60/60. Jev top-1 (or no_match) correct: 10/10 (100%). Claude mean cost per query $0.08.
 
 | query | gold | jev >= 0.5 | claude |
 |---|---|---|---|
@@ -144,3 +144,5 @@ Per (query, screen) pair correct: Jev 48/48, Claude 48/48. Jev top-1 (or no_matc
 | sim-which-password | ['s_signin'] | ['s_signin'] | ['s_signin'] |
 | sim-which-searchfield | ['s_sysprefs'] | ['s_sysprefs'] | ['s_sysprefs'] |
 | sim-which-map | [] | [] | [] |
+| sim-which-filter | ['s_inbox'] | [] | ['s_inbox'] |
+| sim-which-volume | ['s_settings'] | ['s_settings'] | ['s_settings'] |

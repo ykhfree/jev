@@ -4956,5 +4956,119 @@
   "cache_creation_tokens": 9454,
   "cost_usd": 0.07582,
   "duration_ms": 4199
+ },
+ "317ed63c8f893b2ca776eba06357da28a61cbe8425fe4fe6035e53a595e13065": {
+  "answers": {
+   "present": 0.11
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3226,
+  "sec": 0.24
+ },
+ "ca5521b6e24dae77c2fc04f97290fcaea65b945ab411059c823420375df44044": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3227,
+  "sec": 0.25
+ },
+ "27b7cc61525ca7ecc1d83bdf051d4023892c55c099c519698dad5197abdddb6e": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3231,
+  "sec": 0.3
+ },
+ "56ae667cf7903c480f35710cb66ec552382cec58c1cc01d5d06d253bfe0658dc": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3230,
+  "sec": 0.31
+ },
+ "65049fae28f466d9492a1799a57c5142642149582b685e6fd480f33966868a85": {
+  "answers": {
+   "present": 0.02
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3229,
+  "sec": 0.2
+ },
+ "b022b6c395b4c49a0c46f212eb77fa475693e8bf12396ec3a5d336b4bded2307": {
+  "answers": {
+   "present": 0.02
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3228,
+  "sec": 0.24
+ },
+ "fffef378d68946d42827bfa71461a340f8d59dfbaaf41a8231d99e45c45b23df": {
+  "text": "{\"screens\": [\"s_inbox\"]}",
+  "input_tokens": 2,
+  "output_tokens": 17,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 9458,
+  "cost_usd": 0.076012,
+  "duration_ms": 6817
+ },
+ "db4ee7bd31b4f2df623c7c0c2c2a82c0df797b6e66d8c2f0a7158024c11868a4": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3228,
+  "sec": 0.19
+ },
+ "aeaea4b6c1e9a7706d720ff93060e38942517025bb2122c6a3d0b1d1024d5b09": {
+  "answers": {
+   "present": 0.73
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3227,
+  "sec": 0.21
+ },
+ "bdf80b6c3021592934a171405cc4d29308137dec5ce1cb8309c185d171dc0f57": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3224,
+  "sec": 0.24
+ },
+ "672e40ef3761305ba57eaf27b56a25267fe570b8de29d4c078ea90d91a7673e1": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3228,
+  "sec": 0.29
+ },
+ "99f58760b52b4e4081fa300db66022256927062bb7192de15cf099ecd436d4bb": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3229,
+  "sec": 0.21
+ },
+ "7212ef6c72d56cf1b3c75fd35ae9a56004348daf43edeef96f5daef828f52739": {
+  "answers": {
+   "present": 0.01
+  },
+  "model": "jev-1.14.0",
+  "input_tokens": 3225,
+  "sec": 0.24
+ },
+ "a64f77f51e610b86c0b7b75c54d5b272e2eeb93d4366d6155732810f78b9432e": {
+  "text": "{\"screens\": [\"s_settings\"]}",
+  "input_tokens": 2,
+  "output_tokens": 16,
+  "cache_read_tokens": 0,
+  "cache_creation_tokens": 9457,
+  "cost_usd": 0.075984,
+  "duration_ms": 4709
  }
 }
