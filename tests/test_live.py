@@ -7,6 +7,8 @@ import os
 from pathlib import Path
 
 import pytest
+from PIL import Image as PILImage
+from PIL import ImageOps
 
 import jev
 
@@ -213,8 +215,12 @@ def test_search_finds_the_auth_module_and_not_the_unrelated_one(tmp_path, capsys
     assert "imaging/resize.py" not in paths, out
 
 
-# --- images (Danger Zone, VISION_MODEL); fixtures are evals/vision screens with no real data ---
+# --- images (Danger Zone, VISION_MODEL). fixtures/screens are evals/vision screens with no real data.
+# fixtures/photos/dog.jpg is Darknet's data/dog.jpg (https://github.com/pjreddie/darknet, LICENSE:
+# "Darknet is public domain"): a dog, a bicycle and a pickup truck, no people ---
 SCREENS = Path(__file__).parent / "fixtures" / "screens"
+PHOTOS = Path(__file__).parent / "fixtures" / "photos"
+DETECT_LABELS = [arg for label in ("dog", "bicycle", "truck", "cat", "person") for arg in ("-l", label)]
 
 
 def test_which_picks_the_screen_that_shows_the_target(capsys):
@@ -243,3 +249,31 @@ def test_locate_checks_its_click_point(capsys):
 def test_locate_reports_an_absent_target(capsys):
     out = run(["locate", "-q", "the 'Delete account' row", str(SCREENS / "m_settings.png")], capsys)
     assert out["verdict"] == "absent"
+
+
+def test_detect_finds_and_boxes_the_labelled_objects(capsys):
+    out = run(["detect", str(PHOTOS / "dog.jpg"), *DETECT_LABELS], capsys)
+    found = {o["label"]: o for o in out["objects"]}
+    scores = {o["label"]: o["present"] for o in out["objects"] + out["absent"]}
+    assert {"dog", "bicycle"} <= set(found), out
+    assert found["dog"]["count"] == found["bicycle"]["count"] == "one", out
+    assert {"cat", "person"} <= {a["label"] for a in out["absent"]}, out
+    # The truck scored 0.65-0.67, close to the band, so only its order against absent labels is checked.
+    assert scores["truck"] > max(scores["cat"], scores["person"]), out
+    # probe box for the dog: left 0.15, top 0.38, right 0.40, bottom 0.93
+    x, y = jev.box_center(found["dog"]["box"])
+    assert 0.15 <= x <= 0.40 and 0.38 <= y <= 0.93, out
+    assert out["image_size"] == [768, 576]
+
+
+def test_detect_counts_two_dogs_as_several(tmp_path, capsys):
+    with PILImage.open(PHOTOS / "dog.jpg") as photo:
+        both = PILImage.new("RGB", (photo.width * 2, photo.height))
+        both.paste(photo, (0, 0))
+        both.paste(ImageOps.mirror(photo), (photo.width, 0))
+    path = tmp_path / "dog_twice.jpg"
+    both.save(path)
+    out = run(["detect", str(path), *DETECT_LABELS], capsys)
+    found = {o["label"]: o for o in out["objects"]}
+    assert found["dog"]["count"] == "several", out
+    assert out["image_size"] == [1536, 576]

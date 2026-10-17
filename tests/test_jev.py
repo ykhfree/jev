@@ -1,5 +1,6 @@
 import io
 import json
+import re
 import subprocess
 from types import SimpleNamespace
 
@@ -968,3 +969,210 @@ def test_with_marker_leaves_the_input_unchanged():
     marked = jev.with_marker(img, {"left": 0.4, "top": 0.4, "right": 0.6, "bottom": 0.6})
     assert marked.getpixel((300, 200)) == (255, 0, 0) and marked.getpixel((10, 10)) == (255, 255, 255)
     assert img.getpixel((300, 200)) == (255, 255, 255)
+
+
+# --- detect ---
+
+DOG_BOX = {"left": 0.15, "top": 0.38, "right": 0.4, "bottom": 0.93, "confidence": 0.9}
+CAT_BOX = {"left": 0.6, "top": 0.1, "right": 0.9, "bottom": 0.3, "confidence": 0.9}
+DETECT_INSTRUCTIONS = re.compile(r"Does `screen` show a (.+)\?|a (.+) in `screen`|How many of (.+) does `screen` show\?")
+
+
+def detect_ask(present, boxes=None, counts=None):
+    """Fake ask for detect. Each answer is picked by the label in the question's
+    instructions and by the question's type, never by its id."""
+
+    def respond(state, questions):
+        answers = {}
+        for qid, q in questions.items():
+            label = next(g for g in DETECT_INSTRUCTIONS.fullmatch(q.instructions).groups() if g)
+            if isinstance(q, jev.Noul):
+                answers[qid] = present[label]
+            elif isinstance(q, jev.Box):
+                answers[qid] = (boxes or {}).get(label, CAT_BOX)
+            else:
+                answers[qid] = {"choice": (counts or {}).get(label, "one"), "probabilities": {}, "confidence": 0.9}
+        return answers
+
+    return fake(respond)
+
+
+def labels_argv(*labels):
+    return [arg for label in labels for arg in ("-l", label)]
+
+
+def sent_image(state):
+    return PILImage.open(io.BytesIO(bytes(state["screen"].data)))
+
+
+def color_at(img, xy):
+    """The strongest channel at xy (JPEG shifts exact values)."""
+    rgb = img.getpixel(xy)
+    return ("red", "green", "blue")[rgb.index(max(rgb))]
+
+
+def exif_rotated_jpeg(path):
+    """A 400x300 JPEG, red left half and blue right half, with EXIF orientation 6:
+    a viewer turns it 90 degrees clockwise, so it shows 300x400 with red on top."""
+    img = PILImage.new("RGB", (400, 300), "blue")
+    img.paste((255, 0, 0), (0, 0, 200, 300))
+    exif = PILImage.Exif()
+    exif[0x0112] = 6
+    img.save(path, exif=exif)
+    return str(path)
+
+
+def test_detect_asks_about_every_label_in_one_request(tmp_path, capsys):
+    labels = ["dog", "bicycle", "coffee mug"]
+    ask = detect_ask({"dog": 0.96, "bicycle": 0.97, "coffee mug": 0.06})
+    code, _, _ = run(["detect", screenshot(tmp_path / "p.png"), *labels_argv(*labels)], ask, capsys)
+
+    assert code == 0
+    [(state, questions)] = ask.calls
+    assert list(state) == ["screen"] and isinstance(state["screen"], jev.Image)  # the image is sent once
+    assert len(questions) == 9
+    assert sorted((type(q).__name__, q.instructions) for q in questions.values()) == sorted(
+        pair
+        for label in labels
+        for pair in [
+            ("Noul", f"Does `screen` show a {label}?"),
+            ("Box", f"a {label} in `screen`"),
+            ("Choice", f"How many of {label} does `screen` show?"),
+        ]
+    )
+    count = next(q for q in questions.values() if q.instructions == "How many of coffee mug does `screen` show?")
+    assert count.criteria == {
+        "none": "No coffee mug is visible",
+        "one": "Exactly one coffee mug is visible",
+        "several": "Two or more coffee mugs are visible",
+    }
+
+
+def test_detect_splits_labels_at_the_threshold_and_sorts_by_score(tmp_path, capsys):
+    present = {"dog": 0.96, "bicycle": 0.97, "truck": 0.6, "cat": 0.03, "person": 0.4, "mug": 0.06}
+    ask = detect_ask(present, boxes={"dog": DOG_BOX})
+    code, out, _ = run(["detect", screenshot(tmp_path / "p.png", (768, 576)), *labels_argv(*present)], ask, capsys)
+
+    assert code == 0
+    assert set(out) == {"objects", "absent", "image_size"}
+    assert [(o["label"], o["present"], o["uncertain"]) for o in out["objects"]] == [
+        ("bicycle", 0.97, False),
+        ("dog", 0.96, False),
+        ("truck", 0.6, True),
+    ]
+    assert out["objects"][1] == {
+        "label": "dog", "present": 0.96, "uncertain": False, "count": "one",
+        "box": {"left": 0.15, "top": 0.38, "right": 0.4, "bottom": 0.93},
+        "box_px": [115, 219, 307, 536],
+    }
+    assert out["absent"] == [  # no count or box for an absent label
+        {"label": "person", "present": 0.4, "uncertain": True},
+        {"label": "mug", "present": 0.06, "uncertain": False},
+        {"label": "cat", "present": 0.03, "uncertain": False},
+    ]
+    assert out["image_size"] == [768, 576]
+
+
+@pytest.mark.parametrize("score, found", [(0.5, True), (0.49, False)])
+def test_detect_present_min_is_inclusive(tmp_path, capsys, score, found):
+    _, out, _ = run(["detect", screenshot(tmp_path / "p.png"), "-l", "dog"], detect_ask({"dog": score}), capsys)
+    assert (len(out["objects"]), len(out["absent"])) == ((1, 0) if found else (0, 1))
+
+
+def test_detect_reports_box_px_in_the_file_pixels_not_the_sent_copy(tmp_path, capsys):
+    unsure_box = {"left": 0.15004, "top": 0.38, "right": 0.4, "bottom": 0.93, "confidence": 0.2}
+    ask = detect_ask({"dog": 0.9}, boxes={"dog": unsure_box})
+    _, out, _ = run(["detect", screenshot(tmp_path / "p.png", (2560, 1600)), "-l", "dog"], ask, capsys)
+
+    [dog] = out["objects"]  # a low Box confidence neither filters nor shows
+    assert dog["box"] == {"left": 0.15, "top": 0.38, "right": 0.4, "bottom": 0.93}
+    assert dog["box_px"] == [384, 608, 1024, 1488] and out["image_size"] == [2560, 1600]
+    with sent_image(ask.calls[0][0]) as sent:
+        assert sent.size == (1568, 980)
+
+
+def test_detect_passes_the_count_choice_through(tmp_path, capsys):
+    ask = detect_ask({"dog": 0.97, "bicycle": 0.96}, counts={"dog": "several"})
+    _, out, _ = run(["detect", screenshot(tmp_path / "p.png"), "-l", "dog", "-l", "bicycle"], ask, capsys)
+    assert {o["label"]: o["count"] for o in out["objects"]} == {"dog": "several", "bicycle": "one"}
+
+
+def test_detect_strips_labels_and_drops_repeats(tmp_path, capsys):
+    ask = detect_ask({"dog": 0.9, "cat": 0.1})
+    _, out, _ = run(["detect", screenshot(tmp_path / "p.png"), *labels_argv(" dog ", "cat", "dog")], ask, capsys)
+    assert len(ask.calls[0][1]) == 6
+    assert [o["label"] for o in out["objects"]] == ["dog"]
+    assert [a["label"] for a in out["absent"]] == ["cat"]
+
+
+@pytest.mark.parametrize("label", ["", "   "])
+def test_detect_rejects_a_blank_label_before_any_request(tmp_path, capsys, label):
+    ask = detect_ask({"dog": 0.9})
+    code, _, err = run(["detect", screenshot(tmp_path / "p.png"), "-l", "dog", "-l", label], ask, capsys)
+    assert code == 1 and "blank" in err
+    assert ask.calls == []
+
+
+def test_detect_draws_found_objects_on_a_full_size_copy(tmp_path, capsys):
+    photo = screenshot(tmp_path / "p.png", (2560, 1600), "blue")
+    before = (tmp_path / "p.png").read_bytes()
+    drawn_path = tmp_path / "boxes.png"
+    ask = detect_ask({"dog": 0.96, "cat": 0.03}, boxes={"dog": DOG_BOX, "cat": CAT_BOX})
+    code, out, _ = run(["detect", photo, "-l", "dog", "-l", "cat", "--draw", str(drawn_path)], ask, capsys)
+
+    assert code == 0
+    left, top, right, bottom = out["objects"][0]["box_px"]
+    middle = ((left + right) // 2, (top + bottom) // 2)
+    with PILImage.open(drawn_path) as drawn:
+        assert drawn.size == (2560, 1600) and drawn.mode == "RGB"
+        assert drawn.getpixel((left, middle[1])) == drawn.getpixel((middle[0], bottom)) == (255, 0, 0)
+        assert drawn.getpixel(middle) == (0, 0, 255)  # the box is an outline
+        tag = {color for _, color in drawn.crop((left, top, left + 100, top + 40)).getcolors(10_000)}
+        assert {(255, 0, 0), (255, 255, 255)} <= tag  # white text on a red tag
+        # cat is absent, so its box is not drawn
+        assert drawn.getpixel((round(CAT_BOX["left"] * 2560), round(0.2 * 1600))) == (0, 0, 255)
+    assert (tmp_path / "p.png").read_bytes() == before
+
+
+def test_detect_without_draw_writes_no_file(tmp_path, capsys):
+    photo = screenshot(tmp_path / "p.png")
+    run(["detect", photo, "-l", "dog"], detect_ask({"dog": 0.9}), capsys)
+    assert sorted(f.name for f in tmp_path.iterdir()) == ["p.png"]
+
+
+def test_detect_turns_an_exif_rotated_photo_upright(tmp_path, capsys):
+    top_left_quarter = {"left": 0.0, "top": 0.0, "right": 0.5, "bottom": 0.25, "confidence": 0.9}
+    ask = detect_ask({"dog": 0.9}, boxes={"dog": top_left_quarter})
+    _, out, _ = run(["detect", exif_rotated_jpeg(tmp_path / "phone.jpg"), "-l", "dog"], ask, capsys)
+
+    assert out["image_size"] == [300, 400]
+    assert out["objects"][0]["box_px"] == [0, 0, 150, 100]
+    with sent_image(ask.calls[0][0]) as sent:
+        assert sent.size == (300, 400)
+        assert (color_at(sent, (150, 50)), color_at(sent, (150, 350))) == ("red", "blue")
+
+
+def test_locate_and_which_also_turn_exif_rotated_photos_upright(tmp_path, capsys):
+    photo = exif_rotated_jpeg(tmp_path / "phone.jpg")
+    ask = locate_ask(0.99, 0.95)
+    _, out, _ = run(["locate", "-q", "x", photo], ask, capsys)
+    assert out["image_size"] == [300, 400] and out["click_px"] == [150, 240]  # CANCEL_BOX center (0.5, 0.6)
+    for state, _ in ask.calls:
+        with sent_image(state) as sent:
+            assert sent.size == (300, 400) and color_at(sent, (150, 50)) == "red"
+
+    ask = fake(lambda state, q: {"shows": 0.9})
+    run(["which", "-q", "x", photo], ask, capsys)
+    with sent_image(ask.calls[0][0]) as sent:
+        assert sent.size == (300, 400) and color_at(sent, (150, 50)) == "red"
+
+
+@pytest.mark.parametrize("name, size, message", [
+    ("id_rsa.jpg", (800, 600), "secret"),
+    ("pano.png", (6000, 300), "crop it"),  # a wide photo cannot fit 280..1568 px per side
+])
+def test_detect_refuses_an_unsendable_image_before_any_request(tmp_path, capsys, name, size, message):
+    ask = detect_ask({"dog": 0.9})
+    code, _, err = run(["detect", screenshot(tmp_path / name, size), "-l", "dog"], ask, capsys)
+    assert code == 1 and message in err
+    assert ask.calls == []

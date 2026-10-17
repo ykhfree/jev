@@ -21,7 +21,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path, PurePosixPath
 
 from PIL import Image as PILImage
-from PIL import ImageDraw
+from PIL import ImageDraw, ImageOps
 from typesafe_sdk import Box, Choice, Image, Noul, NoulCriteria, TypeSafeClient, TypeSafeError
 
 # --- Thresholds: starting values from the TypeSafe cookbooks; tune on real use ---
@@ -40,6 +40,8 @@ SCREEN = {  # classifying_rag_passages cookbook
 SEARCH = {"dir_min": 0.5, "file_min": 0.6, "unit_min": 0.6}
 # evals/vision: presence >= 0.97 vs <= 0.07; the marker check flagged 5/5 wrong boxes and 1/25 right ones
 LOCATE = {"present_min": 0.5, "on_target_min": 0.5}
+# probe on a public-domain photo: present labels 0.65-0.97, absent <= 0.06
+DETECT = {"present_min": 0.5}
 
 # --- Request sizing: Jev allows 32k tokens for state + longest question and 255
 # Choice options. Char caps are conservative because Korean can be ~1 token/char.
@@ -96,6 +98,14 @@ def shows_question(query: str) -> Noul:
 
 def box_question(query: str) -> Box:
     return Box(instructions=f"{query} in `screen`")
+
+
+def count_question(label: str) -> Choice:
+    return Choice(
+        instructions=f"How many of {label} does `screen` show?",
+        criteria={"none": f"No {label} is visible", "one": f"Exactly one {label} is visible",
+                  "several": f"Two or more {label}s are visible"},
+    )
 
 
 def marker_question(query: str) -> Noul:
@@ -336,19 +346,22 @@ def image_size(w: int, h: int) -> tuple[int, int]:
     scale = max(min(1.0, IMAGE_MAX / max(w, h)), IMAGE_MIN / min(w, h))
     size = round(w * scale), round(h * scale)
     if max(size) > IMAGE_MAX:
-        raise JevError(f"a {w}x{h} image cannot fit {IMAGE_MIN}..{IMAGE_MAX} px per side; capture one viewport at a time")
+        raise JevError(
+            f"a {w}x{h} image cannot fit {IMAGE_MIN}..{IMAGE_MAX} px per side; crop it, or capture one viewport at a time"
+        )
     return size
 
 
-def load_image(path: str) -> tuple[PILImage.Image, tuple[int, int]]:
-    """A PNG or JPEG file resized to the API limits, and the file's own size.
+def load_image(path: str) -> tuple[PILImage.Image, PILImage.Image]:
+    """A PNG or JPEG file as upright RGB: a copy resized to the API limits, and the full-size image.
+    The API ignores EXIF orientation, so the pixels are rotated here.
     PIL raises OSError for a file that is not an image, which main reports."""
     p = Path(path)
     if SECRET_NAME.match(p.name):
         raise JevError(f"refusing to send a likely secret file: {path}")
     with PILImage.open(p) as img:
-        rgb = img.convert("RGB")
-    return rgb.resize(image_size(*rgb.size), PILImage.LANCZOS), rgb.size
+        rgb = ImageOps.exif_transpose(img).convert("RGB")
+    return rgb.resize(image_size(*rgb.size), PILImage.LANCZOS), rgb
 
 
 def as_image(img: PILImage.Image) -> Image:
@@ -389,7 +402,8 @@ def with_marker(img: PILImage.Image, box: dict) -> PILImage.Image:
 
 
 def cmd_locate(args, ask):
-    img, (width, height) = load_image(args.image)
+    img, full = load_image(args.image)
+    width, height = full.size
     first = ask({"screen": as_image(img)}, {"present": shows_question(args.query), "where": box_question(args.query)})
     present = first["present"]
     if present < LOCATE["present_min"]:
@@ -408,6 +422,63 @@ def cmd_locate(args, ask):
         "click_px": [round(x * width), round(y * height)],
         "image_size": [width, height],
     }
+
+
+# --- detect: Box docs (primitives/box.md): one Box question per label in one request, plus a
+# none/one/several Choice, because one Box answer holds one box. No marker check: a box center
+# often misses a non-convex object (a bicycle), so locate's marker question would misfire ---
+def detect_labels(raw: list[str]) -> list[str]:
+    """Stripped labels in first-seen order; a repeat would only repeat its questions and output."""
+    labels = [label.strip() for label in raw]
+    if not all(labels):
+        raise JevError("a label is blank")
+    return list(dict.fromkeys(labels))
+
+
+def with_boxes(img: PILImage.Image, objects: list[dict]) -> PILImage.Image:
+    """`img` with a red rectangle and a "label 96%" tag for each object, drawn in place."""
+    red, line, font_size = (255, 0, 0), max(2, round(img.width / 300)), max(12, round(img.width / 50))
+    draw = ImageDraw.Draw(img)
+    for o in objects:
+        left, top, right, bottom = o["box_px"]
+        draw.rectangle((left, top, right, bottom), outline=red, width=line)
+        tag = f"{o['label']} {round(o['present'] * 100)}%"
+        draw.rectangle(draw.textbbox((left, top), tag, font_size=font_size), fill=red)
+        draw.text((left, top), tag, fill=(255, 255, 255), font_size=font_size)
+    return img
+
+
+def cmd_detect(args, ask):
+    labels = detect_labels(args.label)
+    img, full = load_image(args.image)
+    questions = {}
+    for i, label in enumerate(labels):
+        questions |= {
+            f"present{i}": shows_question(f"a {label}"),
+            f"where{i}": box_question(f"a {label}"),
+            f"count{i}": count_question(label),
+        }
+    answers = ask({"screen": as_image(img)}, questions)
+    width, height = full.size
+    objects, absent = [], []
+    for i, label in enumerate(labels):
+        present = answers[f"present{i}"]
+        item = {"label": label, "present": r3(present), "uncertain": in_band(present)}
+        if present < DETECT["present_min"]:
+            absent.append(item)
+            continue
+        box = answers[f"where{i}"]
+        objects.append({
+            **item,
+            "count": answers[f"count{i}"]["choice"],
+            "box": {k: r3(box[k]) for k in EDGES},
+            "box_px": [round(box[k] * size) for k, size in zip(EDGES, (width, height, width, height))],
+        })
+    objects.sort(key=lambda o: -o["present"])
+    absent.sort(key=lambda a: -a["present"])
+    if args.draw:
+        with_boxes(full, objects).save(args.draw, "PNG")
+    return {"objects": objects, "absent": absent, "image_size": [width, height]}
 
 
 # --- memgate: the 4 recording questions + a duplicate/conflict check per existing
@@ -852,6 +923,17 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("image", help="screenshot file")
     p.add_argument("-q", "--query", required=True, help="what to find, e.g. \"the 'Cancel' button\"")
     p.set_defaults(run=cmd_locate)
+
+    p = sub.add_parser(
+        "detect",
+        help="which of the given objects a photo (PNG/JPEG) shows, and where, in one request; "
+        "public-domain or fixture photos with no people only",
+        epilog="box is fractions of the image; box_px is [left, top, right, bottom] in the file's pixels.",
+    )
+    p.add_argument("image", help="photo file")
+    p.add_argument("-l", "--label", action="append", required=True, help="an object to look for, as a singular noun, e.g. dog; repeat per object")
+    p.add_argument("--draw", metavar="OUT.png", help="also write a PNG copy with a box and score for each object found")
+    p.set_defaults(run=cmd_detect)
     return parser
 
 
